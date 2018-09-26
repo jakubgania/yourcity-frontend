@@ -1,0 +1,33 @@
+{
+  "name": "yourcity-frontend",
+  "version": "1.0.0",
+  "description": " ",
+  "author": "Jakub Gania",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "vue": "^2.5.17",
+    "vuetify": "^1.2.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
