@@ -1,13 +1,66 @@
 .footer-container
 {
+    padding-top: 80px;
+    border-top: 2px solid #f4f4f4;
     background-color: #ffffff;
 }
+.footer-section
+{
+    padding-bottom: 80px;
+    border-bottom: 2px solid #252bfc;
+}
+.icons-section
+{
+    padding-top: 20px;
 
+    .footer-icon
+    {
+        display: inline;
+        color: #c4c4c4;
+    }
+}
+.description
+{
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    letter-spacing: 1px;
+    color: #4e4e4e;
+}
+.link-section
+{
+    font-size: 12px;
+    padding-bottom: 16px;
+    cursor: default;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4e4e4e;
 
+    a
+    {
+        text-decoration: none;
+        color: #4e4e4e;
+    }
+
+    a:hover
+    {
+        font-size: 12px;
+        font-weight: 700;
+        color: #252bfc;
+    }
+
+    .link-icon
+    {
+        font-size: 18px;
+        top: 1px;
+        margin-right: 12px;
+        color: #000000!important;
+    }
+}
 .copyright-section
 {
-    height: 100px;
-    line-height: 100px;
+    height: 120px;
+    line-height: 120px;
 
     display: inline;
 }
