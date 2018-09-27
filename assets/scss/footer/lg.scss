@@ -1,0 +1,34 @@
+.footer-container
+{
+    background-color: #ffffff;
+}
+
+
+.copyright-section
+{
+    height: 100px;
+    line-height: 100px;
+
+    display: inline;
+}
+.email-link
+{
+    font-size: 12px;
+    letter-spacing: 2px;
+    float: left;
+    text-decoration: none;
+    color: #4e4e4e;
+    font-weight: 700;
+}
+.copyright
+{
+    font-size: 12px;
+    font-weight: 700;
+
+    float: right;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: default;
+
+    color: #4e4e4e;
+}
