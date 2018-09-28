@@ -23,7 +23,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#252bfc' },
 
   /*
   ** Global CSS
@@ -37,7 +37,16 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
+    '~/plugins/i18n.js',
   ],
+
+  // generate: {
+  //   routes: ['/', '/about', '/fr', '/fr/about'],
+  // },
+
+  router: {
+    middleware: 'i18n',
+  },
 
   /*
   ** Nuxt.js modules
