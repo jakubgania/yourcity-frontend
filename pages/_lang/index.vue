@@ -8,29 +8,59 @@
       lg12
     >
       <search-component/>
-      {{ $t('home.introduction') }}
-      <!-- informations descriptions component -->
-      <!-- image -->
-      <!-- categories component -->
-      <!-- image -->
-      <!-- tags component -->
-      <!-- image -->
-      <!-- gallery component -->
-      <!-- image -->
-      <!-- cities component -->
-      <!-- image -->
-      <!-- business information component -->
-      <!-- map component -->
+      <!-- {{ $t('home.introduction') }} -->
+      <information-component/>
+
+      <!-- <img :src="" alt="" class=""> -->
+
+      <categories-component/>
+
+      <!-- <img :src="" alt="" class=""> -->
+
+      <tags-component/>
+
+      <!-- <img :src="" alt="" class=""> -->
+
+      <gallery-component/>
+
+      <!-- <img :src="" alt="" class=""> -->
+
+      <cities-component/>
+
+      <!-- <img :src="" alt="" class=""> -->
+
+      <business-component/>
+
+      <map-component/>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import SearchComponent from '../../components/home/search.vue';
+import InformationComponent from '../../components/home/information.vue';
+import CategoriesComponent from '../../components/home/categories.vue';
+import TagsComponent from '../../components/home/tags.vue';
+import GalleryComponent from '../../components/home/gallery.vue';
+import CitiesComponent from '../../components/home/cities.vue';
+import BusinessComponent from '../../components/home/business.vue';
+import MapComponent from '../../components/home/map.vue';
 
 export default {
   components: {
     'search-component': SearchComponent,
+    'information-component': InformationComponent,
+    'categories-component': CategoriesComponent,
+    'tags-component': TagsComponent,
+    'gallery-component': GalleryComponent,
+    'cities-component': CitiesComponent,
+    'business-component': BusinessComponent,
+    'map-component': MapComponent,
+  },
+  data() {
+    return {
+      //
+    };
   },
   head() {
     return {
