@@ -30,6 +30,7 @@ module.exports = {
   */
   css: [
     '~/assets/style/app.styl',
+    'aos/dist/aos.css',
   ],
 
   /*
@@ -38,6 +39,7 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     '~/plugins/i18n.js',
+    { src: '~/plugins/aos', ssr: false },
   ],
 
   // generate: {
@@ -66,6 +68,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['aos'],
     /*
     ** You can extend webpack config here
     */
