@@ -1,0 +1,10 @@
+{
+  "home": {
+    "footer": {
+      "routes-names": {
+        "home_page": "strona główna",
+        "search_page": "wyszukiwanie"
+      }
+    }
+  },
+}

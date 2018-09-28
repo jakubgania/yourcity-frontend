@@ -103,57 +103,27 @@
               lg4
             >
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  home page
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('search')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  search page
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('photos')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  photos page
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('cities/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
-                </nuxt-link>
-              </div>
-            </v-flex>
-            <v-flex
-              xs6
-              sm4
-              lg4
-            >
-              <div class="link-section">
-                <nuxt-link to="/">
-                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
-                </nuxt-link>
-              </div>
-              <div class="link-section">
-                <nuxt-link to="/">
-                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
-                </nuxt-link>
-              </div>
-              <div class="link-section">
-                <nuxt-link to="/">
-                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
-                </nuxt-link>
-              </div>
-              <div class="link-section">
-                <nuxt-link to="/">
-                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  cities all
                 </nuxt-link>
               </div>
             </v-flex>
@@ -163,21 +133,51 @@
               lg4
             >
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('project')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  project page
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('founder')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  founder page
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link to="/">
+                <nuxt-link :to="$i18n.path('changelog')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  page
+                  changelog page
+                </nuxt-link>
+              </div>
+              <div class="link-section">
+                <nuxt-link :to="$i18n.path('agreements')">
+                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
+                  agreements page
+                </nuxt-link>
+              </div>
+            </v-flex>
+            <v-flex
+              xs6
+              sm4
+              lg4
+            >
+              <div class="link-section">
+                <nuxt-link :to="$i18n.path('contact')">
+                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
+                  contact page
+                </nuxt-link>
+              </div>
+              <div class="link-section">
+                <nuxt-link :to="$i18n.path('business')">
+                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
+                  business page
+                </nuxt-link>
+              </div>
+              <div class="link-section">
+                <nuxt-link :to="$i18n.path('example-profile')">
+                  <v-icon class="link-icon">keyboard_arrow_right</v-icon>
+                  example profile page
                 </nuxt-link>
               </div>
             </v-flex>
