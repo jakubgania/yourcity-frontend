@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     displayFooter() {
-      if (this.$route.name === 'lang-search') {
+      if (this.$route.name === 'lang-search' || this.$route.name === 'search') {
         return false;
       }
 
