@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$scrollbar-track-color: #ffffff;
+$scrollbar-track-color: #f4f4f4;
 $scrollbar-thumb-color: #b8b8b8;
 
 ::-webkit-scrollbar-track
