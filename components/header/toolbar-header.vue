@@ -28,6 +28,12 @@ export default {
   component: {
   //
   },
+  props: {
+    drawer: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       //

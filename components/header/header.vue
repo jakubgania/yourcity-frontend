@@ -11,6 +11,7 @@
 
     <toolbar-header-component
       :drawer="drawer"
+      @showNavigationDrawer="showNavigationDrawer"
       @switchNavigationDrawer="switchNavigationDrawer"
       @closeNavigationDrawer="closeNavigationDrawer"
     />
@@ -36,6 +37,9 @@ export default {
   methods: {
     closeNavigationDrawer() {
       this.drawer = false;
+    },
+    showNavigationDrawer() {
+      this.drawer = true;
     },
     switchNavigationDrawer() {
       console.log(this.drawer);

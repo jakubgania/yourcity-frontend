@@ -55,7 +55,7 @@ export default {
         return this.drawer;
       },
       set(value) {
-        this.$emit('updateNavigationDrawerVal', value);
+        this.$emit('updateNavigationDrawerValue', value);
       },
     },
   },
