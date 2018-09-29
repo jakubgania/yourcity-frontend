@@ -1,0 +1,39 @@
+{
+    "items" : [
+        {
+            "title" : "Strona główna",
+            "router" : "true",
+            "href" : "lang"
+        },
+        {
+            "title" : "Wyszukiwanie",
+            "router" : "true",
+            "href" : "lang-search"
+        },
+        {
+            "title" : "Miasta",
+            "router" : "true",
+            "href" : "lang-cities-all"
+        },
+        {
+            "title" : "Kontakt",
+            "router" : "true",
+            "href" : "lang-contact"
+        },
+        {
+            "title" : "Dla biznesu",
+            "router" : "true",
+            "href" : "lang-business"
+        },
+        {
+            "title" : "Changelog",
+            "router" : "true",
+            "href" : "lang-changelog"
+        },
+        {
+            "title" : "Zdjęcia",
+            "router" : "true",
+            "href" : "lang-photos"
+        }
+    ]
+}

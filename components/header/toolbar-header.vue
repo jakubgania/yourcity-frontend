@@ -29,12 +29,17 @@ export default {
   //
   },
   data() {
-  //
+    return {
+      //
+    };
   },
   watch: {
-    // drawer(value) {
-    //   !value && this.$emit('closeNavigationDrawer');
-    // },
+    drawer(value) {
+      // !value && this.$emit('closeNavigationDrawer');
+      if (!value) {
+        this.$emit('closeNavigationDrawer');
+      }
+    },
   },
   methods: {
     displayHeader() {
@@ -44,7 +49,7 @@ export default {
       return this.$route.name === 'lang-business' || this.$route.name === 'business';
     },
     switchNavigationDrawer() {
-      // this.$emit('switchNavigationDrawer');
+      this.$emit('switchNavigationDrawer');
     },
   },
 };
