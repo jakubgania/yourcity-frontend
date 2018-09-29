@@ -3,37 +3,57 @@
         {
             "title" : "Strona główna",
             "router" : "true",
-            "href" : "lang"
+            "path" : ""
         },
         {
             "title" : "Wyszukiwanie",
             "router" : "true",
-            "href" : "lang-search"
+            "path" : "search"
         },
         {
             "title" : "Miasta",
             "router" : "true",
-            "href" : "lang-cities-all"
-        },
-        {
-            "title" : "Kontakt",
-            "router" : "true",
-            "href" : "lang-contact"
-        },
-        {
-            "title" : "Dla biznesu",
-            "router" : "true",
-            "href" : "lang-business"
-        },
-        {
-            "title" : "Changelog",
-            "router" : "true",
-            "href" : "lang-changelog"
+            "path" : "cities/all"
         },
         {
             "title" : "Zdjęcia",
             "router" : "true",
-            "href" : "lang-photos"
+            "path" : "photos"
+        },
+        {
+            "title" : "Kontakt",
+            "router" : "true",
+            "path" : "contact"
+        },
+        {
+            "title" : "Changelog",
+            "router" : "true",
+            "path" : "changelog"
+        },
+        {
+            "title" : "Dla biznesu",
+            "router" : "true",
+            "path" : "business"
+        },
+        {
+            "title" : "Przykladowy profil",
+            "router" : "true",
+            "path" : "example-profile"
+        },
+        {
+            "title" : "O projekcie",
+            "router" : "true",
+            "path" : "project"
+        },
+        {
+            "title" : "O twórcy",
+            "router" : "true",
+            "path" : "founder"
+        },
+        {
+            "title" : "Regulamin",
+            "router" : "true",
+            "path" : "agreements"
         }
     ]
 }

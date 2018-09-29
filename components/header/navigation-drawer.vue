@@ -16,7 +16,7 @@
       >
         <v-list-tile
           :key="menuItem.id"
-          :href="menuItem.href"
+          :to="$i18n.path(menuItem.path)"
         >
           <v-list-tile-action class="">
             <v-icon class="">keyboard_arrow_right</v-icon>
