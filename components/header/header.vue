@@ -5,9 +5,7 @@
       @switchNavigationDrawer="switchNavigationDrawer"
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
       @closeNavigationDrawer="closeNavigationDrawer"
-    >
-      <!--  -->
-    </navigation-drawer-component>
+    />
 
     <toolbar-header-component
       :drawer="drawer"
@@ -19,7 +17,6 @@
 </template>
 
 <script>
-/* eslint no-console: ["error", { allow: ["warn", "log"] }] */
 import NavigationDrawerComponent from './navigation-drawer.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 
@@ -42,7 +39,6 @@ export default {
       this.drawer = true;
     },
     switchNavigationDrawer() {
-      console.log(this.drawer);
       this.drawer = !this.drawer;
     },
     updateNavigationDrawerValue(value) {

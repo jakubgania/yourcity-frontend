@@ -4,11 +4,19 @@
     fixed
     app
     temporary
-    class=""
+    class="navigation-drawer-container"
   >
     <v-list>
-      <div class="">
-        <!-- logo section -->
+      <div class="list-section-logo">
+        <v-icon
+          class="close-menu-icon"
+          @click="closeNavigationDrawer()"
+        >
+          close
+        </v-icon>
+
+        <!-- logo component -->
+
       </div>
       <v-divider/>
       <template
@@ -18,10 +26,10 @@
           :key="menuItem.id"
           :to="$i18n.path(menuItem.path)"
         >
-          <v-list-tile-action class="">
-            <v-icon class="">keyboard_arrow_right</v-icon>
+          <v-list-tile-action class="selected-icon">
+            <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
           </v-list-tile-action>
-          <v-list-tile-content class="">
+          <v-list-tile-content class="selected-text">
             <v-list-tile
               class="list-menu-text"
               v-html="menuItem.title"
@@ -67,5 +75,14 @@ export default {
       }
     },
   },
+  methods: {
+    closeNavigationDrawer() {
+      this.$emit('closeNavigationDrawer');
+    },
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+@import '../../assets/scss/header/navigation-drawer.scss';
+</style>
