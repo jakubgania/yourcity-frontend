@@ -2,6 +2,17 @@
 
 >  
 
+## Technology stack
+
+- [Vue.js](https://vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/)
+- [NUXT](https://nuxtjs.org/)
+- [Sass](https://sass-lang.com/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [Vue i18n](https://kazupon.github.io/vue-i18n/)
+- [axios](https://github.com/axios/axios)
+- [Node.js](https://nodejs.org/en/)
+
 ## Build Setup
 
 ``` bash
