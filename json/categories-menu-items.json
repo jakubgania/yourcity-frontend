@@ -1,0 +1,104 @@
+{
+    "categories" : [
+        {
+            "id" : "club",
+            "icon" : "music_note",
+            "name" : "Kluby"
+        },
+        {
+            "id" : "barAndPub",
+            "icon" : "local_bar",
+            "name" : "Bary i puby"
+        },
+        {
+            "id" : "cafeteria",
+            "icon" : "local_cafe",
+            "name" : "Kawiarnie"
+        },
+        {
+            "id" : "food",
+            "icon" : "restaurant",
+            "name" : "Jedzenie"
+        },
+        {
+            "id" : "entertainment",
+            "icon" : "star",
+            "name" : "Rozrywka"
+        },
+        {
+            "id" : "event",
+            "icon" : "date_range",
+            "name" : "Wydarzenia"
+        },
+        {
+            "id" : "shop",
+            "icon" : "shopping_cart",
+            "name" : "Sklepy"
+        },
+        {
+            "id" : "service",
+            "icon" : "settings",
+            "name" : "Usługi"
+        },
+        {
+            "id" : "tourism",
+            "icon" : "directions_walk",
+            "name" : "Turystyka"
+        },
+        {
+            "id" : "sport",
+            "icon" : "pool",
+            "name" : "Sport"
+        },
+        {
+            "id" : "other",
+            "icon" : "clear_all",
+            "name" : "Inne"
+        },
+        {
+            "id" : "information",
+            "icon" : "info_outline",
+            "name" : "Informacje"
+        },
+        {
+            "id" : "education",
+            "icon" : "school",
+            "name" : "Edukacja"
+        },
+        {
+            "id" : "health",
+            "icon" : "local_hospital",
+            "name" : "Zdrowie"
+        },
+        {
+            "id" : "hotel",
+            "icon" : "local_hotel",
+            "name" : "Hotel"
+        },
+        {
+            "id" : "travel",
+            "icon" : "directions",
+            "name" : "Podróż"
+        },
+        {
+            "id" : "culture",
+            "icon" : "account_balance",
+            "name" : "Kultura"
+        },
+        {
+            "id" : "public institutions",
+            "icon" : "domain",
+            "name" : "Instytucje pub."
+        },
+        {
+            "id" : "it",
+            "icon" : "laptop",
+            "name" : "It"
+        },
+        {
+            "id" : "automotive",
+            "icon" : "directions_car",
+            "name" : "Motoryzacja"
+        }
+    ]
+}

@@ -3,7 +3,9 @@
     row
     wrap
   >
-    <sidebar-menu-component/>
+    <div class="hidden-xs-only">
+      <sidebar-menu-component/>
+    </div>
 
     <container-results-component/>
 

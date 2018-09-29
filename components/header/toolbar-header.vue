@@ -3,6 +3,7 @@
     v-if="displayHeader()"
     color="white"
     app
+    height="64"
     absolute
     clipped-left
     class="toolbar-header"
@@ -19,6 +20,12 @@
     >
       for business
     </div>
+
+    <v-spacer/>
+
+    <v-btn icon>
+      <v-icon>more_vert</v-icon>
+    </v-btn>
 
   </v-toolbar>
 </template>
