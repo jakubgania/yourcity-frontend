@@ -6,7 +6,7 @@
     temporary
     class="navigation-drawer-container"
   >
-    <v-list>
+    <v-list class="list-section">
       <div class="list-section-logo">
         <v-icon
           class="close-menu-icon"
