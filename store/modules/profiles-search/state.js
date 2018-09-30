@@ -1,5 +1,5 @@
-// const state = {
-//   test: null,
-// };
-//
-// export default state;
+const state = {
+  test: null,
+};
+
+export default state;

@@ -1,6 +1,6 @@
 /* eslint no-shadow: off */
 
-const state = ({
+const state = () => ({
   basicClientAddress: '',
   basicServerAddressAPI: '',
 });
