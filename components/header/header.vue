@@ -13,17 +13,22 @@
       @switchNavigationDrawer="switchNavigationDrawer"
       @closeNavigationDrawer="closeNavigationDrawer"
     />
+
+    <toolbar-search-header-component/>
+
   </div>
 </template>
 
 <script>
 import NavigationDrawerComponent from './navigation-drawer.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
+import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';
 
 export default {
   components: {
     'navigation-drawer-component': NavigationDrawerComponent,
     'toolbar-header-component': ToolbarHeaderComponent,
+    'toolbar-search-header-component': ToolbarSearchHeaderComponent,
   },
   data: () => ({
     drawer: false,
