@@ -1,5 +1,7 @@
 # yourcity-frontend
 
+Web application for searching places in cities and locations.
+
 >  
 
 ## Project preview
