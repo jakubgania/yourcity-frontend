@@ -1,5 +1,6 @@
 <template>
   <v-toolbar
+    v-if="displaySearchHeader()"
     color="white"
     app
     height="64"
@@ -7,7 +8,7 @@
     clipped-left
     class="toolbar-search-header"
   >
-    <v-toolbar-side-icon/>
+    <v-toolbar-side-icon @click.stop="drawerFlag = !drawerFlag"/>
 
     logo
 
@@ -50,7 +51,7 @@
             type="submit"
             class="submit-search-form-btn"
           >
-            search button
+            szukaj
             <v-icon class="btn-icon">keyboard_arrow_right</v-icon>
           </button>
         </v-flex>
@@ -70,20 +71,36 @@
 
 <script>
 export default {
+  props: {
+    drawer: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       //
     };
   },
   computed: {
-    //
+    drawerFlag: {
+      get() {
+        return this.drawer;
+      },
+      set(value) {
+        this.$emit('updateNavigationDrawerValue', value);
+      },
+    },
   },
   watch: {
     //
   },
   methods: {
+    displaySearchHeader() {
+      return this.$route.name === 'lang-search' || this.$route.name === 'search';
+    },
     submitSearchForm() {
-      //
+      // this.$emit('submitSearchForm');
     },
   },
 };

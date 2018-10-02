@@ -23,5 +23,10 @@ export default {
     'sidebar-menu-component': SidebarMenuComponent,
     'container-results-component': ContainerOfResultsComponent,
   },
+  head() {
+    return {
+      title: 'Yourcity - Wyszukiwanie profili',
+    };
+  },
 };
 </script>

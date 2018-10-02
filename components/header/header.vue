@@ -14,7 +14,10 @@
       @closeNavigationDrawer="closeNavigationDrawer"
     />
 
-    <toolbar-search-header-component/>
+    <toolbar-search-header-component
+      :drawer="drawer"
+      @updateNavigationDrawerValue="updateNavigationDrawerValue"
+    />
 
   </div>
 </template>
