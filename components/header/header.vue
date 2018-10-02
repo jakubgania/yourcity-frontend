@@ -23,6 +23,7 @@
 </template>
 
 <script>
+// import { mapGetters, mapActions } from 'vuex';
 import NavigationDrawerComponent from './navigation-drawer.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';

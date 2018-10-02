@@ -1,5 +1,26 @@
 const state = {
-  test: null,
+  city: null,
+  query: null,
+  category: null,
+  currentCategory: null,
+  pagingURL: null,
+  items: [],
+  result: [],
+  resultCopy: [],
+  profilePosts: [],
+  showModalImage: [],
+  showModalInformation: [],
+  showLoader: false,
+  showTagSection: false,
+  postLoaderButton: false,
+  showPaginigButton: false,
+  showPagingButtonLoader: false,
+  showProfileDetailsDialog: false,
+  showProfileDetailsDialogMobile: false,
+  showEmptyResultsAlert: false,
+  showErrorConnectionAlert: false,
+  proposedTags: [],
+  numberOfTags: null,
 };
 
 export default state;
