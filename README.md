@@ -13,6 +13,7 @@ Last update date :  -- -- --
 ## Technology stack
 
 - [Vue.js](https://vuejs.org/)
+- [Vuex](https://github.com/vuejs/vuex)
 - [Vuetify](https://vuetifyjs.com/)
 - [NUXT](https://nuxtjs.org/)
 - [Sass](https://sass-lang.com/)
