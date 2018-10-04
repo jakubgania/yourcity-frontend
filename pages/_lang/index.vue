@@ -11,7 +11,14 @@
       <!-- {{ $t('home.introduction') }} -->
       <information-component/>
 
-      <!-- <img :src="" alt="" class=""> -->
+      <img
+        :src="seeImage"
+        alt="Phoenix See Dortmund"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <categories-component/>
 
@@ -45,6 +52,7 @@ import GalleryComponent from '../../components/home/gallery.vue';
 import CitiesComponent from '../../components/home/cities.vue';
 import BusinessComponent from '../../components/home/business.vue';
 import MapComponent from '../../components/home/map.vue';
+import seeImage from '../../assets/images/see.jpg';
 
 export default {
   components: {
@@ -59,7 +67,7 @@ export default {
   },
   data() {
     return {
-      //
+      seeImage,
     };
   },
   head() {

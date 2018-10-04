@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     displayHeader() {
-      return this.$route.name !== 'lang-search' || this.route.name === 'search';
+      return this.$route.name !== 'lang-search' || this.$route.name === 'search';
     },
     displayLogoBusinessName() {
       return this.$route.name === 'lang-business' || this.$route.name === 'business';
