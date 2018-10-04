@@ -114,7 +114,7 @@ const showErrorConnectionAlert = (state, value) => {
   state.showErrorConnectionAlert = value;
 };
 
-export default {
+export {
   city,
   query,
   cityInput,

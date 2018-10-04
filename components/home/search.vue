@@ -21,7 +21,63 @@
       </v-layout>
 
       <div class="search-form-section">
-        <!--  -->
+        <form @submit.prevent="submitSearchForm">
+          <v-layout
+            row
+            wrap
+          >
+            <v-flex
+              xs12
+              sm5
+              md5
+              offset-md1
+              lg4
+              offset-lg2
+            >
+              <v-combobox
+                solo
+                clearable
+                autocomplete="off"
+                spellcheck="false"
+                prepend-inner-icon="search"
+                placeholder="Czego szukasz ?"
+                class="input-combobox"
+              />
+            </v-flex>
+            <v-flex
+              xs12
+              sm4
+              md3
+              lg2
+            >
+              <v-combobox
+                solo
+                clearable
+                autocomplete="off"
+                spellcheck="false"
+                prepend-inner-icon="location_on"
+                placeholder="Lokalizacja"
+                class="input-combobox"
+              >
+                <!--  -->
+              </v-combobox>
+            </v-flex>
+            <v-flex
+              xs12
+              sm3
+              md2
+              lg2
+            >
+              <button
+                type="submit"
+                class="submit-button"
+              >
+                szukaj
+                <v-icon class="icon">keyboard_arrow_right</v-icon>
+              </button>
+            </v-flex>
+          </v-layout>
+        </form>
       </div>
 
     </v-parallax>
@@ -75,6 +131,9 @@ export default {
   methods: {
     resetCounter() {
       this.counter = 0;
+    },
+    submitSearchForm() {
+      //
     },
   },
 };
