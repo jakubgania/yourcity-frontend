@@ -2,6 +2,8 @@
 
 Web application for searching places in cities and locations.
 
+The project is at a very early stage.
+
 >  
 
 ## Project preview
