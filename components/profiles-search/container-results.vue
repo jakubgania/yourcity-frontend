@@ -2,7 +2,7 @@
   <div class="container-results">
     container results component
     <!-- filter section -->
-    <!-- tags section -->
+    <tags-section-component/>
     <!-- count of results -->
     <!-- result list section -->
     <!-- profile details desktop layout -->
@@ -14,9 +14,11 @@
 </template>
 
 <script>
+import TagsSectionComponent from './tags-section.vue';
+
 export default {
   components: {
-  //
+    'tags-section-component': TagsSectionComponent,
   },
   data() {
     return {
