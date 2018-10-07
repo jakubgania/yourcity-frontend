@@ -1,0 +1,170 @@
+{
+    "tags": {
+        "club" : [
+            "klub",
+            "impreza",
+            "muzyka",
+            "zabawa"
+        ],
+        "barAndPub" : [
+            "bar",
+            "pub",
+            "pijalnia wódki",
+            "piwo",
+            "drink",
+            "alkohol"
+        ],
+        "cafeteria" : [
+            "kawiarnia",
+            "kawa",
+            "cafe",
+            "lody",
+            "deser"
+        ],
+        "food" : [
+            "restauracja",
+            "jedzenie",
+            "obiad",
+            "kebab",
+            "burger",
+            "pizza",
+            "vegan",
+            "sushi",
+            "pierogarnia",
+            "trattoria",
+            "frytki",
+            "food truck"
+        ],
+        "entertainment" : [
+            "kino",
+            "kręgle",
+            "bilard",
+            "escape room"
+        ],
+        "event" : [
+            "wydarzenie",
+            "spotkanie",
+            "zjad",
+            "zlot"
+        ],
+        "shop" : [
+            "galeria handlowa",
+            "ch",
+            "galeria",
+            "odzież",
+            "sklep",
+            "rowerowy",
+            "pasaż",
+            "zakupy",
+            "zniżka"
+        ],
+        "service" : [
+            "transport",
+            "przeprowadzka",
+            "przewóz",
+            "usugi remontowe",
+            "remonty",
+            "knacleria",
+            "prawnik",
+            "ubezpieczenia",
+            "ksero"
+        ],
+        "tourism" : [
+            "zoo",
+            "muzeum",
+            "turystyka",
+            "city tour",
+            "przewodnik"
+        ],
+        "sport" : [
+            "trampoliny",
+            "jump",
+            "basen",
+            "hala sportowa",
+            "kort tenisowy",
+            "pole golfowe",
+            "sauna",
+            "siłownia",
+            "crossfit",
+            "stadion",
+            "trener personalny"
+        ],
+        "other" : [
+            "qwert"
+        ],
+        "information" : [
+            "qwerty"
+        ],
+        "education" : [
+            "szkola",
+            "uczelnia",
+            "liceum",
+            "gimnazjum",
+            "uniwersytet",
+            "akademia",
+            "nauczanie",
+            "politechnika",
+            "podstawówka"
+        ],
+        "health" : [
+            "apteka",
+            "szpital",
+            "przychodnia lekarska",
+            "gabinet",
+            "lekarz",
+            "poradnia",
+            "klinika",
+            "stomatolog"
+        ],
+        "hotel" : [
+            "hostel",
+            "nocleg"
+        ],
+        "travel" : [
+
+        ],
+        "culture" : [
+            "muzeum",
+            "sztuka",
+            "fotografia",
+            "wystawia",
+            "dom kultury"
+        ],
+        "public institutions" : [
+            "urząd",
+            "urząd skarbowy",
+            "urząd pracy",
+            "urząd stanu cywilnego",
+            "urząd wojewódzki",
+            "hospicjum",
+            "MOPS",
+            "komenda",
+            "straż pożarna",
+            "jednostka wojskowa"
+        ],
+        "it" : [
+            "web",
+            "programmers",
+            "it",
+            "software",
+            "software house",
+            "web developer",
+            "software developer",
+            "mobile app developer"
+        ],
+        "automotive" : [
+            "auto",
+            "warsztat samochodowy",
+            "detailng",
+            "myjnia",
+            "wulkanizacja",
+            "opony",
+            "cześci samochodowe",
+            "blacharstwo",
+            "stacja kontroli pojazdów",
+            "dealer",
+            "pomoc drogowa",
+            "tuning"
+        ]
+    }
+}

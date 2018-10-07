@@ -1,6 +1,8 @@
 import axios from 'axios';
 import state from './state';
 
+import categoryTags from '../../../json/search-profiles/tags.json';
+
 const updateResult = ({ commit }, value) => {
   commit('updateResult', value);
 };
@@ -95,29 +97,96 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
     });
 };
 
-// const getPagingProfilesData = ({ commit , dispatch }, parameters) => {
-//
-// };
+const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
+  const parameters = urlparameters;
+  let url = null;
+  dispatch('showPagingButtonLoader', true);
+  parameters.url = encodeURIComponent(parameters.url);
 
-// const checkIsPaging = ({ commit, dispatch }, data) => {
-//
-// }
+  url = `/api/search-profiles/paging?query=${parameters.query}&city=${parameters.city}&category=${parameters.category}&paging-url=${parameters.url}`;
 
-// const setProposedTags = ({ commit, dispatch }, data) => {
-//
-// }
+  axios.get(url)
+    .then((response) => {
+      const items = {
+        result: state.result.length,
+        loop: response.data.data.length,
+      };
 
-// const setPredefinedTags = ({ commit, dispatch }, category) => {
-//
-// }
+      dispatch('generatePagingModalImage', items);
+      commit('getPagingProfilesData', response.data.data);
+      dispatch('checkIsPaging', response.data);
+      commit('resultCopy', state.result);
+      // dispatch('setProposedTags', state.result);
+      dispatch('showPagingButtonLoader', false);
+    }).catch(() => {
+      dispatch('showPagingButtonLoader', false);
+      // this.errors.push(e)
+    });
+};
 
-// const removeDuplicates = ({ commit, dispatch }, arr) => {
-//
-// }
+const checkIsPaging = ({ commit, dispatch }, data) => {
+  // if (data.hasOwnProperty('paging')) {
+  // if (data.Object.prototype.hasOwnProperty.call(foo, 'paging')) {
+  if (data.paging) {
+    dispatch('showPaginigButton', true);
+    commit('pagingURL', data.paging.next);
+  } else {
+    dispatch('showPaginigButton', false);
+  }
+};
 
-// const sort = ({ commit }, arr ) => {
-//
-// }
+const setProposedTags = ({ commit, dispatch }, data) => {
+  let numberOfResults = 0;
+  const arrayResult = []; // const ??
+
+  numberOfResults = data.length;
+
+  if (numberOfResults > 0) {
+    for (let i = 0; i < numberOfResults; i += 1) {
+      if (data[i].category_list) {
+        const dataCategoryListLengthArray = data[i].category_list.length;
+
+        for (let p = 0; p < dataCategoryListLengthArray; p += 1) {
+          arrayResult.push(data[i].category_list[p].name);
+        }
+      }
+    }
+
+    dispatch('removeDuplicates', arrayResult);
+    // dispatch('sort', state.proposedTags );
+    commit('showTagSection', true);
+  } else {
+    commit('showTagSection', false);
+  }
+};
+
+const setPredefinedTags = ({ commit, dispatch }, category) => {
+  dispatch('numberOfTags', categoryTags.tags[category].length);
+  commit('proposedTags', categoryTags.tags[category]);
+};
+
+const removeDuplicates = ({ commit, dispatch }, arr) => {
+  const uniqueArray = [];
+
+  for (let i = 0; i < arr.length; i += 1) {
+    if (uniqueArray.indexOf(arr[i]) === -1) {
+      uniqueArray.push(arr[i]);
+    }
+  }
+
+  commit('proposedTags', uniqueArray);
+
+  if (uniqueArray.length > 14) {
+    dispatch('numberOfTags', 14);
+  } else {
+    dispatch('numberOfTags', uniqueArray.length);
+  }
+};
+
+const sort = ({ commit }, arr) => {
+  arr.sort((a, b) => a.length - b.length);
+  commit('proposedTags', arr);
+};
 
 const numberOfTags = ({ commit }, value) => {
   commit('numberOfTags', value);
@@ -181,7 +250,12 @@ export {
   switchCategory,
   shuffle,
   getProfilesData,
-  // getPagingProfilesData,
+  getPagingProfilesData,
+  setProposedTags,
+  setPredefinedTags,
+  removeDuplicates,
+  sort,
+  checkIsPaging,
   numberOfTags,
   showLoader,
   postLoaderButton,
