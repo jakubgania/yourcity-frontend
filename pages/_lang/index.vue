@@ -72,7 +72,7 @@ export default {
   },
   head() {
     return {
-      title: 'YOURCITY - Home page',
+      title: 'Yourcity - Wyszukuj różne miejsca w miastach i lokalizacjach.',
       // title: this.$t('home.title')
     };
   },

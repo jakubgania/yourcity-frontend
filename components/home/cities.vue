@@ -34,7 +34,7 @@
               style="width:100%;"
             >
               <router-link
-                :to="$i18n.path(`/search?query=&city=${city}`)"
+                :to="$i18n.path(`search?query=&city=${city}`)"
                 target="_blank"
                 style="text-decoration:none;"
               >

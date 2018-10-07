@@ -105,25 +105,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  home page
+                  strona główna
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('search')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  search page
+                  wyszukiwanie
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('photos')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  photos page
+                  zdjęcia
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('cities/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  cities all
+                  miasta
                 </nuxt-link>
               </div>
             </v-flex>
@@ -135,25 +135,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('project')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  project page
+                  o platformie
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('founder')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  founder page
+                  o twórcy
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('changelog')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  changelog page
+                  changelog
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('agreements')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  agreements page
+                  regulamin
                 </nuxt-link>
               </div>
             </v-flex>
@@ -165,19 +165,19 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('contact')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  contact page
+                  kontakt
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('business')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  business page
+                  dla biznesu
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('example-profile')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  example profile page
+                  przykładowy profil
                 </nuxt-link>
               </div>
             </v-flex>
