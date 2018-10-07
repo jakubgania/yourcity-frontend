@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px)
+{
+    .title-section
+    {
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .cities-section
+    {
+        column-count: 2;
+        coulumn-width: 50%;
+    }
+    .city-name
+    {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .more-cities-button
+    {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}

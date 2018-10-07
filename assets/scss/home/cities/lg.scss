@@ -1,0 +1,44 @@
+.title-section
+{
+    font-size: 40px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    color: #000000;
+}
+.link-section
+{
+    text-decoration: none;
+}
+.cities-section
+{
+    column-count: 5;
+    column-width: 20%;
+}
+.city-name
+{
+    font-size: 16px;
+    padding-left: 40px;
+    padding-bottom: 4px;
+    letter-spacing: 2px;
+    cursor: default;
+    color: #9f9f9f;
+
+    &:hover
+    {
+        color: #2d2d2d;
+    }
+}
+.more-cities-button
+{
+    margin-top: 160px;
+    margin-bottom: 160px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #2a2f30 !important;
+}
