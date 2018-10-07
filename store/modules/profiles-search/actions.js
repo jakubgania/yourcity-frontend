@@ -1,7 +1,7 @@
 import axios from 'axios';
 import state from './state';
 
-import categoryTags from '../../../json/search-profiles/tags.json';
+import categoryTags from '../../../json/tags.json';
 
 const updateResult = ({ commit }, value) => {
   commit('updateResult', value);

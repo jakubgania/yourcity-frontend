@@ -111,6 +111,12 @@
 // import { mapGetters, mapActions } from 'vuex';
 
 export default {
+  props: {
+    result: {
+      type: Array,
+      default: null,
+    },
+  },
   data() {
     return {
       //
