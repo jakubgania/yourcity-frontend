@@ -1,4 +1,4 @@
-// import axios from 'axios';
+import axios from 'axios';
 import state from './state';
 
 const updateResult = ({ commit }, value) => {
@@ -49,17 +49,51 @@ const shuffle = (dataArray) => {
   }
 };
 
-// const getProfilesData = ({ commit, dispatch }, queryStringParameters) => {
-//
-//   // function to check if it exists category in queryStringParameters
-//
-//   axios.get(url)
-//     .then((response) => {
-//       // response ok
-//     }).catch((error) => {
-//       // error
-//     });
-// };
+const getProfilesData = ({ commit, dispatch }, parameters) => {
+  const queryStringParameters = parameters;
+  let url = null;
+  const emptyArray = [];
+
+  dispatch('showLoader', true);
+  commit('resultCopy', state.result);
+  dispatch('showPaginigButton', false);
+
+  if (queryStringParameters.category) {
+    queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
+    url = `/api/search-profiles?city=${queryStringParameters.city}&query=null&category=${queryStringParameters.category}`;
+  } else {
+    queryStringParameters.query = encodeURIComponent(queryStringParameters.query);
+    queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
+    url = `/api/search-profiles?city=${queryStringParameters.city}&query=${queryStringParameters.category}`;
+  }
+
+  axios.get(url)
+    .then((response) => {
+      if (!response.data.data || response.data.data.length === 0) {
+        commit('showEmptyResultsAlert', true);
+        dispatch('showLoader', false);
+      } else {
+        commit('showEmptyResultsAlert', false);
+        commit('getProfilesData', emptyArray);
+
+        if (state.showErrorConnectionAlert) {
+          commit('showErrorConnectionAlert', false);
+        }
+
+        dispatch('shuffle', response.data.data);
+        dispatch('generateModalImage', response.data.data.length);
+        dispatch('setProposedTags', response.data.data);
+        dispatch('checkIsPaging', response.data);
+        commit('getProfilesData', response.data.data);
+        commit('resultCopy', state.result);
+
+        dispatch('showLoader', false);
+      }
+    }).catch(() => {
+      // error
+      // console.log(error);
+    });
+};
 
 // const getPagingProfilesData = ({ commit , dispatch }, parameters) => {
 //
@@ -146,7 +180,7 @@ export {
   cityUpdate,
   switchCategory,
   shuffle,
-  // getProfilesData,
+  getProfilesData,
   // getPagingProfilesData,
   numberOfTags,
   showLoader,
