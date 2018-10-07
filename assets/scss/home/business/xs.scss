@@ -1,0 +1,68 @@
+@media only screen and (max-width: 600px)
+{
+    .title-section
+    {
+        font-size: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .logo-section
+    {
+        margin-top: 0px;
+        margin-bottom: 80px;
+
+        .text
+        {
+            top: 30%;
+            font-size: 20px;
+        }
+    }
+    .logo-component
+    {
+        float: right;
+        padding-left: 0px;
+        font-size: 44px;
+
+        .city
+        {
+            margin-left: -10px;
+        }
+    }
+    .button
+    {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .big-font-title
+    {
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .icon-title
+        {
+            top: 10px;
+        }
+    }
+    .first-description
+    {
+        padding-bottom: 40px;
+    }
+    .description
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .link-section
+    {
+        .button
+        {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    }
+}
