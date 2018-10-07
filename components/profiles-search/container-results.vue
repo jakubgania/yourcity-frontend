@@ -15,7 +15,9 @@
     </v-flex>
 
     <results-list-component/>
-    <!-- profile details desktop layout -->
+
+    <layout-profile-details-desktop-component/>
+
     <!-- profile details mobile layout -->
     <!-- paging button section -->
     <!-- alert of empty results section -->
@@ -26,11 +28,13 @@
 <script>
 import TagsSectionComponent from './tags-section.vue';
 import ResultsListComponent from './results-list.vue';
+import LayoutProfileDetailsDesktopComponent from './layout-profile-details-desktop.vue';
 
 export default {
   components: {
     'tags-section-component': TagsSectionComponent,
     'results-list-component': ResultsListComponent,
+    'layout-profile-details-desktop-component': LayoutProfileDetailsDesktopComponent,
   },
   data() {
     return {
