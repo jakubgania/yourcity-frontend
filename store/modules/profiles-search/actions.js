@@ -228,35 +228,61 @@ const openModalImage = ({ commit }, index) => {
   commit('openModalImage', index);
 };
 
-// const generateModalImage = ({ commit }, value) => {
-//
-// }
-//
-// const generatePagingModalImage = ({ commit }, items) => {
-//
-// }
+const generateModalImage = ({ commit }, value) => {
+  const jsObj = {};
 
-// const getProfilePosts = ({ commit, dispatch}, idProfile) => {
-//
-// }
+  for (let i = 0; i < value; i += 1) {
+    jsObj[`key${i}`] = false;
+  }
+
+  commit('showModalImage', jsObj);
+};
+
+const generatePagingModalImage = ({ commit }, items) => {
+  const object = {};
+  let keyNumber = null;
+
+  for (let p = 0; p < items.loop; p += 1) {
+    keyNumber = items.result + p;
+    object[`key${keyNumber}`] = false;
+  }
+
+  commit('showPagingModalImage', object);
+};
+
+const getProfilePosts = ({ commit, dispatch }, idProfile) => {
+  const id = idProfile;
+  let url = null;
+  dispatch('postLoaderButton', true);
+
+  url = `/api/search-profiles/posts?id-profile=${id}`;
+
+  axios.get(url)
+    .then((response) => {
+      commit('profilePosts', response.data.data);
+      dispatch('postLoaderButton', false);
+      dispatch('updateShowProfileDetailsDialog', true);
+    }).catch(() => {
+      // this.errors.push(e)
+      commit('profilePosts', null);
+      dispatch('postLoaderButton', false);
+    });
+};
 
 export {
   updateResult,
   updateCategory,
-  updateCurrentCategory,
   resetResult,
   queryUpdate,
   cityUpdate,
   switchCategory,
+  updateCurrentCategory,
   shuffle,
   getProfilesData,
   getPagingProfilesData,
   setProposedTags,
-  setPredefinedTags,
-  removeDuplicates,
-  sort,
-  checkIsPaging,
   numberOfTags,
+  removeDuplicates,
   showLoader,
   postLoaderButton,
   updateShowProfileDetailsDialog,
@@ -264,6 +290,12 @@ export {
   showPagingButtonLoader,
   updateShowTagSection,
   showPaginigButton,
+  generateModalImage,
+  generatePagingModalImage,
   closeModalImage,
   openModalImage,
+  sort,
+  setPredefinedTags,
+  getProfilePosts,
+  checkIsPaging,
 };
