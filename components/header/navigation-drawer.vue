@@ -30,12 +30,11 @@
             <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
           </v-list-tile-action>
           <v-list-tile-content class="selected-text">
-            <v-list-tile
+            <v-list-tile-title
               class="list-menu-text"
               v-html="menuItem.title"
             />
           </v-list-tile-content>
-          <!-- {{ $i18n.locale }} -->
         </v-list-tile>
       </template>
     </v-list>
