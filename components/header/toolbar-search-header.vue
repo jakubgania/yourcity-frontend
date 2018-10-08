@@ -28,7 +28,7 @@
               autocomplete="off"
               spellcheck="false"
               prepend-inner-icon="search"
-              placeholder="text"
+              placeholder="Czego szukasz ?"
               class="combobox-input"
             />
           </div>
@@ -41,7 +41,7 @@
               autocomplete="off"
               spellcheck="false"
               prepend-inner-icon="location_on"
-              placeholder="text"
+              placeholder="Lokalizacja"
               class="combobox-input"
             />
           </div>
@@ -100,7 +100,7 @@ export default {
       return this.$route.name === 'lang-search' || this.$route.name === 'search';
     },
     submitSearchForm() {
-      // this.$emit('submitSearchForm');
+      this.$emit('submitSearchForm');
     },
   },
 };

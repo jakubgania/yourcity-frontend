@@ -9,8 +9,7 @@
       class="result-counter-section"
     >
       <div class="title-section">
-        <!-- {{ 'Wyniki' + ' : ' + resultCount() }} -->
-        {{ 'Wyniki : 20' }}
+        {{ 'Wyniki' + ' : ' + resultCount() }}
       </div>
     </v-flex>
 
@@ -62,16 +61,17 @@ export default {
       //
     ]),
     resultCount() {
-      if (this.result.length === 0) {
-        return 0;
-      }
-
-      if (this.showPaginigButton) {
-        // return this.result.length + '+';
-        return `${this.result.length}+`;
-      }
-
-      return this.result.length;
+      // if (this.result.length === 0) {
+      //   return 0;
+      // }
+      //
+      // if (this.showPaginigButton) {
+      //   // return this.result.length + '+';
+      //   return `${this.result.length}+`;
+      // }
+      //
+      // return this.result.length;
+      return 22;
     },
     setProfileDetails(value) {
       this.profileDetails = this.result[value];
