@@ -80,11 +80,11 @@ export default {
       'cityUpdate',
     ]),
     submitSearchForm() {
-      const query = '';
-      const city = 'dortmund';
+      // const query = '';
+      // const city = 'dortmund';
 
-      // const { query } = this.query;
-      // const { city } = this.city;
+      const { query } = this.query;
+      const { city } = this.city;
 
       const parameters = {
         query,

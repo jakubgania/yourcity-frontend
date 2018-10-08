@@ -1,31 +1,41 @@
 <template>
   <div class="container-results">
-    container results component
-    <!-- filter section -->
-    <tags-section-component/>
-
-    <v-flex
-      lg12
-      class="result-counter-section"
+    <v-layout
+      row
+      wrap
     >
-      <div class="title-section">
-        {{ 'Wyniki' + ' : ' + resultCount() }}
-      </div>
-    </v-flex>
+      <v-flex
+        xs12
+        lg12
+      >
+        container results component
+        <!-- filter section -->
+        <tags-section-component/>
 
-    <results-list-component
-      :result="result"
-      @setProfileDetails="setProfileDetails"
-      @updateShowInformationDialog="updateShowInformationDialog"
-      @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
-    />
+        <v-flex
+          lg12
+          class="result-counter-section"
+        >
+          <div class="title-section">
+            {{ 'Wyniki' + ' : ' + resultCount() }}
+          </div>
+        </v-flex>
 
-    <layout-profile-details-desktop-component/>
+        <results-list-component
+          :result="result"
+          @setProfileDetails="setProfileDetails"
+          @updateShowInformationDialog="updateShowInformationDialog"
+          @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
+        />
 
-    <!-- profile details mobile layout -->
-    <!-- paging button section -->
-    <!-- alert of empty results section -->
-    <!-- alert of connection error component -->
+        <layout-profile-details-desktop-component/>
+
+        <!-- profile details mobile layout -->
+        <!-- paging button section -->
+        <!-- alert of empty results section -->
+        <!-- alert of connection error component -->
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
