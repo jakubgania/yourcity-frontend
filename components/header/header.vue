@@ -16,12 +16,12 @@
 
     <toolbar-search-header-component
       :drawer="drawer"
-      :queryModel="queryModel"
-      :queryItems="queryItems"
-      :queryInputSync="queryInputSync"
-      :cityModel="cityModel"
-      :cityItems="cityItems"
-      :cityInputSync="cityInputSync"
+      :query-model="queryModel"
+      :query-items="queryItems"
+      :query-input-sync="queryInputSync"
+      :city-model="cityModel"
+      :city-items="cityItems"
+      :city-input-sync="cityInputSync"
       @submitSearchForm="submitSearchForm"
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
     />
@@ -79,11 +79,11 @@ export default {
       'cityUpdate',
     ]),
     submitSearchForm() {
-      // let query = '';
-      // let city = '';
+      const query = '';
+      const city = 'dortmund';
 
-      const { query } = this.query;
-      const { city } = this.city;
+      // const { query } = this.query;
+      // const { city } = this.city;
 
       const parameters = {
         query,

@@ -23,6 +23,9 @@
         <v-flex lg5>
           <div class="query-input">
             <v-combobox
+              v-model="queryModelComp"
+              :items="queryItems"
+              :search-input.sync="queryInputSync"
               solo
               clearable
               autocomplete="off"
@@ -36,6 +39,11 @@
         <v-flex lg4>
           <div class="query-input">
             <v-combobox
+              v-model="cityModelComp"
+              :items="cityItems"
+              :search-input.sync="cityInputSync"
+              item-text="name"
+              item-value="name"
               solo
               clearable
               autocomplete="off"
@@ -76,10 +84,27 @@ export default {
       type: Boolean,
       default: false,
     },
+    queryModel: {
+      type: Object,
+      default: null,
+    },
+    queryItems: {
+      type: Object,
+      default: null,
+    },
+    cityModel: {
+      type: Object,
+      default: null,
+    },
+    cityItems: {
+      type: Object,
+      default: null,
+    },
   },
   data() {
     return {
-      //
+      queryInputSync: null,
+      cityInputSync: null,
     };
   },
   computed: {
@@ -89,6 +114,26 @@ export default {
       },
       set(value) {
         this.$emit('updateNavigationDrawerValue', value);
+      },
+    },
+    queryModelComp: {
+      get() {
+        return this.queryModel;
+      },
+      set(value) {
+        if (value != null) {
+          this.$emit('updateQueryModel', value);
+        }
+      },
+    },
+    cityModelComp: {
+      get() {
+        return this.cityModel;
+      },
+      set(value) {
+        if (value != null) {
+          this.$emit('updateCityModel', value);
+        }
       },
     },
   },
