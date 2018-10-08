@@ -75,6 +75,7 @@ export default {
   },
   methods: {
     ...mapActions('searchProfiles', [
+      'getProfilesData',
       'queryUpdate',
       'cityUpdate',
     ]),
