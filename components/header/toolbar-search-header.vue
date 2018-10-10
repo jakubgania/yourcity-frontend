@@ -85,7 +85,7 @@ export default {
       default: false,
     },
     queryModel: {
-      type: Object,
+      type: String,
       default: null,
     },
     queryItems: {
@@ -93,7 +93,7 @@ export default {
       default: null,
     },
     cityModel: {
-      type: Object,
+      type: String,
       default: null,
     },
     cityItems: {
@@ -138,7 +138,24 @@ export default {
     },
   },
   watch: {
-    //
+    queryInputSync(val) {
+      // val && val !== this.queryModelComp && this.$emit('updateQueryInputSync', val);
+
+      if (val && val !== this.queryModelComp) {
+        this.$emit('updateQueryInputSync', val);
+      }
+
+      this.$store.dispatch('searchProfiles/queryUpdate', val);
+    },
+    cityInputSync(val) {
+      // val && val !== this.cityModelComp && this.$emit('updateCityInputSync', val);
+
+      if (val && val !== this.cityModelComp) {
+        this.$emit('updateCityInputSync', val);
+      }
+
+      this.$store.dispatch('searchProfiles/cityUpdate', val);
+    },
   },
   methods: {
     displaySearchHeader() {

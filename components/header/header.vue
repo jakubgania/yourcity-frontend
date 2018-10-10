@@ -22,6 +22,10 @@
       :city-model="cityModel"
       :city-items="cityItems"
       :city-input-sync="cityInputSync"
+      @updateQueryModel="updateQueryModel"
+      @updateQueryInputSync="updateQueryInputSync"
+      @updateCityModel="updateCityModel"
+      @updateCityInputSync="updateCityInputSync"
       @submitSearchForm="submitSearchForm"
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
     />
@@ -71,7 +75,24 @@ export default {
     },
   },
   watch: {
-  //
+    cityInputSync(value) {
+      // autocomplete function
+
+      if (value != null) {
+        this.cityModel = value;
+      } else {
+        this.cityModel = '';
+      }
+    },
+    queryInputSync(value) {
+      // autocomplete function
+
+      if (value != null) {
+        this.queryModel = value;
+      } else {
+        this.queryModel = '';
+      }
+    },
   },
   methods: {
     ...mapActions('searchProfiles', [
@@ -83,13 +104,18 @@ export default {
       // const query = '';
       // const city = 'dortmund';
 
-      const { query } = this.query;
-      const { city } = this.city;
+      const parameters = {};
 
-      const parameters = {
-        query,
-        city,
-      };
+      parameters.query = this.query;
+      parameters.city = this.city;
+
+      // const { query } = this.query;
+      // const { city } = this.city;
+
+      // const parameters = {
+      //   query,
+      //   city,
+      // };
 
       window.scrollTo(0, 0);
       // update url
@@ -107,6 +133,18 @@ export default {
     },
     updateNavigationDrawerValue(value) {
       this.drawer = value;
+    },
+    updateQueryModel(value) {
+      this.queryModel = value;
+    },
+    updateQueryInputSync(value) {
+      this.queryInputSync = value;
+    },
+    updateCityModel(value) {
+      this.cityModel = value;
+    },
+    updateCityInputSync(value) {
+      this.cityInputSync = value;
     },
   },
 };
