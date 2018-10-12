@@ -8,7 +8,7 @@ The project is at a very early stage.
 
 ## Project preview
 
-http://yourcity.io
+[yourcity.io](http://yourcity.io)
 
 Last update date :  15:34 12/10/2018
 
