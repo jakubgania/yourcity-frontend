@@ -8,9 +8,9 @@ The project is at a very early stage.
 
 ## Project preview
 
-soon
+http://145.239.83.156/
 
-Last update date :  -- -- --
+Last update date :  15:34 12/10/2018
 
 ## Technology stack
 
@@ -18,7 +18,7 @@ Last update date :  -- -- --
 - [Vuex](https://github.com/vuejs/vuex) 3.0.1
 - [Vuetify](https://vuetifyjs.com/) 1.2.4
 - [NUXT](https://nuxtjs.org/) 2.0.0
-- [node-sass](https://github.com/sass/node-sass) 4.9.3 
+- [node-sass](https://github.com/sass/node-sass) 4.9.3
 - [AOS](https://michalsnik.github.io/aos/) 3.0.0-beta.5
 - [Vue i18n](https://kazupon.github.io/vue-i18n/) 8.1.0
 - [axios](https://github.com/axios/axios) 0.18.0
