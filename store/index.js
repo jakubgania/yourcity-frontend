@@ -12,7 +12,7 @@ Vue.use(Vuex);
 
 export default () => new Vuex.Store({
   state: {
-    locales: ['en', 'fr'],
+    locales: ['en', 'pl'],
     locale: 'en',
   },
   mutations: {
