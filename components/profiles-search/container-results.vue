@@ -29,7 +29,13 @@
             @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
           />
 
-          <layout-profile-details-desktop-component/>
+          <layout-profile-details-desktop-component
+            :show-information-dialog="showInformationDialog"
+            :profile-details="profileDetails"
+            :profile-posts="profilePosts"
+            :show-full-description="showFullDescription"
+            :show-full-description-button="showFullDescriptionButton"
+          />
 
           <!-- profile details mobile layout -->
           <!-- paging button section -->
@@ -56,7 +62,7 @@ export default {
   data() {
     return {
       showInformationDialog: false,
-      profileDetails: false,
+      profileDetails: {},
       showFullDescription: false,
       showFullDescriptionButton: false,
       filterSectionValue: true,
@@ -65,7 +71,16 @@ export default {
   },
   computed: {
     ...mapGetters('searchProfiles', [
+      'query',
+      'city',
       'result',
+      'category',
+      'showPaginigButton',
+      'showPagingButtonLoader',
+      'pagingURL',
+      'profilePosts',
+      'showEmptyResultsAlert',
+      'showErrorConnectionAlert',
     ]),
   },
   created() {
@@ -76,17 +91,16 @@ export default {
       //
     ]),
     resultCount() {
-      // if (this.result.length === 0) {
-      //   return 0;
-      // }
-      //
+      if (this.result.length === 0) {
+        return 0;
+      }
+
       // if (this.showPaginigButton) {
       //   // return this.result.length + '+';
       //   return `${this.result.length}+`;
       // }
-      //
-      // return this.result.length;
-      return 22;
+
+      return this.result.length;
     },
     setProfileDetails(value) {
       this.profileDetails = this.result[value];
