@@ -28,7 +28,10 @@
             order-lg1
           >
             <div class="">
-              <div class="profile-name">
+              <div
+                class="profile-name"
+                @click="moreProfileInfo(index)"
+              >
                 {{ section.name }}
               </div>
               <div class="profile-subtext">
@@ -153,6 +156,17 @@ export default {
     };
   },
   methods: {
+    moreProfileInfo(index) {
+      if (this.$vuetify.breakpoint.xs) {
+        this.$emit('dialog', false);
+        this.$emit('updatepProfileDetailsMobileModel', true);
+      } else {
+        this.$emit('dialog', true);
+        this.$emit('updatepProfileDetailsMobileModel', false);
+      }
+
+      this.$emit('setProfileDetails', index);
+    },
     showFullSizePhoto(name, cover, coverSource) {
       this.showFullSizePhotoDialog = true;
       this.fullSizePhotoName = name;

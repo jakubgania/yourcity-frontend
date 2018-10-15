@@ -55,8 +55,11 @@ export default {
   },
   data() {
     return {
-      profileDetails: false,
       showInformationDialog: false,
+      profileDetails: false,
+      showFullDescription: false,
+      showFullDescriptionButton: false,
+      filterSectionValue: true,
       profileDetailsMobileModel: false,
     };
   },
@@ -95,6 +98,20 @@ export default {
     },
     updatepProfileDetailsMobileModel(value) {
       this.profileDetailsMobileModel = value;
+    },
+    setFullDescriptionFlag(description) {
+      if (description) {
+        if (description.length > 300) {
+          this.showFullDescription = false;
+          this.showFullDescriptionButton = true;
+        } else {
+          this.showFullDescription = true;
+          this.showFullDescriptionButton = false;
+        }
+      } else {
+        this.showFullDescription = true;
+        this.showFullDescriptionButton = false;
+      }
     },
   },
 };
