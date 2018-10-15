@@ -9,7 +9,7 @@
         lg12
       >
         <div class="results-section">
-          container results component
+
           <!-- filter section -->
           <tags-section-component/>
 

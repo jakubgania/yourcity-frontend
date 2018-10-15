@@ -76,10 +76,12 @@
                 v-if="section.cover"
                 :style="{'background-image': 'url(' + section.cover.source + ')'}"
                 class="profile-image"
+                @click="showFullSizePhoto(section.name, section.cover, section.cover.source)"
               />
               <div
                 v-else
                 class="profile-image-not-available"
+                @click="showFullSizePhoto(section.name, null, null)"
               >
                 <div class="no-picture-text">
                   image not available
@@ -92,19 +94,28 @@
     </v-layout>
 
     <v-dialog
+      v-model="showFullSizePhotoDialog"
       max-width="800"
+      @keydown.esc="showFullSizePhotoDialog = false"
     >
       <v-card>
-        <v-card-title class="">
-          <!-- photo name -->
+        <v-card-title class="headline">
+          {{ fullSizePhotoName }}
         </v-card-title>
-        <div class="">
-          <!--  -->
+        <div
+          v-if="fullSizePhotoCover"
+          :style="{'background-image': 'url(' + fullSizePhotoCoverSource + ')'}"
+          class="card-profile-image"
+        />
+        <div
+          v-else
+          class="dialog-profile-image-not-available"
+        >
+          <div class="no-picture-text">
+            no image
+          </div>
         </div>
-        <div class="">
-          <!--  -->
-        </div>
-        <v-card-actions>
+        <v-card-actions style="height:64px;">
           <div class="">
             <!--  -->
           </div>
@@ -112,7 +123,8 @@
           <v-btn
             flat
             color="blue accent-3"
-            class=""
+            class="dialog-close-button"
+            @click.native="showFullSizePhotoDialog = false"
           >
             zamknij
           </v-btn>
@@ -134,11 +146,19 @@ export default {
   },
   data() {
     return {
-      //
+      showFullSizePhotoDialog: false,
+      fullSizePhotoCover: null,
+      fullSizePhotoName: null,
+      fullSizePhotoCoverSource: null,
     };
   },
   methods: {
-    //
+    showFullSizePhoto(name, cover, coverSource) {
+      this.showFullSizePhotoDialog = true;
+      this.fullSizePhotoName = name;
+      this.fullSizePhotoCover = cover;
+      this.fullSizePhotoCoverSource = coverSource;
+    },
   },
 };
 </script>
