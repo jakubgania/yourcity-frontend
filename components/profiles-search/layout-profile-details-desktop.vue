@@ -6,6 +6,7 @@
     <v-dialog
       v-model="showInformationDialog"
       max-width="600"
+      @keydown.esc="$emit('closeShowInformationDialog')"
     >
       <v-card>
         <div class="title-header">
@@ -104,7 +105,13 @@ export default {
     //
   },
   watch: {
-    //
+    showInformationDialog(value) {
+      // !value && this.$emit('closeShowInformationDialog');
+
+      if (!value) {
+        this.$emit('closeShowInformationDialog');
+      }
+    },
   },
   methods: {
     //

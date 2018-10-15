@@ -25,7 +25,7 @@
           <results-list-component
             :result="result"
             @setProfileDetails="setProfileDetails"
-            @updateShowInformationDialog="updateShowInformationDialog"
+            @dialog="updateShowInformationDialog"
             @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
           />
 
@@ -35,6 +35,7 @@
             :profile-posts="profilePosts"
             :show-full-description="showFullDescription"
             :show-full-description-button="showFullDescriptionButton"
+            @closeShowInformationDialog="closeShowInformationDialog"
           />
 
           <!-- profile details mobile layout -->
@@ -126,6 +127,9 @@ export default {
         this.showFullDescription = true;
         this.showFullDescriptionButton = false;
       }
+    },
+    closeShowInformationDialog() {
+      this.showInformationDialog = false;
     },
   },
 };
