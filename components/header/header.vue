@@ -78,20 +78,12 @@ export default {
     cityInputSync(value) {
       // autocomplete function
 
-      if (value != null) {
-        this.cityModel = value;
-      } else {
-        this.cityModel = '';
-      }
+      this.cityModel = this.checkIsNullWatch(value);
     },
     queryInputSync(value) {
       // autocomplete function
 
-      if (value != null) {
-        this.queryModel = value;
-      } else {
-        this.queryModel = '';
-      }
+      this.queryModel = this.checkIsNullWatch(value);
     },
   },
   methods: {
@@ -101,26 +93,29 @@ export default {
       'cityUpdate',
     ]),
     submitSearchForm() {
-      // const query = '';
-      // const city = 'dortmund';
-
       const parameters = {};
 
-      parameters.query = this.query;
-      parameters.city = this.city;
-
-      // const { query } = this.query;
-      // const { city } = this.city;
-
-      // const parameters = {
-      //   query,
-      //   city,
-      // };
+      parameters.query = this.checkIsNull(this.query);
+      parameters.city = this.checkIsNull(this.city);
 
       window.scrollTo(0, 0);
       // update url
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
       // update current category
+    },
+    checkIsNull(value) {
+      if (value == null) {
+        return '';
+      }
+
+      return value;
+    },
+    checkIsNullWatch(value) {
+      if (value != null) {
+        return value;
+      }
+
+      return '';
     },
     closeNavigationDrawer() {
       this.drawer = false;
