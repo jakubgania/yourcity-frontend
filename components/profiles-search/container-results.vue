@@ -8,32 +8,34 @@
         xs12
         lg12
       >
-        container results component
-        <!-- filter section -->
-        <tags-section-component/>
+        <div class="results-section">
+          container results component
+          <!-- filter section -->
+          <tags-section-component/>
 
-        <v-flex
-          lg12
-          class="result-counter-section"
-        >
-          <div class="title-section">
-            {{ 'Wyniki' + ' : ' + resultCount() }}
-          </div>
-        </v-flex>
+          <v-flex
+            lg12
+            class="result-counter-section"
+          >
+            <div class="title-section">
+              {{ 'Wyniki' + ' : ' + resultCount() }}
+            </div>
+          </v-flex>
 
-        <results-list-component
-          :result="result"
-          @setProfileDetails="setProfileDetails"
-          @updateShowInformationDialog="updateShowInformationDialog"
-          @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
-        />
+          <results-list-component
+            :result="result"
+            @setProfileDetails="setProfileDetails"
+            @updateShowInformationDialog="updateShowInformationDialog"
+            @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
+          />
 
-        <layout-profile-details-desktop-component/>
+          <layout-profile-details-desktop-component/>
 
-        <!-- profile details mobile layout -->
-        <!-- paging button section -->
-        <!-- alert of empty results section -->
-        <!-- alert of connection error component -->
+          <!-- profile details mobile layout -->
+          <!-- paging button section -->
+          <!-- alert of empty results section -->
+          <!-- alert of connection error component -->
+        </div>
       </v-flex>
     </v-layout>
   </div>

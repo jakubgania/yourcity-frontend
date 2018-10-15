@@ -1,8 +1,11 @@
 <template>
   <div>
     <v-layout
+      v-for="(section, index) in result"
+      :key="section.id"
       row
       wrap
+      class=""
     >
       <v-flex
         xs12
@@ -12,7 +15,7 @@
         <v-layout
           row
           wrap
-          class=""
+          class="container-profile"
         >
           <v-flex
             xs12
@@ -25,23 +28,30 @@
             order-lg1
           >
             <div class="">
-              <div class="">
-                <!-- name -->
+              <div class="profile-name">
+                {{ section.name }}
               </div>
-              <div class="">
-                <!-- description -->
+              <div class="profile-subtext">
+                {{ section.description ?
+                section.description.substring(0, 34) + '...' : 'Opis - Brak' }}
+                <!-- {{ section.description.substring(0, 34) + '...' }} -->
+                {{ index }}
               </div>
-              <div class="">
-                <!-- address -->
+              <div class="profile-subtext">
+                {{ section.single_line_address ?
+                'Adres - ' + section.single_line_address : 'Adres - Brak' }}
               </div>
-              <div class="">
-                <!-- star rating -->
+              <div class="profile-subtext">
+                {{ section.overall_star_rating ?
+                'Ocena - ' + section.overall_star_rating : 'Ocena - Brak' }}
               </div>
-              <div class="">
-                <!-- rating count -->
+              <div class="profile-subtext">
+                {{ section.rating_count ?
+                'Liczba ocen - ' + section.rating_count : 'Liczba ocen - 0' }}
               </div>
-              <div class="">
-                <!-- hours -->
+              <div class="profile-subtext">
+                {{ section.hours ?
+                'Godziny otwarcia - Tak' : 'Godziny otwarcia - Brak' }}
               </div>
             </div>
 
@@ -61,13 +71,18 @@
             lg4
             order-lg2
           >
-            <div class="">
+            <div class="profile-image-section">
               <div
-                class=""
+                v-if="section.cover"
+                :style="{'background-image': 'url(' + section.cover.source + ')'}"
+                class="profile-image"
               />
-              <div class="">
-                <div class="">
-                  <!-- image not available -->
+              <div
+                v-else
+                class="profile-image-not-available"
+              >
+                <div class="no-picture-text">
+                  image not available
                 </div>
               </div>
             </div>
@@ -121,6 +136,9 @@ export default {
     return {
       //
     };
+  },
+  methods: {
+    //
   },
 };
 </script>
