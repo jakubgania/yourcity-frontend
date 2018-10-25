@@ -13,7 +13,10 @@
         offset-lg2
       >
         <div class="logo-section">
-          l o g o
+          <logo-component
+            :logo-size="88"
+            :margin="-16"
+          />
         </div>
       </v-flex>
       <v-flex
@@ -379,6 +382,16 @@
 
   </v-flex>
 </template>
+
+<script>
+import LogoComponent from '../logo-component.vue';
+
+export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import '../../assets/scss/home/information/lg.scss';

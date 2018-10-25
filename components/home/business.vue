@@ -36,7 +36,30 @@
             row
             wrap
           >
-            logo section
+            <v-flex
+              xs6
+              lg4
+              offset-lg2
+              class="logo-section-component"
+            >
+              <logo-component
+                :logo-size="88"
+                :margin="-16"
+              />
+            </v-flex>
+            <v-flex
+              xs6
+              lg4
+            >
+              <div
+                class="text"
+                data-aos="fade"
+                data-aos-delay="600"
+                data-aos-once="true"
+              >
+                for business
+              </div>
+            </v-flex>
           </v-layout>
         </v-flex>
         <v-flex
@@ -136,6 +159,16 @@
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+import LogoComponent from '../logo-component.vue';
+
+export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
     @import '../../assets/scss/home/business/lg.scss';
