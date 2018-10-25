@@ -10,9 +10,9 @@
   >
     <v-toolbar-side-icon @click.native="switchNavigationDrawer()"/>
 
-    <div class="">
-      l o g o
-    </div>
+    <v-toolbar-title>
+      <logo-component/>
+    </v-toolbar-title>
 
     <div
       v-if="displayLogoBusinessName()"
@@ -31,9 +31,11 @@
 </template>
 
 <script>
+import LogoComponent from '../logo-component.vue';
+
 export default {
-  component: {
-  //
+  components: {
+    'logo-component': LogoComponent,
   },
   props: {
     drawer: {

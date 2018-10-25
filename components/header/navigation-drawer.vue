@@ -15,7 +15,7 @@
           close
         </v-icon>
 
-        <!-- logo component -->
+        <logo-component/>
 
       </div>
       <v-divider/>
@@ -42,9 +42,13 @@
 </template>
 
 <script>
+import LogoComponent from '../logo-component.vue';
 import navigationMenuItems from '../../json/navigation-menu-items.json';
 
 export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
   props: {
     drawer: {
       type: Boolean,

@@ -10,7 +10,9 @@
   >
     <v-toolbar-side-icon @click.stop="drawerFlag = !drawerFlag"/>
 
-    logo
+    <v-toolbar-title>
+      <logo-component/>
+    </v-toolbar-title>
 
     <form
       class="search-form"
@@ -78,7 +80,12 @@
 </template>
 
 <script>
+import LogoComponent from '../logo-component.vue';
+
 export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
   props: {
     drawer: {
       type: Boolean,
