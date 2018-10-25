@@ -13,6 +13,16 @@
   </v-layout>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Yourcity - Regulamin',
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .container-agreements
 {

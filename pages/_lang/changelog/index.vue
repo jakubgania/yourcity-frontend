@@ -13,6 +13,16 @@
   </v-layout>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Yourcity - Changelog',
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .container-changelog
 {

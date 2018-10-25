@@ -13,6 +13,16 @@
   </v-layout>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Yourcity - O projekcie',
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .container-project
 {
