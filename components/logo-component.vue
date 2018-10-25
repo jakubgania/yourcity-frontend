@@ -4,17 +4,36 @@
     class="logo-link"
   >
     <div
+      :style="{ fontSize: logoSize + 'px' }"
       class="logo-section"
     >
-      <div style="display:inline">
+      <div class="your">
         your
       </div>
-      <div style="display:inline;margin-left:-6px;color:blue;">
+      <div
+        :style="{ marginLeft: margin + 'px' }"
+        class="city"
+      >
         city
       </div>
     </div>
   </router-link>
 </template>
+
+<script>
+export default {
+  props: {
+    logoSize: {
+      type: Number,
+      default: 24,
+    },
+    margin: {
+      type: Number,
+      default: -6,
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .logo-link
@@ -26,8 +45,16 @@
   display: inline;
   color: #000000;
   font-weight: 700;
-  font-size: 24px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+}
+.your
+{
+  display:inline;
+}
+.city
+{
+  display: inline;
+  color: blue;
 }
 </style>
