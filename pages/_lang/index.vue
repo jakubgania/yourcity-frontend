@@ -22,19 +22,47 @@
 
       <categories-component/>
 
-      <!-- <img :src="" alt="" class=""> -->
+      <img
+        :src="galleryImage"
+        alt="Thier-Galerie Dortmund"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <tags-component/>
 
-      <!-- <img :src="" alt="" class=""> -->
+      <img
+        :src="bridgeImage"
+        alt="Rędziński Bridge Wrocław"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <gallery-component/>
 
-      <!-- <img :src="" alt="" class=""> -->
+      <img
+        :src="wroImage"
+        alt="Gallery Wroclavia Wrocław"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <cities-component/>
 
-      <!-- <img :src="" alt="" class=""> -->
+      <img
+        :src="schoolImage"
+        alt="Wrocław University of Economics"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <business-component/>
 
@@ -53,6 +81,10 @@ import CitiesComponent from '../../components/home/cities.vue';
 import BusinessComponent from '../../components/home/business.vue';
 import MapComponent from '../../components/home/map.vue';
 import seeImage from '../../assets/images/see.jpg';
+import galleryImage from '../../assets/images/gallery.jpg';
+import bridgeImage from '../../assets/images/bridge.jpg';
+import wroImage from '../../assets/images/wro.jpg';
+import schoolImage from '../../assets/images/school.jpg';
 
 export default {
   components: {
@@ -68,6 +100,10 @@ export default {
   data() {
     return {
       seeImage,
+      galleryImage,
+      bridgeImage,
+      wroImage,
+      schoolImage,
     };
   },
   head() {
