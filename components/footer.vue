@@ -29,9 +29,7 @@
               sm12
               lg12
             >
-              <div class="">
-                logo section
-              </div>
+              <logo-component/>
             </v-flex>
             <v-flex
               xs12
@@ -207,6 +205,16 @@
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+import LogoComponent from './logo-component.vue';
+
+export default {
+  components: {
+    'logo-component': LogoComponent,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
   @import './../assets/scss/footer/lg.scss';
