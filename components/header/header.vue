@@ -101,7 +101,10 @@ export default {
       parameters.city = this.checkIsNull(this.city);
 
       document.title = `Yourcity - wyszukiwanie ${parameters.query} ${parameters.city}`;
-      this.updateURL(`${this.basicClientAddress}/${this.$i18n.locale}/search?query=${parameters.query}&city=${parameters.city}`);
+      console.log(this.$route.path); // eslint-disable-line
+      // this.updateURL(``);
+      // ${this.basicClientAddress}/${this.i18n.locale}/search?
+      // query=${parameters.query}&city=${parameters.city}
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
       // update current category
     },
