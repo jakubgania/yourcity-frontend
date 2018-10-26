@@ -5,6 +5,7 @@ import Vuex from 'vuex';
 import axios from 'axios';
 
 import searchProfiles from './modules/profiles-search';
+import autocomplete from './modules/autocomplete';
 
 axios.defaults.baseURL = 'http://192.168.0.14';
 
@@ -24,5 +25,6 @@ export default () => new Vuex.Store({
   },
   modules: {
     searchProfiles,
+    autocomplete
   },
 });

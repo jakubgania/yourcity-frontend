@@ -49,13 +49,17 @@ export default {
     drawer: false,
     cityInputSync: null,
     queryInputSync: null,
-    queryItems: null,
-    cityItems: null,
+    // queryItems: null,
+    // cityItems: null,
   }),
   computed: {
     ...mapGetters('searchProfiles', [
       'query',
       'city',
+    ]),
+    ...mapGetters('autocomplete', [
+      'queryItems',
+      'cityItems',
     ]),
     queryModel: {
       get() {

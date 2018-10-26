@@ -96,7 +96,7 @@ export default {
       default: null,
     },
     queryItems: {
-      type: Object,
+      type: Array,
       default: null,
     },
     cityModel: {
@@ -104,7 +104,7 @@ export default {
       default: null,
     },
     cityItems: {
-      type: Object,
+      type: Array,
       default: null,
     },
   },
