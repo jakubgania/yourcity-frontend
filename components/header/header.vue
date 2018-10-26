@@ -95,13 +95,19 @@ export default {
     submitSearchForm() {
       const parameters = {};
 
+      window.scrollTo(0, 0);
+
       parameters.query = this.checkIsNull(this.query);
       parameters.city = this.checkIsNull(this.city);
 
-      window.scrollTo(0, 0);
-      // update url
+      document.title = `Yourcity - wyszukiwanie ${parameters.query} ${parameters.city}`;
+      this.updateURL(`${this.basicClientAddress}/${this.$i18n.locale}/search?query=${parameters.query}&city=${parameters.city}`);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
       // update current category
+    },
+    updateURL(url) {
+      const stateObj = { foo: 'bar' };
+      history.pushState(stateObj, 'page', url); // eslint-disable-line
     },
     checkIsNull(value) {
       if (value == null) {
