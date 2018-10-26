@@ -11,7 +11,10 @@
         <div class="results-section">
 
           <!-- filter section -->
-          <tags-section-component/>
+
+          <tags-section-component
+            @searchByTag="searchByTag"
+          />
 
           <v-flex
             lg12
@@ -89,7 +92,10 @@ export default {
   },
   methods: {
     ...mapActions('searchProfiles', [
-      //
+      'getPagingProfilesData',
+      'getProfilePosts',
+      'setProposedTags',
+      'queryUpdate',
     ]),
     resultCount() {
       if (this.result.length === 0) {
@@ -130,6 +136,18 @@ export default {
     },
     closeShowInformationDialog() {
       this.showInformationDialog = false;
+    },
+    searchByTag(tag) {
+      const parameters = {};
+      const tagNormalized = tag.replace(/\s/g, '+');
+
+      // update url
+
+      parameters.query = tagNormalized;
+      parameters.city = this.city;
+
+      this.$store.dispatch('searchProfiles/queryUpdate', tag);
+      this.$store.dispatch('searchProfiles/getProfilesData', parameters);
     },
   },
 };
