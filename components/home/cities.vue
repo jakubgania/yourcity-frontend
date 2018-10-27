@@ -64,6 +64,9 @@
           large
           depressed
           class="more-cities-button"
+          data-aos="fade-right"
+          data-aos-delay="240"
+          data-aos-once="true"
         >
           więcej miast
           <v-icon
