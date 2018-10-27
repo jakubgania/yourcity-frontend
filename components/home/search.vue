@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import topImage from '../../assets/images/sky-tower-16.jpg';
 
 export default {
@@ -162,18 +162,22 @@ export default {
     },
   },
   watch: {
-    cityInputSync(val) {
-      // autocomplete
+    cityInputSync(value) {
+      if (value && value !== this.cityModel) {
+        this.$store.dispatch('autocomplete/autocompleteCity', value);
+      }
 
-      if (val != null) {
-        this.cityModel = val;
+      if (value != null) {
+        this.cityModel = value;
       }
     },
-    queryInputSync(val) {
-      // autocomplete
+    queryInputSync(value) {
+      if (value && value !== this.queryModel) {
+        this.$store.dispatch('autocomplete/autocompleteQuery', value);
+      }
 
-      if (val != null) {
-        this.queryModel = val;
+      if (value != null) {
+        this.queryModel = value;
       }
     },
   },
@@ -183,6 +187,10 @@ export default {
     }, 1800);
   },
   methods: {
+    ...mapActions('autocomplete', [
+      'autocompleteQuery',
+      'autocompleteCity',
+    ]),
     resetCounter() {
       this.counter = 0;
     },
