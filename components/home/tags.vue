@@ -89,6 +89,37 @@
           </v-flex>
         </v-layout>
       </v-flex>
+      <v-flex
+        xs10
+        offset-xs1
+        sm8
+        offset-sm2
+        lg4
+        offset-lg4
+      >
+        <router-link
+          :to="$i18n.path('search')"
+          class="link-section"
+        >
+          <v-btn
+            block
+            large
+            depressed
+            class="button"
+            data-aos="fade-right"
+            data-aos-delay="240"
+            data-aos-once="true"
+          >
+            PRZEJDŹ DO WYSZUKIWANIA
+            <v-icon
+              right
+              dark
+            >
+              keyboard_arrow_right
+            </v-icon>
+          </v-btn>
+        </router-link>
+      </v-flex>
     </v-layout>
   </v-flex>
 </template>
