@@ -12,7 +12,12 @@
         lg4
         offset-lg2
       >
-        <div class="logo-section">
+        <div
+          class="logo-section"
+          data-aos="fade-right"
+          data-aos-delay="240"
+          data-aos-once="true"
+        >
           <logo-component
             :logo-size="88"
             :margin="-16"
@@ -22,11 +27,17 @@
       <v-flex
         lg4
       >
-        <div class="text-title">
-          Informacje o Twoim mieście
-        </div>
-        <div class="text-subtitle">
-          oraz okolicy w której się znajdujesz
+        <div
+          data-aos="fade-left"
+          data-aos-delay="240"
+          data-aos-once="true"
+        >
+          <div class="text-title">
+            Informacje o Twoim mieście
+          </div>
+          <div class="text-subtitle">
+            oraz okolicy w której się znajdujesz
+          </div>
         </div>
       </v-flex>
     </v-layout>
