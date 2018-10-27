@@ -105,16 +105,21 @@ export default {
       parameters.city = this.checkIsNull(this.city);
 
       document.title = `Yourcity - wyszukiwanie ${parameters.query} ${parameters.city}`;
-      console.log(this.$route.path); // eslint-disable-line
-      // this.updateURL(``);
-      // ${this.basicClientAddress}/${this.i18n.locale}/search?
-      // query=${parameters.query}&city=${parameters.city}
+
+      this.updateURL(`${this.checkLanguage()}/search?query=${parameters.query}&city=${parameters.city}`);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
       // update current category
     },
     updateURL(url) {
       const stateObj = { foo: 'bar' };
       history.pushState(stateObj, 'page', url); // eslint-disable-line
+    },
+    checkLanguage() {
+      if (this.$i18n.locale !== 'en') {
+        return `/${this.$i18n.locale}`;
+      }
+
+      return '';
     },
     checkIsNull(value) {
       if (value == null) {
