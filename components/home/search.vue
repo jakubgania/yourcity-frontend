@@ -21,7 +21,7 @@
       </v-layout>
 
       <div class="search-form-section">
-        <form @submit.prevent="submitSearchForm">
+        <v-form @submit.prevent="submitSearchForm">
           <v-layout
             row
             wrap
@@ -35,6 +35,9 @@
               offset-lg2
             >
               <v-combobox
+                v-model="queryModel"
+                :items="queryItems"
+                :search-input.sync="queryInputSync"
                 solo
                 clearable
                 autocomplete="off"
@@ -51,6 +54,9 @@
               lg2
             >
               <v-combobox
+                v-model="cityModel"
+                :items="cityItems"
+                :search-input.sync="cityInputSync"
                 solo
                 clearable
                 autocomplete="off"
@@ -77,7 +83,7 @@
               </button>
             </v-flex>
           </v-layout>
-        </form>
+        </v-form>
       </div>
 
     </v-parallax>
@@ -85,6 +91,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import topImage from '../../assets/images/sky-tower-16.jpg';
 
 export default {
@@ -105,9 +112,19 @@ export default {
         'kino',
         'apteka',
       ],
+      cityInputSync: null,
+      queryInputSync: null,
     };
   },
   computed: {
+    ...mapGetters('searchProfiles', [
+      'city',
+      'query',
+    ]),
+    ...mapGetters('autocomplete', [
+      'queryItems',
+      'cityItems',
+    ]),
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '540';
@@ -127,9 +144,38 @@ export default {
 
       return this.topWords[this.counter];
     },
+    queryModel: {
+      get() {
+        return this.$store.state.searchProfiles.query;
+      },
+      set(value) {
+        this.$store.dispatch('searchProfiles/queryUpdate', value);
+      },
+    },
+    cityModel: {
+      get() {
+        return this.$store.state.searchProfiles.city;
+      },
+      set(value) {
+        this.$store.dispatch('searchProfiles/cityUpdate', value);
+      },
+    },
   },
   watch: {
-  //
+    cityInputSync(val) {
+      // autocomplete
+
+      if (val != null) {
+        this.cityModel = val;
+      }
+    },
+    queryInputSync(val) {
+      // autocomplete
+
+      if (val != null) {
+        this.queryModel = val;
+      }
+    },
   },
   mounted() {
     setInterval(() => {
@@ -141,7 +187,17 @@ export default {
       this.counter = 0;
     },
     submitSearchForm() {
-      //
+      this.$router.push({
+        path: `${this.checkLanguage()}/search`,
+        query: { query: this.query, city: this.city },
+      });
+    },
+    checkLanguage() {
+      if (this.$i18n.locale !== 'en') {
+        return `/${this.$i18n.locale}`;
+      }
+
+      return '';
     },
   },
 };
