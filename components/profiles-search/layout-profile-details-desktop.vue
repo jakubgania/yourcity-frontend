@@ -137,6 +137,101 @@
           Godziny otwarcia
         </v-card-title>
 
+        <v-card-text class="section">
+          <v-layout
+            v-if="profileDetails.hours"
+            row
+            wrap
+            class="opening-hours-section"
+          >
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Poniedzialek
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.mon_1_open, profileDetails.hours.mon_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Wtorek
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.tue_1_open, profileDetails.hours.tue_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Środa
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.wed_1_open, profileDetails.hours.wed_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Czwartek
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.thu_1_open, profileDetails.hours.thu_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Piątek
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.fri_1_open, profileDetails.hours.fri_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Sobota
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.sat_1_open, profileDetails.hours.sat_1_close) }}
+              </div>
+            </v-flex>
+            <v-flex
+              lg12
+              class="opening-hours-subsection"
+            >
+              <div class="title-day-off-week">
+                Niedziela
+              </div>
+              <div class="hour-text">
+                {{ hourText(profileDetails.hours.sun_1_open, profileDetails.hours.sun_1_close) }}
+              </div>
+            </v-flex>
+          </v-layout>
+          <v-layout
+            v-else
+            row
+            wrap
+            class=""
+          >
+            brak
+          </v-layout>
+        </v-card-text>
+
         <v-card-title class="title-subsection">
           <i class="material-icons icon">comment</i>
           Posty
@@ -321,7 +416,13 @@ export default {
     },
   },
   methods: {
-    //
+    hourText(value1, value2) {
+      if (value1 && value2) {
+        return `${value1} - ${value2}`;
+      }
+
+      return '-- - --';
+    },
   },
 };
 </script>
