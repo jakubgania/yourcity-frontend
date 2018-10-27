@@ -49,8 +49,6 @@ export default {
     drawer: false,
     cityInputSync: null,
     queryInputSync: null,
-    // queryItems: null,
-    // cityItems: null,
   }),
   computed: {
     ...mapGetters('searchProfiles', [
@@ -80,12 +78,16 @@ export default {
   },
   watch: {
     cityInputSync(value) {
-      // autocomplete function
+      if (value) {
+        this.$store.dispatch('autocomplete/autocompleteCity', value);
+      }
 
       this.cityModel = this.checkIsNullWatch(value);
     },
     queryInputSync(value) {
-      // autocomplete function
+      if (value) {
+        this.$store.dispatch('autocomplete/autocompleteQuery', value);
+      }
 
       this.queryModel = this.checkIsNullWatch(value);
     },
@@ -96,6 +98,10 @@ export default {
       'queryUpdate',
       'cityUpdate',
     ]),
+    ...mapActions('autocomplete', [
+      'autocompleteQuery',
+      'autocompleteCity',
+    ]),
     submitSearchForm() {
       const parameters = {};
 
@@ -104,7 +110,7 @@ export default {
       parameters.query = this.checkIsNull(this.query);
       parameters.city = this.checkIsNull(this.city);
 
-      document.title = `Yourcity - wyszukiwanie ${parameters.query} ${parameters.city}`;
+      document.title = `Yourcity - wyszukiwanie - ${parameters.query} - ${parameters.city}`;
 
       this.updateURL(`${this.checkLanguage()}/search?query=${parameters.query}&city=${parameters.city}`);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
@@ -162,6 +168,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
