@@ -57,6 +57,9 @@
           large
           depressed
           class="button"
+          data-aos="fade-right"
+          data-aos-delay="240"
+          data-aos-once="true"
         >
           przejdź do wyszukiwania
           <v-icon
