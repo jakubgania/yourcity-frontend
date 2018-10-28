@@ -187,7 +187,7 @@
         >
           <v-icon
             class="info-icon"
-            style="color:#030ac9;"
+            style="color:#020797;"
           >
             location_on
           </v-icon>
@@ -213,7 +213,7 @@
         >
           <v-icon
             class="info-icon"
-            style="color:#0308b0;"
+            style="color:#02067e;"
           >
             map
           </v-icon>
@@ -287,7 +287,7 @@
         >
           <v-icon
             class="info-icon"
-            style="color:#030ac9;"
+            style="color:#020564;"
           >
             local_hospital
           </v-icon>
@@ -313,7 +313,7 @@
         >
           <v-icon
             class="info-icon"
-            style="color:#0308b0;"
+            style="color:#01044b;"
           >
             view_compact
           </v-icon>
@@ -385,7 +385,7 @@
         >
           <v-icon
             class="info-icon"
-            style="color:#030ac9;"
+            style="color:#010232;"
           >
             dvr
           </v-icon>
