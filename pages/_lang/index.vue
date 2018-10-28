@@ -2,6 +2,7 @@
   <v-layout
     row
     wrap
+    style="overflow-x: hidden;"
   >
     <v-flex
       xs12

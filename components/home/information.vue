@@ -14,15 +14,18 @@
         offset-lg2
       >
         <div
-          class="logo-section"
           data-aos="fade-right"
           data-aos-delay="240"
           data-aos-once="true"
         >
-          <logo-component
-            :logo-size="logoSize"
-            :margin="logoMargin"
-          />
+          <div
+            class="logo-section"
+          >
+            <logo-component
+              :logo-size="logoSize"
+              :margin="logoMargin"
+            />
+          </div>
         </div>
       </v-flex>
       <v-flex

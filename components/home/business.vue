@@ -70,6 +70,7 @@
             row
             wrap>
             <v-flex
+              xs12
               sm6
               lg3
               offset-lg2
@@ -98,6 +99,7 @@
               </v-layout>
             </v-flex>
             <v-flex
+              xs12
               sm6
               lg3
               offset-lg2
