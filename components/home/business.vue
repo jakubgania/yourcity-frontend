@@ -43,8 +43,8 @@
               class="logo-section-component"
             >
               <logo-component
-                :logo-size="88"
-                :margin="-16"
+                :logo-size="logoSize"
+                :margin="logoMargin"
               />
             </v-flex>
             <v-flex
@@ -169,6 +169,28 @@ import LogoComponent from '../logo-component.vue';
 export default {
   components: {
     'logo-component': LogoComponent,
+  },
+  computed: {
+    logoSize() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return '44';
+        case 'sm': return '88';
+        case 'md': return '88';
+        case 'lg': return '88';
+        case 'xl': return '88';
+        default: return '88';
+      }
+    },
+    logoMargin() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return '-10';
+        case 'sm': return '-16';
+        case 'md': return '-16';
+        case 'lg': return '-16';
+        case 'xl': return '-16';
+        default: return '-16';
+      }
+    },
   },
 };
 </script>

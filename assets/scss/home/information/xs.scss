@@ -1,4 +1,32 @@
 @media only screen and (max-width: 600px)
 {
-    
+  .text-title
+  {
+      text-align: center;
+      font-size: 26px;
+  }
+  .text-subtitle
+  {
+      text-align: center;
+  }
+  .section-info
+  {
+      margin-bottom: 60px;
+  }
+  .section-info-title
+  {
+      font-size: 26px;
+      margin-top: 20px;
+      text-align: center;
+  }
+  .section-info-description
+  {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+  }
+  .info-icon
+  {
+      font-size: 48px;
+  }
 }

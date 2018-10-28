@@ -213,4 +213,5 @@ export default {
 
 <style lang="scss">
 @import '../../assets/scss/home/search/lg.scss';
+@import '../../assets/scss/home/search/xs.scss';
 </style>
