@@ -222,5 +222,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import './../assets/scss/footer/lg.scss';
+@import './../assets/scss/footer/lg.scss';
+@import './../assets/scss/footer/xs.scss';
 </style>
