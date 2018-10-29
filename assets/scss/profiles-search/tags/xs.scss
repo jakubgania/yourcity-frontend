@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px)
+{
+    .title-section
+    {
+        margin-left: 10px;
+    }
+    .tag-section
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar-track {
+            border-radius: 0px;
+            background-color: #ffffff;
+        }
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+        &::-webkit-scrollbar-thumb {
+            height: 0px;
+            border-radius: 0px;
+            background-color: #8d8e8d;
+        }
+    }
+}
