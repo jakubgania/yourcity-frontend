@@ -1,0 +1,73 @@
+.toolbar-top-section
+{
+    background-color: #ffffff;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #eceff1;
+    box-shadow: none;
+
+    .close-icon
+    {
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .top-title
+    {
+        font-size: 16px;
+        // color: #252bfc;
+        letter-spacing: 2px;
+        padding-top: 3px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}
+.query-input
+{
+    border-left: 1px solid #c9c9c9;
+    height: 64px;
+    line-height: 64px;
+
+    .v-input__slot
+    {
+        border-radius: 0px;
+        box-shadow: none !important;
+        margin-bottom: 0px;
+        height: 64px;
+
+        .primary--text
+        {
+            color: #252bfc !important;
+        }
+    }
+}
+.combobox-input
+{
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid black;
+}
+.submit-form-button
+{
+    height: 64px;
+    width: 100%;
+    background-color: #30d6bc;
+    line-height: 64px;
+    letter-spacing: 3px;
+    outline: none;
+    margin-top: 2px;
+    color: #000000;
+    text-transform: uppercase;
+
+    &:hover
+    {
+        background-color: #eceff1;
+        transition: background-color 200ms linear;
+    }
+}
+.button-icon
+{
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+}

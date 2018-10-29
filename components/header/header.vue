@@ -30,6 +30,27 @@
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
     />
 
+    <div v-if="this.$vuetify.breakpoint.name == 'xs'">
+      <search-dialog-xs-component
+        :search-dialog-xs-model="searchDialogXsModel"
+        :categories-model="categoriesModel"
+        :categories-items="categoriesItems"
+        :query-model="queryModel"
+        :query-items="queryItems"
+        :query-input-sync="queryInputSync"
+        :city-model="cityModel"
+        :city-items="cityItems"
+        :city-input-sync="cityInputSync"
+        @updateCategoriesModel="updateCategoriesModel"
+        @updateQueryModel="updateQueryModel"
+        @updateQueryInputSync="updateQueryInputSync"
+        @updateCityModel="updateCityModel"
+        @updateCityInputSync="updateCityInputSync"
+        @submitSearchForm="submitSearchForm"
+        @updateSearchDialogXsModel="updateSearchDialogXsModel"
+      />
+    </div>
+
   </div>
 </template>
 
@@ -38,17 +59,22 @@ import { mapGetters, mapActions } from 'vuex';
 import NavigationDrawerComponent from './navigation-drawer.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';
+import SearchDialogXsComponent from '../profiles-search/search-dialog-xs.vue';
 
 export default {
   components: {
     'navigation-drawer-component': NavigationDrawerComponent,
     'toolbar-header-component': ToolbarHeaderComponent,
     'toolbar-search-header-component': ToolbarSearchHeaderComponent,
+    'search-dialog-xs-component': SearchDialogXsComponent,
   },
   data: () => ({
     drawer: false,
     cityInputSync: null,
     queryInputSync: null,
+    searchDialogXsModel: false,
+    categoriesModel: null,
+    categoriesItems: null,
   }),
   computed: {
     ...mapGetters('searchProfiles', [
