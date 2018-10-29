@@ -15,7 +15,7 @@
     </v-toolbar-title>
 
     <form
-      class="search-form"
+      class="search-form hidden-xs-only"
       @submit.prevent="submitSearchForm()"
     >
       <v-layout
@@ -71,6 +71,7 @@
     <v-spacer/>
 
     <v-btn
+      icon
       class="hidden-md-only hidden-lg-only"
     >
       <v-icon>search</v-icon>
