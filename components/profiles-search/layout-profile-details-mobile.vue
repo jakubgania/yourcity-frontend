@@ -1,9 +1,15 @@
 <template>
   <div
     v-if="profileDetailsMobileModel"
+    id="profile-details-mobile-component"
     class="profile-details-mobile-container"
   >
-    <div class="profile-section">
+    <div
+      class="profile-section"
+      data-aos="zoom-in"
+      data-aos-delay="140"
+      data-aos-once="true"
+    >
       <div
         v-touch="{ left: () => swipe('left') , right: () => swipe('right') }"
         class="swipe-section"
@@ -59,7 +65,8 @@
                     >
                       keyboard_arrow_right
                     </v-icon>
-                    {{ 'Liczba ocen - ' + profileDetails.rating_count }}
+                    {{ profileDetails.rating_count ?
+                    'Liczba ocen - ' + profileDetails.rating_count : 'Liczba ocen - Brak' }}
                   </v-flex>
                 </v-layout>
               </v-card-text>

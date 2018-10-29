@@ -103,7 +103,7 @@ const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
   dispatch('showPagingButtonLoader', true);
   parameters.url = encodeURIComponent(parameters.url);
 
-  url = `/api/search-profiles/paging?query=${parameters.query}&city=${parameters.city}&category=${parameters.category}&paging-url=${parameters.url}`;
+  url = `/api/profiles-search/paging?query=${parameters.query}&city=${parameters.city}&category=${parameters.category}&paging-url=${parameters.url}`;
 
   axios.get(url)
     .then((response) => {

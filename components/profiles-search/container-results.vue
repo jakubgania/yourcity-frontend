@@ -55,9 +55,84 @@
             @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
           />
 
-          <!-- paging button section -->
-          <!-- alert of empty results section -->
-          <!-- alert of connection error component -->
+          <v-layout
+            v-if="showPaginigButton && filterSectionValue"
+            row
+            wrap
+          >
+            <v-flex
+              xs10
+              offset-xs1
+              sm6
+              offset-sm3
+              lg4
+              offset-lg4
+              class="paging-button-section"
+            >
+              <v-btn
+                :loading="showPagingButtonLoader"
+                :disabled="showPagingButtonLoader"
+                class="paging-button"
+                depressed
+                large
+                block
+                @click.native="getPagingProfilesData(pagingURL)"
+              >
+                Pokaż więcej
+                <v-icon class="icon">cached</v-icon>
+              </v-btn>
+            </v-flex>
+          </v-layout>
+
+          <v-layout
+            v-if="showEmptyResultsAlert"
+            row
+            wrap
+          >
+            <v-flex
+              xs10
+              offset-xs1
+              sm6
+              offset-sm3
+              lg4
+              offset-lg4
+              style="margin-top:100px;"
+            >
+              <v-alert
+                :value="true"
+                color="info"
+                icon="info"
+                style="letter-spacing:1px;"
+              >
+                Brak wyników dla podanej frazy
+              </v-alert>
+            </v-flex>
+          </v-layout>
+
+          <v-layout
+            v-if="showErrorConnectionAlert"
+            row
+            wrap
+          >
+            <v-flex
+              xs10
+              offset-xs1
+              sm6
+              offset-sm3
+              lg4
+              offset-lg4
+              style="margin-top:100px;"
+            >
+              <v-alert
+                :value="true"
+                type="error"
+                style="letter-spacing:1px;font-weight:700;"
+              >
+                Network connection error.
+              </v-alert>
+            </v-flex>
+          </v-layout>
+
         </div>
       </v-flex>
     </v-layout>
@@ -175,6 +250,17 @@ export default {
     },
     updateShowFullDescription() {
       this.showFullDescription = !this.showFullDescription;
+    },
+    getPagingProfilesData(pagingURL) {
+      const parameters = {
+        query: this.query,
+        city: this.city,
+        category: this.category,
+        url: pagingURL,
+      };
+
+      this.$store.dispatch('searchProfiles/getPagingProfilesData', parameters);
+      this.$store.dispatch('searchProfiles/setProposedTags', this.result);
     },
   },
 };
