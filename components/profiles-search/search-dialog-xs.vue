@@ -30,11 +30,14 @@
           <v-flex xs12>
             <div class="query-input">
               <v-select
+                v-model="categoriesModelComputed"
+                :items="categoriesItems"
                 item-text="name"
                 item-value="id"
                 solo
+                clearable
                 prepend-inner-icon="label"
-                placeholder="Kategorie"
+                placeholder="Kategoria"
                 class="combobox-input"
               />
             </div>
@@ -42,6 +45,9 @@
           <v-flex xs12>
             <div class="query-input">
               <v-combobox
+                v-model="queryModelComputed"
+                :items="queryItems"
+                :search-input.sync="queryInputSyncComputed"
                 solo
                 clearable
                 autocomplete="off"
@@ -55,6 +61,9 @@
           <v-flex xs12>
             <div class="query-input">
               <v-combobox
+                v-model="cityModelComputed"
+                :items="cityItems"
+                :search-input.sync="cityInputSyncComputed"
                 solo
                 clearable
                 autocomplete="off"
@@ -92,8 +101,8 @@ export default {
       default: false,
     },
     categoriesItems: {
-      type: Boolean,
-      default: false,
+      type: Array,
+      default: null,
     },
     queryModel: {
       type: String,
@@ -104,8 +113,8 @@ export default {
       default: null,
     },
     queryInputSync: {
-      type: Boolean,
-      default: false,
+      type: String,
+      default: null,
     },
     cityModel: {
       type: String,
@@ -116,8 +125,8 @@ export default {
       default: null,
     },
     cityInputSync: {
-      type: Boolean,
-      default: false,
+      type: String,
+      default: null,
     },
   },
   data() {

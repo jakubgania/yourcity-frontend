@@ -73,6 +73,7 @@
     <v-btn
       icon
       class="hidden-md-only hidden-lg-only"
+      @click="$emit('updateSearchDialogXsModel', true)"
     >
       <v-icon>search</v-icon>
     </v-btn>

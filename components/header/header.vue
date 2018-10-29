@@ -28,6 +28,7 @@
       @updateCityInputSync="updateCityInputSync"
       @submitSearchForm="submitSearchForm"
       @updateNavigationDrawerValue="updateNavigationDrawerValue"
+      @updateSearchDialogXsModel="updateSearchDialogXsModel"
     />
 
     <div v-if="this.$vuetify.breakpoint.name == 'xs'">
@@ -60,6 +61,7 @@ import NavigationDrawerComponent from './navigation-drawer.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';
 import SearchDialogXsComponent from '../profiles-search/search-dialog-xs.vue';
+import categoriesItems from '../../json/categories-menu-items.json';
 
 export default {
   components: {
@@ -74,7 +76,7 @@ export default {
     queryInputSync: null,
     searchDialogXsModel: false,
     categoriesModel: null,
-    categoriesItems: null,
+    categoriesItems: categoriesItems.categories,
   }),
   computed: {
     ...mapGetters('searchProfiles', [
@@ -190,6 +192,12 @@ export default {
     },
     updateCityInputSync(value) {
       this.cityInputSync = value;
+    },
+    updateCategoriesModel(value) {
+      this.categoriesModel = value;
+    },
+    updateSearchDialogXsModel(value) {
+      this.searchDialogXsModel = value;
     },
   },
 };
