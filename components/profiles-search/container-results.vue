@@ -41,7 +41,20 @@
             @closeShowInformationDialog="closeShowInformationDialog"
           />
 
-          <!-- profile details mobile layout -->
+          <layout-profile-details-mobile-component
+            :profile-details-mobile-model="profileDetailsMobileModel"
+            :profile-details="profileDetails"
+            :show-full-description="showFullDescription"
+            :show-full-description-button="showFullDescriptionButton"
+            :number-results="numberResults"
+            :profile-posts="profilePosts"
+            @loadProfilePosts="loadProfilePosts"
+            @setProfileDetails="setProfileDetails"
+            @facebookMenuRedirect="facebookMenuRedirect"
+            @updateShowFullDescription="updateShowFullDescription"
+            @updatepProfileDetailsMobileModel="updatepProfileDetailsMobileModel"
+          />
+
           <!-- paging button section -->
           <!-- alert of empty results section -->
           <!-- alert of connection error component -->
@@ -56,12 +69,14 @@ import { mapGetters, mapActions } from 'vuex';
 import TagsSectionComponent from './tags-section.vue';
 import ResultsListComponent from './results-list.vue';
 import LayoutProfileDetailsDesktopComponent from './layout-profile-details-desktop.vue';
+import LayoutProfileDetailsMobileComponent from './layout-profile-details-mobile.vue';
 
 export default {
   components: {
     'tags-section-component': TagsSectionComponent,
     'results-list-component': ResultsListComponent,
     'layout-profile-details-desktop-component': LayoutProfileDetailsDesktopComponent,
+    'layout-profile-details-mobile-component': LayoutProfileDetailsMobileComponent,
   },
   data() {
     return {
@@ -86,6 +101,9 @@ export default {
       'showEmptyResultsAlert',
       'showErrorConnectionAlert',
     ]),
+    numberResults() {
+      return this.result.length;
+    },
   },
   created() {
     //
@@ -148,6 +166,15 @@ export default {
 
       this.$store.dispatch('searchProfiles/queryUpdate', tag);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
+    },
+    loadProfilePosts() {
+      //
+    },
+    facebookMenuRedirect() {
+      //
+    },
+    updateShowFullDescription() {
+      this.showFullDescription = !this.showFullDescription;
     },
   },
 };
