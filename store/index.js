@@ -7,8 +7,13 @@ import axios from 'axios';
 import searchProfiles from './modules/profiles-search';
 import autocomplete from './modules/autocomplete';
 
-axios.defaults.baseURL = 'http://192.168.0.14';
-// axios.defaults.baseURL = 'https://api.yourcity.io';
+
+if (process.env.NODE_ENV == 'production') {
+  axios.defaults.baseURL = 'https://api.yourcity.io';
+} else {
+  axios.defaults.baseURL = 'http://192.168.0.14';
+}
+
 
 Vue.use(Vuex);
 
