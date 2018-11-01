@@ -38,6 +38,7 @@
             :profile-posts="profilePosts"
             :show-full-description="showFullDescription"
             :show-full-description-button="showFullDescriptionButton"
+            @updateShowFullDescription="updateShowFullDescription"
             @closeShowInformationDialog="closeShowInformationDialog"
           />
 

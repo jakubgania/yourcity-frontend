@@ -14,12 +14,12 @@
           <div class="title-text">
             Więcej informacji
           </div>
-          <!-- <v-icon
+          <v-icon
             class="icon-close"
             @click="$emit('closeShowInformationDialog')"
           >
             close
-          </v-icon> -->
+          </v-icon>
         </div>
 
         <div style="height:60px;"/>
@@ -72,7 +72,7 @@
                 block
                 depressed
                 class="full-description-button"
-                @click="showFullDescriptionEmit()"
+                @click="$emit('updateShowFullDescription')"
               >
                 {{ descriptionButtonText }}
                 <v-icon class="icon">{{ iconButtonText }}</v-icon>
