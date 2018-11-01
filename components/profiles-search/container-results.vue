@@ -182,7 +182,28 @@ export default {
     },
   },
   created() {
-    //
+    let queryInput = '';
+    let cityInput = '';
+
+    if (this.$route.query.query) {
+      queryInput = this.$route.query.query;
+    }
+
+    if (this.$route.query.city) {
+      cityInput = this.$route.query.city;
+    }
+
+    queryInput = queryInput.replace(/\s/g, '+');
+    cityInput = cityInput.replace(/\s/g, '+');
+
+    const parameters = {
+      query: queryInput,
+      city: cityInput,
+    };
+
+    if (queryInput.length !== 0 || cityInput.length !== 0) {
+      this.$store.dispatch('searchProfiles/getProfilesData', parameters);
+    }
   },
   methods: {
     ...mapActions('searchProfiles', [
