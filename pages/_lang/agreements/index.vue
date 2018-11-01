@@ -18,6 +18,17 @@ export default {
   head() {
     return {
       title: 'Yourcity - Regulamin',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '',
+        },
+        {
+          name: 'keywords',
+          content: '',
+        },
+      ],
     };
   },
 };

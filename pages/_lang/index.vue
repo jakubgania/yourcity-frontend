@@ -9,7 +9,7 @@
       lg12
     >
       <search-component/>
-      <!-- {{ $t('home.introduction') }} -->
+
       <information-component/>
 
       <img
@@ -110,7 +110,17 @@ export default {
   head() {
     return {
       title: 'Yourcity - Wyszukuj różne miejsca w miastach i lokalizacjach.',
-      // title: this.$t('home.title')
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '',
+        },
+        {
+          name: 'keywords',
+          content: '',
+        },
+      ],
     };
   },
 };

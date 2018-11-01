@@ -9,6 +9,17 @@ export default {
   head() {
     return {
       title: 'Yourcity - Zdjęcia',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '',
+        },
+        {
+          name: 'keywords',
+          content: '',
+        },
+      ],
     };
   },
 };
