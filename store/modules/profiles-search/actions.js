@@ -56,7 +56,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
   let url = null;
   const emptyArray = [];
 
-  dispatch('showLoader', true);
+  dispatch('showFullScreenLoader', true);
   commit('resultCopy', state.result);
   dispatch('showPaginigButton', false);
 
@@ -73,7 +73,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
     .then((response) => {
       if (!response.data.data || response.data.data.length === 0) {
         commit('showEmptyResultsAlert', true);
-        dispatch('showLoader', false);
+        dispatch('showFullScreenLoader', false);
       } else {
         commit('showEmptyResultsAlert', false);
         commit('getProfilesData', emptyArray);
@@ -89,7 +89,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
         commit('getProfilesData', response.data.data);
         commit('resultCopy', state.result);
 
-        dispatch('showLoader', false);
+        dispatch('showFullScreenLoader', false);
       }
     }).catch(() => {
       // error
@@ -192,8 +192,8 @@ const numberOfTags = ({ commit }, value) => {
   commit('numberOfTags', value);
 };
 
-const showLoader = ({ commit }, value) => {
-  commit('showLoader', value);
+const showFullScreenLoader = ({ commit }, value) => {
+  commit('showFullScreenLoader', value);
 };
 
 const postLoaderButton = ({ commit }, value) => {
@@ -283,7 +283,7 @@ export {
   setProposedTags,
   numberOfTags,
   removeDuplicates,
-  showLoader,
+  showFullScreenLoader,
   postLoaderButton,
   updateShowProfileDetailsDialog,
   showProfileDetailsDialogMobile,

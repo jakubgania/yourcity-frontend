@@ -10,7 +10,7 @@ const state = {
   profilePosts: [],
   showModalImage: [],
   showModalInformation: [],
-  showLoader: false,
+  showFullScreenLoader: false,
   showTagSection: false,
   postLoaderButton: false,
   showPaginigButton: false,

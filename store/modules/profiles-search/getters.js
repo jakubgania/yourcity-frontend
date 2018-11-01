@@ -8,7 +8,7 @@ const result = state => state.result;
 const resultCopy = state => state.resultCopy;
 const profilePosts = state => state.profilePosts;
 const showModalImage = state => state.showModalImage;
-const showLoader = state => state.showLoader;
+const showFullScreenLoader = state => state.showFullScreenLoader;
 const showTagSection = state => state.showTagSection;
 const showPaginigButton = state => state.showPaginigButton;
 const showProfileDetailsDialog = state => state.showProfileDetailsDialog;
@@ -31,7 +31,7 @@ export {
   resultCopy,
   profilePosts,
   showModalImage,
-  showLoader,
+  showFullScreenLoader,
   showTagSection,
   showPaginigButton,
   showProfileDetailsDialog,

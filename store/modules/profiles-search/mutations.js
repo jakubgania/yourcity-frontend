@@ -24,8 +24,8 @@ const currentCategory = (state, value) => {
   state.currentCategory = value;
 };
 
-const showLoader = (state, value) => {
-  state.showLoader = value;
+const showFullScreenLoader = (state, value) => {
+  state.showFullScreenLoader = value;
 };
 
 const showProfileDetailsDialog = (state, value) => {
@@ -121,7 +121,7 @@ export {
   queryInput,
   switchCategory,
   currentCategory,
-  showLoader,
+  showFullScreenLoader,
   showProfileDetailsDialog,
   showProfileDetailsDialogMobile,
   postLoaderButton,
