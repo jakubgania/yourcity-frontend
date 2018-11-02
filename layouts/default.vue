@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $scrollbar-track-color: #f4f4f4;
 $scrollbar-thumb-color: #b8b8b8;
 
@@ -58,9 +58,26 @@ $scrollbar-thumb-color: #b8b8b8;
     border-radius: 0px;
     background-color: $scrollbar-thumb-color
 }
-
 .container
 {
     padding: 0;
+}
+.v-menu__content
+{
+    box-shadow: none;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+.v-menu__content::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: $scrollbar-track-color;
+}
+.v-menu__content::-webkit-scrollbar {
+    width: 8px;
+}
+.v-menu__content::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: $scrollbar-thumb-color;
 }
 </style>
