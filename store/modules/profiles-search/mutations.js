@@ -62,6 +62,7 @@ const getProfilesData = (state, value) => {
 
 const getPagingProfilesData = (state, value) => {
   state.result = state.result.concat(value);
+  state.resultCopy = state.result;
 };
 
 const profilePosts = (state, value) => {
@@ -92,9 +93,11 @@ const updateResult = (state, value) => {
 
 const resultCopy = (state, value) => {
   state.resultCopy = value;
+  // state.resultCopy = state.resultCopy.concat(value);
 };
 
 const resetResult = (state, value) => {
+  // state.result = value;
   state.result = value;
 };
 

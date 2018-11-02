@@ -51,7 +51,7 @@ export default {
     return {
       custom: null,
       prototypeFilter: '',
-      resultCopy: null,
+      prototypeItems: null,
     };
   },
   computed: {
@@ -60,15 +60,15 @@ export default {
       return Math.min(100, value.length * 10);
     },
     ...mapGetters('searchProfiles', [
-      'result',
+      'resultCopy',
     ]),
   },
   watch: {
-    prototypeFilter(value) {
-      if (!value) {
-        this.$store.dispatch('searchProfiles/resetResult');
-      }
-    },
+    // prototypeFilter(value) {
+    //   if (!value) {
+    //     this.$store.dispatch('searchProfiles/resetResult', this.resultCopy);
+    //   }
+    // },
   },
   methods: {
     ...mapActions('searchProfiles', [
@@ -76,23 +76,19 @@ export default {
       'resetResult',
     ]),
     inputFilter() {
-      // console.log('1');
-
-      this.resultCopy = this.result;
+      /* eslint-disable */
       if (this.prototypeFilter.length !== 0) {
         // this.$emit('updateFilterSectionValue', false);
 
-        this.prototypeItems = this.resultCopy.filter((item) => {
+        this.prototypeItems = this.resultCopy.filter(item => {
           if (this.calculateLogicalValueOfAllVariables(item)) {
             return item;
           }
-
-          return null;
         });
 
         this.$store.dispatch('searchProfiles/updateResult', this.prototypeItems);
       } else {
-        this.$store.dispatch('searchProfiles/resetResult');
+        this.$store.dispatch('searchProfiles/resetResult', this.resultCopy);
         // this.$emit('updateFilterSectionValue', true);
       }
     },

@@ -15,8 +15,8 @@ const updateCurrentCategory = ({ commit }, currentCategory) => {
   commit('currentCategory', currentCategory);
 };
 
-const resetResult = ({ commit }) => {
-  commit('resetResult', state.resultCopy);
+const resetResult = ({ commit }, resultCopy) => {
+  commit('resetResult', resultCopy);
 };
 
 const queryUpdate = ({ commit }, query) => {
@@ -57,7 +57,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
   const emptyArray = [];
 
   dispatch('showFullScreenLoader', true);
-  commit('resultCopy', state.result);
+  // commit('resultCopy', state.result);
   dispatch('showPaginigButton', false);
 
   if (queryStringParameters.category) {
@@ -87,7 +87,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
         dispatch('setProposedTags', response.data.data);
         dispatch('checkIsPaging', response.data);
         commit('getProfilesData', response.data.data);
-        commit('resultCopy', state.result);
+        commit('resultCopy', response.data.data);
 
         dispatch('showFullScreenLoader', false);
       }
@@ -115,7 +115,6 @@ const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
       dispatch('generatePagingModalImage', items);
       commit('getPagingProfilesData', response.data.data);
       dispatch('checkIsPaging', response.data);
-      commit('resultCopy', state.result);
       // dispatch('setProposedTags', state.result);
       dispatch('showPagingButtonLoader', false);
     }).catch(() => {
