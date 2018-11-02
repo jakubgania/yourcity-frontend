@@ -102,7 +102,7 @@ export default {
       default: null,
     },
     cityModel: {
-      type: String,
+      type: Object,
       default: null,
     },
     cityItems: {
