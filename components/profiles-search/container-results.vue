@@ -10,7 +10,7 @@
       >
         <div class="results-section">
 
-          <!-- filter section -->
+          <filter-component/>
 
           <tags-section-component
             @searchByTag="searchByTag"
@@ -146,6 +146,7 @@ import TagsSectionComponent from './tags-section.vue';
 import ResultsListComponent from './results-list.vue';
 import LayoutProfileDetailsDesktopComponent from './layout-profile-details-desktop.vue';
 import LayoutProfileDetailsMobileComponent from './layout-profile-details-mobile.vue';
+import FilterComponent from './filter.vue';
 
 export default {
   components: {
@@ -153,6 +154,7 @@ export default {
     'results-list-component': ResultsListComponent,
     'layout-profile-details-desktop-component': LayoutProfileDetailsDesktopComponent,
     'layout-profile-details-mobile-component': LayoutProfileDetailsMobileComponent,
+    'filter-component': FilterComponent,
   },
   data() {
     return {
@@ -182,28 +184,28 @@ export default {
     },
   },
   created() {
-    let queryInput = '';
-    let cityInput = '';
-
-    if (this.$route.query.query) {
-      queryInput = this.$route.query.query;
-    }
-
-    if (this.$route.query.city) {
-      cityInput = this.$route.query.city;
-    }
-
-    queryInput = queryInput.replace(/\s/g, '+');
-    cityInput = cityInput.replace(/\s/g, '+');
-
-    const parameters = {
-      query: queryInput,
-      city: cityInput,
-    };
-
-    if (queryInput.length !== 0 || cityInput.length !== 0) {
-      this.$store.dispatch('searchProfiles/getProfilesData', parameters);
-    }
+    // let queryInput = '';
+    // let cityInput = '';
+    //
+    // if (this.$route.query.query) {
+    //   queryInput = this.$route.query.query;
+    // }
+    //
+    // if (this.$route.query.city) {
+    //   cityInput = this.$route.query.city;
+    // }
+    //
+    // queryInput = queryInput.replace(/\s/g, '+');
+    // cityInput = cityInput.replace(/\s/g, '+');
+    //
+    // const parameters = {
+    //   query: queryInput,
+    //   city: cityInput,
+    // };
+    //
+    // if (queryInput.length !== 0 || cityInput.length !== 0) {
+    //   this.$store.dispatch('searchProfiles/getProfilesData', parameters);
+    // }
   },
   methods: {
     ...mapActions('searchProfiles', [
