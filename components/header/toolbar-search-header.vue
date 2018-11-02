@@ -14,7 +14,7 @@
       <logo-component/>
     </v-toolbar-title>
 
-    <form
+    <v-form
       class="search-form hidden-xs-only"
       @submit.prevent="submitSearchForm()"
     >
@@ -66,7 +66,7 @@
           </button>
         </v-flex>
       </v-layout>
-    </form>
+    </v-form>
 
     <v-spacer/>
 
