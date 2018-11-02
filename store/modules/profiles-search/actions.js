@@ -62,7 +62,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
 
   if (queryStringParameters.category) {
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
-    url = `/api/profiles-search?city=${queryStringParameters.city}&query=null&category=${queryStringParameters.category}`;
+    url = `/api/profiles-search?city=${queryStringParameters.city}&query=&category=${queryStringParameters.category}`;
   } else {
     queryStringParameters.query = encodeURIComponent(queryStringParameters.query);
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
