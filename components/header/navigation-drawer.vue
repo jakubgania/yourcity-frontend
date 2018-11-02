@@ -19,9 +19,7 @@
 
       </div>
       <v-divider/>
-      <template
-        v-for="menuItem in navigationMenuItems"
-      >
+      <template v-for="menuItem in navigationMenuItems">
         <v-list-tile
           :key="menuItem.id"
           :to="$i18n.path(menuItem.path)"
