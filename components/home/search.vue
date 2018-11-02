@@ -57,6 +57,9 @@
                 v-model="cityModel"
                 :items="cityItems"
                 :search-input.sync="cityInputSync"
+                item-text="name"
+                item-value="name"
+                return-object
                 solo
                 clearable
                 autocomplete="off"
@@ -65,7 +68,30 @@
                 placeholder="Lokalizacja"
                 class="input-combobox"
               >
-                <!--  -->
+                <!-- <autocomplete-list-component
+                  :city-items="cityItems"
+                /> -->
+                <template
+                  slot="item"
+                  slot-scope="cityItems"
+                >
+                  {{ cityItems.item.name }}
+                </template>
+                <template
+                  slot="item"
+                  slot-scope="cityItems"
+                >
+                  <template v-if="cityItems.item.value">
+                    <v-list-tile-content @click="getCurrentLocation()">
+                      <v-list-tile-title>Użyj obecnej lokalizacji</v-list-tile-title>
+                    </v-list-tile-content>
+                  </template>
+                  <template v-else>
+                    <v-list-tile-content>
+                      <v-list-tile-title v-html="cityItems.item"/>
+                    </v-list-tile-content>
+                  </template>
+                </template>
               </v-combobox>
             </v-flex>
             <v-flex
@@ -93,8 +119,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import topImage from '../../assets/images/sky-tower-16.jpg';
+import AutocompleteListComponent from '../autocomplete-list.vue';
 
 export default {
+  components: {
+    'autocomplete-list-component': AutocompleteListComponent,
+  },
   data() {
     return {
       topImage,
@@ -206,6 +236,9 @@ export default {
       }
 
       return '';
+    },
+    getCurrentLocation() {
+      //
     },
   },
 };

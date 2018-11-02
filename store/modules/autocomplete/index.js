@@ -4,7 +4,9 @@ import axios from 'axios';
 
 const state = {
   queryItems: ['No items'],
-  cityItems: ['No items'],
+  cityItems: [
+    { name: 'Current location', value: 'Current location' },
+  ],
 };
 
 const getters = {
