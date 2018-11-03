@@ -1,7 +1,7 @@
 {
     "items" : [
         {
-            "title" : "Strona główna",
+            "title" : "\/$t('footer.routes_names.home_page')",
             "router" : "true",
             "path" : ""
         },

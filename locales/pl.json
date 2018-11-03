@@ -178,19 +178,19 @@
 
   },
   "footer": {
-    "description": "",
-    "routes_names": {
-      "home_page": "strona główna",
-      "search_page": "wyszukiwanie",
-      "photos_page": "zdjęcia",
-      "cities_page": "miasta",
-      "projects_page": "o platformie",
-      "founder_page": "o twórcy",
-      "changelog_page": "changelog",
-      "agreements_page": "regulamin",
-      "contact_page": "kontakt",
-      "business_page": "dla bzinesu",
-      "example_profile": "przykładowy profil"
-    }
+    "description": ""
+  },
+  "routes_names": {
+    "home_page": "Strona główna",
+    "search_page": "Wyszukiwanie",
+    "photos_page": "Zdjęcia",
+    "cities_page": "Miasta",
+    "projects_page": "O platformie",
+    "founder_page": "O twórcy",
+    "changelog_page": "Changelog",
+    "agreements_page": "Regulamin",
+    "contact_page": "Kontakt",
+    "business_page": "Dla bzinesu",
+    "example_profile": "Przykładowy profil"
   }
 }

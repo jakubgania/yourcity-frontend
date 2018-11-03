@@ -41,7 +41,7 @@
 
 <script>
 import LogoComponent from '../logo-component.vue';
-import navigationMenuItems from '../../json/navigation-menu-items.json';
+// import navigationMenuItems from '../../json/navigation-menu-items.json';
 
 export default {
   components: {
@@ -55,7 +55,53 @@ export default {
   },
   data() {
     return {
-      navigationMenuItems: navigationMenuItems.items,
+      // navigationMenuItems: navigationMenuItems.items,
+      navigationMenuItems: [
+        {
+          title: this.$t('routes_names.home_page'),
+          path: '',
+        },
+        {
+          title: this.$t('routes_names.search_page'),
+          path: 'search',
+        },
+        {
+          title: this.$t('routes_names.photos_page'),
+          path: 'cities/all',
+        },
+        {
+          title: this.$t('routes_names.cities_page'),
+          path: 'photos',
+        },
+        {
+          title: this.$t('routes_names.projects_page'),
+          path: 'contact',
+        },
+        {
+          title: this.$t('routes_names.founder_page'),
+          path: 'changelog',
+        },
+        {
+          title: this.$t('routes_names.changelog_page'),
+          path: 'business',
+        },
+        {
+          title: this.$t('routes_names.agreements_page'),
+          path: 'example-profile',
+        },
+        {
+          title: this.$t('routes_names.contact_page'),
+          path: 'project',
+        },
+        {
+          title: this.$t('routes_names.business_page'),
+          path: 'founder',
+        },
+        {
+          title: this.$t('routes_names.example_profile'),
+          path: 'agreements',
+        },
+      ],
     };
   },
   computed: {
