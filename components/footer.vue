@@ -108,25 +108,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  strona główna
+                  {{ $t('footer.routes_names.home_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('search')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  wyszukiwanie
+                  {{ $t('footer.routes_names.search_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('photos')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  zdjęcia
+                  {{ $t('footer.routes_names.photos_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('cities/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  miasta
+                  {{ $t('footer.routes_names.cities_page') }}
                 </nuxt-link>
               </div>
             </v-flex>
@@ -138,25 +138,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('project')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  o platformie
+                  {{ $t('footer.routes_names.projects_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('founder')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  o twórcy
+                  {{ $t('footer.routes_names.founder_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('changelog')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  changelog
+                  {{ $t('footer.routes_names.changelog_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('agreements')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  regulamin
+                  {{ $t('footer.routes_names.agreements_page') }}
                 </nuxt-link>
               </div>
             </v-flex>
@@ -168,19 +168,19 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('contact')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  kontakt
+                  {{ $t('footer.routes_names.contact_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('business')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  dla biznesu
+                  {{ $t('footer.routes_names.business_page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('example-profile')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  przykładowy profil
+                  {{ $t('footer.routes_names.example_profile') }}
                 </nuxt-link>
               </div>
             </v-flex>

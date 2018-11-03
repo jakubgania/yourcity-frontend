@@ -15,7 +15,7 @@
         data-aos-delay="240"
         data-aos-once="true"
       >
-        Kategorie
+        {{ $t('home.categories.title_section') }}
       </div>
     </v-flex>
     <v-flex
@@ -61,7 +61,7 @@
           data-aos-delay="240"
           data-aos-once="true"
         >
-          przejdź do wyszukiwania
+          {{ $t('home.categories.search_button') }}
           <v-icon
             right
             dark
@@ -82,82 +82,82 @@ export default {
         {
           id: 'club',
           icon: 'music_note',
-          name: 'kluby',
+          name: this.$t('home.categories.clubs'),
         },
         {
           id: 'barAndPub',
           icon: 'local_bar',
-          name: 'bary i puby',
+          name: this.$t('home.categories.bar_and_pub'),
         },
         {
           id: 'cafeteria',
           icon: 'local_cafe',
-          name: 'kawiarnie',
+          name: this.$t('home.categories.coffeehouses'),
         },
         {
           id: 'food',
           icon: 'restaurant',
-          name: 'jedzenie',
+          name: this.$t('home.categories.food'),
         },
         {
           id: 'entertainment',
           icon: 'star',
-          name: 'rozrywka',
+          name: this.$t('home.categories.entertainment'),
         },
         {
           id: 'event',
           icon: 'date_range',
-          name: 'wydarzenia',
+          name: this.$t('home.categories.event'),
         },
         {
           id: 'shop',
           icon: 'shopping_cart',
-          name: 'sklepy',
+          name: this.$t('home.categories.shop'),
         },
         {
           id: 'service',
           icon: 'settings',
-          name: 'usługi',
+          name: this.$t('home.categories.service'),
         },
         {
           id: 'tourism',
           icon: 'directions_walk',
-          name: 'turystyka',
+          name: this.$t('home.categories.tourism'),
         },
         {
           id: 'sport',
           icon: 'pool',
-          name: 'sport',
+          name: this.$t('home.categories.sport'),
         },
         {
           id: 'other',
           icon: 'clear_all',
-          name: 'inne',
+          name: this.$t('home.categories.other'),
         },
         {
           id: 'information',
           icon: 'info_outline',
-          name: 'informacje',
+          name: this.$t('home.categories.information'),
         },
         {
           id: 'education',
           icon: 'school',
-          name: 'edukacja',
+          name: this.$t('home.categories.education'),
         },
         {
           id: 'health',
           icon: 'local_hospital',
-          name: 'zdrowie',
+          name: this.$t('home.categories.health'),
         },
         {
           id: 'hotel',
           icon: 'local_hotel',
-          name: 'hotel',
+          name: this.$t('home.categories.hotel'),
         },
         {
           id: 'travel',
           icon: 'directions',
-          name: 'podróż',
+          name: this.$t('home.categories.travel'),
         },
       ],
     };

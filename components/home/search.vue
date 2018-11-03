@@ -38,12 +38,12 @@
                 v-model="queryModel"
                 :items="queryItems"
                 :search-input.sync="queryInputSync"
+                :placeholder="$t('home.search_section.search_form.input_query_placeholder')"
                 solo
                 clearable
                 autocomplete="off"
                 spellcheck="false"
                 prepend-inner-icon="search"
-                placeholder="Czego szukasz ?"
                 class="input-combobox"
               />
             </v-flex>
@@ -57,6 +57,7 @@
                 v-model="cityModel"
                 :items="cityItems"
                 :search-input.sync="cityInputSync"
+                :placeholder="$t('home.search_section.search_form.input_city_placeholder')"
                 item-text="name"
                 item-value="name"
                 return-object
@@ -65,7 +66,6 @@
                 autocomplete="off"
                 spellcheck="false"
                 prepend-inner-icon="location_on"
-                placeholder="Lokalizacja"
                 class="input-combobox"
               >
                 <!-- <autocomplete-list-component
@@ -104,7 +104,7 @@
                 type="submit"
                 class="submit-button"
               >
-                szukaj
+                {{ $t('home.search_section.search_form.submit_button') }}
                 <v-icon class="icon">keyboard_arrow_right</v-icon>
               </button>
             </v-flex>
@@ -129,19 +129,7 @@ export default {
     return {
       topImage,
       counter: 0,
-      topWords: [
-        'klub',
-        'obiad',
-        'rynek',
-        'impreza',
-        'jedznie',
-        'piwo',
-        'sklep',
-        'muzyka',
-        'basen',
-        'kino',
-        'apteka',
-      ],
+      topWords: this.$t('home.search_section.top_words'),
       cityInputSync: null,
       queryInputSync: null,
     };

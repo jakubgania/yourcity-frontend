@@ -20,7 +20,7 @@ Vue.use(Vuex);
 export default () => new Vuex.Store({
   state: {
     locales: ['en', 'pl'],
-    locale: 'en',
+    locale: 'pl',
   },
   mutations: {
     SET_LANG(state, locale) {

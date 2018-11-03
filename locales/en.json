@@ -1,16 +1,96 @@
 {
-  "links": {
-    "home": "Home",
-    "about": "About",
-    "english": "English version",
-    "french": "French version"
-  },
   "home": {
-    "title": "Welcome",
-    "introduction": "This is an introduction in English."
+    "head": {
+      "title": "Yourcity - Search for different places in cities and locations"
+    },
+    "search_section": {
+      "top_words": [
+        "clubs",
+        "dinner",
+        "town",
+        "party",
+        "food",
+        "beer",
+        "shop",
+        "music",
+        "swimming pool",
+        "cinema",
+        "pharmacy"
+      ],
+      "search_form": {
+        "input_query_placeholder": "What are you looking for ?",
+        "input_city_placeholder": "Location",
+        "submit_button": "Search"
+      }
+    },
+    "information_section": {
+
+    },
+    "categories": {
+      "title_section": "Categories",
+      "clubs": "clubs",
+      "bar_and_pub": "bars and pubs",
+      "coffeehouses": "coffeehouses",
+      "food": "food",
+      "entertainment": "entertainment",
+      "event": "events",
+      "shop": "shops",
+      "service": "services",
+      "tourism": "tourism",
+      "sport": "sport",
+      "other": "other",
+      "information": "information",
+      "education": "education",
+      "health": "health",
+      "hotel": "hotels",
+      "travel": "travel",
+      "search_button": "search"
+    }
   },
-  "about": {
-    "title": "About",
-    "introduction": "This page is made to give you more informations."
+  "profiles-search": {
+
+  },
+  "photos": {
+
+  },
+  "cities": {
+
+  },
+  "project": {
+
+  },
+  "founder": {
+
+  },
+  "changelog": {
+
+  },
+  "agreements": {
+
+  },
+  "contact": {
+
+  },
+  "business": {
+
+  },
+  "example-profile": {
+
+  },
+  "footer": {
+    "description": "",
+    "routes_names": {
+      "home_page": "home",
+      "search_page": "search",
+      "photos_page": "photos",
+      "cities_page": "cities",
+      "projects_page": "about project",
+      "founder_page": "founder",
+      "changelog_page": "changelog",
+      "agreements_page": "agreements",
+      "contact_page": "contact",
+      "business_page": "for business",
+      "example_profile": "example profile"
+    }
   }
 }

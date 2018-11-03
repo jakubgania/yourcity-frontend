@@ -109,7 +109,7 @@ export default {
   },
   head() {
     return {
-      title: 'Yourcity - Wyszukuj różne miejsca w miastach i lokalizacjach.',
+      title: this.$t('home.head.title'),
       meta: [
         {
           hid: 'description',

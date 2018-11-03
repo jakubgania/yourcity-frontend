@@ -1,13 +1,50 @@
 {
   "home": {
+    "head": {
+      "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach."
+    },
+    "search_section": {
+      "top_words": [
+        "klub",
+        "obiad",
+        "rynek",
+        "impreza",
+        "jedznie",
+        "piwo",
+        "sklep",
+        "muzyka",
+        "basen",
+        "kino",
+        "apteka"
+      ],
+      "search_form": {
+        "input_query_placeholder": "Czego szukasz ?",
+        "input_city_placeholder": "Lokalizacja",
+        "submit_button": "wyślij"
+      }
+    },
     "information_section": {
 
     },
-    "footer": {
-      "routes-names": {
-        "home_page": "strona główna",
-        "search_page": "wyszukiwanie"
-      }
+    "categories": {
+      "title_section": "Kategorie",
+      "clubs": "kluby",
+      "bar_and_pub": "bary i puby",
+      "coffeehouses": "kawiarnie",
+      "food": "jedzenie",
+      "entertainment": "rozrywka",
+      "event": "wydarzenia",
+      "shop": "sklepy",
+      "service": "usługi",
+      "tourism": "turystyka",
+      "sport": "sport",
+      "other": "inne",
+      "information": "informacje",
+      "education": "edukacja",
+      "health": "zdrowie",
+      "hotel": "hotele",
+      "travel": "podróż",
+      "search_button": "przejdź do wyszukiwania"
     }
   },
   "profiles-search": {
@@ -39,5 +76,21 @@
   },
   "example-profile": {
 
+  },
+  "footer": {
+    "description": "",
+    "routes_names": {
+      "home_page": "strona główna",
+      "search_page": "wyszukiwanie",
+      "photos_page": "zdjęcia",
+      "cities_page": "miasta",
+      "projects_page": "o platformie",
+      "founder_page": "o twórcy",
+      "changelog_page": "changelog",
+      "agreements_page": "regulamin",
+      "contact_page": "kontakt",
+      "business_page": "dla bzinesu",
+      "example_profile": "przykładowy profil"
+    }
   }
 }
