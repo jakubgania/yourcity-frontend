@@ -1,4 +1,9 @@
 {
+  "header": {
+    "dropdown_menu": {
+      "language": "Polski"
+    }
+  },
   "home": {
     "head": {
       "title": "Yourcity - Search for different places in cities and locations"

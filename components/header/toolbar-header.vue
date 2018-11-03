@@ -23,19 +23,19 @@
 
     <v-spacer/>
 
-    <v-btn icon>
-      <v-icon>more_vert</v-icon>
-    </v-btn>
+    <dropdown-menu-component/>
 
   </v-toolbar>
 </template>
 
 <script>
 import LogoComponent from '../logo-component.vue';
+import DropdownMenuComponent from './dropdown-menu.vue';
 
 export default {
   components: {
     'logo-component': LogoComponent,
+    'dropdown-menu-component': DropdownMenuComponent,
   },
   props: {
     drawer: {

@@ -1,4 +1,9 @@
 {
+  "header": {
+    "dropdown_menu": {
+      "language": "English"
+    }
+  },
   "home": {
     "head": {
       "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach."
