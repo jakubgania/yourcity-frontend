@@ -1,7 +1,7 @@
 /* eslint no-shadow: off */
 
 const state = () => ({
-  basicClientAddress: '',
+  basicClientAddress: 'https://yourcity.io',
   basicServerAddressAPI: '',
 });
 

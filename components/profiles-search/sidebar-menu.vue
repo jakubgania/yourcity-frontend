@@ -34,6 +34,9 @@ export default {
       'query',
       'currentCategory',
     ]),
+    ...mapGetters({
+      basicClientAddress: 'basicClientAddress',
+    }),
     currentCategory: {
       get() {
         return this.$store.state.searchProfiles.currentCategory;
@@ -59,7 +62,7 @@ export default {
     },
     changeCategory(category) {
       this.isActive = category;
-      this.updateURL(`http://192.168.0.14:9800${this.checkLanguage()}/search?category=${category}`);
+      this.updateURL(`${this.basicClientAddress}${this.checkLanguage()}/search?category=${category}`);
       this.$emit('updateCurrentCategory', category);
       window.scrollTo(0, 0);
       this.$store.dispatch('searchProfiles/updateShowTagSection', true);
