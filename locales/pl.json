@@ -50,6 +50,75 @@
       "hotel": "hotele",
       "travel": "podróż",
       "search_button": "przejdź do wyszukiwania"
+    },
+    "popular_tags": {
+      "title_section": "Popularne tagi",
+      "food": {
+        "title": "jedzenie",
+        "tags": [
+          "lody",
+          "restauracja",
+          "pizza",
+          "kawiarnia",
+          "food",
+          "food truck",
+          "vegan",
+          "sushi"
+        ]
+      },
+      "shop": {
+        "title": "zakupy",
+        "tags": [
+          "fashion",
+          "galeria",
+          "centrum",
+          "centrum handlowe",
+          "sklep"
+        ]
+      },
+      "entertainment": {
+        "title": "rozrywka",
+        "tags": [
+          "kino",
+          "party",
+          "escape room",
+          "club",
+          "fun"
+        ]
+      },
+      "sport": {
+        "title": "sport",
+        "tags": [
+          "siłownia",
+          "basen",
+          "sport",
+          "fitness"
+        ]
+      },
+      "business": {
+        "title": "biznes",
+        "tags": [
+          "startup",
+          "office",
+          "business",
+          "job",
+          "service",
+          "work"
+        ]
+      },
+      "other": {
+        "title": "inne",
+        "tags": [
+          "apartamenty",
+          "bootcamp",
+          "design",
+          "apteka",
+          "turystyka",
+          "beauty",
+          "kultura"
+        ]
+      },
+      "search_button": "PRZEJDŹ DO WYSZUKIWANIA"
     }
   },
   "profiles_search": {

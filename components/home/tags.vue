@@ -16,7 +16,7 @@
           data-aos-delay="240"
           data-aos-once="true"
         >
-          Popularne tagi
+          {{ $t('home.popular_tags.title_section') }}
         </div>
       </v-flex>
       <v-flex
@@ -110,7 +110,7 @@
             data-aos-delay="240"
             data-aos-once="true"
           >
-            PRZEJDŹ DO WYSZUKIWANIA
+            {{ $t('home.popular_tags.search_button') }}
             <v-icon
               right
               dark
@@ -130,74 +130,33 @@ export default {
     return {
       proposedTags: [
         {
-          section_name: 'JEDZENIE',
-          tags: [
-            'lody',
-            'restauracja',
-            'pizza',
-            'kawiarnia',
-            'food',
-            'food truck',
-            'vegan',
-            'sushi',
-          ],
+          section_name: this.$t('home.popular_tags.food.title'),
+          tags: this.$t('home.popular_tags.food.tags'),
           color_hover_class: 'color-hover-food',
         },
         {
-          section_name: 'ZAKUPY',
-          tags: [
-            'fashion',
-            'galeria',
-            'centrum',
-            'centrum handlowe',
-            'sklep',
-          ],
+          section_name: this.$t('home.popular_tags.shop.title'),
+          tags: this.$t('home.popular_tags.shop.tags'),
           color_hover_class: 'color-hover-shop',
         },
         {
-          section_name: 'ROZRYWKA',
-          tags: [
-            'kino',
-            'party',
-            'escape room',
-            'club',
-            'fun',
-          ],
+          section_name: this.$t('home.popular_tags.entertainment.title'),
+          tags: this.$t('home.popular_tags.entertainment.tags'),
           color_hover_class: 'color-hover-entertainment',
         },
         {
-          section_name: 'SPORT',
-          tags: [
-            'siłownia',
-            'basen',
-            'sport',
-            'fitness',
-          ],
+          section_name: this.$t('home.popular_tags.sport.title'),
+          tags: this.$t('home.popular_tags.sport.tags'),
           color_hover_class: 'color-hover-sport',
         },
         {
-          section_name: 'BIZNES',
-          tags: [
-            'startup',
-            'office',
-            'business',
-            'job',
-            'service',
-            'work',
-          ],
+          section_name: this.$t('home.popular_tags.business.title'),
+          tags: this.$t('home.popular_tags.business.tags'),
           color_hover_class: 'color-hover-business',
         },
         {
-          section_name: 'INNE',
-          tags: [
-            'apartamenty',
-            'bootcamp',
-            'design',
-            'apteka',
-            'tourist',
-            'beauty',
-            'culture',
-          ],
+          section_name: this.$t('home.popular_tags.other.title'),
+          tags: this.$t('home.popular_tags.other.tags'),
           color_hover_class: 'color-hover-other',
         },
       ],

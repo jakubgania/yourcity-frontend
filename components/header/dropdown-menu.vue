@@ -26,11 +26,11 @@
     </v-list> -->
 
     <v-list>
-      <v-list-tile>
+      <v-list-tile class="link-section">
         <nuxt-link
           v-if="$i18n.locale === 'en'"
           :to="`/pl` + $route.fullPath.replace(/^\/[^\/]+/, '')"
-          style="text-decoration:none;letter-spacing:1px;"
+          class="link"
         >
           <v-icon style="margin-right:14px;">translate</v-icon>
           {{ $t('header.dropdown_menu.language') }}
@@ -38,7 +38,7 @@
         <nuxt-link
           v-if="$i18n.locale === 'pl'"
           :to="`/en` + $route.fullPath"
-          style="text-decoration:none;letter-spacing:1px;"
+          class="link"
         >
           <v-icon style="margin-right:14px;">translate</v-icon>
           {{ $t('header.dropdown_menu.language') }}
@@ -73,5 +73,14 @@ export default {
   letter-spacing: 1px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.link-section:hover
+{
+  background-color: #e6e6e6;
+}
+.link
+{
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 </style>

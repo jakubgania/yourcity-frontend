@@ -65,6 +65,7 @@ $scrollbar-thumb-color: #b8b8b8;
 .v-menu__content
 {
     box-shadow: none;
+    border-top: 1px solid #e2e2e2;
     border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;

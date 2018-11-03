@@ -50,6 +50,75 @@
       "hotel": "hotels",
       "travel": "travel",
       "search_button": "search"
+    },
+    "popular_tags": {
+      "title_section": "Popular tags",
+      "food": {
+        "title": "food",
+        "tags": [
+          "lody",
+          "restauracja",
+          "pizza",
+          "kawiarnia",
+          "food",
+          "food truck",
+          "vegan",
+          "sushi"
+        ]
+      },
+      "shop": {
+        "title": "shop",
+        "tags": [
+          "fashion",
+          "galeria",
+          "centrum",
+          "centrum handlowe",
+          "sklep"
+        ]
+      },
+      "entertainment": {
+        "title": "entertainment",
+        "tags": [
+          "kino",
+          "party",
+          "escape room",
+          "club",
+          "fun"
+        ]
+      },
+      "sport": {
+        "title": "sport",
+        "tags": [
+          "siłownia",
+          "basen",
+          "sport",
+          "fitness"
+        ]
+      },
+      "business": {
+        "title": "business",
+        "tags": [
+          "startup",
+          "office",
+          "business",
+          "job",
+          "service",
+          "work"
+        ]
+      },
+      "other": {
+        "title": "other",
+        "tags": [
+          "apartamenty",
+          "bootcamp",
+          "design",
+          "apteka",
+          "turystyka",
+          "beauty",
+          "kultura"
+        ]
+      },
+      "search_button": "go to search"
     }
   },
   "profiles_search": {
