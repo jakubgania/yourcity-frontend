@@ -123,6 +123,17 @@
     "cities": {
       "title_section": "Miasta",
       "search_button": "Więcej miast"
+    },
+    "business": {
+      "title_section": "Dla biznesu",
+      "section_1": {
+        "title": "Zostań oficjalnym partnerem",
+        "description": "Dołącz do platformy YOURCITY i zostań oficjalnym zweryfikowanym partnerem."
+      },
+      "section_2": {
+        "title": "Stwórz porfil dla biznesu",
+        "description": "Utwórz szczegółowy profil dla biznesu , który prowadzisz."
+      }
     }
   },
   "profiles_search": {

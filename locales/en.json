@@ -123,6 +123,17 @@
     "cities": {
       "title_section": "Cities",
       "search_button": "More cities"
+    },
+    "business": {
+      "title_section": "For business",
+      "section_1": {
+        "title": "Official partnership",
+        "description": "Join the Yourcity platform and become an official verified partner."
+      },
+      "section_2": {
+        "title": "Create a business profile",
+        "description": "Create a profile for your business."
+      }
     }
   },
   "profiles_search": {

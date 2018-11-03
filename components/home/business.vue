@@ -24,7 +24,7 @@
             data-aos-delay="240"
             data-aos-once="true"
           >
-            Dla biznesu
+            {{ $t('home.business.title_section') }}
           </div>
         </v-flex>
         <v-flex
@@ -87,12 +87,12 @@
                   <v-flex lg12>
                     <div class="big-font-title">
                       <i class="material-icons icon-title">compare_arrows</i>
-                      Zostań oficjalnym partnerem
+                      {{ $t('home.business.section_1.title') }}
                     </div>
                   </v-flex>
                   <v-flex lg12>
                     <div class="description first-description">
-                      Dołącz do platformy YOURCITY i zostań oficjalnym zweryfikowanym partnerem.
+                      {{ $t('home.business.section_1.description') }}
                     </div>
                   </v-flex>
                 </div>
@@ -116,12 +116,12 @@
                   <v-flex lg12>
                     <div class="big-font-title">
                       <i class="material-icons icon-title">layers</i>
-                      Stwórz porfil dla biznesu
+                      {{ $t('home.business.section_2.title') }}
                     </div>
                   </v-flex>
                   <v-flex lg12>
                     <div class="description">
-                      Utwórz szczegółowy profil dla biznesu , który prowadzisz.
+                      {{ $t('home.business.section_2.description') }}
                     </div>
                   </v-flex>
                 </div>
