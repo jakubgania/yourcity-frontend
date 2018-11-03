@@ -15,7 +15,7 @@
         data-aos-delay="240"
         data-aos-once="true"
       >
-        Miasta
+        {{ $t('home.cities.title_section') }}
       </div>
     </v-flex>
     <v-flex
@@ -68,7 +68,7 @@
           data-aos-delay="240"
           data-aos-once="true"
         >
-          więcej miast
+          {{ $t('home.cities.search_button') }}
           <v-icon
             right
             dark

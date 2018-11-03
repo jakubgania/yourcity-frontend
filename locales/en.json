@@ -119,6 +119,10 @@
         ]
       },
       "search_button": "go to search"
+    },
+    "cities": {
+      "title_section": "Cities",
+      "search_button": "More cities"
     }
   },
   "profiles_search": {

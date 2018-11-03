@@ -119,6 +119,10 @@
         ]
       },
       "search_button": "PRZEJDŹ DO WYSZUKIWANIA"
+    },
+    "cities": {
+      "title_section": "Miasta",
+      "search_button": "Więcej miast"
     }
   },
   "profiles_search": {

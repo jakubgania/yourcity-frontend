@@ -6,7 +6,7 @@
     <v-content style="padding-top:64px;">
       <v-container
         fluid
-        style="padding: 0;"
+        class="container"
       >
         <nuxt/>
       </v-container>
@@ -58,10 +58,10 @@ $scrollbar-thumb-color: #b8b8b8;
     border-radius: 0px;
     background-color: $scrollbar-thumb-color
 }
-// .container
-// {
-//     padding: 0;
-// }
+.container
+{
+    padding: 0;
+}
 .v-menu__content
 {
     box-shadow: none;
