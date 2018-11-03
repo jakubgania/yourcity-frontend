@@ -4,6 +4,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import axios from 'axios';
 
+import globalVariables from './modules/global-variables';
 import searchProfiles from './modules/profiles-search';
 import autocomplete from './modules/autocomplete';
 
@@ -30,6 +31,7 @@ export default () => new Vuex.Store({
     },
   },
   modules: {
+    globalVariables,
     searchProfiles,
     autocomplete
   },

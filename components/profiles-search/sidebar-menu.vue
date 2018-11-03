@@ -62,7 +62,7 @@ export default {
     },
     changeCategory(category) {
       this.isActive = category;
-      this.updateURL(`${this.basicClientAddress}${this.checkLanguage()}/search?category=${category}`);
+      this.updateURL(`${this.basicClientAddress}/${this.checkLanguage()}/search?category=${category}`);
       this.$emit('updateCurrentCategory', category);
       window.scrollTo(0, 0);
       this.$store.dispatch('searchProfiles/updateShowTagSection', true);
@@ -91,7 +91,7 @@ export default {
     },
     checkLanguage() {
       if (this.$i18n.locale !== 'en') {
-        return `/${this.$i18n.locale}`;
+        return `${this.$i18n.locale}`;
       }
 
       return '';
