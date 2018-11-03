@@ -3,7 +3,6 @@
     v-if="displaySearchHeader()"
     color="white"
     app
-    height="64"
     absolute
     clipped-left
     class="toolbar-search-header"

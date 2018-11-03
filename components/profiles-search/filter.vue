@@ -1,12 +1,20 @@
 <template>
-  <v-expansion-panel expand>
-    <v-expansion-panel-content style="background-color:#ffffff;border-left:1px solid #eeeeee;">
+  <v-expansion-panel
+    expand
+    style="box-shadow:none;"
+  >
+    <v-expansion-panel-content
+      class="extension-panel"
+      style="background-color: transparent;"
+    >
       <div
         slot="header"
         style="letter-spacing:1px;font-weight:700;"
       >
-        <v-icon style="position:relative;top:5px;margin-right:15px;font-size:20px;"/>
-        Filtry
+        <v-icon style="position:relative;top:5px;margin-right:15px;font-size:20px;">
+          filter_list
+        </v-icon>
+        {{ $t('profiles_search.filter.title_section') }}
       </div>
 
       <v-layout
@@ -23,11 +31,11 @@
           <v-text-field
             :append-icon="'search'"
             v-model="prototypeFilter"
+            :label="$t('profiles_search.filter.search')"
             loading
             clearable
             autocomplete="off"
             name="input-1"
-            label="Szukaj w wynikach"
             @keyup="inputFilter()"
           />
           <v-progress-linear
@@ -119,6 +127,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.extension-panel
+{
+  border-bottom: 1px solid #dfdfdf;
+}
 @media only screen and (max-width: 600px)
 {
 }

@@ -58,7 +58,13 @@
       "input_city_placeholder": "Lokalizacja",
       "current_location": "Użyj obecnej lokalizacji",
       "submit_button": "wyślij"
-    }
+    },
+    "filter": {
+      "title_section": "Filtry",
+      "search": "Szukaj w wynikach"
+    },
+    "result_count": "Wyników",
+    "paging_button": "Pokaż więcej"
   },
   "photos": {
 

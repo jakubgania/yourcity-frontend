@@ -3,10 +3,10 @@
 
     <header-component/>
 
-    <v-content>
+    <v-content style="padding-top:64px;">
       <v-container
         fluid
-        class="container"
+        style="padding: 0;"
       >
         <nuxt/>
       </v-container>
@@ -58,10 +58,10 @@ $scrollbar-thumb-color: #b8b8b8;
     border-radius: 0px;
     background-color: $scrollbar-thumb-color
 }
-.container
-{
-    padding: 0;
-}
+// .container
+// {
+//     padding: 0;
+// }
 .v-menu__content
 {
     box-shadow: none;
@@ -79,5 +79,10 @@ $scrollbar-thumb-color: #b8b8b8;
 .v-menu__content::-webkit-scrollbar-thumb {
     border-radius: 0px;
     background-color: $scrollbar-thumb-color;
+}
+
+.v-expansion-panel__header
+{
+  padding: 0px;
 }
 </style>

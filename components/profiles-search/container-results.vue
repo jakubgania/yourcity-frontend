@@ -21,7 +21,7 @@
             class="result-counter-section"
           >
             <div class="title-section">
-              {{ 'Wyniki' + ' : ' + resultCount() }}
+              {{ $t('profiles_search.result_count') + ' : ' + resultCount() }}
             </div>
           </v-flex>
 
@@ -79,7 +79,7 @@
                 block
                 @click.native="getPagingProfilesData(pagingURL)"
               >
-                Pokaż więcej
+                {{ $t('profiles_search.paging_button') }}
                 <v-icon class="icon">cached</v-icon>
               </v-btn>
             </v-flex>
