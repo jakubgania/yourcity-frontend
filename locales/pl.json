@@ -52,8 +52,13 @@
       "search_button": "przejdź do wyszukiwania"
     }
   },
-  "profiles-search": {
-
+  "profiles_search": {
+    "search_form": {
+      "input_query_placeholder": "Czego szukasz ?",
+      "input_city_placeholder": "Lokalizacja",
+      "current_location": "Użyj obecnej lokalizacji",
+      "submit_button": "wyślij"
+    }
   },
   "photos": {
 

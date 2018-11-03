@@ -28,12 +28,12 @@
               v-model="queryModelComp"
               :items="queryItems"
               :search-input.sync="queryInputSync"
+              :placeholder="$t('profiles_search.search_form.input_query_placeholder')"
               solo
               clearable
               autocomplete="off"
               spellcheck="false"
               prepend-inner-icon="search"
-              placeholder="Czego szukasz ?"
               class="combobox-input"
             />
           </div>
@@ -44,6 +44,7 @@
               v-model="cityModelComp"
               :items="cityItems"
               :search-input.sync="cityInputSync"
+              :placeholder="$t('profiles_search.search_form.input_city_placeholder')"
               item-text="name"
               item-value="name"
               solo
@@ -51,7 +52,6 @@
               autocomplete="off"
               spellcheck="false"
               prepend-inner-icon="location_on"
-              placeholder="Lokalizacja"
               class="combobox-input"
             >
               <template
@@ -66,7 +66,9 @@
               >
                 <template v-if="cityItems.item.value">
                   <v-list-tile-content @click="getCurrentLocation()">
-                    <v-list-tile-title>Current location</v-list-tile-title>
+                    <v-list-tile-title>
+                      {{ $t('profiles_search.search_form.current_location') }}
+                    </v-list-tile-title>
                   </v-list-tile-content>
                 </template>
                 <template v-else>
@@ -83,7 +85,7 @@
             type="submit"
             class="submit-search-form-btn"
           >
-            szukaj
+            {{ $t('profiles_search.search_form.submit_button') }}
             <v-icon class="btn-icon">keyboard_arrow_right</v-icon>
           </button>
         </v-flex>
