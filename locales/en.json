@@ -147,6 +147,11 @@
       "title_section": "Filter",
       "search": "Search in results"
     },
+    "tags": {
+      "title": "Tags",
+      "button": "More tags",
+      "close": "Close"
+    },
     "results_list": {
       "address": "Address",
       "rating": "Rating",

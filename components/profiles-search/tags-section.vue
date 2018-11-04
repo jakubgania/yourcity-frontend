@@ -6,7 +6,7 @@
     >
       <v-flex lg12>
         <div class="title-section">
-          {{ 'Tagi : ' + proposedTags.length }}
+          {{ $t('profiles_search.tags.title') + ' - ' + proposedTags.length }}
         </div>
       </v-flex>
       <div class="tag-section">
@@ -50,7 +50,7 @@
           class="more-tags-button"
           @click="showMoreTagsDialog(true)"
         >
-          Więcej tagów
+          {{ $t('profiles_search.tags.button') }}
           <v-icon class="icon">bubble_chart</v-icon>
         </v-btn>
 
@@ -63,7 +63,7 @@
           <v-card>
             <div class="top-title-section">
               <v-icon class="icon-info">info_outline</v-icon>
-              Tagi
+              {{ $t('profiles_search.tags.title') }}
               <v-icon
                 class="icon-close"
                 @click="showMoreTagsDialog(false)"
@@ -95,7 +95,7 @@
                 flat
                 @click.native="showMoreTagsDialog(false)"
               >
-                Zamknij
+                {{ $t('profiles_search.tags.close') }}
               </v-btn>
             </v-card-actions>
           </v-card>
