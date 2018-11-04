@@ -1,59 +1,48 @@
 {
-    "items" : [
-        {
-            "title" : "\/$t('footer.routes_names.home_page')",
-            "router" : "true",
-            "path" : ""
-        },
-        {
-            "title" : "Wyszukiwanie",
-            "router" : "true",
-            "path" : "search"
-        },
-        {
-            "title" : "Miasta",
-            "router" : "true",
-            "path" : "cities/all"
-        },
-        {
-            "title" : "Zdjęcia",
-            "router" : "true",
-            "path" : "photos"
-        },
-        {
-            "title" : "Kontakt",
-            "router" : "true",
-            "path" : "contact"
-        },
-        {
-            "title" : "Changelog",
-            "router" : "true",
-            "path" : "changelog"
-        },
-        {
-            "title" : "Dla biznesu",
-            "router" : "true",
-            "path" : "business"
-        },
-        {
-            "title" : "Przykładowy profil",
-            "router" : "true",
-            "path" : "example-profile"
-        },
-        {
-            "title" : "O projekcie",
-            "router" : "true",
-            "path" : "project"
-        },
-        {
-            "title" : "O twórcy",
-            "router" : "true",
-            "path" : "founder"
-        },
-        {
-            "title" : "Regulamin",
-            "router" : "true",
-            "path" : "agreements"
-        }
-    ]
+  "items": [
+    {
+      "nameKey": "home_page",
+      "path": ""
+    },
+    {
+      "nameKey": "search_page",
+      "path": "search"
+    },
+    {
+      "nameKey": "cities_page",
+      "path": "cities/all"
+    },
+    {
+      "nameKey": "photos_page",
+      "path": "photos"
+    },
+    {
+      "nameKey": "contact_page",
+      "path": "contact"
+    },
+    {
+      "nameKey": "changelog_page",
+      "path": "changelog"
+    },
+    {
+      "nameKey": "business_page",
+      "path": "business"
+    },
+    {
+      "nameKey": "example_profile",
+      "path": "example-profile"
+    },
+    {
+      "nameKey": "projects_page",
+      "path": "project"
+    },
+    {
+      "nameKey": "founder_page",
+      "path": "founder"
+    },
+    {
+      "nameKey": "agreements_page",
+      "path": "agreements"
+    }
+  ]
 }

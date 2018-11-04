@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <navigation-drawer-component
       :drawer="drawer"
       @switchNavigationDrawer="switchNavigationDrawer"
