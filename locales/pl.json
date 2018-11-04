@@ -147,6 +147,16 @@
       "title_section": "Filtry",
       "search": "Szukaj w wynikach"
     },
+    "results_list": {
+      "address": "Adres",
+      "rating": "Ocena",
+      "rating_count": "Liczba ocen",
+      "hours": "Godziny otwarcia",
+      "image_not_available": "Brak zdjęcia",
+      "image_dialog": {
+        "close_button": "Zamknij"
+      }
+    },
     "result_count": "Wyników",
     "paging_button": "Pokaż więcej"
   },

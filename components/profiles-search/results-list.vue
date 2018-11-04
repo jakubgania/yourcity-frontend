@@ -37,24 +37,27 @@
               <div class="profile-subtext">
                 {{ section.description ?
                 section.description.substring(0, 34) + '...' : 'Opis - Brak' }}
-                <!-- {{ section.description.substring(0, 34) + '...' }} -->
                 {{ index }}
               </div>
               <div class="profile-subtext">
                 {{ section.single_line_address ?
-                'Adres - ' + section.single_line_address : 'Adres - Brak' }}
+                  $t('profiles_search.results_list.address') + ' - ' +
+                section.single_line_address : 'Adres - Brak' }}
               </div>
               <div class="profile-subtext">
                 {{ section.overall_star_rating ?
-                'Ocena - ' + section.overall_star_rating : 'Ocena - Brak' }}
+                  $t('profiles_search.results_list.rating') + ' - ' +
+                section.overall_star_rating : 'Ocena - Brak' }}
               </div>
               <div class="profile-subtext">
                 {{ section.rating_count ?
-                'Liczba ocen - ' + section.rating_count : 'Liczba ocen - 0' }}
+                  $t('profiles_search.results_list.rating_count') + ' - ' +
+                section.rating_count : 'Liczba ocen - 0' }}
               </div>
               <div class="profile-subtext">
                 {{ section.hours ?
-                'Godziny otwarcia - Tak' : 'Godziny otwarcia - Brak' }}
+                  $t('profiles_search.results_list.hours') :
+                $t('profiles_search.results_list.hours') }}
               </div>
             </div>
 
@@ -87,7 +90,7 @@
                 @click="showFullSizePhoto(section.name, null, null)"
               >
                 <div class="no-picture-text">
-                  image not available
+                  {{ $t('profiles_search.results_list.image_not_available') }}
                 </div>
               </div>
             </div>
@@ -115,12 +118,12 @@
           class="dialog-profile-image-not-available"
         >
           <div class="no-picture-text">
-            no image
+            {{ $t('profiles_search.results_list.image_not_available') }}
           </div>
         </div>
         <v-card-actions style="height:64px;">
-          <div class="">
-            <!--  -->
+          <div v-if="fullSizePhotoCover">
+            <powered-by-facebook-component/>
           </div>
           <v-spacer/>
           <v-btn
@@ -129,7 +132,7 @@
             class="dialog-close-button"
             @click.native="showFullSizePhotoDialog = false"
           >
-            zamknij
+            {{ $t('profiles_search.results_list.image_dialog.close_button') }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -138,9 +141,12 @@
 </template>
 
 <script>
-// import { mapGetters, mapActions } from 'vuex';
+import PoweredByFacebookComponent from '../powered-by-facebook.vue';
 
 export default {
+  components: {
+    'powered-by-facebook-component': PoweredByFacebookComponent,
+  },
   props: {
     result: {
       type: Array,

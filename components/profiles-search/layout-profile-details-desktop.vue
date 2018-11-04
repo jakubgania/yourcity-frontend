@@ -337,7 +337,7 @@
         </div>
 
         <v-card-actions class="bottom-section">
-          <!-- powered by component -->
+          <powered-by-facebook-component/>
           <v-spacer/>
           <v-btn
             color="blue accent-3"
@@ -357,9 +357,13 @@
 <script>
 import { mapGetters } from 'vuex';
 // import { mapGetters, mapActions } from 'vuex';
+import PoweredByFacebookComponent from '../powered-by-facebook.vue';
 // posts component
 
 export default {
+  components: {
+    'powered-by-facebook-component': PoweredByFacebookComponent,
+  },
   props: {
     showInformationDialog: {
       type: Boolean,

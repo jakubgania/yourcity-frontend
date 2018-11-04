@@ -147,6 +147,16 @@
       "title_section": "Filter",
       "search": "Search in results"
     },
+    "results_list": {
+      "address": "Address",
+      "rating": "Rating",
+      "rating_count": "Rating count",
+      "hours": "Opening hours",
+      "image_not_available": "Image not available",
+      "image_dialog": {
+        "close_button": "Close"
+      }
+    },
     "result_count": "Results",
     "paging_button": "Load more"
   },
