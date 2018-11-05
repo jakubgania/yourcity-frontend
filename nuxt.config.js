@@ -13,6 +13,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
+      { name: 'google-site-verification', content: 'LNwrNzoVyEwS7ueGJ5pG6ud_0P50su76BS88vouWYCw' },
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
