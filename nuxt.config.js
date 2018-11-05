@@ -43,6 +43,7 @@ module.exports = {
     '@/plugins/vuetify',
     '~/plugins/i18n.js',
     { src: '~/plugins/aos', ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
   ],
 
   // generate: {
