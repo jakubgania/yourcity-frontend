@@ -47,7 +47,30 @@ module.exports = {
   ],
 
   generate: {
-    routes: ['/', '/en'],
+    routes: [
+      '/',
+      '/en',
+      'search',
+      '/en/search',
+      '/cities/all',
+      '/en/cities/all',
+      '/photos',
+      '/en/photos',
+      '/contact',
+      '/en/contact',
+      '/changelog',
+      '/en/changelog',
+      '/business',
+      '/en/business',
+      '/example-profile',
+      '/en/example-profile',
+      '/project',
+      '/en/project',
+      '/founder',
+      '/en/founder',
+      '/agreements',
+      '/en/agreements',
+    ],
   },
 
   router: {
