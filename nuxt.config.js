@@ -310,7 +310,7 @@ module.exports = {
     hostname: 'https://yourcity.io',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
-    generate: false, // Enable me when using nuxt generate
+    generate: true, // Enable me when using nuxt generate
     // exclude: [
     //   '/secret',
     //   '/admin/**'
