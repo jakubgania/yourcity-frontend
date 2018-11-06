@@ -46,9 +46,9 @@ module.exports = {
     { src: '~plugins/ga.js', ssr: false },
   ],
 
-  // generate: {
-  //   routes: ['/', '/about', '/fr', '/fr/about'],
-  // },
+  generate: {
+    routes: ['/', '/en'],
+  },
 
   router: {
     middleware: 'i18n',
