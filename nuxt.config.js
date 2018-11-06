@@ -1,5 +1,242 @@
 const pkg = require('./package');
 
+const sitemapRoutes = [
+  {
+    url: '/',
+    changefreq: 'weekly',
+    priority: 1,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl',
+    changefreq: 'weekly',
+    priority: 1,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en',
+    changefreq: 'weekly',
+    priority: 1,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/search',
+    changefreq: 'always',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/search',
+    changefreq: 'always',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/search',
+    changefreq: 'always',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/cities/all',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/cities/all',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/cities/all',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/photos',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/photos',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/photos',
+    changefreq: 'daily',
+    priority: 0.8,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/contact',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/contact',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/contact',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/changelog',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/changelog',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/changelog',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/business',
+    changefreq: 'daily',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/business',
+    changefreq: 'daily',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/business',
+    changefreq: 'daily',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/example-profile',
+    changefreq: 'weekly',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/example-profile',
+    changefreq: 'weekly',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/example-profile',
+    changefreq: 'weekly',
+    priority: 0.6,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/project',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/project',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/project',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/founder',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/founder',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/founder',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/agreements',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/en/agreements',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+  {
+    url: '/pl/agreements',
+    changefreq: 'weekly',
+    priority: 0.5,
+    lastmodISO: '2018-11-06',
+  },
+];
+
+const generateRoutes = [
+  '/',
+  '/pl',
+  '/en',
+  'search',
+  '/pl/search',
+  '/en/search',
+  '/cities/all',
+  '/pl/cities/all',
+  '/en/cities/all',
+  '/photos',
+  '/pl/photos',
+  '/en/photos',
+  '/contact',
+  '/pl/contact',
+  '/en/contact',
+  '/changelog',
+  '/pl/changelog',
+  '/en/changelog',
+  '/business',
+  '/pl/business',
+  '/en/business',
+  '/example-profile',
+  '/pl/example-profile',
+  '/en/example-profile',
+  '/project',
+  '/pl/project',
+  '/en/project',
+  '/founder',
+  '/pl/founder',
+  '/en/founder',
+  '/agreements',
+  '/pl/agreements',
+  '/en/agreements',
+];
+
 module.exports = {
   // mode: 'spa',
   mode: 'universal',
@@ -47,41 +284,7 @@ module.exports = {
   ],
 
   generate: {
-    routes: [
-      '/',
-      '/pl',
-      '/en',
-      'search',
-      '/pl/search',
-      '/en/search',
-      '/cities/all',
-      '/pl/cities/all',
-      '/en/cities/all',
-      '/photos',
-      '/pl/photos',
-      '/en/photos',
-      '/contact',
-      '/pl/contact',
-      '/en/contact',
-      '/changelog',
-      '/pl/changelog',
-      '/en/changelog',
-      '/business',
-      '/pl/business',
-      '/en/business',
-      '/example-profile',
-      '/pl/example-profile',
-      '/en/example-profile',
-      '/project',
-      '/pl/project',
-      '/en/project',
-      '/founder',
-      '/pl/founder',
-      '/en/founder',
-      '/agreements',
-      '/pl/agreements',
-      '/en/agreements',
-    ],
+    routes: generateRoutes,
   },
 
   router: {
@@ -92,14 +295,27 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://yourcity.io',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false, // Enable me when using nuxt generate
+    // exclude: [
+    //   '/secret',
+    //   '/admin/**'
+    // ],
+    routes: sitemapRoutes,
   },
 
   /*
