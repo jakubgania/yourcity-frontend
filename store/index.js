@@ -7,7 +7,7 @@ import axios from 'axios';
 import globalVariables from './modules/global-variables';
 import searchProfiles from './modules/profiles-search';
 import autocomplete from './modules/autocomplete';
-
+import photos from './modules/photos';
 
 if (process.env.NODE_ENV == 'production') {
   axios.defaults.baseURL = 'https://api.yourcity.io';
@@ -33,6 +33,7 @@ export default () => new Vuex.Store({
   modules: {
     globalVariables,
     searchProfiles,
-    autocomplete
+    autocomplete,
+    photos
   },
 });

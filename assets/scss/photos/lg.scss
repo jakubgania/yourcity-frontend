@@ -1,0 +1,81 @@
+.fade-enter-active, .fade-leave-active
+{
+    transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to
+{
+    opacity: 0;
+}
+
+.container-gallery
+{
+    min-height: calc(100vh - 64px);
+    height: auto;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+.title-section
+{
+    font-size: 44px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    text-align: center;
+    letter-spacing: 2px;
+
+    color: #111111;
+}
+.image-section
+{
+    max-width: 480px;
+}
+.paging-button
+{
+    font-weight: bold;
+
+    margin-top: 60px;
+    background-color: #000000 !important;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.desktop-full-screen-photo
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    html, body
+    {
+        overflow: hidden !important;
+    }
+}
+.full-size-photo
+{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+
+    width: 80%;
+    max-width: 1400px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.card-button
+{
+    position: absolute;
+    right: 0px;
+    margin-top: 16px;
+    margin-right: 16px;
+    font-size: 40px;
+    color: #000000;
+}
