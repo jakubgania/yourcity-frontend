@@ -17,7 +17,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - Changelog',
+      title: this.$t('changelog.head.title'),
       meta: [
         {
           hid: 'description',

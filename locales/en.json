@@ -137,6 +137,9 @@
     }
   },
   "profiles_search": {
+    "head": {
+      "title": "Yourcity - Search for profiles"
+    },
     "search_form": {
       "input_query_placeholder": "What are you looking for ?",
       "input_city_placeholder": "Location",
@@ -166,31 +169,49 @@
     "paging_button": "Load more"
   },
   "photos": {
-
+    "head": {
+      "title": "Yourcity - Photos"
+    }
   },
   "cities": {
-
+    "head": {
+      "title": "Yourcity - Cities"
+    }
   },
   "project": {
-
+    "head": {
+      "title": "Yourcity - About project"
+    }
   },
   "founder": {
-
+    "head": {
+      "title": "Yourcity - About founder"
+    }
   },
   "changelog": {
-
+    "head": {
+      "title": "Yourcity - Changelog"
+    }
   },
   "agreements": {
-
+    "head": {
+      "title": "Yourcity - Agreements"
+    }
   },
   "contact": {
-
+    "head": {
+      "title": "Yourcity - Contact"
+    }
   },
   "business": {
-
+    "head": {
+      "title": "Yourcity - For business"
+    }
   },
   "example-profile": {
-
+    "head": {
+      "title": "Yourcity - Example profile"
+    }
   },
   "footer": {
     "description": ""
@@ -201,7 +222,7 @@
     "photos_page": "Photos",
     "cities_page": "Cities",
     "projects_page": "About project",
-    "founder_page": "Founder",
+    "founder_page": "About founder",
     "changelog_page": "Changelog",
     "agreements_page": "Agreements",
     "contact_page": "Contact",

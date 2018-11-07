@@ -8,7 +8,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - Przykładowy profil',
+      title: this.$t('example-profile.head.title'),
       meta: [
         {
           hid: 'description',

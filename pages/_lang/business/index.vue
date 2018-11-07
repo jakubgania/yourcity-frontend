@@ -8,7 +8,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - Dla biznesu',
+      title: this.$t('business.head.title'),
       meta: [
         {
           hid: 'description',

@@ -17,7 +17,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - O twórcy',
+      title: this.$t('founder.head.title'),
       meta: [
         {
           hid: 'description',

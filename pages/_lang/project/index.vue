@@ -17,7 +17,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - O projekcie',
+      title: this.$t('project.head.title'),
       meta: [
         {
           hid: 'description',

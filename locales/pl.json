@@ -137,6 +137,9 @@
     }
   },
   "profiles_search": {
+    "head": {
+      "title": "Yourcity - Wyszukiwanie profili"
+    },
     "search_form": {
       "input_query_placeholder": "Czego szukasz ?",
       "input_city_placeholder": "Lokalizacja",
@@ -166,31 +169,49 @@
     "paging_button": "Pokaż więcej"
   },
   "photos": {
-
+    "head": {
+      "title": "Yourcity - Zdjęcia"
+    }
   },
   "cities": {
-
+    "head": {
+      "title": "Yourcity - Miasta"
+    }
   },
   "project": {
-
+    "head": {
+      "title": "Yourcity - O projekcie"
+    }
   },
   "founder": {
-
+    "head": {
+      "title": "Yourcity - O twórcy"
+    }
   },
   "changelog": {
-
+    "head": {
+      "title": "Yourcity - Changelog"
+    }
   },
   "agreements": {
-
+    "head": {
+      "title": "Yourcity - Regulamin"
+    }
   },
   "contact": {
-
+    "head": {
+      "title": "Yourcity - Kontakt"
+    }
   },
   "business": {
-
+    "head": {
+      "title": "Yourcity - Dla biznesu"
+    }
   },
   "example-profile": {
-
+    "head": {
+      "title": "Yourcity - Przykładowy profil"
+    }
   },
   "footer": {
     "description": ""

@@ -17,7 +17,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - Regulamin',
+      title: this.$t('agreements.head.title'),
       meta: [
         {
           hid: 'description',

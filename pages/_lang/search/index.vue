@@ -37,7 +37,7 @@ export default {
   },
   head() {
     return {
-      title: 'Yourcity - Wyszukiwanie profili',
+      title: this.$t('profiles_search.head.title'),
       meta: [
         {
           hid: 'description',

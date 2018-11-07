@@ -8,7 +8,7 @@
 export default {
   head() {
     return {
-      title: 'Yourcity - Zdjęcia',
+      title: this.$t('photos.head.title'),
       meta: [
         {
           hid: 'description',
