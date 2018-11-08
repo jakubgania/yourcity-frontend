@@ -14,9 +14,31 @@
       </div>
     </v-flex>
 
-    <!-- <v-flex lg12>
-      network connection error
-    </v-flex> -->
+    <v-flex lg12>
+      <v-layout
+        v-if="showErrorConnectionAlert"
+        row
+        wrap
+      >
+        <v-flex
+          xs10
+          offset-xs1
+          sm6
+          offset-sm3
+          lg4
+          offset-lg4
+        >
+          <v-alert
+            :value="true"
+            outline
+            type="error"
+            style="letter-spacing:1px;font-weight:700;"
+          >
+            Network connection error.
+          </v-alert>
+        </v-flex>
+      </v-layout>
+    </v-flex>
 
     <v-flex
       xs12
@@ -139,7 +161,7 @@ export default {
     },
     setDetailsPhoto(index) {
       const details = this.photoDetails[index];
-      this.updateURL(`${this.basicClientAddress}/${this.$i18n.locale + this.resourcePath + details.id}`);
+      this.updateURL(`${this.checkLanguage()}/${this.$i18n.locale + this.resourcePath + details.id}`);
       this.src = details.src;
       this.titleHeaderPage = `Yourcity - ${details.id}`;
       this.fullScreenPhoto = true;
@@ -147,11 +169,18 @@ export default {
     closePhotoDetails() {
       this.fullScreenPhoto = false;
       this.titleHeaderPage = 'Yourcity - Galeria';
-      this.updateURL(`${this.basicClientAddress}/${this.$i18n.locale + this.resourcePath}`);
+      this.updateURL(`${this.checkLanguage()}/${this.$i18n.locale + this.resourcePath}`);
     },
     updateURL(url) {
       const stateObject = { foo: 'bar' };
       history.pushState(stateObject, 'page', url); // eslint-disable-line
+    },
+    checkLanguage() {
+      if (this.$i18n.locale !== 'en') {
+        return `/${this.$i18n.locale}`;
+      }
+
+      return '';
     },
   },
   head() {
