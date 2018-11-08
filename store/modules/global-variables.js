@@ -1,8 +1,8 @@
 /* eslint no-shadow: off */
 
 const state = () => ({
-  // basicClientAddress: 'https://yourcity.io',
-  basicClientAddress: 'http://192.168.0.14:9800',
+  basicClientAddress: 'https://yourcity.io',
+  // basicClientAddress: 'http://192.168.0.14:9800',
   basicServerAddressAPI: '',
 });
 
