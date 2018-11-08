@@ -120,6 +120,11 @@
       },
       "search_button": "PRZEJDŹ DO WYSZUKIWANIA"
     },
+    "gallery": {
+      "title_section": "Galeria",
+      "search_button": "Zobacz więcej",
+      "paging_button": "Więcej"
+    },
     "cities": {
       "title_section": "Miasta",
       "search_button": "Więcej miast"

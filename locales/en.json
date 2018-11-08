@@ -120,6 +120,11 @@
       },
       "search_button": "go to search"
     },
+    "gallery": {
+      "title_section": "Gallery",
+      "search_button": "See more",
+      "paging_button": "Load more"
+    },
     "cities": {
       "title_section": "Cities",
       "search_button": "More cities"

@@ -2,6 +2,7 @@
   <v-layout
     row
     wrap
+    class="gallery-container"
   >
     <v-flex
       xs10
@@ -15,7 +16,7 @@
         data-aos-delay="240"
         data-aos-once="true"
       >
-        Galeria
+        {{ $t('home.gallery.title_section') }}
       </div>
     </v-flex>
 
@@ -96,7 +97,7 @@
           depressed
           class="show-gallery-button"
         >
-          ZOBACZ GALERIĘ
+          {{ $t('home.gallery.search_button') }}
           <v-icon
             right
             dark

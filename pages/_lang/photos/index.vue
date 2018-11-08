@@ -10,7 +10,7 @@
       offset-lg4
     >
       <div class="title-section">
-        Zdjęcia
+        {{ $t('home.gallery.title_section') }}
       </div>
     </v-flex>
 
@@ -43,6 +43,7 @@
     <v-flex
       xs12
       lg12
+      style="padding-left:10px;padding-right:10px;"
     >
       <v-container
         fluid
@@ -93,7 +94,7 @@
         class="paging-button"
         @click="loadMore(pagingPhotosURL)"
       >
-        WIĘCEJ
+        {{ $t('home.gallery.paging_button') }}
         <v-icon
           right
           dark
@@ -161,7 +162,7 @@ export default {
     },
     setDetailsPhoto(index) {
       const details = this.photoDetails[index];
-      this.updateURL(`${this.checkLanguage()}/${this.$i18n.locale + this.resourcePath + details.id}`);
+      this.updateURL(`${this.checkLanguage()}/${this.resourcePath + details.id}`);
       this.src = details.src;
       this.titleHeaderPage = `Yourcity - ${details.id}`;
       this.fullScreenPhoto = true;
@@ -169,7 +170,7 @@ export default {
     closePhotoDetails() {
       this.fullScreenPhoto = false;
       this.titleHeaderPage = 'Yourcity - Galeria';
-      this.updateURL(`${this.checkLanguage()}/${this.$i18n.locale + this.resourcePath}`);
+      this.updateURL(`${this.checkLanguage()}/${this.resourcePath}`);
     },
     updateURL(url) {
       const stateObject = { foo: 'bar' };
