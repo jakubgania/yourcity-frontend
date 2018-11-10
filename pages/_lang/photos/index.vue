@@ -137,8 +137,7 @@ export default {
     return {
       fullScreenPhoto: false,
       src: null,
-      resourcePath: '/photos/',
-      titleHeaderPage: 'Yourcity - Galeria',
+      resourcePath: 'photos/',
     };
   },
   computed: {
@@ -164,12 +163,10 @@ export default {
       const details = this.photoDetails[index];
       this.updateURL(`${this.checkLanguage()}/${this.resourcePath + details.id}`);
       this.src = details.src;
-      this.titleHeaderPage = `Yourcity - ${details.id}`;
       this.fullScreenPhoto = true;
     },
     closePhotoDetails() {
       this.fullScreenPhoto = false;
-      this.titleHeaderPage = 'Yourcity - Galeria';
       this.updateURL(`${this.checkLanguage()}/${this.resourcePath}`);
     },
     updateURL(url) {
