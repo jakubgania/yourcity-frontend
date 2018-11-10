@@ -214,6 +214,8 @@ const generateRoutes = [
   '/photos',
   '/pl/photos',
   '/en/photos',
+  '/pl/photos/:id',
+  '/en/photos/:id',
   '/contact',
   '/pl/contact',
   '/en/contact',
