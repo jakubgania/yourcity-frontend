@@ -175,8 +175,13 @@
   },
   "photos": {
     "head": {
-      "title": "Yourcity - Photos"
-    }
+      "title": "Yourcity - Photos",
+      "photo": "Photo"
+    },
+    "information": "Information",
+    "share": "Share",
+    "tags": "Tags",
+    "gallery": "Gallery"
   },
   "cities": {
     "head": {

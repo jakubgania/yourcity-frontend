@@ -61,6 +61,7 @@ $scrollbar-thumb-color: #b8b8b8;
 .container
 {
     padding: 0;
+    background-color: #ffffff;
 }
 .v-menu__content
 {
