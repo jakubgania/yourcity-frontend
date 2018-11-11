@@ -42,12 +42,13 @@
 
     <v-flex
       xs12
-      lg12
+      lg10
+      offset-lg1
       style="padding-left:10px;padding-right:10px;"
     >
       <v-container
         fluid
-        grid-list-lg
+        grid-list-xs
       >
         <v-layout
           row

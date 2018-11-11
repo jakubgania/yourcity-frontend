@@ -48,12 +48,13 @@
       xs12
       sm12
       md12
-      lg12
+      lg10
+      offset-lg1
       style="padding-left:10px;padding-right:10px;"
     >
       <v-container
         fluid
-        grid-list-lg
+        grid-list-xs
       >
         <v-layout
           row
@@ -69,7 +70,7 @@
             class="image-section"
           >
             <v-img
-              :src="photoDetails[index].thumbnail"
+              :src="basicServerAddressAPI + photoDetails[index].thumbnail"
               height="220px"
             />
           </v-flex>
@@ -120,6 +121,9 @@ export default {
       'photoDetails',
       'showErrorConnectionAlert',
     ]),
+    ...mapGetters({
+      basicServerAddressAPI: 'basicServerAddressAPI',
+    }),
   },
   created() {
     this.$store.dispatch('photos/getPhotos', '/api/photos?start=0&offset=8&fields=thumbnail');
