@@ -72,7 +72,20 @@
             <v-img
               :src="basicServerAddressAPI + photoDetails[index].thumbnail"
               height="220px"
-            />
+            >
+              <v-layout
+                slot="placeholder"
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  style="color:#252bfc;"
+                />
+              </v-layout>
+            </v-img>
           </v-flex>
         </v-layout>
       </v-container>
