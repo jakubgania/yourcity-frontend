@@ -70,12 +70,21 @@
     display: block;
     margin: auto;
 }
+.info-icon
+{
+  position: absolute;
+  left: 0px;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-size: 30px;
+  color: #969696;
+}
 .card-button
 {
     position: absolute;
     right: 0px;
     margin-top: 16px;
     margin-right: 16px;
-    font-size: 40px;
-    color: #000000;
+    font-size: 30px;
+    color: #969696;
 }

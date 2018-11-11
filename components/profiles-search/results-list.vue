@@ -78,9 +78,9 @@
             order-lg2
           >
             <div class="profile-image-section">
-              <div
+              <v-img
                 v-if="section.cover"
-                :style="{'background-image': 'url(' + section.cover.source + ')'}"
+                :src="section.cover.source"
                 class="profile-image"
                 @click="showFullSizePhoto(section.name, section.cover, section.cover.source)"
               >
@@ -96,7 +96,7 @@
                     style="color:#252bfc;"
                   />
                 </v-layout>
-              </div>
+              </v-img>
               <div
                 v-else
                 class="profile-image-not-available"

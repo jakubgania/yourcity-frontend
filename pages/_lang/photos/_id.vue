@@ -17,6 +17,12 @@
     >
       <v-card class="details-section">
         <v-card-title class="title-text">
+          <i
+            class="material-icons"
+            style="margin-right: 20px;"
+          >
+            info_outline
+          </i>
           {{ $t('photos.information') }}
         </v-card-title>
         <v-card-text>
@@ -96,7 +102,7 @@
       style="background-color:#ffffff;"
     >
       <v-img
-        :src="basicServerAddressAPI + photoFullSizeDetails.src"
+        :src="imagePath"
         class="photo-section"
       >
         <v-layout
@@ -132,7 +138,6 @@ export default {
   },
   computed: {
     ...mapGetters('photos', [
-      'photoDetails',
       'photoFullSizeDetails',
     ]),
     ...mapGetters({
@@ -142,6 +147,13 @@ export default {
     // getCurrentURL() {
     //   return this.basicClientAddress + '/photos' + '/' + this.photoDetails['id'];
     // },
+    imagePath() {
+      if (this.photoFullSizeDetails.src) {
+        return this.basicServerAddressAPI + this.photoFullSizeDetails.src;
+      }
+
+      return '';
+    },
   },
   created() {
     this.$store.dispatch('photos/getPhotoDeatils', `/api/photos/details?id=${this.$route.params.id}`);

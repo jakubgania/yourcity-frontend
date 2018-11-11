@@ -13,13 +13,14 @@
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 700;
-    background-color: #f4f6fa;
 }
 .card-text
 {
     color: #4f4f4f;
     letter-spacing: 2px;
     cursor: default;
+    height: auto;
+    clear: both;
 
     .card-icon
     {

@@ -64,7 +64,7 @@
             class="image-section"
           >
             <v-img
-              :src="photoDetails[index].thumbnail"
+              :src="basicServerAddressAPI + photoDetails[index].thumbnail"
               height="220px"
               @click="setDetailsPhoto(index)"
             >
@@ -123,6 +123,61 @@
         @keydown.esc="closePhotoDetails()"
       >
         <v-icon
+          left
+          class="info-icon"
+          @click="dialog3 = true"
+        >
+          info_outline
+        </v-icon>
+
+        <v-dialog
+          v-model="dialog3"
+          max-width="500px"
+        >
+          <v-card>
+            <v-card-title>
+              <span class="headline">Informacje</span>
+              <v-spacer/>
+              <v-menu
+                bottom
+                left
+              >
+                <v-btn
+                  icon
+                  @click="dialog3=false"
+                >
+                  <v-icon>close</v-icon>
+                </v-btn>
+              </v-menu>
+            </v-card-title>
+            <v-card-text>
+              title
+            </v-card-text>
+            <v-card-text>
+              date and time
+            </v-card-text>
+            <v-card-text>
+              location
+            </v-card-text>
+            <v-card-text>
+              share
+            </v-card-text>
+            <v-card-text>
+              tags
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                color="primary"
+                flat
+                @click="dialog3=false"
+              >
+                Close
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+
+        <v-icon
           right
           class="card-button"
           @click="closePhotoDetails()"
@@ -130,7 +185,7 @@
           close
         </v-icon>
         <img
-          :src="src"
+          :src="basicServerAddressAPI + src"
           alt=""
           class="full-size-photo"
         >
@@ -149,18 +204,21 @@ export default {
       fullScreenPhoto: false,
       src: null,
       resourcePath: 'photos/',
+      dialog3: false,
     };
   },
   computed: {
     ...mapGetters('photos', [
       'thumbnails',
       'photoDetails',
+      'photoFullSizeDetails',
       'pagingPhotosURL',
       'showPagingMoreButtonLoader',
       'showErrorConnectionAlert',
     ]),
     ...mapGetters({
       basicClientAddress: 'basicClientAddress',
+      basicServerAddressAPI: 'basicServerAddressAPI',
     }),
   },
   created() {
