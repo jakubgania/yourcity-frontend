@@ -1,5 +1,5 @@
 <script>
-import Index from '~/pages/_lang/photos/_id';
+import PhotoId from '~/pages/_lang/photos/_id';
 
-export default Index;
+export default PhotoId;
 </script>
