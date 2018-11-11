@@ -83,7 +83,20 @@
                 :style="{'background-image': 'url(' + section.cover.source + ')'}"
                 class="profile-image"
                 @click="showFullSizePhoto(section.name, section.cover, section.cover.source)"
-              />
+              >
+                <v-layout
+                  slot="placeholder"
+                  fill-height
+                  align-center
+                  justify-center
+                  ma-0
+                >
+                  <v-progress-circular
+                    indeterminate
+                    style="color:#252bfc;"
+                  />
+                </v-layout>
+              </div>
               <div
                 v-else
                 class="profile-image-not-available"

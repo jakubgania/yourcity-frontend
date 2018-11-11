@@ -63,13 +63,24 @@
             lg3
             class="image-section"
           >
-            <v-card tile>
-              <v-img
-                :src="photoDetails[index].thumbnail"
-                height="220px"
-                @click="setDetailsPhoto(index)"
-              />
-            </v-card>
+            <v-img
+              :src="photoDetails[index].thumbnail"
+              height="220px"
+              @click="setDetailsPhoto(index)"
+            >
+              <v-layout
+                slot="placeholder"
+                fill-height
+                align-center
+                justify-center
+                ma-0
+              >
+                <v-progress-circular
+                  indeterminate
+                  style="color:#252bfc;"
+                />
+              </v-layout>
+            </v-img>
           </v-flex>
         </v-layout>
       </v-container>
@@ -153,7 +164,7 @@ export default {
     }),
   },
   created() {
-    this.$store.dispatch('photos/getPhotos', '/api/photos?start=0&offset=4&fields=id,thumbnail,src');
+    this.$store.dispatch('photos/getPhotos', '/api/photos?start=0&offset=8&fields=id,thumbnail,src');
   },
   methods: {
     loadMore(url) {

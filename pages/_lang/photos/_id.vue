@@ -108,7 +108,7 @@
         >
           <v-progress-circular
             indeterminate
-            color="blue"
+            style="color:#252bfc;"
           />
         </v-layout>
       </v-img>
@@ -160,55 +160,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-photo
-{
-    background-color: #ffffff;
-    padding-bottom: 100px;
-}
-.details-section
-{
-    background-color: #ffffff;
-    box-shadow: none;
-}
-.title-text
-{
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    background-color: #f4f6fa;
-}
-.card-text
-{
-    color: #4f4f4f;
-    letter-spacing: 2px;
-    cursor: default;
-
-    .card-icon
-    {
-        position: relative;
-        top: 7px;
-        margin-right: 14px;
-        color: #252bfc;
-    }
-}
-.details-tag
-{
-    height: 48px;
-    letter-spacing: 1px;
-    padding: 4px;
-    margin: 0px;
-    margin-top: 8px;
-    margin-right: 8px;
-    background-color: #ffffff;
-
-    &:hover
-    {
-        border-color: #ffaa06;
-        color: #000000;
-    }
-}
-.photo-section
-{
-    width: 100%;
-}
+@import './assets/scss/photos/id/lg.scss';
 </style>
