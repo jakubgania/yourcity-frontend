@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss">
 $scrollbar-track-color: #f4f4f4;
-$scrollbar-thumb-color: #b8b8b8;
+$scrollbar-thumb-color: #4e4d4d;
 
 ::-webkit-scrollbar-track
 {

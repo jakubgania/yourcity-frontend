@@ -1,24 +1,24 @@
 {
     "categories" : [
         {
-            "id" : "club",
+            "id" : "clubs",
             "icon" : "music_note",
-            "name" : "Kluby"
+            "name" : "clubs"
         },
         {
-            "id" : "barAndPub",
+            "id" : "bar_and_pub",
             "icon" : "local_bar",
-            "name" : "Bary i puby"
+            "name" : "bar_and_pub"
         },
         {
-            "id" : "cafeteria",
+            "id" : "coffeehouses",
             "icon" : "local_cafe",
-            "name" : "Kawiarnie"
+            "name" : "coffeehouses"
         },
         {
             "id" : "food",
             "icon" : "restaurant",
-            "name" : "Jedzenie"
+            "name" : "food"
         },
         {
             "id" : "entertainment",
@@ -86,7 +86,7 @@
             "name" : "Kultura"
         },
         {
-            "id" : "public institutions",
+            "id" : "public_institutions",
             "icon" : "domain",
             "name" : "Instytucje pub."
         },

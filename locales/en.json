@@ -268,6 +268,28 @@
     "business_page": "For business",
     "example_profile": "Example profile"
   },
+  "categories": {
+    "clubs": "Clubs",
+    "bar_and_pub": "Bars and Pubs",
+    "coffeehouses": "Coffeehouses",
+    "food": "Food",
+    "entertainment": "Entertainment",
+    "event": "Events",
+    "shop": "Shops",
+    "service": "Services",
+    "tourism": "Tourism",
+    "sport": "Sport",
+    "other": "Other",
+    "information": "Information",
+    "education": "Education",
+    "health": "Health",
+    "hotel": "Hotels",
+    "travel": "Travel",
+    "culture": "Culture",
+    "public_institutions": "Public ins.",
+    "it": "IT",
+    "automotive": "Automotive"
+  },
   "network-connection-error-alert": "Network connection error",
   "empty-results-alert": "No results for this query"
 }

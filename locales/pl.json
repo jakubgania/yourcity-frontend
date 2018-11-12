@@ -268,6 +268,28 @@
     "business_page": "Dla bzinesu",
     "example_profile": "Przykładowy profil"
   },
+  "categories": {
+    "clubs": "Kluby",
+    "bar_and_pub": "Bary i Puby",
+    "coffeehouses": "Kawiarnie",
+    "food": "Jedzenie",
+    "entertainment": "Rozrywka",
+    "event": "Wydarzenia",
+    "shop": "Sklepy",
+    "service": "Usługi",
+    "tourism": "Turystyka",
+    "sport": "Sport",
+    "other": "Inne",
+    "information": "Informacje",
+    "education": "Edukacja",
+    "health": "Zdrowie",
+    "hotel": "Hotele",
+    "travel": "Podróż",
+    "culture": "Kultura",
+    "public_institutions": "Instytucje pub.",
+    "it": "IT",
+    "automotive": "Motoryzacja"
+  },
   "network-connection-error-alert": "Błąd sieci",
   "empty-results-alert": "Brak wyników dla podanej frazy"
 }

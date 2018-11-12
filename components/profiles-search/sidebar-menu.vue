@@ -10,7 +10,8 @@
           @click="changeCategory(category.id)"
         >
           <v-icon class="icon">{{ category.icon }}</v-icon>
-          {{ category.name }}
+          <!-- {{ category.name }} -->
+          {{ $t(`categories.${category.id}`) }}
         </li>
       </ul>
     </div>

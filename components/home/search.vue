@@ -18,6 +18,13 @@
             {{ wordChanger }}
           </div>
         </v-flex>
+        <!-- <v-flex lg12>
+          <div class="word-changer-section">
+            <transition name="fade">
+              <p v-if="show">{{ wordChanger }}</p>
+            </transition>
+          </div>
+        </v-flex> -->
       </v-layout>
 
       <div class="search-form-section">
@@ -129,6 +136,7 @@ export default {
     return {
       topImage,
       counter: 0,
+      show: false,
       topWords: this.$t('home.search_section.top_words'),
       cityInputSync: null,
       queryInputSync: null,
@@ -235,4 +243,11 @@ export default {
 <style lang="scss">
 @import '../../assets/scss/home/search/lg.scss';
 @import '../../assets/scss/home/search/xs.scss';
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 </style>

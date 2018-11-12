@@ -6,6 +6,7 @@
     >
       <v-flex
         xs12
+        sm12
         lg12
       >
         <div class="results-section">
@@ -256,5 +257,6 @@ export default {
 
 <style lang='scss' scoped>
 @import '../../assets/scss/profiles-search/container-results/lg.scss';
+@import '../../assets/scss/profiles-search/container-results/sm.scss';
 @import '../../assets/scss/profiles-search/container-results/xs.scss';
 </style>
