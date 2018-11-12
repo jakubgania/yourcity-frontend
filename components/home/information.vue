@@ -38,10 +38,10 @@
           data-aos-once="true"
         >
           <div class="text-title">
-            Informacje o Twoim mieście
+            {{ $t('home.information_section.title') }}
           </div>
           <div class="text-subtitle">
-            oraz okolicy w której się znajdujesz
+            {{ $t('home.information_section.subtitle') }}
           </div>
         </div>
       </v-flex>
@@ -67,11 +67,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Odkrywanie
+            {{ $t('home.information_section.exploration.title') }}
           </div>
           <div class="section-info-description">
-            YOURCITY możesz użyc podczas pobytu w nowym nieznanym
-            miescie lub do odrkywania nowych miejsc w twoim obecnym.
+            {{ $t('home.information_section.exploration.description') }}
           </div>
         </div>
       </v-flex>
@@ -135,13 +134,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Informacje
+            {{ $t('home.information_section.information.title') }}
           </div>
           <div class="section-info-description">
-            Jest to miejsce w którym znajdziesz przydatne informacje o
-            różnych miejscach oraz usugach czy nadchodzacych wydarzeniach.
-            Sprawdz jakie sa restauracje w miejscu do ktroego sie wybierasz
-            lub wyszukaj galerie handlowa planujac zakupy.
+            {{ $t('home.information_section.information.description') }}
           </div>
         </div>
       </v-flex>
@@ -167,11 +163,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Kategorie
+            {{ $t('home.information_section.categories.title') }}
           </div>
           <div class="section-info-description">
-            Dzięki różnym kategoriom możesz odkrywać ciekawe obiekty w
-            Twojej okolicy lub w miejscu, które jest Ci nieznane.
+            {{ $t('home.information_section.categories.description') }}
           </div>
         </div>
       </v-flex>
@@ -235,12 +230,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Atrakcje
+            {{ $t('home.information_section.attractions.title') }}
           </div>
           <div class="section-info-description">
-            YOURCITY wspomoże Cię takze w poszukiwaniu obiektow sportowych
-            takich jak baseny, hale sportowe czy parki trampolin
-            ale i również atrakcji turystycznych, muzeow czy galerii sztuki.
+            {{ $t('home.information_section.attractions.description') }}
           </div>
         </div>
       </v-flex>
@@ -266,12 +259,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Pomoc
+            {{ $t('home.information_section.help.title') }}
           </div>
           <div class="section-info-description">
-            Gdy jest dla Ciebie ważne zdrowie mozesz poszukac silowni lub
-            trenera personalnego ale takze znajdziesz informacje o przychodniach lekarskich,
-            szpitalch i aptekach.
+            {{ $t('home.information_section.help.description') }}
           </div>
         </div>
       </v-flex>
@@ -335,11 +326,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Profile
+            {{ $t('home.information_section.profiles.title') }}
           </div>
           <div class="section-info-description">
-            Profile usług oraz miejsc dostarczają różne informacje takie
-            jak godziny otwarcia czy adres lub zdjęcie.
+            {{ $t('home.information_section.profiles.description') }}
           </div>
         </div>
       </v-flex>
@@ -365,11 +355,10 @@
           data-aos-once="true"
         >
           <div class="section-info-title">
-            Firmy
+            {{ $t('home.information_section.companies.title') }}
           </div>
           <div class="section-info-description">
-            Można tutaj znaleźc informacje o wielu firmach z różnych braż oraz
-            informacje przeznaczone dla startupow i przedsiębiorcow.
+            {{ $t('home.information_section.companies.description') }}
           </div>
         </div>
       </v-flex>

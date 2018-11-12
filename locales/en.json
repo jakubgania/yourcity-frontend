@@ -29,7 +29,36 @@
       }
     },
     "information_section": {
-
+      "title": "Information about your city",
+      "subtitle": "and the area where you are",
+      "exploration": {
+        "title": "Exploration",
+        "description": "You can use YOURCITY while in a new unknown city or to discover new places in your current location."
+      },
+      "information": {
+        "title": "Information",
+        "description": "This is a place where you can find useful information about various places and services or upcoming events. Check what are the restaurants in the place you are going to, or search for a shopping mall planning shopping."
+      },
+      "categories": {
+        "title": "Categories",
+        "description": "Thanks to various categories, you can discover interesting objects in your area or in a place that is unknown to you."
+      },
+      "attractions": {
+        "title": "Attractions",
+        "description": "YOURCITY will also help you in finding sports facilities such as swimming pools, sports halls and trampoline parks, but also tourist attractions, e.g museums and art galleries."
+      },
+      "help": {
+        "title": "Help",
+        "description": "When health is important to you, you can look for a gym or personal trainer, but also find information about medical clinics, hospitals and pharmacies."
+      },
+      "profiles": {
+        "title": "Profiles",
+        "description": "Profiles provide various information such as opening hours or address or photo."
+      },
+      "companies": {
+        "title": "Companies",
+        "description": "Here you can find information about many companies from various sectors and information for startups and entrepreneurs."
+      }
     },
     "categories": {
       "title_section": "Categories",

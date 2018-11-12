@@ -29,7 +29,36 @@
       }
     },
     "information_section": {
-
+      "title": "Informacje o Twoim mieście",
+      "subtitle": "oraz okolicy w której się znajdujesz",
+      "exploration": {
+        "title": "Odkrywanie",
+        "description": "YOURCITY możesz użyc podczas pobytu w nowym nieznanym miescie lub do odkrywania nowych miejsc w twoim obecnym."
+      },
+      "information": {
+        "title": "Informacje",
+        "description": "Jest to miejsce w którym znajdziesz przydatne informacje o różnych miejscach oraz usugach czy nadchodzacych wydarzeniach. Sprawdz jakie sa restauracje w miejscu do ktroego sie wybierasz lub wyszukaj galerie handlowa planujac zakupy."
+      },
+      "categories": {
+        "title": "Kategorie",
+        "description": "Dzięki różnym kategoriom możesz odkrywać ciekawe obiekty w Twojej okolicy lub w miejscu, które jest Ci nieznane."
+      },
+      "attractions": {
+        "title": "Atrakcje",
+        "description": "YOURCITY wspomoże Cię takze w poszukiwaniu obiektow sportowych takich jak baseny, hale sportowe czy parki trampolin ale i również atrakcji turystycznych, muzeow czy galerii sztuki."
+      },
+      "help": {
+        "title": "Pomoc",
+        "description": "Gdy jest dla Ciebie ważne zdrowie mozesz poszukac silowni lub trenera personalnego ale takze znajdziesz informacje o przychodniach lekarskich, szpitalch i aptekach."
+      },
+      "profiles": {
+        "title": "Profile",
+        "description": "Profile dostarczają różne informacje takie jak godziny otwarcia czy adres lub zdjęcie."
+      },
+      "companies": {
+        "title": "Firmy",
+        "description": "Można tutaj znaleźc informacje o wielu firmach z różnych braż oraz informacje przeznaczone dla startupow i przedsiębiorcow."
+      }
     },
     "categories": {
       "title_section": "Kategorie",
