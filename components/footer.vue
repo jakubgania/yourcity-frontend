@@ -82,12 +82,7 @@
               lg12
             >
               <div class="description">
-                Miejsce w którym znajdziesz przydatne informacje o różnych
-                miejscach, od restauracji po sklepy. Dzięki różnym kategoriom
-                możesz odkrywać ciekawe obiekty w Twojej okolicy lub w miejscu,
-                które jest Ci nieznane. YOURCITY wspomoże Cię w poszukiwaniu
-                apteki ale i również atrakcji turystycznych. Profile usług oraz
-                miejsc dostarczają różne informacje.
+                {{ $t('footer.description') }}
               </div>
             </v-flex>
           </v-layout>
