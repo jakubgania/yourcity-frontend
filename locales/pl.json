@@ -238,5 +238,6 @@
     "contact_page": "Kontakt",
     "business_page": "Dla bzinesu",
     "example_profile": "Przykładowy profil"
-  }
+  },
+  "network-connection-error-alert": "Błąd sieci"
 }

@@ -110,29 +110,10 @@
             </v-flex>
           </v-layout>
 
-          <v-layout
-            v-if="showErrorConnectionAlert"
-            row
-            wrap
-          >
-            <v-flex
-              xs10
-              offset-xs1
-              sm6
-              offset-sm3
-              lg4
-              offset-lg4
-              style="margin-top:100px;"
-            >
-              <v-alert
-                :value="true"
-                type="error"
-                style="letter-spacing:1px;font-weight:700;"
-              >
-                Network connection error.
-              </v-alert>
-            </v-flex>
-          </v-layout>
+          <network-connection-error-alert-component
+            :show-error-connection-alert="showErrorConnectionAlert"
+            :margin="100"
+          />
 
         </div>
       </v-flex>
@@ -147,6 +128,7 @@ import ResultsListComponent from './results-list.vue';
 import LayoutProfileDetailsDesktopComponent from './layout-profile-details-desktop.vue';
 import LayoutProfileDetailsMobileComponent from './layout-profile-details-mobile.vue';
 import FilterComponent from './filter.vue';
+import NetworkConnectionErrorAlertComponent from '../network-connection-error-alert.vue';
 
 export default {
   components: {
@@ -155,6 +137,7 @@ export default {
     'layout-profile-details-desktop-component': LayoutProfileDetailsDesktopComponent,
     'layout-profile-details-mobile-component': LayoutProfileDetailsMobileComponent,
     'filter-component': FilterComponent,
+    'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
   },
   data() {
     return {
@@ -291,6 +274,6 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-  @import '../../assets/scss/profiles-search/container-results/lg.scss';
-  @import '../../assets/scss/profiles-search/container-results/xs.scss';
+@import '../../assets/scss/profiles-search/container-results/lg.scss';
+@import '../../assets/scss/profiles-search/container-results/xs.scss';
 </style>

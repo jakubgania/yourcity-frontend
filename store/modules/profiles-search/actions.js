@@ -92,8 +92,9 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
         dispatch('showFullScreenLoader', false);
       }
     }).catch(() => {
-      // error
-      // console.log(error);
+      commit('showEmptyResultsAlert', false);
+      commit('showErrorConnectionAlert', true);
+      dispatch('showFullScreenLoader', false);
     });
 };
 

@@ -238,5 +238,6 @@
     "contact_page": "Contact",
     "business_page": "For business",
     "example_profile": "Example profile"
-  }
+  },
+  "network-connection-error-alert": "Network connection error"
 }

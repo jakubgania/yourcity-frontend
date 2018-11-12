@@ -14,31 +14,9 @@
       </div>
     </v-flex>
 
-    <v-flex lg12>
-      <v-layout
-        v-if="showErrorConnectionAlert"
-        row
-        wrap
-      >
-        <v-flex
-          xs10
-          offset-xs1
-          sm6
-          offset-sm3
-          lg4
-          offset-lg4
-        >
-          <v-alert
-            :value="true"
-            outline
-            type="error"
-            style="letter-spacing:1px;font-weight:700;"
-          >
-            Network connection error.
-          </v-alert>
-        </v-flex>
-      </v-layout>
-    </v-flex>
+    <network-connection-error-alert-component
+      :show-error-connection-alert="showErrorConnectionAlert"
+    />
 
     <v-flex
       xs12
@@ -205,8 +183,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import NetworkConnectionErrorAlertComponent from '../../../components/network-connection-error-alert.vue';
 
 export default {
+  components: {
+    'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
+  },
   data() {
     return {
       fullScreenPhoto: false,
