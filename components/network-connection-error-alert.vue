@@ -16,7 +16,7 @@
       >
         <v-alert
           :value="true"
-          outline
+          color="error"
           type="error"
           style="letter-spacing:1px;font-weight:700;"
         >

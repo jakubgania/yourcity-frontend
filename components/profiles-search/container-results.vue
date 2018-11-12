@@ -85,30 +85,9 @@
             </v-flex>
           </v-layout>
 
-          <v-layout
-            v-if="showEmptyResultsAlert"
-            row
-            wrap
-          >
-            <v-flex
-              xs10
-              offset-xs1
-              sm6
-              offset-sm3
-              lg4
-              offset-lg4
-              style="margin-top:100px;"
-            >
-              <v-alert
-                :value="true"
-                color="info"
-                icon="info"
-                style="letter-spacing:1px;"
-              >
-                Brak wyników dla podanej frazy
-              </v-alert>
-            </v-flex>
-          </v-layout>
+          <empty-results-alert-component
+            :show-empty-results-alert="showEmptyResultsAlert"
+          />
 
           <network-connection-error-alert-component
             :show-error-connection-alert="showErrorConnectionAlert"
@@ -128,6 +107,7 @@ import ResultsListComponent from './results-list.vue';
 import LayoutProfileDetailsDesktopComponent from './layout-profile-details-desktop.vue';
 import LayoutProfileDetailsMobileComponent from './layout-profile-details-mobile.vue';
 import FilterComponent from './filter.vue';
+import EmptyResultsAlertComponent from './empty-results-alert.vue';
 import NetworkConnectionErrorAlertComponent from '../network-connection-error-alert.vue';
 
 export default {
@@ -138,6 +118,7 @@ export default {
     'layout-profile-details-mobile-component': LayoutProfileDetailsMobileComponent,
     'filter-component': FilterComponent,
     'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
+    'empty-results-alert-component': EmptyResultsAlertComponent,
   },
   data() {
     return {

@@ -239,5 +239,6 @@
     "business_page": "Dla bzinesu",
     "example_profile": "Przykładowy profil"
   },
-  "network-connection-error-alert": "Błąd sieci"
+  "network-connection-error-alert": "Błąd sieci",
+  "empty-results-alert": "Brak wyników dla podanej frazy"
 }
