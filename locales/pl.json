@@ -215,7 +215,8 @@
   "cities": {
     "head": {
       "title": "Yourcity - Miasta"
-    }
+    },
+    "select_city": "Wybierz miasto"
   },
   "project": {
     "head": {
