@@ -1,25 +1,13 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
 <template>
-  <v-layout
-    row
-    wrap
-    style="background-color:#ffffff;"
-  >
-    <v-flex
-      lg12
-      class="search-container"
-    >
+  <v-layout row wrap class="container-cities">
+    <v-flex xs12 lg12 class="search-container">
       <div
         :style="{'background-image': 'url(' + nightImage + ')'}"
         class="top-image"
       >
-        <v-layout
-          row
-          wrap
-        >
-          <v-flex
-            xs12
-            lg12
-          >
+        <v-layout row wrap>
+          <v-flex xs12 lg12>
             <div class="title-page-section">
               Miasta
             </div>
@@ -28,19 +16,11 @@
       </div>
     </v-flex>
 
-    <v-flex
-      lg10
-      offset-lg1
-      class="select-country"
-    >
+    <v-flex xs12 lg10 offset-lg1 class="select-country">
       {{ $t('cities.select_city') }}
     </v-flex>
 
-    <v-flex
-      xs12
-      lg10
-      offset-lg1
-    >
+    <v-flex xs12 lg10 offset-lg1>
       <div class="countries-section">
         <div
           v-for="(country) in countriesItems"
@@ -100,6 +80,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container-cities
+{
+  background-color: #ffffff;
+}
 .select-country
 {
   padding-top: 60px;
