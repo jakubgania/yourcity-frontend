@@ -2,9 +2,9 @@
 
 const state = () => ({
   basicClientAddress: 'https://yourcity.io',
-  // basicClientAddress: 'http://192.168.0.14:9800',
+  // basicClientAddress: 'http://192.168.0.15:9800',
   basicServerAddressAPI: 'https://api.yourcity.io',
-  // basicServerAddressAPI: 'http://192.168.0.14',
+  // basicServerAddressAPI: 'http://192.168.0.15',
 });
 
 const getters = {
