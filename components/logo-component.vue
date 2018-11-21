@@ -4,7 +4,7 @@
     class="logo-link"
   >
     <div
-      :style="{ fontSize: logoSize + 'px' }"
+      :style="{ fontSize: logoSize + 'px'}"
       class="logo-section"
     >
       <div class="your">

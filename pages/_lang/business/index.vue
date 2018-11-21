@@ -13,16 +13,19 @@
       </v-flex>
     </v-layout>
 
+    <scheme-component/>
 
   </v-layout>
 </template>
 
 <script>
 import TopImageComponent from '../../../components/business/top-image.vue';
+import SchemeComponent from '../../../components/business/scheme.vue';
 
 export default {
   components: {
     'top-image-component': TopImageComponent,
+    'scheme-component': SchemeComponent,
   },
   head() {
     return {
