@@ -19,6 +19,8 @@
 
     <who-can-advertise-component/>
 
+    <profile-components-descriptions-component/>
+
     <references-component/>
     <references-component/>
 
@@ -30,6 +32,7 @@ import TopImageComponent from '../../../components/business/top-image.vue';
 import SchemeComponent from '../../../components/business/scheme.vue';
 import ReferencesComponent from '../../../components/business/references.vue';
 import WhoCanAdvertiseComponent from '../../../components/business/who-can-advertise.vue';
+import ProfileComponentsDescriptionsComponent from '../../../components/business/profile-components-descriptions.vue';
 
 export default {
   components: {
@@ -37,6 +40,7 @@ export default {
     'scheme-component': SchemeComponent,
     'references-component': ReferencesComponent,
     'who-can-advertise-component': WhoCanAdvertiseComponent,
+    'profile-components-descriptions-component': ProfileComponentsDescriptionsComponent,
   },
   head() {
     return {
