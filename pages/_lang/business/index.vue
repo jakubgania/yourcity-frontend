@@ -24,6 +24,12 @@
     <references-component/>
     <references-component/>
 
+    <v-flex lg12>
+      <img :src="fromSkyTowerImage" alt="" class="image-section">
+    </v-flex>
+
+    <partners-component/>
+
   </v-layout>
 </template>
 
@@ -33,6 +39,8 @@ import SchemeComponent from '../../../components/business/scheme.vue';
 import ReferencesComponent from '../../../components/business/references.vue';
 import WhoCanAdvertiseComponent from '../../../components/business/who-can-advertise.vue';
 import ProfileComponentsDescriptionsComponent from '../../../components/business/profile-components-descriptions.vue';
+import PartnersComponent from '../../../components/business/partners.vue';
+import fromSkyTowerImage from '../../../assets/images/from-sky-tower.jpg';
 
 export default {
   components: {
@@ -41,6 +49,12 @@ export default {
     'references-component': ReferencesComponent,
     'who-can-advertise-component': WhoCanAdvertiseComponent,
     'profile-components-descriptions-component': ProfileComponentsDescriptionsComponent,
+    'partners-component': PartnersComponent,
+  },
+  data() {
+    return {
+      fromSkyTowerImage,
+    };
   },
   head() {
     return {
