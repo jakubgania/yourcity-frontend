@@ -16,6 +16,9 @@
     <scheme-component/>
 
     <references-component/>
+
+    <who-can-advertise-component/>
+
     <references-component/>
     <references-component/>
 
@@ -26,12 +29,14 @@
 import TopImageComponent from '../../../components/business/top-image.vue';
 import SchemeComponent from '../../../components/business/scheme.vue';
 import ReferencesComponent from '../../../components/business/references.vue';
+import WhoCanAdvertiseComponent from '../../../components/business/who-can-advertise.vue';
 
 export default {
   components: {
     'top-image-component': TopImageComponent,
     'scheme-component': SchemeComponent,
     'references-component': ReferencesComponent,
+    'who-can-advertise-component': WhoCanAdvertiseComponent,
   },
   head() {
     return {
