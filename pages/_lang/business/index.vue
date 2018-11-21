@@ -22,6 +22,9 @@
     <profile-components-descriptions-component/>
 
     <references-component/>
+
+    <categories-component/>
+
     <references-component/>
 
     <v-flex lg12>
@@ -39,6 +42,7 @@ import SchemeComponent from '../../../components/business/scheme.vue';
 import ReferencesComponent from '../../../components/business/references.vue';
 import WhoCanAdvertiseComponent from '../../../components/business/who-can-advertise.vue';
 import ProfileComponentsDescriptionsComponent from '../../../components/business/profile-components-descriptions.vue';
+import CategoriesComponent from '../../../components/business/categories.vue';
 import PartnersComponent from '../../../components/business/partners.vue';
 import fromSkyTowerImage from '../../../assets/images/from-sky-tower.jpg';
 
@@ -49,6 +53,7 @@ export default {
     'references-component': ReferencesComponent,
     'who-can-advertise-component': WhoCanAdvertiseComponent,
     'profile-components-descriptions-component': ProfileComponentsDescriptionsComponent,
+    'categories-component': CategoriesComponent,
     'partners-component': PartnersComponent,
   },
   data() {
