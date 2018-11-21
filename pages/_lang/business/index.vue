@@ -15,17 +15,23 @@
 
     <scheme-component/>
 
+    <references-component/>
+    <references-component/>
+    <references-component/>
+
   </v-layout>
 </template>
 
 <script>
 import TopImageComponent from '../../../components/business/top-image.vue';
 import SchemeComponent from '../../../components/business/scheme.vue';
+import ReferencesComponent from '../../../components/business/references.vue';
 
 export default {
   components: {
     'top-image-component': TopImageComponent,
     'scheme-component': SchemeComponent,
+    'references-component': ReferencesComponent,
   },
   head() {
     return {
