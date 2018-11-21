@@ -15,8 +15,33 @@
         </button>
       </v-flex>
     </v-layout>
+
+    <v-dialog v-model="dialog" max-width="500px">
+      <v-card>
+        <v-card-title>
+          <span>Poinformuj o starcie platformy</span>
+          <v-spacer/>
+        </v-card-title>
+        <v-card-actions>
+          <v-btn color="primary" flat @click="dialog=false">
+            Zamknij
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
   </v-flex>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      dialog: false,
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .pages-references-section
