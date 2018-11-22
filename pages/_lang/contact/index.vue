@@ -76,6 +76,24 @@
             </v-btn>
           </v-flex>
 
+          <v-dialog
+            v-model="sending"
+            hide-overlay
+            persistent
+            width="300"
+          >
+            <v-card color="primary" dark>
+              <v-card-text>
+                Please stand by
+                <v-progress-linear
+                  indeterminate
+                  color="white"
+                  class="mb-0"
+                />
+              </v-card-text>
+            </v-card>
+          </v-dialog>
+
           <v-snackbar
             :timeout="timeout"
             v-model="snackbarSuccess"
