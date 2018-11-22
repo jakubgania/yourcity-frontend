@@ -117,7 +117,7 @@ export default {
       formHasErrors: false,
       timeout: 2400,
       snackbarSuccess: false,
-      snackbarError: true,
+      snackbarError: false,
       rules: {
         title: [
           () => !!this.title || 'This field is required title',
@@ -143,7 +143,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters('contactForm', [
+    ...mapGetters('contact', [
       'sending',
       'networkError',
     ]),
@@ -152,12 +152,10 @@ export default {
     }),
     sendingModel: {
       get() {
-        // return this.query;
-        return this.$store.state.contactForm.sending;
+        return this.$store.state.contact.sending;
       },
       set(value) {
-        // console.log('y')
-        this.$store.contactForm.commit('sending', value);
+        this.$store.contact.commit('sending', value);
       },
     },
     form() {
@@ -170,7 +168,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions('contactForm', [
+    ...mapActions('contact', [
       'sendContactForm',
     ]),
     submit() {
@@ -191,7 +189,7 @@ export default {
           terms: this.terms,
         };
 
-        this.$store.dispatch('contactForm/sendContactForm', parameters);
+        this.$store.dispatch('contact/sendContactForm', parameters);
       }
     },
   },

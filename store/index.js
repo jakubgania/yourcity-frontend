@@ -9,6 +9,7 @@ import searchProfiles from './modules/profiles-search';
 import autocomplete from './modules/autocomplete';
 import photos from './modules/photos';
 import changelog from './modules/changelog';
+import contact from './modules/contact';
 
 if (process.env.NODE_ENV == 'production') {
   axios.defaults.baseURL = 'https://api.yourcity.io';
@@ -36,6 +37,7 @@ export default () => new Vuex.Store({
     searchProfiles,
     autocomplete,
     photos,
-    changelog
+    changelog,
+    contact
   },
 });
