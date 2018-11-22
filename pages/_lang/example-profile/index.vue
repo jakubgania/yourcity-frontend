@@ -1,6 +1,7 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
 <template>
   <div class="">
-    example profile page
+    index
   </div>
 </template>
 
