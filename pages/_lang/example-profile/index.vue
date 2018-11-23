@@ -22,11 +22,12 @@
       Opis
     </div>
     <div class="text">
-      Wystarczy do tego już RTX 2080. Podczas GTC 2018 w Japonii zieloni
-      przedstawili nowe dane na temat wydajności swoich kart graficznych z rodziny
-      Turing. Przedsiębiorstwo zapewnia, że wraz z premierą GeForce’ów RTX wkroczymy
-      w erę grania w rozdzielczości 4K przy 60 kl./s. Dzięki dodatkowym usprawnieniom
-      w postaci DLSS mamy spodziewać się znaczącego wzrostu wydajności.
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum."
     </div>
 
     <div class="subtitle">
@@ -46,7 +47,7 @@
         Miasto
       </div>
       <div class="opening-hours">
-        Dortmund
+        Hamburg
       </div>
     </div>
     <div class="opening-hours-section">
@@ -54,7 +55,7 @@
         Ulica
       </div>
       <div class="opening-hours">
-        Vxdrty
+        Einsiedeldeich
       </div>
     </div>
     <div class="opening-hours-section">
@@ -92,7 +93,7 @@
         Telefon
       </div>
       <div class="opening-hours">
-        343 672 917
+        123 234 523
       </div>
     </div>
     <div class="opening-hours-section">
@@ -100,7 +101,7 @@
         Strona
       </div>
       <div class="opening-hours">
-        www.xdwedsapxo.com
+        www.example-website.com
       </div>
     </div>
     <div class="opening-hours-section">
@@ -108,7 +109,7 @@
         E-mail
       </div>
       <div class="opening-hours">
-        contact@yourcity.io
+        example@email.io
       </div>
     </div>
 
@@ -282,7 +283,6 @@ export default {
           },
         },
         tags: [
-          'one tag',
           'apteka',
           'restauracja',
           'jedzenie',
