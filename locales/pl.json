@@ -252,6 +252,13 @@
     "head": {
       "title": "Yourcity - Przykładowy profil"
     },
+    "menu": {
+      "information": "Informacje",
+      "posts": "Posty",
+      "gallery": "Galeria",
+      "comments": "Komentarze",
+      "related-profiles": "Powiązane profile"
+    },
     "information": {
       "page-subtitle": "Yourcity - Przykładowy profil - Informacje",
       "profile-title": "Example profile on YOURCITY platform",
