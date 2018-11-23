@@ -12,7 +12,36 @@
       <span id="alignment"/>
       <div class="wrapper">
         <div class="menu-section">
-          <!--  -->
+          <router-link :to="$i18n.path('example-profile')" class="router-link">
+            <div class="router-link-button">
+              <v-icon class="icon">chevron_right</v-icon>
+              Informacje
+            </div>
+          </router-link>
+          <router-link :to="$i18n.path('example-profile/posts')" class="router-link">
+            <div class="router-link-button">
+              <v-icon class="icon">chevron_right</v-icon>
+              Posty
+            </div>
+          </router-link>
+          <router-link :to="$i18n.path('example-profile/photos')" class="router-link">
+            <div class="router-link-button">
+              <v-icon class="icon">chevron_right</v-icon>
+              Galeria
+            </div>
+          </router-link>
+          <router-link :to="$i18n.path('example-profile/comments')" class="router-link">
+            <div class="router-link-button">
+              <v-icon class="icon">chevron_right</v-icon>
+              Komentarze
+            </div>
+          </router-link>
+          <router-link :to="$i18n.path('example-profile/related-profiles')" class="router-link">
+            <div class="router-link-button">
+              <v-icon class="icon">chevron_right</v-icon>
+              Powiązane profile
+            </div>
+          </router-link>
         </div>
         <div class="content-section">
           <nuxt-child/>
