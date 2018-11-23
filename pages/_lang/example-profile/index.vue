@@ -2,16 +2,16 @@
 <template>
   <div class="information-container">
     <div class="title-profile">
-      Example profile on YOURCITY platform
+      {{ $t('example-profile.information.profile-title') }}
     </div>
 
     <div class="title-subsection">
-      Informacje podstawowe
+      {{ $t('example-profile.information.basic-information') }}
     </div>
 
     <div class="subtitle">
       <v-icon class="icon">apps</v-icon>
-      Kategoria
+      {{ $t('example-profile.information.category') }}
     </div>
     <div class="text">
       Informacje
@@ -19,7 +19,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">info_outline</v-icon>
-      Opis
+      {{ $t('example-profile.information.description') }}
     </div>
     <div class="text">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -32,11 +32,11 @@
 
     <div class="subtitle">
       <v-icon class="icon">gps_fixed</v-icon>
-      Adres
+      {{ $t('example-profile.information.address') }}
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Kraj
+        {{ $t('example-profile.information.country') }}
       </div>
       <div class="opening-hours">
         Niemcy
@@ -44,7 +44,7 @@
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Miasto
+        {{ $t('example-profile.information.city') }}
       </div>
       <div class="opening-hours">
         Hamburg
@@ -52,7 +52,7 @@
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Ulica
+        {{ $t('example-profile.information.street') }}
       </div>
       <div class="opening-hours">
         Einsiedeldeich
@@ -60,7 +60,7 @@
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Kod pocztowy
+        {{ $t('example-profile.information.postal-code') }}
       </div>
       <div class="opening-hours">
         22-444
@@ -69,7 +69,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">query_builder</v-icon>
-      Gdziny otwarcia
+      {{ $t('example-profile.information.opening-hours') }}
     </div>
     <div
       v-for="section in profileData.openingHours"
@@ -86,11 +86,11 @@
 
     <div class="subtitle">
       <v-icon class="icon">phone_android</v-icon>
-      Kontakt
+      {{ $t('example-profile.information.contact') }}
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Telefon
+        {{ $t('example-profile.information.phone') }}
       </div>
       <div class="opening-hours">
         123 234 523
@@ -98,7 +98,7 @@
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        Strona
+        {{ $t('example-profile.information.website') }}
       </div>
       <div class="opening-hours">
         www.example-website.com
@@ -106,7 +106,7 @@
     </div>
     <div class="opening-hours-section">
       <div class="day-of-week-name">
-        E-mail
+        {{ $t('example-profile.information.e-mail') }}
       </div>
       <div class="opening-hours">
         example@email.io
@@ -115,7 +115,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">bubble_chart</v-icon>
-      Tagi
+      {{ $t('example-profile.information.tags') }}
     </div>
     <div class="">
       <div v-for="tag in profileData.tags" :key="tag.id" class="tags-section">
@@ -129,7 +129,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">location_on</v-icon>
-      Lokalizacja
+      {{ $t('example-profile.information.location') }}
     </div>
     <div class="map-section">
       <img :src="worldImage" alt="" class="map-image">
@@ -137,7 +137,7 @@
 
     <div class="subtitle">
       <i class="material-icons icon">share</i>
-      Inne media
+      {{ $t('example-profile.information.other-media') }}
     </div>
     <div v-for="section in profileData.otherMedia" :key="section.id">
       <div class="other-media-section">
@@ -153,7 +153,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">phone_android</v-icon>
-      Aplikacje
+      {{ $t('example-profile.information.apps') }}
     </div>
     <div class="mobile-app-section">
       <div class="app-subsection">
@@ -166,7 +166,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">history</v-icon>
-      Data utworzenia
+      {{ $t('example-profile.information.creation-date') }}
     </div>
     <div class="text">
       02.09.2018 11:43:08
@@ -174,7 +174,7 @@
 
     <div class="subtitle">
       <v-icon class="icon">cached</v-icon>
-      Ostatnia aktualizacja
+      {{ $t('example-profile.information.last-update') }}
     </div>
     <div class="text">
       02.09.2018 11:44:28
@@ -316,7 +316,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('example-profile.head.title'),
+      title: this.$t('example-profile.information.page-subtitle'),
       meta: [
         {
           hid: 'description',

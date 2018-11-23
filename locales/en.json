@@ -251,6 +251,41 @@
   "example-profile": {
     "head": {
       "title": "Yourcity - Example profile"
+    },
+    "information": {
+      "page-subtitle": "Yourcity - Example profile - Information",
+      "profile-title": "Example profile on YOURCITY platform",
+      "basic-information": "Basic information",
+      "category": "Category",
+      "description": "Description",
+      "address": "Address",
+      "country": "Country",
+      "city": "City",
+      "street": "Street",
+      "postal-code": "Postal code",
+      "opening-hours": "Opening hours",
+      "contact": "Contact",
+      "phone": "Phone",
+      "website": "Website",
+      "e-mail": "E-mail",
+      "tags": "Tags",
+      "location": "Location",
+      "other-media": "Other media",
+      "apps": "Apps",
+      "creation-date": "Creation date",
+      "last-update": "Last update"
+    },
+    "posts": {
+      "page-subtitle": "Yourcity - Example profile - Posts"
+    },
+    "gallery": {
+      "page-subtitle": "Yourcity - Example profile - Gallery"
+    },
+    "comments": {
+      "page-subtitle": "Yourcity - Example profile - Comments"
+    },
+    "related-profiles": {
+      "page-subtitle": "Yourcity - Example profile - Related profiles"
     }
   },
   "footer": {
