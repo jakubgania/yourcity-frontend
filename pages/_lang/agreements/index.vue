@@ -10,9 +10,14 @@
     <v-flex
       v-for="(rule, index) in rules"
       :key="rule.id"
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
       lg4
       offset-lg4
-      style="font-size:18px;margin-top:30px;"
+      class="description"
     >
       <div v-html="index + 1 + '. ' + rule.message"/>
     </v-flex>
@@ -95,5 +100,21 @@ export default {
     letter-spacing: 2px;
 
     color: #111111;
+}
+.description
+{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 600px)
+{
+  .description
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
 }
 </style>
