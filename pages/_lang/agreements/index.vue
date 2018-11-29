@@ -8,6 +8,31 @@
     </v-flex>
 
     <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
+      lg4
+      offset-lg4
+      class="description"
+    >
+      Aplikacja - Pojęcie rozumiane jako strona internetowa dostępna pod adresem https://yourcity.io.
+    </v-flex>
+    <v-flex
+      xs12
+      sm8
+      offset-sm2
+      md6
+      offset-md3
+      lg4
+      offset-lg4
+      class="description"
+    >
+      Użytkownik - osoba korzystająca z aplikacji.
+    </v-flex>
+
+    <v-flex
       v-for="(rule, index) in rules"
       :key="rule.id"
       xs12
@@ -21,6 +46,7 @@
     >
       <div v-html="index + 1 + '. ' + rule.message"/>
     </v-flex>
+
   </v-layout>
 </template>
 
@@ -30,10 +56,10 @@ export default {
     return {
       rules: [
         {
-          message: 'Użytkownik korzystający z aplikacji Yourcity akceptuje regulamin/postanowienia oraz zapoznał się ze wszystkimi postanowieniami zawartymi w regulaminie.',
+          message: 'Użytkownik korzystający z aplikacji Yourcity akceptuje regulamin i postanowienia oraz zapoznał się ze wszystkimi zasadami zawartymi w regulaminie.',
         },
         {
-          message: 'Twórca aplikacji Yourcity nie bierze na siebie odpowiedzialności w związku z niepoprawnym działaniem strony lub nieaktualnymi lub nieprawidłowymi informacjami jakie są wyświetlane podczas wyszukiwania profili.',
+          message: 'Użytkownik zobiwiązuje się do korzystania z aplikacji w sposób nie zaburzający jej działania oraz integralności, oraz nie naraża aplikacji na celowe obciążenie.',
         },
         {
           message: 'Twórca aplikacji Yourcity nie bierze na siebie odpowiedzialności w związku z niepoprawnym działaniem strony lub nieaktualnymi lub nieprawidłowymi informacjami jakie są wyświetlane podczas wyszukiwania profili.',
@@ -48,16 +74,16 @@ export default {
           message: 'Aplikacja wykorzystuje pliki cookie jedynie w celach statystycznych.',
         },
         {
-          message: 'Aplikacja Yourcity może zostać w każdej chwili wyłączona przez osobę nią zarządzającą i przestać dostarczać informacje.',
+          message: 'Aplikacja Yourcity może zostać w każdej chwili wyłączona przez osobę nią zarządzającą i przestać świadczyć usługi o charakterze informacyjnym.',
         },
         {
-          message: 'Należy pamiętać, że informacje o profilach mogą być nieaktualne lub nieprawdziwe.',
+          message: 'Należy pamiętać, że informacje o profilach mogą być nieaktualne lub nieprawdziwe na co twórca nie ma wpływu.',
         },
         {
           message: 'Wszystkie zdjęcia na stronie głównej, stronie z galerią zdjęć oraz stronie z listą wszystkich karajów są własnością twórcy. Zabrania się kopiowania i nieuprawnionego wykorzystywania bez zgody autora.',
         },
         {
-          message: 'Twórca dokłada wszelkich starań by aplikacja działała jak najlepiej.',
+          message: 'Twórca dokłada wszelkich starań by aplikacja działała stabilnie oraz jak najlepiej.',
         },
         {
           message: 'W przypadku zaobserowania niestabilnej pracy aplikacji lub znalezienia błędów użytkonik proszony jest o kontakt z twórcą i opisanie problemu.',
