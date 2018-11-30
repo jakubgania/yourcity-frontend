@@ -221,7 +221,8 @@
   },
   "project": {
     "head": {
-      "title": "Yourcity - O projekcie"
+      "title": "Yourcity - O projekcie",
+      "description": "Więcej informacji o projekcie Yourcity."
     }
   },
   "founder": {

@@ -35,7 +35,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('project.head.description'),
         },
         {
           name: 'keywords',
