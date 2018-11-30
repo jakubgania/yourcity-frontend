@@ -242,6 +242,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: this.$t('photos.head.title'),
       meta: [
         {
@@ -251,7 +254,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: '',
+          content: this.$t('photos.head.keywords'),
         },
       ],
     };

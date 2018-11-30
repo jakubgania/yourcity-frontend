@@ -1,4 +1,7 @@
 {
+  "html": {
+    "language": "pl"
+  },
   "header": {
     "dropdown_menu": {
       "language": "English"
@@ -7,7 +10,8 @@
   "home": {
     "head": {
       "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach.",
-      "description": "Informacje o Twoim mieście oraz okolicy w której się znajdujesz. Szukaj informacji w różnych kategoriach w różnych krajach. Yourcity to stale rowijająca się platforma."
+      "description": "Informacje o Twoim mieście oraz okolicy w której się znajdujesz. Szukaj informacji w różnych kategoriach w różnych krajach. Yourcity to stale rowijająca się platforma.",
+      "keywords": "yourcity, aplikacja yourcity, strona główna, strona startowa, wyszukiwanie, szukaj, profile, lokalizacje, miasta, kraje"
     },
     "search_section": {
       "top_words": [
@@ -174,7 +178,8 @@
   "profiles_search": {
     "head": {
       "title": "Yourcity - Wyszukiwanie profili",
-      "description": "Wyszukuj informacje o interesującym mieście oraz lokalizacji w której jesteś lub przeglądaj różne kategorie."
+      "description": "Wyszukuj informacje o interesującym mieście oraz lokalizacji w której jesteś lub przeglądaj różne kategorie.",
+      "keywords": "szukaj, profile, lokalizacje, kategorie, tagi, informacje, adresy, yourcity wyszukiwanie profili"
     },
     "search_form": {
       "input_query_placeholder": "Czego szukasz ?",
@@ -208,7 +213,8 @@
     "head": {
       "title": "Yourcity - Zdjęcia",
       "photo": "Zdjęcie",
-      "description": "Zobacz galerię zdjęć z różnych miejsc, lokalizacji, miast i krajów."
+      "description": "Zobacz galerię zdjęć z różnych miejsc, lokalizacji, miast i krajów.",
+      "keywords": "zdjęcia, obrazy, galeria, fotografie, zdjęcia miast, zdjęcia budynków, widoki, galeria yourcity"
     },
     "information": "Informacje",
     "share": "Udostępnij",
@@ -224,25 +230,29 @@
   "project": {
     "head": {
       "title": "Yourcity - O projekcie",
-      "description": "Więcej informacji o projekcie Yourcity."
+      "description": "Więcej informacji o projekcie Yourcity.",
+      "keywords": "projekt yourcity, o projekcie, projekt, aplikacja, opis projektu, informacje"
     }
   },
   "founder": {
     "head": {
       "title": "Yourcity - O twórcy",
-      "description": "Przeczytaj więcej o twórcy platformy Yourcity."
+      "description": "Przeczytaj więcej o twórcy platformy Yourcity.",
+      "keywords": "twórca, twórca yourcity, inżynier yourcity"
     }
   },
   "changelog": {
     "head": {
       "title": "Yourcity - Changelog",
-      "description": "Przeczytaj o zmianach jakie zachodzą na platformie Yourcity."
+      "description": "Przeczytaj o zmianach jakie zachodzą na platformie Yourcity.",
+      "keywords": "changelog, informacje, zmiany, wiadomości, opisy zmian"
     }
   },
   "agreements": {
     "head": {
       "title": "Yourcity - Regulamin",
-      "content": "Regulamin aplikacji Yourcity. Zbiór zasad i wytycznych."
+      "content": "Regulamin aplikacji Yourcity. Zbiór zasad i wytycznych.",
+      "keywords": "regulamin, zasady, spis zasad"
     },
     "title": "Regulamin",
     "app": "Aplikacja - Pojęcie rozumiane jako strona internetowa dostępna pod adresem https://yourcity.io.",
@@ -286,19 +296,22 @@
   "contact": {
     "head": {
       "title": "Yourcity - Kontakt",
-      "description": "Formularz kontaktowy - napisz wiadomość, zadaj pytanie lub opisz problem."
+      "description": "Formularz kontaktowy - napisz wiadomość, zadaj pytanie lub opisz problem.",
+      "keywords": "kontakt, formularz kontaktowy, pytanie, wiadomość, email"
     }
   },
   "business": {
     "head": {
       "title": "Yourcity - Dla biznesu",
-      "description": "Yourcity dla biznesu - informacje o profilu dla firm i przedsiębiorstw."
+      "description": "Yourcity dla biznesu - informacje o profilu dla firm i przedsiębiorstw.",
+      "keywords": "biznes, firmy, przedsiębiorstwa, dla biznesu, dla firm, dla przedsiębiorstw, profile biznesowe, profil firmy, profil działalności"
     }
   },
   "example-profile": {
     "head": {
       "title": "Yourcity - Przykładowy profil",
-      "description": "Zobacz jak wygląda przykładowy profil na platformie Yourcity. Różne opcjonalne sekcje, szczegółowe informacje."
+      "description": "Zobacz jak wygląda przykładowy profil na platformie Yourcity. Różne opcjonalne sekcje, szczegółowe informacje.",
+      "keywords": "przykładowy profil, profil w yourcity, profile informacyjny, sekcje, dane podstawowe, kategoria, opis, adres, godziny otwarcia, kontakt, tagi, lokalizacja, mapa, inne media, facebook, twitter, youtube, instagram, snapchat, linkedin, aplikacje mobilne, app store, google play, data utworzenia, data aktualizacji"
     },
     "menu": {
       "information": "Informacje",

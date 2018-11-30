@@ -109,6 +109,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: this.$t('home.head.title'),
       meta: [
         {
@@ -118,7 +121,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: '',
+          content: this.$t('home.head.keywords'),
         },
       ],
     };

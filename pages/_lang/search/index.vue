@@ -37,6 +37,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: this.$t('profiles_search.head.title'),
       meta: [
         {
@@ -46,7 +49,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: '',
+          content: this.$t('profiles_search.head.keywords'),
         },
       ],
     };

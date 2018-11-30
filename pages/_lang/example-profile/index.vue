@@ -316,6 +316,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: this.$t('example-profile.information.page-subtitle'),
       meta: [
         {
@@ -325,7 +328,7 @@ export default {
         },
         {
           name: 'keywords',
-          content: '',
+          content: this.$t('example-profile.head.keywords'),
         },
       ],
     };

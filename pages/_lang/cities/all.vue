@@ -62,6 +62,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: this.$t('cities.head.title'),
       meta: [
         {

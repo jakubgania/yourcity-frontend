@@ -1,4 +1,7 @@
 {
+  "html": {
+    "language": "en"
+  },
   "header": {
     "dropdown_menu": {
       "language": "Polski"
@@ -7,7 +10,8 @@
   "home": {
     "head": {
       "title": "Yourcity - Search for different places in cities and locations",
-      "description": "Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform."
+      "description": "Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform.",
+      "keywords": "yourcity, yourcity app, start page, home, profiles, search, locations, cities, countries"
     },
     "search_section": {
       "top_words": [
@@ -174,7 +178,8 @@
   "profiles_search": {
     "head": {
       "title": "Yourcity - Search for profiles",
-      "description": "Search for information about the city of interest and the location where you are or browse different categories."
+      "description": "Search for information about the city of interest and the location where you are or browse different categories.",
+      "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
     },
     "search_form": {
       "input_query_placeholder": "What are you looking for ?",
@@ -208,7 +213,8 @@
     "head": {
       "title": "Yourcity - Photos",
       "photo": "Photo",
-      "description": "See a photo gallery from various places, locations, cities and countries."
+      "description": "See a photo gallery from various places, locations, cities and countries.",
+      "keywords": "photos, pictures, gallery, photographs, photos of cities, pictures of buildings, views, gallery yourcity"
     },
     "information": "Information",
     "share": "Share",
@@ -224,25 +230,29 @@
   "project": {
     "head": {
       "title": "Yourcity - About project",
-      "description": "More information about Yourcity project."
+      "description": "More information about Yourcity project.",
+      "keywords": "yourcity project, project, project, application, project description, information"
     }
   },
   "founder": {
     "head": {
       "title": "Yourcity - About founder",
-      "description": "Read more about the founder of Yourcity."
+      "description": "Read more about the founder of Yourcity.",
+      "keywords": "creator, creator of yourcity, yourcity engineer"
     }
   },
   "changelog": {
     "head": {
       "title": "Yourcity - Changelog",
-      "description": "Read about the changes that take place on the Yourcity platform."
+      "description": "Read about the changes that take place on the Yourcity platform.",
+      "keywords": "changelog, information, changes, messages, descriptions of changes"
     }
   },
   "agreements": {
     "head": {
       "title": "Yourcity - Agreements",
-      "content": "Yourcity application regulations. A set of rules and guidelines."
+      "content": "Yourcity application regulations. A set of rules and guidelines.",
+      "keywords": "regulations, rules, list of rules"
     },
     "title": "Agreements",
     "app": "Application - A concept understood as a website available at https://yourcity.io.",
@@ -286,19 +296,22 @@
   "contact": {
     "head": {
       "title": "Yourcity - Contact",
-      "description": "Formularz kontaktowy - napisz wiadomość, zadaj pytanie lub opisz problem."
+      "description": "Contact form - write a message, ask a question or describe a problem.",
+      "keywords": "contact, contact form, question, message, email"
     }
   },
   "business": {
     "head": {
       "title": "Yourcity - For business",
-      "description": "Yourcity for business - profile information for companies and enterprises."
+      "description": "Yourcity for business - profile information for companies and enterprises.",
+      "keywords": "business, companies, enterprises, for business, for companies, for enterprises, business profiles, company profile, activity profile"
     }
   },
   "example-profile": {
     "head": {
       "title": "Yourcity - Example profile",
-      "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information."
+      "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information.",
+      "keywords": "example profile, profile in yourcity, information profile, sections, basic information, category, description, address, opening hours, contact, tags, location, map, other media, facebook, twitter, youtube, instagram, snapchat, linkedin, mobile apps, app store, google play, creation date, last update date"
     },
     "menu": {
       "information": "Information",

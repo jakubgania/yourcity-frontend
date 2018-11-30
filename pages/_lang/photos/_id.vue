@@ -165,6 +165,9 @@ export default {
   },
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: `Yourcity - ${this.$t('photos.head.photo')} - ${this.photoFullSizeDetails.title}`,
     };
   },

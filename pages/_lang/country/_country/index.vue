@@ -8,6 +8,9 @@
 export default {
   head() {
     return {
+      htmlAttrs: {
+        lang: this.$t('html.language'),
+      },
       title: 'Yourcity - Miasta',
       meta: [
         {
