@@ -280,7 +280,8 @@
   },
   "contact": {
     "head": {
-      "title": "Yourcity - Kontakt"
+      "title": "Yourcity - Kontakt",
+      "description": "Formularz kontaktowy - napisz wiadomość, zadaj pytanie lub opisz problem."
     }
   },
   "business": {
