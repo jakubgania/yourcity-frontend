@@ -114,7 +114,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('home.head.description'),
         },
         {
           name: 'keywords',

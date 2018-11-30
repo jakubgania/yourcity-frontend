@@ -6,7 +6,8 @@
   },
   "home": {
     "head": {
-      "title": "Yourcity - Search for different places in cities and locations"
+      "title": "Yourcity - Search for different places in cities and locations",
+      "description": "Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform."
     },
     "search_section": {
       "top_words": [

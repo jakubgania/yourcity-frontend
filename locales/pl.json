@@ -6,7 +6,8 @@
   },
   "home": {
     "head": {
-      "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach."
+      "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach.",
+      "description": "Informacje o Twoim mieście oraz okolicy w której się znajdujesz. Szukaj informacji w różnych kategoriach w różnych krajach. Yourcity to stale rowijająca się platforma."
     },
     "search_section": {
       "top_words": [
