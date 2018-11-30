@@ -292,7 +292,8 @@
   },
   "example-profile": {
     "head": {
-      "title": "Yourcity - Przykładowy profil"
+      "title": "Yourcity - Przykładowy profil",
+      "description": "Zobacz jak wygląda przykładowy profil na platformie Yourcity. Różne opcjonalne sekcje, szczegółowe informacje."
     },
     "menu": {
       "information": "Informacje",

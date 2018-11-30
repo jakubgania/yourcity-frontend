@@ -292,7 +292,8 @@
   },
   "example-profile": {
     "head": {
-      "title": "Yourcity - Example profile"
+      "title": "Yourcity - Example profile",
+      "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information."
     },
     "menu": {
       "information": "Information",

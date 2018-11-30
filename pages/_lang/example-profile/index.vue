@@ -321,7 +321,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('example-profile.head.description'),
         },
         {
           name: 'keywords',
