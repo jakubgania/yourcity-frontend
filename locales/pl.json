@@ -284,7 +284,8 @@
   },
   "business": {
     "head": {
-      "title": "Yourcity - Dla biznesu"
+      "title": "Yourcity - Dla biznesu",
+      "description": "Yourcity dla biznesu - informacje o profilu dla firm i przedsiębiorstw."
     }
   },
   "example-profile": {

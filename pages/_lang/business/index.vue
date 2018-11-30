@@ -68,7 +68,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('business.head.description'),
         },
         {
           name: 'keywords',
