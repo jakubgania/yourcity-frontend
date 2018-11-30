@@ -230,7 +230,8 @@
   },
   "changelog": {
     "head": {
-      "title": "Yourcity - Changelog"
+      "title": "Yourcity - Changelog",
+      "description": "Read about the changes that take place on the Yourcity platform."
     }
   },
   "agreements": {
