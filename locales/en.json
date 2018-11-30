@@ -205,7 +205,8 @@
   "photos": {
     "head": {
       "title": "Yourcity - Photos",
-      "photo": "Photo"
+      "photo": "Photo",
+      "description": "See a photo gallery from various places, locations, cities and countries."
     },
     "information": "Information",
     "share": "Share",

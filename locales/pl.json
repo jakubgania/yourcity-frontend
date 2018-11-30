@@ -205,7 +205,8 @@
   "photos": {
     "head": {
       "title": "Yourcity - Zdjęcia",
-      "photo": "Zdjęcie"
+      "photo": "Zdjęcie",
+      "description": "Zobacz galerię zdjęć z różnych miejsc, lokalizacji, miast i krajów."
     },
     "information": "Informacje",
     "share": "Udostępnij",

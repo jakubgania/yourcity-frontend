@@ -247,7 +247,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('photos.head.description'),
         },
         {
           name: 'keywords',
