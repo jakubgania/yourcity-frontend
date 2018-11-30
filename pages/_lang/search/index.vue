@@ -42,7 +42,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('profiles_search.head.description'),
         },
         {
           name: 'keywords',

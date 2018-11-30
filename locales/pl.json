@@ -172,7 +172,8 @@
   },
   "profiles_search": {
     "head": {
-      "title": "Yourcity - Wyszukiwanie profili"
+      "title": "Yourcity - Wyszukiwanie profili",
+      "description": "Wyszukuj informacje o interesującym mieście oraz lokalizacji w której jesteś lub przeglądaj różne kategorie."
     },
     "search_form": {
       "input_query_placeholder": "Czego szukasz ?",
