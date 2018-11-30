@@ -62,7 +62,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('founder.head.description'),
         },
         {
           name: 'keywords',

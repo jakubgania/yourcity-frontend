@@ -225,7 +225,8 @@
   },
   "founder": {
     "head": {
-      "title": "Yourcity - O twórcy"
+      "title": "Yourcity - O twórcy",
+      "description": "Przeczytaj więcej o twórcy platformy Yourcity."
     }
   },
   "changelog": {

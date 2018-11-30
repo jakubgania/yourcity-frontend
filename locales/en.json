@@ -225,7 +225,8 @@
   },
   "founder": {
     "head": {
-      "title": "Yourcity - About founder"
+      "title": "Yourcity - About founder",
+      "description": "Read more about the founder of Yourcity."
     }
   },
   "changelog": {
