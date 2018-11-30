@@ -235,7 +235,8 @@
   },
   "agreements": {
     "head": {
-      "title": "Yourcity - Regulamin"
+      "title": "Yourcity - Regulamin",
+      "content": "Regulamin aplikacji Yourcity. Zbiór zasad i wytycznych."
     },
     "title": "Regulamin",
     "app": "Aplikacja - Pojęcie rozumiane jako strona internetowa dostępna pod adresem https://yourcity.io.",

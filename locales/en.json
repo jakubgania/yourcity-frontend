@@ -235,7 +235,8 @@
   },
   "agreements": {
     "head": {
-      "title": "Yourcity - Agreements"
+      "title": "Yourcity - Agreements",
+      "content": "Yourcity application regulations. A set of rules and guidelines."
     },
     "title": "Agreements",
     "app": "Application - A concept understood as a website available at https://yourcity.io.",

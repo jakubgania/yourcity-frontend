@@ -64,7 +64,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('agreements.head.content'),
         },
         {
           name: 'keywords',
