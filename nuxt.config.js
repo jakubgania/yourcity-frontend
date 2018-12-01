@@ -5,19 +5,19 @@ const favicon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdv
 const sitemapRoutes = [
   {
     url: '/',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 1,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 1,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 1,
     lastmodISO: '2018-11-30',
   },
@@ -77,37 +77,37 @@ const sitemapRoutes = [
   },
   {
     url: '/contact',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/contact',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/contact',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/changelog',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/changelog',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/changelog',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
@@ -131,91 +131,91 @@ const sitemapRoutes = [
   },
   {
     url: '/example-profile',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/example-profile',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/example-profile',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/example-profile/photos',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/example-profile/photos',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/example-profile/photos',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.6,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/project',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/project',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/project',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/founder',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/founder',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/founder',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/agreements',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/en/agreements',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
   {
     url: '/pl/agreements',
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.5,
     lastmodISO: '2018-11-30',
   },
@@ -264,8 +264,8 @@ const generateRoutes = [
 ];
 
 module.exports = {
-  mode: 'spa',
-  // mode: 'universal',
+  // mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
@@ -274,6 +274,7 @@ module.exports = {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
+      { name: 'author', content: 'Jakub Gania' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'google-site-verification', content: 'cUuV3bKjY_wOCtCYYfn0xNwrPnqq25aTvcrXyVPEPrA' },
@@ -281,8 +282,8 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/png', href: favicon },
       { rel: 'shortcut icon', type: 'image/png', href: favicon },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600,700,800' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,600,700,800|Material+Icons' },
     ],
   },
 
