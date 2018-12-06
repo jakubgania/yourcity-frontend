@@ -1,16 +1,20 @@
 .toolbar-header
 {
-    position: fixed;
-    box-shadow: 1px 1px #f0f0f0;
+  position: fixed;
+
+  box-shadow: 1px 1px #f0f0f0;
 }
 .business-logo-text
 {
-    width: 200px;
-    height: 64px;
-    line-height: 64px;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    display: inline;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 64px;
+
+  display: inline;
+
+  width: 200px;
+  height: 64px;
+  margin-left: 10px;
+
+  letter-spacing: 1px;
 }

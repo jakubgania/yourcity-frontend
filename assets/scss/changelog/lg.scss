@@ -4,126 +4,127 @@
 }
 .changelog-section
 {
-    background-color: #ffffff;
-    min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
+
+  background-color: #fff;
 }
 .title-page
 {
-    font-size: 44px;
+  font-size: 44px;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-    text-align: center;
-    letter-spacing: 2px;
+  text-align: center;
+  letter-spacing: 2px;
 
-    color: #111111;
+  color: #111;
 }
 .message-item
 {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 
-    border-left: 2px solid #252bfc;
+  border-left: 2px solid #252bfc;
 }
 .message-item:first-child > .line-marker:before
 {
-    position: absolute;
-    top: -10px;
-    left: -3px;
+  position: absolute;
+  top: -10px;
+  left: -3px;
 
-    display: block;
+  display: block;
 
-    width: 6px;
-    height: 9px;
+  width: 6px;
+  height: 9px;
 
-    content: '';
+  content: '';
 
-    background-color: #fff;
+  background-color: #fff;
 }
 .message-item:last-child > .line-marker
 {
-    left: -3px;
+  left: -3px;
 }
 .message-item:last-child
 {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .message-item:last-child > .line-marker:before
 {
-    position: absolute;
-    top: -14px;
-    left: 3px;
+  position: absolute;
+  top: -14px;
+  left: 3px;
 
-    height: 14px;
+  height: 14px;
 
-    content: '';
+  content: '';
 }
 .line-marker
 {
-    position: relative;
-    left: -5px;
+  position: relative;
+  left: -5px;
 
-    display: block;
+  display: block;
 
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 
-    border: 1px solid #252bfc;
-    border-radius: 100%;
-    background: #fff;
+  border: 1px solid #252bfc;
+  border-radius: 100%;
+  background: #fff;
 }
 .card-information-section
 {
-    width: 100%;
-    border-bottom: 1px solid #d5d5d5;
-    // background-color:#fafafa;
+  width: 100%;
+
+  border-bottom: 1px solid #d5d5d5;
 }
 .information
 {
-    font-size: 14px;
-    font-weight: 700;
+  font-size: 14px;
+  font-weight: 700;
 
-    margin-top: -22px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+  margin-top: -22px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
 
-    padding-top: 10px;
-
-    text-align: left;
-
+  text-align: left;
 }
 .time
 {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .message-counter
 {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .message
 {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+  padding: 10px;
 
-    text-align: left;
+  text-align: left;
 }
 .content-text
 {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
 }
+
 .message-item:last-child
 {
-    border-left: 0;
+  border-left: 0;
 }
 .paging-button
 {
-    background-color: #252bfc!important;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 20px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  letter-spacing: 2px;
+
+  color: #fff;
+  background-color: #252bfc!important;
 }

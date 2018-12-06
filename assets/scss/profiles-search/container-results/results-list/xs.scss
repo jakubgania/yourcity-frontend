@@ -1,33 +1,35 @@
 @media only screen and (max-width: 600px)
 {
-    .profile-name
-    {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .profile-subtext
-    {
-        font-size: 12px;
-    }
-    .profile-image-section
-    {
-        padding: 0;
-        margin: 0;
-    }
-    .profile-image
-    {
-        border-radius: 0px;
-    }
-    .profile-image-not-available
-    {
-        border-radius: 0px;
-        background: linear-gradient(to top left, #f4f4f4 calc(49.9% - 1px), #c1c1c1, #f4f4f4 calc(49.9% + 1px) );
+  .profile-name
+  {
+    font-size: 18px;
 
-        .no-picture-text
-        {
-            font-size: 12px;
-            background-color: #f4f4f4;
-        }
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .profile-subtext
+  {
+    font-size: 12px;
+  }
+  .profile-image-section
+  {
+    margin: 0;
+    padding: 0;
+  }
+  .profile-image
+  {
+    border-radius: 0;
+  }
+  .profile-image-not-available
+  {
+    border-radius: 0px;
+    background: linear-gradient(to top left, #f4f4f4 calc(49.9% - 1px), #c1c1c1, #f4f4f4 calc(49.9% + 1px) );
+
+    .no-picture-text
+    {
+      font-size: 12px;
+
+      background-color: #f4f4f4;
     }
+  }
 }

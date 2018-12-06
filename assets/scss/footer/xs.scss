@@ -1,36 +1,37 @@
 @media only screen and (max-width: 600px)
 {
-    .footer-container
+  .footer-container
+  {
+    padding-top: 20px;
+  }
+  .footer-section
+  {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .description
+  {
+    line-height: 1.8;
+  }
+  .link-section
+  {
+    .link-icon
     {
-        padding-top: 20px;
+      margin-right: 10px;
     }
-    .footer-section
-    {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .description
-    {
-      line-height: 1.8;
-    }
-    .link-section
-    {
-        .link-icon
-        {
-            margin-right: 10px;
-        }
-    }
-    .copyright-section
-    {
-        height: 80px;
-        line-height: 80px;
-    }
-    .email-link
-    {
-        padding-left: 10px;
-    }
-    .copyright
-    {
-        padding-right: 10px;
-    }
+  }
+  .copyright-section
+  {
+    line-height: 80px;
+
+    height: 80px;
+  }
+  .email-link
+  {
+    padding-left: 10px;
+  }
+  .copyright
+  {
+    padding-right: 10px;
+  }
 }

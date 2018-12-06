@@ -1,28 +1,34 @@
 .container-results
 {
-  width: calc(100% - 300px);
   float: right;
+
+  width: calc(100% - 300px);
 }
 .results-section
 {
   min-height: calc(100vh - 64px);
-  margin-left: 15px;
   margin-right: 15px;
+  margin-left: 15px;
 }
 .title-section
 {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #424242;
-    padding-top: 14px;
-    padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  letter-spacing: 1px;
+
+  color: #424242;
 }
 .paging-button
 {
+  font-size: 12px;
+
   margin-top: 40px;
   margin-bottom: 60px;
-  font-size: 12px;
+
   letter-spacing: 2px;
 
   .icon

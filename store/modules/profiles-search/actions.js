@@ -53,7 +53,7 @@ const shuffle = (dataArray) => {
 
 const getProfilesData = ({ commit, dispatch }, parameters) => {
   const queryStringParameters = parameters;
-  let url = null;
+  // let url = null;
   const emptyArray = [];
 
   dispatch('showFullScreenLoader', true);
@@ -62,14 +62,17 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
 
   if (queryStringParameters.category) {
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
-    url = `/api/profiles-search?city=${queryStringParameters.city}&query=&category=${queryStringParameters.category}`;
   } else {
     queryStringParameters.query = encodeURIComponent(queryStringParameters.query);
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
-    url = `/api/profiles-search?city=${queryStringParameters.city}&query=${queryStringParameters.query}`;
   }
 
-  axios.get(url)
+  axios.get('/api/profiles-search', {
+    params: {
+      city: queryStringParameters.city,
+      query: queryStringParameters.query,
+    },
+  })
     .then((response) => {
       if (!response.data.data || response.data.data.length === 0) {
         commit('showEmptyResultsAlert', true);

@@ -1,189 +1,210 @@
 .title-header
 {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    max-width: 600px;
-    background-color: #f1f1f1;
-    display: inline;
-    z-index: 10;
+  line-height: 60px;
+
+  position: fixed;
+  z-index: 10;
+
+  display: inline;
+
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+
+  background-color: #f1f1f1;
 }
 .icon-info
 {
-    position: relative;
-    top: 5px;
-    display: inline;
-    margin-left: 16px;
-    margin-right: 16px;
-    font-size: 28px;
+  font-size: 28px;
+
+  position: relative;
+  top: 5px;
+
+  display: inline;
+
+  margin-right: 16px;
+  margin-left: 16px;
 }
 .title-text
 {
-    font-weight: 700;
-    letter-spacing: 2px;
-    display: inline;
+  font-weight: 700;
+
+  display: inline;
+
+  letter-spacing: 2px;
 }
 .icon-close
 {
-    position: relative;
-    top: 14px;
-    display: inline;
-    font-size: 28px;
-    float: right;
-    margin-right: 20px;
+  font-size: 28px;
 
-    &:hover
-    {
-        color: #000000;
-    }
+  position: relative;
+  top: 14px;
+
+  display: inline;
+  float: right;
+
+  margin-right: 20px;
+
+  &:hover
+  {
+    color: #000000;
+  }
 }
 .profile-image-dialog
 {
-    width: 100%;
-    height: 280px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  height: 280px;
 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .profile-name-section
 {
-    width: 100%;
-    font-size: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #f0f0f0;
-    cursor: default;
+  font-size: 22px;
+
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+
+  cursor: default;
+
+  border-bottom: 1px solid #f0f0f0;
 }
 .description-section
 {
-    padding-left: 58px;
-    border-bottom: 1px solid #f0f0f0;
+  padding-left: 58px;
+
+  border-bottom: 1px solid #f0f0f0;
 }
 .description
 {
-    line-height: 1.7em;
+  line-height: 1.7em;
 }
 .full-description-button-section
 {
-    border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 }
 .full-description-button
 {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #ECEFF1 !important;
+  font-size: 12px;
 
-    .icon
-    {
-        position: relative;
-        margin-left: 10px;
-    }
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  letter-spacing: 2px;
+
+  background-color: #eceff1 !important;
+
+  .icon
+  {
+    position: relative;
+
+    margin-left: 10px;
+  }
 }
 .section
 {
-    padding-left: 58px;
+  padding-left: 58px;
 
-    border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 }
 .title-subsection
 {
-    font-size: 14px;
-    // font-weight: 700;
-    color: #4d4d4d;
-    letter-spacing: 1px;
+  font-size: 14px;
+  color: #4d4d4d;
+  letter-spacing: 1px;
 
-    .icon
-    {
-        color: #3eafaf;
-        position: relative;
-        top: -1px;
-        margin-right: 18px;
-    }
+  .icon
+  {
+    position: relative;
+    top: -1px;
+
+    margin-right: 18px;
+
+    color: #3eafaf;
+  }
 }
 .category-list-section
 {
-    border-bottom: 1px solid #f0f0f0;
-    word-break: break-all;
-    padding-left: 50px;
-    padding-top: 5px;
+  border-bottom: 1px solid #f0f0f0;
+  word-break: break-all;
+  padding-left: 50px;
+  padding-top: 5px;
 }
 .tag-chip {
-    height: 48px;
-    letter-spacing: 1px;
-    padding: 4px;
+  height: 48px;
+  letter-spacing: 1px;
+  padding: 4px;
 
-    &:hover
-    {
-        border-color: #ffaa06;
-        color: #000000;
-    }
+  &:hover
+  {
+    border-color: #ffaa06;
+    color: #000000;
+  }
 }
 .city-chip
 {
-    height: 48px;
-    margin-top: 20px;
-    margin-left: 0px;
-    letter-spacing: 1px;
-    padding: 4px;
+  height: 48px;
+  margin-top: 20px;
+  margin-left: 0px;
+  letter-spacing: 1px;
+  padding: 4px;
 
-    &:hover
-    {
-        border-color: #ffaa06;
-        color: #000000;
-    }
+  &:hover
+  {
+    border-color: #ffaa06;
+    color: #000000;
+  }
 }
 .opening-hours-subsection
 {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 
-    .title-day-off-week
-    {
-        width: 150px;
-        letter-spacing: 1px;
-        display: inline-block;
-    }
+  .title-day-off-week
+  {
+    width: 150px;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
 
-    .hour-text
-    {
-        display: inline-block;
-        letter-spacing:1px;
-    }
+  .hour-text
+  {
+    display: inline-block;
+    letter-spacing:1px;
+  }
 }
 .website-chip
 {
-    height: 48px;
-    margin-left: 0px;
-    letter-spacing: 1px;
-    padding: 4px;
+  height: 48px;
+  margin-left: 0px;
+  letter-spacing: 1px;
+  padding: 4px;
 
-    &:hover
-    {
-        border-color: #4b4b4b;
-        color: #30c1ff;
-    }
+  &:hover
+  {
+    border-color: #4b4b4b;
+    color: #30c1ff;
+  }
 }
 .bottom-section
 {
-    height: 60px;
+  height: 60px;
 }
 .dialog-close-button
 {
-    font-size: 12px;
-    letter-spacing: 2px;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .hide-content
 {
-    overflow: hidden;
-    height: 7.8em;
+  overflow: hidden;
+  height: 7.8em;
 }
 .show-content
 {
-    height: auto;
+  height: auto;
 }

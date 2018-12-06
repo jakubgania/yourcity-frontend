@@ -1,34 +1,37 @@
 .business-section
 {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 .title-section
 {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 
-    letter-spacing: 2px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    color: #000000;
+  letter-spacing: 2px;
+  
+  color: #000;
 }
 .logo-section
 {
-    margin-top: 60px;
-    margin-bottom: 180px;
+  margin-top: 60px;
+  margin-bottom: 180px;
 
-    .text
-    {
-        text-align: left;
-        position: relative;
-        top: 36%;
-        font-size: 34px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        padding-left: 24px;
-    }
+  .text
+  {
+    font-size: 34px;
+    font-weight: 700;
+
+    position: relative;
+    top: 36%;
+
+    padding-left: 24px;
+
+    text-align: left;
+    letter-spacing: 1px;
+  }
 }
 .logo-section-component
 {
@@ -36,39 +39,46 @@
 }
 .big-font-title
 {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 700;
 
-    .icon-title
-    {
-        position: relative;
-        top: 8px;
-        font-size: 42px;
-        margin-right: 20px;
-        color: #505050;
-    }
+  letter-spacing: 2px;
+
+  .icon-title
+  {
+    font-size: 42px;
+
+    position: relative;
+    top: 8px;
+
+    margin-right: 20px;
+
+    color: #505050;
+  }
 }
-
 .description
 {
-    width: auto;
-    font-size: 16px;
-    padding-top: 20px;
-    letter-spacing: 1px;
-}
+  font-size: 16px;
 
+  width: auto;
+  padding-top: 20px;
+
+  letter-spacing: 1px;
+}
 .link-section
 {
-    text-decoration: none;
+  text-decoration: none;
 
-    .button
-    {
-        margin-top: 160px;
-        margin-bottom: 160px;
-        letter-spacing: 2px;
-        color: #ffffff;
-        font-size: 12px;
-        background-color: #2a2f30 !important;
-    }
+  .button
+  {
+    font-size: 12px;
+
+    margin-top: 160px;
+    margin-bottom: 160px;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+    background-color: #2a2f30 !important;
+  }
 }
