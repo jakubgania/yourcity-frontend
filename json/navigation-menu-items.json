@@ -9,8 +9,8 @@
       "path": "search"
     },
     {
-      "nameKey": "cities_page",
-      "path": "cities/all"
+      "nameKey": "countries_page",
+      "path": "countries/all"
     },
     {
       "nameKey": "photos_page",

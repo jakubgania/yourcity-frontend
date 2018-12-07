@@ -45,15 +45,13 @@ import axios from 'axios';
 import nightImage from '../../../assets/images/night-dortmund.jpg';
 
 export default {
-  asyncData({ error }) {
-    return axios.get('/api/countries')
-      // eslint-disable-next-line
-      .then((response) => {
-        return { countriesItems: response.data };
-      })
-      .catch(() => {
-        error({ statusCode: 404, message: 'Post not found' });
-      });
+  async asyncData({ error }) {
+    try {
+      const { data } = await axios.get('/api/countries');
+      return { countriesItems: data };
+    } catch (e) {
+      return error({ statusCode: 404, message: 'Network connection error.' });
+    }
   },
   data() {
     return {

@@ -40,19 +40,19 @@ const sitemapRoutes = [
     lastmodISO: '2018-11-30',
   },
   {
-    url: '/cities/all',
+    url: '/countries/all',
     changefreq: 'daily',
     priority: 0.8,
     lastmodISO: '2018-11-30',
   },
   {
-    url: '/en/cities/all',
+    url: '/en/countries/all',
     changefreq: 'daily',
     priority: 0.8,
     lastmodISO: '2018-11-30',
   },
   {
-    url: '/pl/cities/all',
+    url: '/pl/countries/all',
     changefreq: 'daily',
     priority: 0.8,
     lastmodISO: '2018-11-30',

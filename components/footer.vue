@@ -68,7 +68,7 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('cities/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.cities_page') }}
+                  {{ $t('routes_names.countries_page') }}
                 </nuxt-link>
               </div>
             </v-flex>

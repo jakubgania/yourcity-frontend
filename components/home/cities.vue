@@ -56,7 +56,7 @@
       offset-lg4
     >
       <router-link
-        :to="$i18n.path('cities/all')"
+        :to="$i18n.path('countries/all')"
         class="link-section"
       >
         <v-btn
