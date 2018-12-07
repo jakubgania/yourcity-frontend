@@ -234,5 +234,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/contact/index.scss';
+@import './assets/scss/contact/contact.scss';
 </style>
