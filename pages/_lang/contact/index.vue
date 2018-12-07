@@ -234,30 +234,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact-container
-{
-    min-height: calc(100vh - 64px);
-    height: auto;
-    background-color: #ffffff;
-}
-.title-page
-{
-    font-size: 44px;
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    text-align: center;
-    letter-spacing: 2px;
-
-    color: #111111;
-}
-.section
-{
-    margin-bottom: 40px;
-}
-.contact-form-section
-{
-    margin-bottom: 140px;
-}
+@import './assets/scss/contact/index.scss';
 </style>

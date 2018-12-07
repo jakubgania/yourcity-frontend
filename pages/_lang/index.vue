@@ -1,13 +1,8 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <v-layout
-    row
-    wrap
-    style="overflow-x: hidden;"
-  >
-    <v-flex
-      xs12
-      lg12
-    >
+  <v-layout row wrap style="overflow-x: hidden;">
+    <v-flex xs12 lg12>
       <search-component/>
 
       <information-component/>

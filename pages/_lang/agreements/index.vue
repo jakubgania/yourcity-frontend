@@ -80,36 +80,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.agreements-container
-{
-  padding-bottom: 100px;
-}
-.title-page
-{
-    font-size: 44px;
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    text-align: center;
-    letter-spacing: 2px;
-
-    color: #111111;
-}
-.description
-{
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 1.8;
-  margin-top: 30px;
-}
-@media only screen and (max-width: 600px)
-{
-  .description
-  {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 16px;
-  }
-}
+@import './assets/scss/agreements/agreements.scss';
 </style>

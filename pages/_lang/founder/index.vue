@@ -78,27 +78,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.founder-container
-{
-  min-height: calc(100vh - 64px);
-  height: auto;
-  background-color: #ffffff;
-}
-.title-page
-{
-    font-size: 44px;
-
-    padding-top: 100px;
-    // padding-bottom: 100px;
-
-    text-align: center;
-    letter-spacing: 2px;
-
-    color: #111111;
-}
-.link
-{
-  text-decoration: none;
-  letter-spacing: 2px;
-}
+@import './assets/scss/founder/founder.scss';
 </style>

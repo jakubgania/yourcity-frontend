@@ -84,20 +84,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.image-section
-{
-    width: 100%;
-    height: auto;
-}
-.about-description
-{
-  background-color: #ffffff;
-  margin-top: 140px;
-}
-.example-profile-description
-{
-    letter-spacing: 1px;
-    font-size: 16px;
-    margin-bottom: 60px;
-}
+@import './assets/scss/business/business.scss';
 </style>
