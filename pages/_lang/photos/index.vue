@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout
     row
@@ -101,7 +103,7 @@
       </v-btn>
     </v-flex>
 
-    <transition name="fade">
+    <!-- <transition name="fade">
       <div
         v-if="fullScreenPhoto"
         tabindex="0"
@@ -176,7 +178,7 @@
           class="full-size-photo"
         >
       </div>
-    </transition>
+    </transition> -->
 
   </v-layout>
 </template>

@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-dialog
     v-model="searchDialogXsModel"
@@ -7,10 +9,7 @@
   >
     <v-card>
       <v-toolbar class="toolbar-top-section">
-        <v-btn
-          icon
-          dark
-        >
+        <v-btn icon dark>
           <v-icon
             class="close-icon"
             @click="$emit('updateSearchDialogXsModel', false)"
@@ -23,10 +22,7 @@
         </v-toolbar-title>
       </v-toolbar>
       <v-form @submit.prevent="submitSearchForm()">
-        <v-layout
-          row
-          wrap
-        >
+        <v-layout row wrap>
           <v-flex xs12>
             <div class="query-input">
               <v-select
@@ -75,10 +71,7 @@
             </div>
           </v-flex>
           <v-flex xs12>
-            <button
-              type="submit"
-              class="submit-form-button"
-            >
+            <button type="submit" class="submit-form-button">
               search
               <v-icon class="button-icon">keyboard_arrow_right</v-icon>
             </button>
@@ -129,11 +122,6 @@ export default {
       default: null,
     },
   },
-  data() {
-    return {
-    };
-  },
-  // },
   computed: {
     categoriesModelComputed: {
       get() {
@@ -176,8 +164,6 @@ export default {
       },
     },
   },
-  // watch: {
-  // },
   methods: {
     submitSearchForm() {
       this.$emit('submitSearchForm');

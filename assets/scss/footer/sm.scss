@@ -1,0 +1,37 @@
+@media only screen and (max-width: 959px)
+{
+  .footer-container
+  {
+    padding-top: 20px;
+  }
+  .footer-section
+  {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .description
+  {
+    line-height: 1.8;
+  }
+  .link-section
+  {
+    .link-icon
+    {
+      margin-right: 10px;
+    }
+  }
+  .copyright-section
+  {
+    line-height: 80px;
+
+    height: 80px;
+  }
+  .email-link
+  {
+    padding-left: 10px;
+  }
+  .copyright
+  {
+    padding-right: 10px;
+  }
+}
