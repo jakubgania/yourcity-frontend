@@ -246,7 +246,10 @@
       "title": "Yourcity - Changelog",
       "description": "Read about the changes that take place on the Yourcity platform.",
       "keywords": "changelog, information, changes, messages, descriptions of changes"
-    }
+    },
+    "title": "Changelog",
+    "paging-button": "Show more",
+    "network-connection-error": "Network connection error."
   },
   "agreements": {
     "head": {

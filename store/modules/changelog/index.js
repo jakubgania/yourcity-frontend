@@ -7,7 +7,7 @@ const state = ({
   pagingURL: null,
   showPagingButton: false,
   showPagingButtonLoader: false,
-  // showPageLoader: false,
+  showPageLoader: false,
   networkError: false,
   networkErrorPaging: false,
 })
@@ -25,9 +25,9 @@ const getters = {
   showPagingButtonLoader: state => {
     return state.showPagingButtonLoader
   },
-  // showPageLoader: state => {
-  //     return state.showPageLoader
-  // },
+  showPageLoader: state => {
+      return state.showPageLoader
+  },
   networkError: state => {
     return state.networkError
   },
@@ -38,15 +38,16 @@ const getters = {
 
 const actions = {
   getPosts({commit, dispatch}) {
+    commit('showPageLoader', true);
     axios.get('/api/changelog?start=0&offset=4')
     .then(response => {
       commit('posts', response.data.data);
       dispatch('checkIsPaging', response.data.paging);
-      // commit('showPageLoader', false);
+      commit('showPageLoader', false);
     })
     .catch(e => {
       commit('networkError', true);
-      // commit('showPageLoader', false);
+      commit('showPageLoader', false);
     })
   },
   getPagingPosts({ commit, dispatch }, url) {
@@ -89,9 +90,9 @@ const mutations = {
   showPagingButtonLoader(state, value) {
     state.showPagingButtonLoader = value
   },
-  // showPageLoader(state, value) {
-  //     state.showPageLoader = value
-  // },
+  showPageLoader(state, value) {
+      state.showPageLoader = value
+  },
   networkError(state, value) {
     state.networkError = value
   },

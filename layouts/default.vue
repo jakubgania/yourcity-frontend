@@ -41,50 +41,5 @@ export default {
 </script>
 
 <style lang="scss">
-$scrollbar-track-color: #f4f4f4;
-$scrollbar-thumb-color: #4e4d4d;
-
-::-webkit-scrollbar-track
-{
-    border-radius: 0px;
-    background-color: $scrollbar-track-color;
-}
-::-webkit-scrollbar
-{
-    width: 8px;
-}
-::-webkit-scrollbar-thumb
-{
-    border-radius: 0px;
-    background-color: $scrollbar-thumb-color
-}
-.container
-{
-    padding: 0;
-    background-color: #ffffff;
-}
-.v-menu__content
-{
-    box-shadow: none;
-    border-top: 1px solid #e2e2e2;
-    border-left: 1px solid #e2e2e2;
-    border-right: 1px solid #e2e2e2;
-    border-bottom: 1px solid #e2e2e2;
-}
-.v-menu__content::-webkit-scrollbar-track {
-    border-radius: 0px;
-    background-color: $scrollbar-track-color;
-}
-.v-menu__content::-webkit-scrollbar {
-    width: 8px;
-}
-.v-menu__content::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    background-color: $scrollbar-thumb-color;
-}
-
-.v-expansion-panel__header
-{
-  padding: 0px;
-}
+@import './assets/scss/layouts/default.scss';
 </style>

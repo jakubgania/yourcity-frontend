@@ -59,7 +59,6 @@ const actions = {
       // this.errors.push(e);
       dispatch('showPhotosPageLoader', false);
       dispatch('showErrorConnectionAlert', true);
-      // alert('e rr o rr');
     })
   },
   getPhotoDeatils({ commit, dispatch }, url) {

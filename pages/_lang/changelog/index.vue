@@ -4,7 +4,7 @@
     <v-layout row wrap>
       <v-flex xs12 sm12 md12 lg12>
         <div class="title-page">
-          Changelog
+          {{ $t('changelog.title') }}
         </div>
       </v-flex>
 
@@ -17,7 +17,6 @@
         <span class="line-marker"/>
         <v-layout row wrap>
           <v-flex xs10 offset-xs1 lg10 offset-lg1>
-            <!-- <v-card> -->
             <div class="" style="background-color:#f2f2f2;">
               <div class="card-information-section">
                 <div class="information">
@@ -38,7 +37,6 @@
                 </span>
               </div>
             </div>
-            <!-- </v-card> -->
           </v-flex>
         </v-layout>
       </v-flex>
@@ -57,7 +55,7 @@
             block
             @click="getMorePosts(pagingURL)"
           >
-            POKAŻ WIĘCEJ
+            {{ $t('changelog.paging-button') }}
             <v-icon right dark>cached</v-icon>
           </v-btn>
         </v-flex>
@@ -68,17 +66,23 @@
               outline
               type="error"
             >
-              Network connection error.
+              {{ $t('changelog.network-connection-error') }}
             </v-alert>
           </v-flex>
         </transition>
+
+        <network-connection-error-alert-component
+          :show-error-connection-alert="networkError"
+          :margin="100"
+        />
       </v-layout>
     </v-flex>
 
-    <!-- <network-connection-error-alert-component
-      :show-error-connection-alert="showErrorConnectionAlert"
-      :margin="100"
-    /> -->
+    <v-flex
+      v-if="showPageLoader"
+      xs12 sm12 md12 lg12 style="min-height:calc(100vh - 264px);text-align:center;">
+      <v-progress-circular :size="50" indeterminate style="color:#252bfc;margin-top:80px;"/>
+    </v-flex>
 
   </v-layout>
 </template>
@@ -95,6 +99,7 @@ export default {
     ...mapGetters('changelog', [
       'posts',
       'pagingURL',
+      'showPageLoader',
       'showPagingButton',
       'showPagingButtonLoader',
       'networkError',
