@@ -8,12 +8,12 @@
         data-aos-delay="200"
         data-aos-once="true"
       >
-        O twórcy
+        {{ this.$t('founder.title') }}
       </div>
     </v-flex>
-    <v-flex lg4 offset-lg4 style="text-align:center;">
+    <v-flex xs12 lg4 offset-lg4 style="text-align:center;">
       <v-avatar
-        size="220"
+        size="200"
         color="grey lighten-4"
         data-aos="zoom-in"
         data-aos-delay="300"
@@ -22,7 +22,7 @@
         <img :src="profileImg" alt="Jakub Gania - profile image">
       </v-avatar>
     </v-flex>
-    <v-flex lg4 offset-lg4 style="text-align:center;">
+    <v-flex xs12 lg4 offset-lg4 style="text-align:center;">
       <div
         class="headline"
         data-aos="zoom-in"
@@ -32,7 +32,6 @@
         Jakub Gania
       </div>
       <div
-        class=""
         style="margin-top:20px;"
         data-aos="zoom-in"
         data-aos-delay="400"

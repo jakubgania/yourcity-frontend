@@ -242,7 +242,8 @@
       "title": "Yourcity - O twórcy",
       "description": "Przeczytaj więcej o twórcy platformy Yourcity.",
       "keywords": "twórca, twórca yourcity, inżynier yourcity"
-    }
+    },
+    "title": "O twórcy"
   },
   "changelog": {
     "head": {
