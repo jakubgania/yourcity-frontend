@@ -221,11 +221,14 @@
     "tags": "Tags",
     "gallery": "Gallery"
   },
-  "cities": {
+  "countries": {
     "head": {
-      "title": "Yourcity - Cities"
+      "title": "Yourcity - Countries",
+      "description": "Select the country in which you want to view city profiles. The list of countries is constantly updated.",
+      "keywords": "countries, select country, city, locations"
     },
-    "select_city": "Select country"
+    "title": "Countries",
+    "select_country": "Select country"
   },
   "project": {
     "head": {

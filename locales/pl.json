@@ -221,11 +221,14 @@
     "tags": "Tagi",
     "gallery": "Galeria"
   },
-  "cities": {
+  "countries": {
     "head": {
-      "title": "Yourcity - Miasta"
+      "title": "Yourcity - Kraje",
+      "description": "Wybierz kraj w którym chcesz przeglądać profile miast. Lista krajów jest cały czas aktualizowana.",
+      "keywords": "kraje, wybierz kraj, miasto, lokalizacje"
     },
-    "select_city": "Wybierz kraj"
+    "title": "Kraje",
+    "select_country": "Wybierz kraj"
   },
   "project": {
     "head": {

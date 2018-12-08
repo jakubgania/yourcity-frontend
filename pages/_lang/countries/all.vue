@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
 <template>
   <v-layout row wrap class="container-cities">
+
     <v-flex xs12 lg12 class="search-container">
       <div
         :style="{'background-image': 'url(' + nightImage + ')'}"
@@ -9,7 +10,7 @@
         <v-layout row wrap>
           <v-flex xs12 lg12>
             <div class="title-page-section">
-              Miasta
+              {{ $t('countries.title') }}
             </div>
           </v-flex>
         </v-layout>
@@ -17,7 +18,7 @@
     </v-flex>
 
     <v-flex xs12 lg10 offset-lg1 class="select-country">
-      {{ $t('cities.select_city') }}
+      {{ $t('countries.select_country') }}
     </v-flex>
 
     <v-flex xs12 lg10 offset-lg1>
@@ -47,7 +48,7 @@ import nightImage from '../../../assets/images/night-dortmund.jpg';
 export default {
   async asyncData({ error }) {
     try {
-      const { data } = await axios.get('/api/countries');
+      const { data } = await axios.get('https://api.yourcity.io/api/countries');
       return { countriesItems: data };
     } catch (e) {
       return error({ statusCode: 404, message: 'Network connection error.' });
@@ -63,16 +64,16 @@ export default {
       htmlAttrs: {
         lang: this.$t('html.language'),
       },
-      title: this.$t('cities.head.title'),
+      title: this.$t('countries.head.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: '',
+          content: this.$t('countries.head.description'),
         },
         {
           name: 'keywords',
-          content: '',
+          content: this.$t('countries.head.keywords'),
         },
       ],
     };
@@ -81,5 +82,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/cities/cities.scss';
+@import './assets/scss/countries/countries.scss';
 </style>
