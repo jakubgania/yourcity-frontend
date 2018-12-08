@@ -1,16 +1,8 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
 
 <template>
-  <v-layout
-    row
-    wrap
-    class="container-gallery"
-  >
-    <v-flex
-      xs12
-      lg4
-      offset-lg4
-    >
+  <v-layout row wrap class="container-gallery">
+    <v-flex xs12 lg4 offset-lg4>
       <div class="title-section">
         {{ $t('home.gallery.title_section') }}
       </div>
@@ -26,15 +18,8 @@
       offset-lg1
       style="padding-left:10px;padding-right:10px;"
     >
-      <v-container
-        fluid
-        grid-list-xs
-      >
-        <v-layout
-          row
-          wrap
-          justify-left
-        >
+      <v-container fluid grid-list-xs>
+        <v-layout row wrap justify-left>
           <v-flex
             v-for="(thumbnail, index) in photoDetails"
             :key="thumbnail.id"
@@ -61,10 +46,7 @@
                     justify-center
                     ma-0
                   >
-                    <v-progress-circular
-                      indeterminate
-                      style="color:#252bfc;"
-                    />
+                    <v-progress-circular indeterminate style="color:#252bfc;"/>
                   </v-layout>
                 </v-img>
               </v-card>
@@ -88,22 +70,20 @@
       <v-btn
         :loading="showPagingMoreButtonLoader"
         :disabled="showPagingMoreButtonLoader"
+        depressed
         block
         large
         class="paging-button"
         @click="loadMore(pagingPhotosURL)"
       >
         {{ $t('home.gallery.paging_button') }}
-        <v-icon
-          right
-          dark
-        >
-          keyboard_arrow_right
+        <v-icon right dark>
+          cached
         </v-icon>
       </v-btn>
     </v-flex>
 
-    <!-- <transition name="fade">
+    <transition name="fade">
       <div
         v-if="fullScreenPhoto"
         tabindex="0"
@@ -113,27 +93,18 @@
         <v-icon
           left
           class="info-icon"
-          @click="dialog3 = true"
+          @click="dialog = true"
         >
           info_outline
         </v-icon>
 
-        <v-dialog
-          v-model="dialog3"
-          max-width="500px"
-        >
+        <v-dialog v-model="dialog" max-width="500px">
           <v-card>
             <v-card-title>
               <span class="headline">Informacje</span>
               <v-spacer/>
-              <v-menu
-                bottom
-                left
-              >
-                <v-btn
-                  icon
-                  @click="dialog3=false"
-                >
+              <v-menu bottom left>
+                <v-btn icon @click="dialog=false">
                   <v-icon>close</v-icon>
                 </v-btn>
               </v-menu>
@@ -154,22 +125,14 @@
               tags
             </v-card-text>
             <v-card-actions>
-              <v-btn
-                color="primary"
-                flat
-                @click="dialog3=false"
-              >
+              <v-btn color="primary" flat @click="dialog=false">
                 Close
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
 
-        <v-icon
-          right
-          class="card-button"
-          @click="closePhotoDetails()"
-        >
+        <v-icon right class="card-button" @click="closePhotoDetails()">
           close
         </v-icon>
         <img
@@ -178,7 +141,7 @@
           class="full-size-photo"
         >
       </div>
-    </transition> -->
+    </transition>
 
   </v-layout>
 </template>
@@ -196,7 +159,7 @@ export default {
       fullScreenPhoto: false,
       src: null,
       resourcePath: 'photos/',
-      dialog3: false,
+      dialog: false,
     };
   },
   computed: {
@@ -266,4 +229,6 @@ export default {
 
 <style lang="scss" scoped>
 @import './assets/scss/photos/lg.scss';
+@import './assets/scss/photos/sm.scss';
+@import './assets/scss/photos/xs.scss';
 </style>
