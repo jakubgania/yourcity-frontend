@@ -83,65 +83,82 @@
       </v-btn>
     </v-flex>
 
-    <transition name="fade">
-      <div
-        v-if="fullScreenPhoto"
-        tabindex="0"
-        class="desktop-full-screen-photo"
-        @keydown.esc="closePhotoDetails()"
-      >
-        <v-icon
-          left
-          class="info-icon"
-          @click="dialog = true"
-        >
-          info_outline
-        </v-icon>
 
-        <v-dialog v-model="dialog" max-width="500px">
-          <v-card>
-            <v-card-title>
-              <span class="headline">Informacje</span>
-              <v-spacer/>
-              <v-menu bottom left>
-                <v-btn icon @click="dialog=false">
-                  <v-icon>close</v-icon>
-                </v-btn>
-              </v-menu>
-            </v-card-title>
-            <v-card-text>
-              title
-            </v-card-text>
-            <v-card-text>
-              date and time
-            </v-card-text>
-            <v-card-text>
-              location
-            </v-card-text>
-            <v-card-text>
-              share
-            </v-card-text>
-            <v-card-text>
-              tags
-            </v-card-text>
-            <v-card-actions>
-              <v-btn color="primary" flat @click="dialog=false">
-                Close
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-
-        <v-icon right class="card-button" @click="closePhotoDetails()">
-          close
-        </v-icon>
+    <v-dialog
+      v-model="fullScreenPhoto"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+      @keydown.esc="closeDialogESC('fullScreenPhoto')"
+    >
+      <v-card>
+        <v-toolbar dark color="white" style="box-shadow:none;">
+          <v-btn icon dark style="color:black;" @click="fullScreenPhoto = false">
+            <v-icon>close</v-icon>
+          </v-btn>
+          <v-spacer/>
+          <v-toolbar-items>
+            <v-btn icon style="color:black;" @click="dialog = true">
+              <v-icon>info_outline</v-icon>
+            </v-btn>
+          </v-toolbar-items>
+        </v-toolbar>
         <img
           :src="basicServerAddressAPI + src"
           alt=""
           class="full-size-photo"
         >
-      </div>
-    </transition>
+      </v-card>
+    </v-dialog>
+
+    <v-dialog v-model="dialog" max-width="500px" @keydown.esc="closeDialogESC('dialog')">
+      <v-card>
+        <v-card-title>
+          <span class="title">Information</span>
+          <v-spacer/>
+          <v-menu bottom left>
+            <v-btn icon @click="dialog=false">
+              <v-icon>close</v-icon>
+            </v-btn>
+          </v-menu>
+        </v-card-title>
+        <v-card-text>
+          <div class="dialog-subtitle">
+            Title
+          </div>
+        </v-card-text>
+        <v-card-text>
+          <div class="dialog-subtitle">
+            Date creation
+          </div>
+        </v-card-text>
+        <v-card-text>
+          <div class="dialog-subtitle">
+            Location
+          </div>
+        </v-card-text>
+        <v-card-text>
+          <div class="dialog-subtitle">
+            Share
+          </div>
+        </v-card-text>
+        <v-card-text>
+          <div class="dialog-subtitle">
+            Tags
+          </div>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer/>
+          <v-btn
+            color="blue accent-3"
+            class="dialog-close-button"
+            flat @click="dialog=false"
+          >
+            Close
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 
   </v-layout>
 </template>
@@ -203,6 +220,13 @@ export default {
       }
 
       return '';
+    },
+    closeDialogESC(value) {
+      if (this.fullScreenPhoto && value === 'dialog') {
+        this.dialog = false;
+      } else if (!this.dialog && value === 'fullScreenPhoto') {
+        this.fullScreenPhoto = false;
+      }
     },
   },
   head() {
