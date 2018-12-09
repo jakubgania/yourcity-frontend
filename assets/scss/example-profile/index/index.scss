@@ -19,7 +19,6 @@
   font-weight: 700;
   padding-top: 14px;
   padding-bottom: 14px;
-  margin-top: 14px;
   border-top: 1px solid #f2f2f2;
   letter-spacing: 1px;
 
@@ -83,6 +82,17 @@
 {
   letter-spacing: 1px;
   padding-bottom: 4px;
+
+  .title
+  {
+    display: inline-block;
+    width: 140px;
+  }
+
+  .value
+  {
+    display: inline-block;
+  }
 }
 
 $icon-color-facebook: #3b5999;

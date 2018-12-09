@@ -11,7 +11,7 @@
     <div class="content-container">
       <span id="alignment"/>
       <div class="wrapper">
-        <div class="menu-section">
+        <div v-if="this.$vuetify.breakpoint.name != 'xs'" class="menu-section">
           <router-link :to="$i18n.path('example-profile')" class="router-link">
             <div class="router-link-button">
               <v-icon class="icon">chevron_right</v-icon>
@@ -49,6 +49,46 @@
       </div>
     </div>
 
+    <v-navigation-drawer
+      v-model="right"
+      fixed
+      app
+      right
+    >
+      <v-list
+        class="list-section"
+      >
+        <div class="list-section-logo">
+          <v-icon
+            class="close-menu-icon"
+            @click="closeNavigationDrawer()"
+          >
+            close
+          </v-icon>
+
+          <!-- <logo-component/> -->
+
+        </div>
+        <v-divider/>
+        <v-list-tile
+          v-for="menuItem in navigationMenuItems"
+          :key="menuItem.id"
+          :to="$i18n.path(menuItem.path)"
+        >
+          <v-list-tile-action class="selected-icon">
+            <v-icon class="list-menu-icon">keyboard_arrow_right</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content class="selected-text">
+            <v-list-tile-title
+              class="list-menu-text"
+            >
+              {{ $t(`routes_names.${menuItem.nameKey}`) }}
+            </v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+
   </v-layout>
 </template>
 
@@ -59,85 +99,35 @@ export default {
   data() {
     return {
       topImage,
+      right: true,
+      navigationMenuItems: [
+        {
+          nameKey: 'example-profile',
+          path: 'example-profile',
+        },
+        {
+          nameKey: 'example-profile/posts',
+          path: 'example-profile/posts',
+        },
+        {
+          nameKey: 'example-profile/gallery',
+          path: 'example-profile/gallery',
+        },
+        {
+          nameKey: 'example-profile/comments',
+          path: 'example-profile/comments',
+        },
+        {
+          nameKey: 'example-profile/related-profiles',
+          path: 'example-profile/related-profiles',
+        },
+      ],
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.top-image-section
-{
-    width: 100%;
-    height: calc(100vw / 3.2 - 1px);
-    background-color: #d0d0d0;
-}
-.top-image
-{
-    width: 100%;
-    height: calc(100vw / 3.2 - 1px);
-    background-position: center;
-    background-size: cover;
-}
-.content-container
-{
-    margin: auto;
-    padding-bottom: 60px;
-}
-.wrapper
-{
-    text-align: left;
-    margin: 0 300px 0 0;
-    display: inline-block;
-}
-div.menu-section
-{
-    top: 0;
-    padding-top: 64px;
-    position: sticky;
-    margin-right: 10px;
-    width: 300px;
-    height: auto;
-    float: left;
-}
-.content-section
-{
-    width: 640px;
-    padding-top: 60px;
-    float: right;
-}
-.router-link
-{
-    text-decoration: none;
-}
-.router-link-button
-{
-    width: 100%;
-    height: 44px;
-    line-height: 44px;
-    padding-left: 10px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: #1b2d39;
-    font-size: 14px;
-    outline: none;
-
-    &:hover
-    {
-        background-color: #f2f2f2;
-    }
-
-    .icon
-    {
-        position: relative;
-        top: 3px;
-        margin-right: 8px;
-        color: #000000;
-    }
-}
-
-#alignment
-{
-    height: 100%;
-    display: inline-block;
-}
+@import '../../assets/scss/example-profile/example-profile.scss';
+@import './assets/scss/example-profile/xs.scss';
 </style>

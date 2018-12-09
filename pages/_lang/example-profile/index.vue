@@ -13,7 +13,7 @@
       <v-icon class="icon">apps</v-icon>
       {{ $t('example-profile.information.category') }}
     </div>
-    <div class="text">
+    <div class="text margin-bottom">
       Informacje
     </div>
 
@@ -21,7 +21,7 @@
       <v-icon class="icon">info_outline</v-icon>
       {{ $t('example-profile.information.description') }}
     </div>
-    <div class="text">
+    <div class="text margin-bottom">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -117,7 +117,7 @@
       <v-icon class="icon">bubble_chart</v-icon>
       {{ $t('example-profile.information.tags') }}
     </div>
-    <div class="">
+    <div class="tags margin-bottom">
       <div v-for="tag in profileData.tags" :key="tag.id" class="tags-section">
         <router-link :to="setRouteParams(tag)" style="text-decoration:none;">
           <v-chip outline class="tag">
@@ -142,10 +142,10 @@
     <div v-for="section in profileData.otherMedia" :key="section.id">
       <div class="other-media-section">
         <i :class=" section.icon + ' other-media-icon'"/>
-        <div class="text" style="display: inline-block;width:140px;">
+        <div class="title-social">
           {{ section.title }}
         </div>
-        <div class="text" style="display: inline-block;">
+        <div class="value">
           {{ section.value }}
         </div>
       </div>
@@ -157,10 +157,18 @@
     </div>
     <div class="mobile-app-section">
       <div class="app-subsection">
-        <img :src="appleLogo" class="mobile-app-marketplace-logo" alt="">
+        <img
+          :src="appleLogo"
+          class="mobile-app-marketplace-logo"
+          alt="Apple marketplace logo"
+        >
       </div>
       <div class="app-subsection">
-        <img :src="googleLogo" class="mobile-app-marketplace-logo mrg" alt="">
+        <img
+          :src="googleLogo"
+          class="mobile-app-marketplace-logo mrg"
+          alt="Google marketplace logo"
+        >
       </div>
     </div>
 
@@ -168,7 +176,7 @@
       <v-icon class="icon">history</v-icon>
       {{ $t('example-profile.information.creation-date') }}
     </div>
-    <div class="text">
+    <div class="text margin-bottom">
       02.09.2018 11:43:08
     </div>
 
@@ -176,7 +184,7 @@
       <v-icon class="icon">cached</v-icon>
       {{ $t('example-profile.information.last-update') }}
     </div>
-    <div class="text">
+    <div class="text margin-bottom">
       02.09.2018 11:44:28
     </div>
 
@@ -338,5 +346,6 @@ export default {
 
 <style lang="scss" scoped>
 @import './assets/scss/example-profile/index/index.scss';
+@import './assets/scss/example-profile/index/xs.scss';
 @import '../../../assets/fontello/css/fontello.css';
 </style>

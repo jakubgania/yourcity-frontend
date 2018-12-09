@@ -1,0 +1,76 @@
+@media only screen and (max-width: 600px)
+{
+  .title-profile
+  {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .title-subsection
+  {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .subtitle
+  {
+    font-size: 16px;
+
+    .icon
+    {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+  .text
+  {
+    font-size: 14px;
+    padding-left: 46px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+  }
+  .margin-bottom
+  {
+    margin-bottom: 14px;
+  }
+  .opening-hours-section
+  {
+    font-size: 14px;
+
+    .day-of-week-name
+    {
+      margin-left: 46px;
+    }
+  }
+  .tags
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .other-media-section
+  {
+    .title-social
+    {
+      font-size: 16px;
+      display: inline;
+      width: 140px;
+    }
+
+    .value
+    {
+      display: block;
+      padding-left: 46px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+  .other-media-icon
+  {
+    margin-left: 8px;
+    margin-right: 2px;
+  }
+  .mobile-app-section
+  {
+    margin-left: 46px;
+  }
+}
