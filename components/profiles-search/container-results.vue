@@ -1,26 +1,16 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <div class="container-results">
-    <v-layout
-      row
-      wrap
-    >
-      <v-flex
-        xs12
-        sm12
-        lg12
-      >
+    <v-layout row wrap>
+      <v-flex xs12 sm12 lg12>
         <div class="results-section">
 
           <filter-component/>
 
-          <tags-section-component
-            @searchByTag="searchByTag"
-          />
+          <tags-section-component @searchByTag="searchByTag"/>
 
-          <v-flex
-            lg12
-            class="result-counter-section"
-          >
+          <v-flex lg12 class="result-counter-section">
             <div class="title-section">
               {{ $t('profiles_search.result_count') + ' : ' + resultCount() }}
             </div>
