@@ -66,7 +66,7 @@
                 </nuxt-link>
               </div>
               <div class="link-section">
-                <nuxt-link :to="$i18n.path('cities/all')">
+                <nuxt-link :to="$i18n.path('countries/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
                   {{ $t('routes_names.countries_page') }}
                 </nuxt-link>
