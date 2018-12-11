@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px)
+{
+  .title-page-section
+  {
+    font-size: 34px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .select-country
+  {
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .countries-section
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .countries-section
+  {
+    column-count: 2;
+    column-width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

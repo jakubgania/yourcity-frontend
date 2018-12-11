@@ -46,18 +46,20 @@ import axios from 'axios';
 import nightImage from '../../../assets/images/night-dortmund.jpg';
 
 export default {
-  async asyncData({ error }) {
-    try {
-      const { data } = await axios.get('https://api.yourcity.io/api/countries');
-      return { countriesItems: data };
-    } catch (e) {
-      return error({ statusCode: 404, message: 'Network connection error.' });
-    }
-  },
   data() {
     return {
       nightImage,
+      countriesItems: false,
     };
+  },
+  created() {
+    axios.get('/api/countries')
+      .then((response) => {
+        this.countriesItems = response.data;
+      })
+      .catch(() => {
+        //
+      });
   },
   head() {
     return {
@@ -83,4 +85,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './assets/scss/countries/countries.scss';
+@import './assets/scss/countries/xs.scss';
 </style>
