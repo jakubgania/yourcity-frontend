@@ -4,7 +4,8 @@
   },
   "header": {
     "dropdown_menu": {
-      "language": "Polski"
+      "title": "Language",
+      "language": "English"
     }
   },
   "home": {

@@ -1,10 +1,5 @@
 <template>
-  <v-menu
-    :nudge-width="140"
-    nudge-top="-38"
-    nudge-right="14"
-    absolute
-  >
+  <v-menu :nudge-width="160">
     <v-btn
       slot="activator"
       icon
@@ -12,40 +7,42 @@
       <v-icon>more_vert</v-icon>
     </v-btn>
 
-    <v-card>
-      <v-list-tile
-        class="link-section"
-      >
-        <v-list-tile-title>
-          <v-icon style="margin-right:14px;">translate</v-icon>
-          Języki
+    <v-card style="border-radius:0px;">
+
+      <v-list-tile style="cursor:default;background-color:#d4d4d4;">
+        <v-list-tile-title class="text-title">
+          <v-icon style="font-size:18px;margin-right:14px;">translate</v-icon>
+          {{ $t('header.dropdown_menu.title') }}
         </v-list-tile-title>
       </v-list-tile>
+
       <v-list-tile
         class="link-section"
         @click="changeLanguage('pl')"
       >
-        <v-list-tile-title>
-          <v-icon style="margin-right:14px;">chevron_right</v-icon>
+        <v-list-tile-title class="text-title">
+          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
           Polski
         </v-list-tile-title>
       </v-list-tile>
+
       <v-list-tile
         class="link-section"
         @click="changeLanguage('en')"
       >
-        <v-list-tile-title>
-          <v-icon style="margin-right:14px;">chevron_right</v-icon>
-          Angielski
+        <v-list-tile-title class="text-title">
+          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
+          English
         </v-list-tile-title>
       </v-list-tile>
+
       <v-list-tile
         class="link-section"
         @click="changeLanguage('de')"
       >
-        <v-list-tile-title>
-          <v-icon style="margin-right:14px;">chevron_right</v-icon>
-          Niemiecki
+        <v-list-tile-title class="text-title">
+          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
+          Deutsch
         </v-list-tile-title>
       </v-list-tile>
     </v-card>
@@ -93,16 +90,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.v-menu__content
+{
+  position: fixed!important;
+  top: 54px!important;
+  right: 20px!important;
+  left: unset!important;
+}
+.text-title
+{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 .list
 {
   cursor: default;
   letter-spacing: 1px;
-  // padding-left: 10px;
-  padding-right: 10px;
 }
 .link-section:hover
 {
-  background-color: #e6e6e6;
+  background-color: #f4efef;
 }
 .link
 {

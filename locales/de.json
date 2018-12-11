@@ -4,6 +4,7 @@
   },
   "header": {
     "dropdown_menu": {
+      "title": "Sprache",
       "language": "Deutsch"
     }
   },
@@ -228,7 +229,7 @@
       "keywords": "countries, select country, city, locations"
     },
     "title": "Countries",
-    "select_country": "Select country"
+    "select_country": "Wähle ein Land aus"
   },
   "project": {
     "head": {
@@ -240,10 +241,10 @@
   "founder": {
     "head": {
       "title": "Yourcity - Über den Gründer",
-      "description": "Read more about the founder of Yourcity.",
+      "description": "Lesen Sie mehr über den Gründer von Yourcity.",
       "keywords": "creator, creator of yourcity, yourcity engineer"
     },
-    "title": "About founder"
+    "title": "Über den Gründer"
   },
   "changelog": {
     "head": {
@@ -252,8 +253,8 @@
       "keywords": "changelog, information, changes, messages, descriptions of changes"
     },
     "title": "Changelog",
-    "paging-button": "Show more",
-    "network-connection-error": "Network connection error."
+    "paging-button": "Mehr anzeigen",
+    "network-connection-error": "Netzwerkverbindungsfehler."
   },
   "agreements": {
     "head": {
