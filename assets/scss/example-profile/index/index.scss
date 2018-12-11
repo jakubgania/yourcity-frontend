@@ -32,8 +32,13 @@
 }
 .text
 {
+  padding-left: 46px;
   line-height: 1.6;
   font-size: 16px;
+}
+.margin-bottom
+{
+  margin-bottom: 14px;
 }
 .opening-hours-section
 {
@@ -42,16 +47,21 @@
 
   .day-of-week-name
   {
-    width: 140px;
+    width: 180px;
     display: inline-block;
+    padding-left: 46px;
   }
 
   .opening-hours
   {
-    width: 140px;
+    width: 160px;
     display: inline-block;
     letter-spacing: 1px;
   }
+}
+.tags
+{
+  padding-left: 46px;
 }
 .tags-section
 {
@@ -82,8 +92,9 @@
 {
   letter-spacing: 1px;
   padding-bottom: 4px;
+  display: inline-block;
 
-  .title
+  .title-social
   {
     display: inline-block;
     width: 140px;

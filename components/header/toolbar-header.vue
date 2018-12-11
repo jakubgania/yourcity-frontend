@@ -23,6 +23,11 @@
 
     <v-spacer/>
 
+    <v-toolbar-side-icon
+      v-if="displayNavigationDrawerExampleProfile() && this.$vuetify.breakpoint.name == 'xs'"
+      @click.native="switchNavigationDrawerExampleProfile()"
+    />
+
     <dropdown-menu-component/>
 
   </v-toolbar>
@@ -43,11 +48,6 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {
-      //
-    };
-  },
   watch: {
     drawer(value) {
       // !value && this.$emit('closeNavigationDrawer');
@@ -65,6 +65,21 @@ export default {
     },
     switchNavigationDrawer() {
       this.$emit('switchNavigationDrawer');
+    },
+    switchNavigationDrawerExampleProfile() {
+      this.$emit('switchNavigationDrawerExampleProfile');
+    },
+    displayNavigationDrawerExampleProfile() {
+      return this.$route.name === 'lang-example-profile'
+          || this.$route.name === 'lang-example-profile-posts'
+          || this.$route.name === 'lang-example-profile-photos'
+          || this.$route.name === 'lang-example-profile-comments'
+          || this.$route.name === 'lang-example-profile-related-profiles'
+          || this.$route.name === 'example-profile'
+          || this.$route.name === 'example-profile-posts'
+          || this.$route.name === 'example-profile-photos'
+          || this.$route.name === 'example-profile-comments'
+          || this.$route.name === 'example-profile-related-profiles';
     },
   },
 };

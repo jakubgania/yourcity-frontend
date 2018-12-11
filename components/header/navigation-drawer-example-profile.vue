@@ -1,26 +1,22 @@
 <template>
   <v-navigation-drawer
-    v-model="drawerFlag"
+    v-if="this.$vuetify.breakpoint.name == 'xs'"
+    v-model="drawerFlagPro"
     fixed
-    app
+    right
     temporary
-    class="navigation-drawer-container"
   >
     <v-list
       class="list-section"
     >
       <div class="list-section-logo">
         <v-icon
-          class="close-menu-icon"
+          class="close-menu-icon-example-profile"
           @click="closeNavigationDrawer()"
         >
           close
         </v-icon>
-
-        <logo-component/>
-
       </div>
-      <!-- <v-divider/> -->
       <v-list-tile
         v-for="menuItem in navigationMenuItems"
         :key="menuItem.id"
@@ -33,7 +29,7 @@
           <v-list-tile-title
             class="list-menu-text"
           >
-            {{ $t(`routes_names.${menuItem.nameKey}`) }}
+            {{ $t(`${menuItem.nameKey}`) }}
           </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
@@ -42,46 +38,61 @@
 </template>
 
 <script>
-import LogoComponent from '../logo-component.vue';
-import navigationMenuItems from '../../json/navigation-menu-items.json';
-
 export default {
-  components: {
-    'logo-component': LogoComponent,
-  },
   props: {
-    drawer: {
+    drawerExampleProfile: {
       type: Boolean,
       default: false,
     },
   },
   data() {
     return {
-      navigationMenuItems: navigationMenuItems.items,
+      navigationMenuItems: [
+        {
+          nameKey: 'example-profile.menu.information',
+          path: 'example-profile',
+        },
+        {
+          nameKey: 'example-profile.menu.posts',
+          path: 'example-profile/posts',
+        },
+        {
+          nameKey: 'example-profile.menu.photos',
+          path: 'example-profile/photos',
+        },
+        {
+          nameKey: 'example-profile.menu.comments',
+          path: 'example-profile/comments',
+        },
+        {
+          nameKey: 'example-profile.menu.related-profiles',
+          path: 'example-profile/related-profiles',
+        },
+      ],
     };
   },
   computed: {
-    drawerFlag: {
+    drawerFlagPro: {
       get() {
-        return this.drawer;
+        return this.drawerExampleProfile;
       },
       set(value) {
-        this.$emit('updateNavigationDrawerValue', value);
+        this.$emit('updateNavigationDrawerValueExampleProfile', value);
       },
     },
   },
   watch: {
-    drawer(value) {
+    drawerExampleProfile(value) {
       // !value && this.$emit('closeNavigationDrawer');
 
       if (!value) {
-        this.$emit('closeNavigationDrawer');
+        this.$emit('closeNavigationDrawerExampleProfile');
       }
     },
   },
   methods: {
     closeNavigationDrawer() {
-      this.$emit('closeNavigationDrawer');
+      this.$emit('closeNavigationDrawerExampleProfile');
     },
   },
 };

@@ -8,10 +8,18 @@
       @closeNavigationDrawer="closeNavigationDrawer"
     />
 
+    <navigation-drawer-example-profile-component
+      :drawer-example-profile="drawerExampleProfile"
+      @switchNavigationDrawerExampleProfile="switchNavigationDrawerExampleProfile"
+      @updateNavigationDrawerValueExampleProfile="updateNavigationDrawerValueExampleProfile"
+      @closeNavigationDrawerExampleProfile="closeNavigationDrawerExampleProfile"
+    />
+
     <toolbar-header-component
       :drawer="drawer"
       @showNavigationDrawer="showNavigationDrawer"
       @switchNavigationDrawer="switchNavigationDrawer"
+      @switchNavigationDrawerExampleProfile="switchNavigationDrawerExampleProfile"
       @closeNavigationDrawer="closeNavigationDrawer"
     />
 
@@ -59,6 +67,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import NavigationDrawerComponent from './navigation-drawer.vue';
+import NavigationDrawerExampleProfileComponent from './navigation-drawer-example-profile.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';
 import SearchDialogXsComponent from '../profiles-search/search-dialog-xs.vue';
@@ -67,12 +76,14 @@ import categoriesItems from '../../json/categories-menu-items.json';
 export default {
   components: {
     'navigation-drawer-component': NavigationDrawerComponent,
+    'navigation-drawer-example-profile-component': NavigationDrawerExampleProfileComponent,
     'toolbar-header-component': ToolbarHeaderComponent,
     'toolbar-search-header-component': ToolbarSearchHeaderComponent,
     'search-dialog-xs-component': SearchDialogXsComponent,
   },
   data: () => ({
     drawer: false,
+    drawerExampleProfile: false,
     cityInputSync: null,
     queryInputSync: null,
     searchDialogXsModel: false,
@@ -181,6 +192,18 @@ export default {
     },
     updateNavigationDrawerValue(value) {
       this.drawer = value;
+    },
+    switchNavigationDrawerExampleProfile() {
+      this.drawerExampleProfile = !this.drawerExampleProfile;
+    },
+    closeNavigationDrawerExampleProfile() {
+      this.drawerExampleProfile = false;
+    },
+    showNavigationDrawerExampleProfile() {
+      this.drawerExampleProfile = true;
+    },
+    updateNavigationDrawerValueExampleProfile(value) {
+      this.drawerExampleProfile = value;
     },
     updateQueryModel(value) {
       this.queryModel = value;
