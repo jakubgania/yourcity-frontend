@@ -1,59 +1,59 @@
 {
   "html": {
-    "language": "en"
+    "language": "de"
   },
   "header": {
     "dropdown_menu": {
-      "language": "Polski"
+      "language": "Deutsch"
     }
   },
   "home": {
     "head": {
-      "title": "Yourcity - Search for different places in cities and locations",
+      "title": "Yourcity - Suche nach Orten in verschiedenen Städten und Lokaliesierung",
       "description": "Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform.",
       "keywords": "yourcity, yourcity app, start page, home, profiles, search, locations, cities, countries"
     },
     "search_section": {
       "top_words": [
         "clubs",
-        "dinner",
-        "town",
+        "mittagessen",
+        "stadt",
         "party",
-        "food",
-        "beer",
+        "essen",
+        "bier",
         "shop",
-        "music",
-        "swimming pool",
-        "cinema",
-        "pharmacy"
+        "musik",
+        "schwimmbad",
+        "kino",
+        "apotheke"
       ],
       "search_form": {
-        "input_query_placeholder": "What are you looking for ?",
-        "input_city_placeholder": "Location",
-        "submit_button": "Search"
+        "input_query_placeholder": "Was suchst du?",
+        "input_city_placeholder": "Lokalisierung",
+        "submit_button": "Suche"
       }
     },
     "information_section": {
-      "title": "Information about your city",
-      "subtitle": "and the area where you are",
+      "title": "Informationen zu Ihrer Stadt",
+      "subtitle": "und der Bereich, in dem Sie sich befinden",
       "exploration": {
         "title": "Exploration",
         "description": "You can use YOURCITY while in a new unknown city or to discover new places in your current location."
       },
       "information": {
-        "title": "Information",
+        "title": "Informationen",
         "description": "This is a place where you can find useful information about various places and services or upcoming events. Check what are the restaurants in the place you are going to, or search for a shopping mall planning shopping."
       },
       "categories": {
-        "title": "Categories",
+        "title": "Kategorien",
         "description": "Thanks to various categories, you can discover interesting objects in your area or in a place that is unknown to you."
       },
       "attractions": {
-        "title": "Attractions",
+        "title": "Attraktionen",
         "description": "YOURCITY will also help you in finding sports facilities such as swimming pools, sports halls and trampoline parks, but also tourist attractions, e.g museums and art galleries."
       },
       "help": {
-        "title": "Help",
+        "title": "Hilfe",
         "description": "When health is important to you, you can look for a gym or personal trainer, but also find information about medical clinics, hospitals and pharmacies."
       },
       "profiles": {
@@ -61,40 +61,40 @@
         "description": "Profiles provide various information such as opening hours or address or photo."
       },
       "companies": {
-        "title": "Companies",
+        "title": "Unternehmen",
         "description": "Here you can find information about many companies from various sectors and information for startups and entrepreneurs."
       }
     },
     "categories": {
-      "title_section": "Categories",
+      "title_section": "Kategorien",
       "clubs": "clubs",
-      "bar_and_pub": "bars and pubs",
-      "coffeehouses": "coffeehouses",
-      "food": "food",
-      "entertainment": "entertainment",
-      "event": "events",
+      "bar_and_pub": "bars und pubs",
+      "coffeehouses": "kaffeehäuser",
+      "food": "essen",
+      "entertainment": "unterhaltung",
+      "event": "veranstaltung",
       "shop": "shops",
       "service": "services",
-      "tourism": "tourism",
+      "tourism": "tourismus",
       "sport": "sport",
       "other": "other",
       "information": "information",
-      "education": "education",
+      "education": "bildung",
       "health": "health",
       "hotel": "hotels",
-      "travel": "travel",
-      "search_button": "search"
+      "travel": "reise",
+      "search_button": "suche"
     },
     "popular_tags": {
-      "title_section": "Popular tags",
+      "title_section": "Populär tags",
       "food": {
         "title": "food",
         "tags": [
-          "lody",
-          "restauracja",
+          "eis",
+          "restaurant",
           "pizza",
-          "kawiarnia",
-          "food",
+          "cafe",
+          "essen",
           "food truck",
           "vegan",
           "sushi"
@@ -104,10 +104,10 @@
         "title": "shop",
         "tags": [
           "fashion",
-          "galeria",
-          "centrum",
-          "centrum handlowe",
-          "sklep"
+          "galerie",
+          "zentrum",
+          "einkaufszentrum",
+          "laden"
         ]
       },
       "entertainment": {
@@ -123,8 +123,8 @@
       "sport": {
         "title": "sport",
         "tags": [
-          "siłownia",
-          "basen",
+          "gym",
+          "schwimmbad",
           "sport",
           "fitness"
         ]
@@ -143,41 +143,41 @@
       "other": {
         "title": "other",
         "tags": [
-          "apartamenty",
+          "wohnungen",
           "bootcamp",
           "design",
-          "apteka",
-          "turystyka",
+          "apotheke",
+          "tourismus",
           "beauty",
-          "kultura"
+          "kultur"
         ]
       },
-      "search_button": "go to search"
+      "search_button": "zur suche gehen"
     },
     "gallery": {
-      "title_section": "Gallery",
-      "search_button": "See more",
-      "paging_button": "Load more"
+      "title_section": "Bilder",
+      "search_button": "mehr sehen",
+      "paging_button": "mehr laden"
     },
     "cities": {
-      "title_section": "Cities",
-      "search_button": "More cities"
+      "title_section": "Städte",
+      "search_button": "Mehr Städte"
     },
     "business": {
-      "title_section": "For business",
+      "title_section": "Für Unternehmen",
       "section_1": {
-        "title": "Official partnership",
+        "title": "Offizielle Partnerschaft",
         "description": "Join the Yourcity platform and become an official verified partner."
       },
       "section_2": {
-        "title": "Create a business profile",
+        "title": "Erstellen Sie ein Geschäftsprofil",
         "description": "Create a profile for your business."
       }
     }
   },
   "profiles_search": {
     "head": {
-      "title": "Yourcity - Search for profiles",
+      "title": "Yourcity - Profilsuche",
       "description": "Search for information about the city of interest and the location where you are or browse different categories.",
       "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
     },
@@ -185,7 +185,7 @@
       "input_query_placeholder": "What are you looking for ?",
       "input_city_placeholder": "Location",
       "current_location": "Current location",
-      "submit_button": "Search"
+      "submit_button": "Suche"
     },
     "filter": {
       "title_section": "Filter",
@@ -211,7 +211,7 @@
   },
   "photos": {
     "head": {
-      "title": "Yourcity - Photos",
+      "title": "Yourcity - Bilder",
       "photo": "Photo",
       "description": "See a photo gallery from various places, locations, cities and countries.",
       "keywords": "photos, pictures, gallery, photographs, photos of cities, pictures of buildings, views, gallery yourcity"
@@ -223,7 +223,7 @@
   },
   "countries": {
     "head": {
-      "title": "Yourcity - Countries",
+      "title": "Yourcity - Länder",
       "description": "Select the country in which you want to view city profiles. The list of countries is constantly updated.",
       "keywords": "countries, select country, city, locations"
     },
@@ -232,14 +232,14 @@
   },
   "project": {
     "head": {
-      "title": "Yourcity - About project",
+      "title": "Yourcity - Über das Projekt",
       "description": "More information about Yourcity project.",
       "keywords": "yourcity project, project, project, application, project description, information"
     }
   },
   "founder": {
     "head": {
-      "title": "Yourcity - About founder",
+      "title": "Yourcity - Über den Gründer",
       "description": "Read more about the founder of Yourcity.",
       "keywords": "creator, creator of yourcity, yourcity engineer"
     },
@@ -257,11 +257,11 @@
   },
   "agreements": {
     "head": {
-      "title": "Yourcity - Agreements",
+      "title": "Yourcity - Vorschrift",
       "content": "Yourcity application regulations. A set of rules and guidelines.",
       "keywords": "regulations, rules, list of rules"
     },
-    "title": "Agreements",
+    "title": "Vorschrift",
     "app": "Application - A concept understood as a website available at https://yourcity.io.",
     "user": "User - a person using the application.",
     "rules": [
@@ -302,21 +302,21 @@
   },
   "contact": {
     "head": {
-      "title": "Yourcity - Contact",
+      "title": "Yourcity - Kontakt",
       "description": "Contact form - write a message, ask a question or describe a problem.",
       "keywords": "contact, contact form, question, message, email"
     }
   },
   "business": {
     "head": {
-      "title": "Yourcity - For business",
+      "title": "Yourcity - Für das Geschäft",
       "description": "Yourcity for business - profile information for companies and enterprises.",
       "keywords": "business, companies, enterprises, for business, for companies, for enterprises, business profiles, company profile, activity profile"
     }
   },
   "example-profile": {
     "head": {
-      "title": "Yourcity - Example profile",
+      "title": "Yourcity - Beispielprofil",
       "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information.",
       "keywords": "example profile, profile in yourcity, information profile, sections, basic information, category, description, address, opening hours, contact, tags, location, map, other media, facebook, twitter, youtube, instagram, snapchat, linkedin, mobile apps, app store, google play, creation date, last update date"
     },
@@ -328,7 +328,7 @@
       "related-profiles": "Related profiles"
     },
     "information": {
-      "page-subtitle": "Yourcity - Example profile - Information",
+      "page-subtitle": "Yourcity - Beispielprofil - Informationen",
       "profile-title": "Example profile on YOURCITY platform",
       "basic-information": "Basic information",
       "category": "Category",
@@ -351,16 +351,16 @@
       "last-update": "Last update"
     },
     "posts": {
-      "page-subtitle": "Yourcity - Example profile - Posts"
+      "page-subtitle": "Yourcity - Beispielprofil - Beiträge"
     },
     "gallery": {
-      "page-subtitle": "Yourcity - Example profile - Gallery"
+      "page-subtitle": "Yourcity - Beispielprofil - Bilder"
     },
     "comments": {
-      "page-subtitle": "Yourcity - Example profile - Comments"
+      "page-subtitle": "Yourcity - Beispielprofil - Kommentare"
     },
     "related-profiles": {
-      "page-subtitle": "Yourcity - Example profile - Related profiles"
+      "page-subtitle": "Yourcity - Beispielprofil - Verwandte profile"
     }
   },
   "footer": {
@@ -368,16 +368,16 @@
   },
   "routes_names": {
     "home_page": "Home",
-    "search_page": "Search",
-    "photos_page": "Photos",
-    "countries_page": "Cities",
-    "projects_page": "About project",
-    "founder_page": "About founder",
+    "search_page": "Suche",
+    "photos_page": "Bilder",
+    "countries_page": "Städte",
+    "projects_page": "Über das Projekt",
+    "founder_page": "Über den Gründer",
     "changelog_page": "Changelog",
-    "agreements_page": "Agreements",
-    "contact_page": "Contact",
-    "business_page": "For business",
-    "example_profile": "Example profile"
+    "agreements_page": "Vorschrift",
+    "contact_page": "Kontakt",
+    "business_page": "Für das Geschäft",
+    "example_profile": "Beispielprofil"
   },
   "categories": {
     "clubs": "Clubs",
@@ -401,6 +401,6 @@
     "it": "IT",
     "automotive": "Automotive"
   },
-  "network-connection-error-alert": "Network connection error",
-  "empty-results-alert": "No results for this query"
+  "network-connection-error-alert": "Netzwerkverbindungsfehler",
+  "empty-results-alert": "Keine Ergebnisse für diese Frage"
 }
