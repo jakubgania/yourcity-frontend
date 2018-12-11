@@ -11,8 +11,8 @@
   "home": {
     "head": {
       "title": "Yourcity - Suche nach Orten in verschiedenen Städten und Lokaliesierung",
-      "description": "Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform.",
-      "keywords": "yourcity, yourcity app, start page, home, profiles, search, locations, cities, countries"
+      "description": "Informationen über Ihre Stadt und die Region, in der Sie sich befinden. Suchen Sie nach Informationen in verschiedenen Kategorien in verschiedenen Ländern. Yourcity ist eine ständig wachsende Plattform.",
+      "keywords": "yourcity, yourcity app, startseite, home, lokalisierung, suche, profile, standorte, städte, länder"
     },
     "search_section": {
       "top_words": [
@@ -142,7 +142,7 @@
         ]
       },
       "other": {
-        "title": "other",
+        "title": "andere",
         "tags": [
           "wohnungen",
           "bootcamp",
@@ -168,11 +168,11 @@
       "title_section": "Für Unternehmen",
       "section_1": {
         "title": "Offizielle Partnerschaft",
-        "description": "Join the Yourcity platform and become an official verified partner."
+        "description": "Treten Sie der Yourcity plattform bei und werden Sie ein offiziell geprüfter Partner."
       },
       "section_2": {
         "title": "Erstellen Sie ein Geschäftsprofil",
-        "description": "Create a profile for your business."
+        "description": "Erstellen Sie ein detailliertes Profil für das Unternehmen, das Sie betreiben."
       }
     }
   },
@@ -183,19 +183,19 @@
       "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
     },
     "search_form": {
-      "input_query_placeholder": "What are you looking for ?",
-      "input_city_placeholder": "Location",
-      "current_location": "Current location",
+      "input_query_placeholder": "Was suchst du?",
+      "input_city_placeholder": "Lokalisierung",
+      "current_location": "Aktueller lokalisierung",
       "submit_button": "Suche"
     },
     "filter": {
       "title_section": "Filter",
-      "search": "Search in results"
+      "search": "Suche in Ergebnissen"
     },
     "tags": {
       "title": "Tags",
-      "button": "More tags",
-      "close": "Close"
+      "button": "Mehr tags",
+      "close": "Schließen"
     },
     "results_list": {
       "address": "Address",
@@ -204,7 +204,7 @@
       "hours": "Opening hours",
       "image_not_available": "Image not available",
       "image_dialog": {
-        "close_button": "Close"
+        "close_button": "Schließen"
       }
     },
     "result_count": "Results",
@@ -214,8 +214,8 @@
     "head": {
       "title": "Yourcity - Bilder",
       "photo": "Photo",
-      "description": "See a photo gallery from various places, locations, cities and countries.",
-      "keywords": "photos, pictures, gallery, photographs, photos of cities, pictures of buildings, views, gallery yourcity"
+      "description": "Sehen Sie sich eine Fotogalerie aus verschiedenen Orten, Standorte, Städten und Ländern an.",
+      "keywords": "fotos, bilder, galerie, fotos, fotos von städten, bilder von gebäuden, ansichten, galerie yourcity"
     },
     "information": "Information",
     "share": "Share",
@@ -228,13 +228,13 @@
       "description": "Select the country in which you want to view city profiles. The list of countries is constantly updated.",
       "keywords": "countries, select country, city, locations"
     },
-    "title": "Countries",
+    "title": "Länder",
     "select_country": "Wähle ein Land aus"
   },
   "project": {
     "head": {
       "title": "Yourcity - Über das Projekt",
-      "description": "More information about Yourcity project.",
+      "description": "Mehr Informationen zum Yourcity projekt.",
       "keywords": "yourcity project, project, project, application, project description, information"
     }
   },
@@ -304,8 +304,8 @@
   "contact": {
     "head": {
       "title": "Yourcity - Kontakt",
-      "description": "Contact form - write a message, ask a question or describe a problem.",
-      "keywords": "contact, contact form, question, message, email"
+      "description": "Kontaktformular - Schreiben Sie eine Nachricht, stellen Sie eine Frage oder beschreiben Sie das Problem.",
+      "keywords": "kontakt, kontaktformular, frage, nachricht, e-mail"
     }
   },
   "business": {
@@ -318,15 +318,15 @@
   "example-profile": {
     "head": {
       "title": "Yourcity - Beispielprofil",
-      "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information.",
-      "keywords": "example profile, profile in yourcity, information profile, sections, basic information, category, description, address, opening hours, contact, tags, location, map, other media, facebook, twitter, youtube, instagram, snapchat, linkedin, mobile apps, app store, google play, creation date, last update date"
+      "description": "Sehen Sie, wie ein Beispielprofil auf der Yourcity plattform aussieht. Verschiedene Abschnitte, detaillierte Informationen.",
+      "keywords": "beispielprofil, profil in yourcity, informationsprofil, abschnitte, grundlegende informationen, kategorien, beschreibung, adresse, öffnungszeiten, kontakt, tags, lokalisierung, landkarte, andere medien, facebook, twitter, youtube, instagram, snapchat, linkedin, mobile apps, app store, google play, erstellungsdatum, datum der letzten aktualisierung"
     },
     "menu": {
-      "information": "Information",
-      "posts": "Posts",
-      "photos": "Photos",
-      "comments": "Comments",
-      "related-profiles": "Related profiles"
+      "information": "Informationen",
+      "posts": "Beiträge",
+      "photos": "Bilder",
+      "comments": "Kommentare",
+      "related-profiles": "Verwandte Profile"
     },
     "information": {
       "page-subtitle": "Yourcity - Beispielprofil - Informationen",
@@ -382,25 +382,25 @@
   },
   "categories": {
     "clubs": "Clubs",
-    "bar_and_pub": "Bars and Pubs",
-    "coffeehouses": "Coffeehouses",
-    "food": "Food",
-    "entertainment": "Entertainment",
+    "bar_and_pub": "Bars und Pubs",
+    "coffeehouses": "Kaffeehäuser",
+    "food": "Essen",
+    "entertainment": "Unterhaltung",
     "event": "Events",
     "shop": "Shops",
     "service": "Services",
-    "tourism": "Tourism",
+    "tourism": "Tourismus",
     "sport": "Sport",
-    "other": "Other",
-    "information": "Information",
-    "education": "Education",
+    "other": "Andere",
+    "information": "Informationen",
+    "education": "Bildung",
     "health": "Health",
     "hotel": "Hotels",
-    "travel": "Travel",
-    "culture": "Culture",
-    "public_institutions": "Public ins.",
+    "travel": "Reise",
+    "culture": "Kultur",
+    "public_institutions": "öffentliche Ein.",
     "it": "IT",
-    "automotive": "Automotive"
+    "automotive": "Automobilindustrie"
   },
   "network-connection-error-alert": "Netzwerkverbindungsfehler",
   "empty-results-alert": "Keine Ergebnisse für diese Frage"
