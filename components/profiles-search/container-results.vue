@@ -174,11 +174,6 @@ export default {
         return 0;
       }
 
-      // if (this.showPaginigButton) {
-      //   // return this.result.length + '+';
-      //   return `${this.result.length}+`;
-      // }
-
       return this.result.length;
     },
     setProfileDetails(value) {
