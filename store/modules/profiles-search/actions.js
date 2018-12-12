@@ -90,7 +90,6 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
         dispatch('checkIsPaging', response.data);
         commit('getProfilesData', response.data.data);
         commit('resultCopy', response.data.data);
-
         dispatch('showFullScreenLoader', false);
       }
     }).catch(() => {
@@ -102,13 +101,16 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
 
 const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
   const parameters = urlparameters;
-  let url = null;
   dispatch('showPagingButtonLoader', true);
-  parameters.url = encodeURIComponent(parameters.url);
 
-  url = `/api/profiles-search/paging?query=${parameters.query}&city=${parameters.city}&category=${parameters.category}&paging-url=${parameters.url}`;
-
-  axios.get(url)
+  axios.get('/api/profiles-search/paging', {
+    params: {
+      query: parameters.query,
+      city: parameters.city,
+      category: parameters.city,
+      paging_url: parameters.url,
+    },
+  })
     .then((response) => {
       const items = {
         result: state.result.length,
@@ -122,7 +124,6 @@ const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
       dispatch('showPagingButtonLoader', false);
     }).catch(() => {
       dispatch('showPagingButtonLoader', false);
-      // this.errors.push(e)
     });
 };
 
@@ -231,13 +232,13 @@ const openModalImage = ({ commit }, index) => {
 };
 
 const generateModalImage = ({ commit }, value) => {
-  const jsObj = {};
+  const object = {};
 
   for (let i = 0; i < value; i += 1) {
-    jsObj[`key${i}`] = false;
+    object[`key${i}`] = false;
   }
 
-  commit('showModalImage', jsObj);
+  commit('showModalImage', object);
 };
 
 const generatePagingModalImage = ({ commit }, items) => {
@@ -253,19 +254,18 @@ const generatePagingModalImage = ({ commit }, items) => {
 };
 
 const getProfilePosts = ({ commit, dispatch }, idProfile) => {
-  const id = idProfile;
-  let url = null;
   dispatch('postLoaderButton', true);
 
-  url = `/api/search-profiles/posts?id-profile=${id}`;
-
-  axios.get(url)
+  axios.get('/api/search-profiles/posts', {
+    params: {
+      id_profile: idProfile,
+    },
+  })
     .then((response) => {
       commit('profilePosts', response.data.data);
       dispatch('postLoaderButton', false);
       dispatch('updateShowProfileDetailsDialog', true);
     }).catch(() => {
-      // this.errors.push(e)
       commit('profilePosts', null);
       dispatch('postLoaderButton', false);
     });
