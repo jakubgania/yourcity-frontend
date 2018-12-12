@@ -236,6 +236,10 @@
           </v-layout>
         </div>
 
+        <posts-dialog-component
+          :profile-posts="profilePosts"
+        />
+
         <v-card-title class="title-subsection">
           <i class="material-icons icon">smartphone</i>
           {{ $t('profiles_search.profile-details.phone') }}
@@ -312,13 +316,13 @@
 
 <script>
 import { mapGetters } from 'vuex';
-// import { mapGetters, mapActions } from 'vuex';
 import PoweredByFacebookComponent from '../powered-by-facebook.vue';
-// posts component
+import PostsDialogComponent from './posts-dialog.vue';
 
 export default {
   components: {
     'powered-by-facebook-component': PoweredByFacebookComponent,
+    'posts-dialog-component': PostsDialogComponent,
   },
   props: {
     showInformationDialog: {

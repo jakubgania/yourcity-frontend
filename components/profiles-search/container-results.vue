@@ -29,6 +29,7 @@
             :profile-posts="profilePosts"
             :show-full-description="showFullDescription"
             :show-full-description-button="showFullDescriptionButton"
+            @loadProfilePosts="loadProfilePosts"
             @updateShowFullDescription="updateShowFullDescription"
             @closeShowInformationDialog="closeShowInformationDialog"
           />
@@ -216,8 +217,8 @@ export default {
       this.$store.dispatch('searchProfiles/queryUpdate', tag);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
     },
-    loadProfilePosts() {
-      //
+    loadProfilePosts(profileID) {
+      this.$store.dispatch('searchProfiles/getProfilePosts', profileID);
     },
     facebookMenuRedirect() {
       //

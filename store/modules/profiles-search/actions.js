@@ -256,7 +256,7 @@ const generatePagingModalImage = ({ commit }, items) => {
 const getProfilePosts = ({ commit, dispatch }, idProfile) => {
   dispatch('postLoaderButton', true);
 
-  axios.get('/api/search-profiles/posts', {
+  axios.get('/api/profiles-search/posts', {
     params: {
       id_profile: idProfile,
     },
