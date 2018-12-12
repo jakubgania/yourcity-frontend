@@ -46,7 +46,7 @@
           large
           block
           depressed
-          color="white"
+          color="grey lighten-5"
           class="more-tags-button"
           @click="showMoreTagsDialog(true)"
         >
@@ -75,7 +75,6 @@
               <div
                 v-for="tag in proposedTags"
                 :key="tag.id"
-                class=""
                 style="display:inline;"
               >
                 <v-chip
