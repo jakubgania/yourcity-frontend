@@ -207,6 +207,37 @@
         "close_button": "Close"
       }
     },
+    "profile-details": {
+      "title-dialog": "More information",
+      "description": {
+        "title": "Description",
+        "show-more": "Show more",
+        "show-less": "Show less"
+      },
+      "address": "Address",
+      "opening-hours": {
+        "title": "Opening hours",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      },
+      "posts": {
+        "title": "Posts",
+        "button-text": "Show posts"
+      },
+      "phone": "Phone",
+      "website": {
+        "title": "Website",
+        "go-to-website": "Go to website"
+      },
+      "related-categories": "Related categories",
+      "close": "Close",
+      "no-data": "No data"
+    },
     "result_count": "Results",
     "paging_button": "Load more"
   },

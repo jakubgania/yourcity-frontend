@@ -207,6 +207,37 @@
         "close_button": "Zamknij"
       }
     },
+    "profile-details": {
+      "title-dialog": "Więcej informacji",
+      "description": {
+        "title": "Opis",
+        "show-more": "Pokaż więcej",
+        "show-less": "Pokaż mniej"
+      },
+      "address": "Adres",
+      "opening-hours": {
+        "title": "Godziny otwarcia",
+        "monday": "Poniedziałek",
+        "tuesday": "Wtorek",
+        "wednesday": "Środa",
+        "thursday": "Czwartek",
+        "friday": "Piątek",
+        "saturday": "Sobota",
+        "sunday": "Niedziela"
+      },
+      "posts": {
+        "title": "Posty",
+        "button-text": "Pokaż wpisy"
+      },
+      "phone": "Telefon",
+      "website": {
+        "title": "Strona",
+        "go-to-website": "Przejdź do strony"
+      },
+      "related-categories": "Powiązane kategorie",
+      "close": "Zamknij",
+      "no-data": "Brak danych"
+    },
     "result_count": "Wyników",
     "paging_button": "Pokaż więcej"
   },

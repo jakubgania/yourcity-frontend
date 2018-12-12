@@ -76,8 +76,15 @@
 .description-section
 {
   padding-left: 58px;
-
-  border-bottom: 1px solid #f0f0f0;
+}
+.hide-content
+{
+  overflow: hidden;
+  height: 7.8em;
+}
+.show-content
+{
+  height: auto;
 }
 .description
 {
@@ -173,7 +180,7 @@
   .hour-text
   {
     display: inline-block;
-    letter-spacing:1px;
+    letter-spacing: 1px;
   }
 }
 .website-chip
@@ -197,14 +204,4 @@
 {
   font-size: 12px;
   letter-spacing: 2px;
-}
-
-.hide-content
-{
-  overflow: hidden;
-  height: 7.8em;
-}
-.show-content
-{
-  height: auto;
 }
