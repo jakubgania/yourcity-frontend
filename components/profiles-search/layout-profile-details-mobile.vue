@@ -1,4 +1,4 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
+<!-- eslint-disable -->
 
 <template>
   <v-dialog
@@ -7,535 +7,285 @@
     fullscreen
   >
     <div
-      class="profile-section"
-      data-aos="zoom-in"
-      data-aos-delay="140"
-      data-aos-once="true"
+      id="scroll-target"
+      style="max-height: 100%"
+      class="scroll-y"
     >
-      <div
-        v-touch="{ left: () => swipe('left') , right: () => swipe('right') }"
-        class="swipe-section"
-      >
-
-        <div class="title-header">
-          <v-icon class="icon-info">info_outline</v-icon>
-          <div class="title-text">
-            {{ $t('profiles_search.profile-details.title-dialog') }}
-          </div>
-          <v-icon
-            class="icon-close"
-            @click="$emit('closeShowInformationDialog')"
+      <div  style="height: 1000px">
+        <div
+          class="profile-section"
+          data-aos="zoom-in"
+          data-aos-delay="140"
+          data-aos-once="true"
+          v-scroll:#scroll-target="onScroll"
+        >
+          <div
+            v-touch="{ left: () => swipe('left') , right: () => swipe('right'), down: () => swipe('down') }"
+            class="swipe-section"
           >
-            close
-          </v-icon>
-        </div>
 
-        <img
-          v-if="profileDetails.cover"
-          :src="profileDetails.cover.source"
-          class="profile-image"
-          style="margin-top:48px;"
-        >
-        <div v-else class="profile-no-image">
-          Brak zdjęcia
-        </div>
+            <div class="title-header">
+              <v-icon class="icon-info">info_outline</v-icon>
+              <div class="title-text">
+                {{ $t('profiles_search.profile-details.title-dialog') }}
+              </div>
+              <v-icon
+                class="icon-close"
+                @click="$emit('closeShowInformationDialog')"
+              >
+                close
+              </v-icon>
+            </div>
 
-        <v-layout row wrap>
-          <v-flex xs12>
-            <v-card class="profile-details-card-section">
-              <v-card-title class="profile-title-section">
-                <div class="profile-title">
-                  {{ profileDetails.name ? profileDetails.name : 'Brak' }}
-                </div>
-              </v-card-title>
-              <v-card-text class="border-bottom">
-                <v-layout row wrap>
-                  <v-flex
-                    xs5
-                    style="font-size:14px;letter-spacing: 1px;"
-                  >
-                    <v-icon
-                      class=""
-                      style="position:relative;top:2px;color: #3eafaf;"
-                    >
-                      start
-                    </v-icon>
-                    {{ profileDetails.overall_star_rating ?
-                    'Ocena - ' + profileDetails.overall_star_rating : 'Ocena - Brak' }}
-                  </v-flex>
-                  <v-flex
-                    xs7
-                    style="font-size:14px;letter-spacing: 1px;"
-                  >
-                    <v-icon
-                      class=""
-                      style="position:relative;top:2px;margin-right:12px;color: #3eafaf;"
-                    >
-                      keyboard_arrow_right
-                    </v-icon>
-                    {{ profileDetails.rating_count ?
-                    'Liczba ocen - ' + profileDetails.rating_count : 'Liczba ocen - Brak' }}
-                  </v-flex>
-                </v-layout>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">description</v-icon>
-                  Opis
-                </div>
-              </v-card-text>
-              <v-card-text class="border-bottom">
-                <div
-                  :class="[ showFullDescription ? 'show-content' : '', 'hide-content']"
-                  class="description-section"
-                >
-                  {{ profileDetails.description ? profileDetails.description : 'Brak' }}
-                </div>
-                <div
-                  v-if="showFullDescriptionButton"
-                  class="full-description-button-section"
-                >
-                  <v-layout row wrap>
-                    <v-flex xs6 offset-xs3>
-                      <v-btn
-                        block
-                        depressed
-                        class="full-description-button"
-                        @click="$emit('updateShowFullDescription')"
+            <img
+              v-if="profileDetails.cover"
+              :src="profileDetails.cover.source"
+              class="profile-image"
+              style="margin-top:48px;"
+            >
+            <div v-else class="profile-no-image">
+              Brak zdjęcia
+            </div>
+
+            <v-layout row wrap>
+              <v-flex xs12>
+                <v-card class="profile-details-card-section">
+                  <v-card-title class="profile-title-section">
+                    <div class="profile-title">
+                      {{ profileDetails.name ? profileDetails.name : 'Brak' }}
+                    </div>
+                  </v-card-title>
+                  <v-card-text class="border-bottom">
+                    <v-layout row wrap>
+                      <v-flex
+                        xs5
+                        style="font-size:14px;letter-spacing: 1px;"
                       >
-                        {{ descriptionButtonText }}
-                        <v-icon class="icon">{{ iconButtonText }}</v-icon>
-                      </v-btn>
-                    </v-flex>
-                  </v-layout>
-                </div>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">home</v-icon>
-                  Adres
-                </div>
-              </v-card-text>
-              <v-card-text class="card-section border-bottom">
-                <div v-if="profileDetails.single_line_address">
-                  {{ profileDetails.single_line_address ?
-                  profileDetails.single_line_address : 'Brak' }}
-                  <div class="address-section-tags">
+                        <v-icon
+                          class=""
+                          style="position:relative;top:2px;color: #3eafaf;"
+                        >
+                          start
+                        </v-icon>
+                        {{ profileDetails.overall_star_rating ?
+                        'Ocena - ' + profileDetails.overall_star_rating : 'Ocena - Brak' }}
+                      </v-flex>
+                      <v-flex
+                        xs7
+                        style="font-size:14px;letter-spacing: 1px;"
+                      >
+                        <v-icon
+                          class=""
+                          style="position:relative;top:2px;margin-right:12px;color: #3eafaf;"
+                        >
+                          keyboard_arrow_right
+                        </v-icon>
+                        {{ profileDetails.rating_count ?
+                        'Liczba ocen - ' + profileDetails.rating_count : 'Liczba ocen - Brak' }}
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">description</v-icon>
+                      Opis
+                    </div>
+                  </v-card-text>
+                  <v-card-text class="border-bottom">
                     <div
-                      v-if="profileDetails.location.street"
+                      :class="[ showFullDescription ? 'show-content' : '', 'hide-content']"
+                      class="description-section"
+                    >
+                      {{ profileDetails.description ? profileDetails.description : 'Brak' }}
+                    </div>
+                    <div
+                      v-if="showFullDescriptionButton"
+                      class="full-description-button-section"
+                    >
+                      <v-layout row wrap>
+                        <v-flex xs6 offset-xs3>
+                          <v-btn
+                            block
+                            depressed
+                            class="full-description-button"
+                            @click="$emit('updateShowFullDescription')"
+                          >
+                            {{ descriptionButtonText }}
+                            <v-icon class="icon">{{ iconButtonText }}</v-icon>
+                          </v-btn>
+                        </v-flex>
+                      </v-layout>
+                    </div>
+                  </v-card-text>
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">home</v-icon>
+                      Adres
+                    </div>
+                  </v-card-text>
+                  <v-card-text class="card-section border-bottom">
+                    <div v-if="profileDetails.single_line_address">
+                      {{ profileDetails.single_line_address ?
+                      profileDetails.single_line_address : 'Brak' }}
+                      <div class="address-section-tags">
+                        <div
+                          v-if="profileDetails.location.street"
+                          style="display:inline;"
+                        >
+                          <v-chip outline class="tag-chip">
+                            {{ profileDetails.location.street }}
+                          </v-chip>
+                        </div>
+                        <div
+                          v-if="profileDetails.location.city"
+                          style="display:inline;"
+                        >
+                          <v-chip outline class="tag-chip">
+                            {{ profileDetails.location.city }}
+                          </v-chip>
+                        </div>
+                        <div
+                          v-if="profileDetails.location.country"
+                          style="display:inline;"
+                        >
+                          <v-chip outline class="tag-chip">
+                            {{ profileDetails.location.country }}
+                          </v-chip>
+                        </div>
+                      </div>
+                    </div>
+                  </v-card-text>
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">access_time</v-icon>
+                      Godziny otwarcia
+                    </div>
+                  </v-card-text>
+
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">comment</v-icon>
+                      Posty
+                    </div>
+                  </v-card-text>
+
+                  <v-card-text class="border-bottom">
+                    <v-layout row wrap>
+                      <v-flex xs6 offset-xs3>
+                        <v-btn
+                          :loading="postLoaderButton"
+                          :disabled="postLoaderButton"
+                          block
+                          depressed
+                          class="full-description-button"
+                          @click.native="$emit('loadProfilePosts', profileDetails.id)"
+                        >
+                          {{ $t('profiles_search.profile-details.posts.button-text') }}
+                          <v-icon class="icon">cloud_upload</v-icon>
+                        </v-btn>
+                      </v-flex>
+                    </v-layout>
+                  </v-card-text>
+
+                  <posts-dialog-component
+                    :profile-posts="profilePosts"
+                  />
+
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">smartphone</v-icon>
+                      Telefon
+                    </div>
+                  </v-card-text>
+                  <v-card-text class="card-section border-bottom">
+                    {{ profileDetails.phone ? profileDetails.phone : 'Brak' }}
+                  </v-card-text>
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">language</v-icon>
+                      Strona
+                    </div>
+                  </v-card-text>
+                  <v-card-text
+                    v-if="profileDetails.website"
+                    class="card-section border-bottom"
+                  >
+                    <a
+                      :href="profileDetails.website"
+                      target="_blank"
+                      style="text-decoration:none;"
+                    >
+                      <v-chip outline class="website-chip">
+                        Przejdź do strony
+                        <v-icon>keyboard_arrow_right</v-icon>
+                      </v-chip>
+                    </a>
+                  </v-card-text>
+                  <v-card-text v-else class="card-section border-bottom">
+                    Brak
+                  </v-card-text>
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">widgets</v-icon>
+                      Inne media
+                    </div>
+                  </v-card-text>
+
+                  <v-card-text class="card-section border-bottom">
+                    <div
+                      class=""
+                      @click="facebookDialogModel = true"
+                    >
+                      Facebook
+                    </div>
+                  </v-card-text>
+
+                  <v-card-text>
+                    <div class="profile-text">
+                      <v-icon class="icon">share</v-icon>
+                      Powiązane kategorie
+                    </div>
+                  </v-card-text>
+                  <v-card-text
+                    v-if="profileDetails.category_list"
+                    class="tag-section card-section border-bottom"
+                  >
+                    <div
+                      v-for="category in profileDetails.category_list"
+                      :key="category.id"
                       style="display:inline;"
                     >
                       <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.street }}
+                        {{ category.name }}
                       </v-chip>
                     </div>
+                  </v-card-text>
+                  <v-card-text v-else>
+                    brak
+                  </v-card-text>
+                  <v-card-text class="border-bottom">
                     <div
-                      v-if="profileDetails.location.city"
-                      style="display:inline;"
+                      class="return-button profile-text"
+                      @click="closePrfoileDetails()"
                     >
-                      <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.city }}
-                      </v-chip>
+                      <v-icon class="icon">keyboard_backspace</v-icon>
+                      Wróc do profili
                     </div>
-                    <div
-                      v-if="profileDetails.location.country"
-                      style="display:inline;"
-                    >
-                      <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.country }}
-                      </v-chip>
-                    </div>
-                  </div>
-                </div>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">access_time</v-icon>
-                  Godziny otwarcia
-                </div>
-              </v-card-text>
+                  </v-card-text>
+                  <v-card-text style="padding-bottom:80px;padding-top:24px;text-align:center;">
+                    <powered-by-facebook-component/>
+                  </v-card-text>
 
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">comment</v-icon>
-                  Posty
-                </div>
-              </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
 
-              <v-card-text class="border-bottom">
-                <v-layout row wrap>
-                  <v-flex xs6 offset-xs3>
-                    <v-btn
-                      :loading="postLoaderButton"
-                      :disabled="postLoaderButton"
-                      block
-                      depressed
-                      class="full-description-button"
-                      @click.native="$emit('loadProfilePosts', profileDetails.id)"
-                    >
-                      {{ $t('profiles_search.profile-details.posts.button-text') }}
-                      <v-icon class="icon">cloud_upload</v-icon>
-                    </v-btn>
-                  </v-flex>
-                </v-layout>
-              </v-card-text>
-
-              <posts-dialog-component
-                :profile-posts="profilePosts"
-              />
-
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">smartphone</v-icon>
-                  Telefon
-                </div>
-              </v-card-text>
-              <v-card-text class="card-section border-bottom">
-                {{ profileDetails.phone ? profileDetails.phone : 'Brak' }}
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">language</v-icon>
-                  Strona
-                </div>
-              </v-card-text>
-              <v-card-text
-                v-if="profileDetails.website"
-                class="card-section border-bottom"
-              >
-                <a
-                  :href="profileDetails.website"
-                  target="_blank"
-                  style="text-decoration:none;"
-                >
-                  <v-chip outline class="website-chip">
-                    Przejdź do strony
-                    <v-icon>keyboard_arrow_right</v-icon>
-                  </v-chip>
-                </a>
-              </v-card-text>
-              <v-card-text v-else class="card-section border-bottom">
-                Brak
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">widgets</v-icon>
-                  Inne media
-                </div>
-              </v-card-text>
-
-              <v-card-text class="card-section border-bottom">
-                <div
-                  class=""
-                  @click="facebookDialogModel = true"
-                >
-                  Facebook
-                </div>
-              </v-card-text>
-
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">share</v-icon>
-                  Powiązane kategorie
-                </div>
-              </v-card-text>
-              <v-card-text
-                v-if="profileDetails.category_list"
-                class="tag-section card-section border-bottom"
-              >
-                <div
-                  v-for="category in profileDetails.category_list"
-                  :key="category.id"
-                  style="display:inline;"
-                >
-                  <v-chip outline class="tag-chip">
-                    {{ category.name }}
-                  </v-chip>
-                </div>
-              </v-card-text>
-              <v-card-text v-else>
-                brak
-              </v-card-text>
-              <v-card-text class="border-bottom">
-                <div
-                  class="return-button profile-text"
-                  @click="closePrfoileDetails()"
-                >
-                  <v-icon class="icon">keyboard_backspace</v-icon>
-                  Wróc do profili
-                </div>
-              </v-card-text>
-              <v-card-text style="padding-bottom:80px;padding-top:24px;text-align:center;">
-                <powered-by-facebook-component/>
-              </v-card-text>
-
-            </v-card>
-          </v-flex>
-        </v-layout>
-
+          </div>
+        </div>
       </div>
     </div>
+
   </v-dialog>
-  <!-- <div
-    v-if="profileDetailsMobileModel"
-    id="profile-details-mobile-component"
-    class="profile-details-mobile-container"
-  >
-    <div
-      class="profile-section"
-      data-aos="zoom-in"
-      data-aos-delay="140"
-      data-aos-once="true"
-    >
-      <div
-        v-touch="{ left: () => swipe('left') , right: () => swipe('right') }"
-        class="swipe-section"
-      >
-        <img
-          v-if="profileDetails.cover"
-          :src="profileDetails.cover.source"
-          class="profile-image"
-        >
-        <div v-else class="profile-no-image">
-          Brak zdjęcia
-        </div>
-
-        <v-layout row wrap>
-          <v-flex xs12>
-            <v-card class="profile-details-card-section">
-              <v-card-title class="profile-title-section">
-                <div class="profile-title">
-                  {{ profileDetails.name ? profileDetails.name : 'Brak' }}
-                </div>
-              </v-card-title>
-              <v-card-text class="border-bottom">
-                <v-layout row wrap>
-                  <v-flex
-                    xs5
-                    style="font-size:14px;letter-spacing: 1px;"
-                  >
-                    <v-icon
-                      class=""
-                      style="position:relative;top:2px;color: #3eafaf;"
-                    >
-                      start
-                    </v-icon>
-                    {{ profileDetails.overall_star_rating ?
-                    'Ocena - ' + profileDetails.overall_star_rating : 'Ocena - Brak' }}
-                  </v-flex>
-                  <v-flex
-                    xs7
-                    style="font-size:14px;letter-spacing: 1px;"
-                  >
-                    <v-icon
-                      class=""
-                      style="position:relative;top:2px;margin-right:12px;color: #3eafaf;"
-                    >
-                      keyboard_arrow_right
-                    </v-icon>
-                    {{ profileDetails.rating_count ?
-                    'Liczba ocen - ' + profileDetails.rating_count : 'Liczba ocen - Brak' }}
-                  </v-flex>
-                </v-layout>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">description</v-icon>
-                  Opis
-                </div>
-              </v-card-text>
-              <v-card-text class="border-bottom">
-                <div
-                  :class="[ showFullDescription ? 'show-content' : '', 'hide-content']"
-                  class="description-section"
-                >
-                  {{ profileDetails.description ? profileDetails.description : 'Brak' }}
-                </div>
-                <div
-                  v-if="showFullDescriptionButton"
-                  class="full-description-button-section"
-                >
-                  <v-layout row wrap>
-                    <v-flex xs6 offset-xs3>
-                      <v-btn
-                        block
-                        depressed
-                        class="full-description-button"
-                        @click="$emit('updateShowFullDescription')"
-                      >
-                        {{ descriptionButtonText }}
-                        <v-icon class="icon">{{ iconButtonText }}</v-icon>
-                      </v-btn>
-                    </v-flex>
-                  </v-layout>
-                </div>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">home</v-icon>
-                  Adres
-                </div>
-              </v-card-text>
-              <v-card-text class="card-section border-bottom">
-                <div v-if="profileDetails.single_line_address">
-                  {{ profileDetails.single_line_address ?
-                  profileDetails.single_line_address : 'Brak' }}
-                  <div class="address-section-tags">
-                    <div
-                      v-if="profileDetails.location.street"
-                      style="display:inline;"
-                    >
-                      <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.street }}
-                      </v-chip>
-                    </div>
-                    <div
-                      v-if="profileDetails.location.city"
-                      style="display:inline;"
-                    >
-                      <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.city }}
-                      </v-chip>
-                    </div>
-                    <div
-                      v-if="profileDetails.location.country"
-                      style="display:inline;"
-                    >
-                      <v-chip outline class="tag-chip">
-                        {{ profileDetails.location.country }}
-                      </v-chip>
-                    </div>
-                  </div>
-                </div>
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">access_time</v-icon>
-                  Godziny otwarcia
-                </div>
-              </v-card-text>
-
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">comment</v-icon>
-                  Posty
-                </div>
-              </v-card-text>
-
-              <v-card-text class="border-bottom">
-                <v-layout row wrap>
-                  <v-flex xs6 offset-xs3>
-                    <v-btn
-                      :loading="postLoaderButton"
-                      :disabled="postLoaderButton"
-                      block
-                      depressed
-                      class="full-description-button"
-                      @click.native="$emit('loadProfilePosts', profileDetails.id)"
-                    >
-                      {{ $t('profiles_search.profile-details.posts.button-text') }}
-                      <v-icon class="icon">cloud_upload</v-icon>
-                    </v-btn>
-                  </v-flex>
-                </v-layout>
-              </v-card-text>
-
-              <posts-dialog-component
-                :profile-posts="profilePosts"
-              />
-
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">smartphone</v-icon>
-                  Telefon
-                </div>
-              </v-card-text>
-              <v-card-text class="card-section border-bottom">
-                {{ profileDetails.phone ? profileDetails.phone : 'Brak' }}
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">language</v-icon>
-                  Strona
-                </div>
-              </v-card-text>
-              <v-card-text
-                v-if="profileDetails.website"
-                class="card-section border-bottom"
-              >
-                <a
-                  :href="profileDetails.website"
-                  target="_blank"
-                  style="text-decoration:none;"
-                >
-                  <v-chip outline class="website-chip">
-                    Przejdź do strony
-                    <v-icon>keyboard_arrow_right</v-icon>
-                  </v-chip>
-                </a>
-              </v-card-text>
-              <v-card-text v-else class="card-section border-bottom">
-                Brak
-              </v-card-text>
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">widgets</v-icon>
-                  Inne media
-                </div>
-              </v-card-text>
-
-              <v-card-text class="card-section border-bottom">
-                <div
-                  class=""
-                  @click="facebookDialogModel = true"
-                >
-                  Facebook
-                </div>
-              </v-card-text>
-
-              <v-card-text>
-                <div class="profile-text">
-                  <v-icon class="icon">share</v-icon>
-                  Powiązane kategorie
-                </div>
-              </v-card-text>
-              <v-card-text
-                v-if="profileDetails.category_list"
-                class="tag-section card-section border-bottom"
-              >
-                <div
-                  v-for="category in profileDetails.category_list"
-                  :key="category.id"
-                  style="display:inline;"
-                >
-                  <v-chip outline class="tag-chip">
-                    {{ category.name }}
-                  </v-chip>
-                </div>
-              </v-card-text>
-              <v-card-text v-else>
-                brak
-              </v-card-text>
-              <v-card-text class="border-bottom">
-                <div
-                  class="return-button profile-text"
-                  @click="closePrfoileDetails()"
-                >
-                  <v-icon class="icon">keyboard_backspace</v-icon>
-                  Wróc do profili
-                </div>
-              </v-card-text>
-              <v-card-text style="padding-bottom:80px;padding-top:24px;text-align:center;">
-                <powered-by-facebook-component/>
-              </v-card-text>
-
-            </v-card>
-          </v-flex>
-        </v-layout>
-
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -610,6 +360,7 @@ export default {
           page: '/community',
         },
       ],
+      offsetTop: 0,
     };
   },
   computed: {
@@ -650,9 +401,18 @@ export default {
         }
         this.scrollTop();
       }
+
+      if (direction === 'down') {
+        if (this.offsetTop === 0) {
+          this.$emit('updatepProfileDetailsMobileModel', false);
+        }
+      }
+    },
+    onScroll(e) {
+      this.offsetTop = e.target.scrollTop;
     },
     scrollTop() {
-      const element = document.getElementById('profile-details-mobile-component');
+      const element = document.getElementById('scroll-target');
       element.scrollTo(0, 0);
     },
     hourText(val1, val2) {
@@ -664,6 +424,7 @@ export default {
     },
     closePrfoileDetails() {
       this.$emit('updatepProfileDetailsMobileModel', false);
+      this.scrollTop();
     },
   },
 };
@@ -684,7 +445,7 @@ export default {
   max-width: 600px;
   height: 48px;
 
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 .icon-info
 {
@@ -705,5 +466,22 @@ export default {
   display: inline;
 
   letter-spacing: 2px;
+}
+.icon-close
+{
+  font-size: 28px;
+
+  position: relative;
+  top: 10px;
+
+  display: inline;
+  float: right;
+
+  margin-right: 20px;
+
+  &:hover
+  {
+    color: #000000;
+  }
 }
 </style>
