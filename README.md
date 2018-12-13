@@ -31,3 +31,9 @@ Last update date : 00:20 13/12/2018
 - [ESlint](https://eslint.org/) 5.0.1
 - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) 13.1.0
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) 4.0.0
+
+## System components
+
+- Frontend (this repository)
+- [Backend](https://github.com/jakubgania/yourcity-backend-laravel)
+- [Docker setup](https://github.com/jakubgania/yourcity-docker-setup)
