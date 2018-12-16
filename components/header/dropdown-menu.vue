@@ -1,5 +1,5 @@
 <template>
-  <v-menu :nudge-width="160">
+  <v-menu :nudge-width="140">
     <v-btn
       slot="activator"
       icon
@@ -21,7 +21,7 @@
         @click="changeLanguage('pl')"
       >
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
           Polski
         </v-list-tile-title>
       </v-list-tile>
@@ -31,7 +31,7 @@
         @click="changeLanguage('en')"
       >
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
           English
         </v-list-tile-title>
       </v-list-tile>
@@ -41,7 +41,7 @@
         @click="changeLanguage('de')"
       >
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:18px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
           Deutsch
         </v-list-tile-title>
       </v-list-tile>
@@ -99,7 +99,7 @@ export default {
 }
 .text-title
 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
 }
