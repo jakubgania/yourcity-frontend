@@ -3,13 +3,14 @@
     v-if="displaySearchHeader()"
     color="white"
     app
+    height="64"
     absolute
     clipped-left
     class="toolbar-search-header"
   >
     <v-toolbar-side-icon @click.stop="drawerFlag = !drawerFlag"/>
 
-    <v-toolbar-title>
+    <v-toolbar-title class="toolbar-title">
       <logo-component/>
     </v-toolbar-title>
 
@@ -95,13 +96,11 @@
 
     <v-btn
       icon
-      class="hidden-md-only hidden-lg-only"
+      class="hidden-md-only hidden-lg-only mobile-search-icon"
       @click="$emit('updateSearchDialogXsModel', true)"
     >
       <v-icon>search</v-icon>
     </v-btn>
-
-    <v-spacer/>
 
     <dropdown-menu-component/>
 
@@ -177,8 +176,6 @@ export default {
   },
   watch: {
     queryInputSync(val) {
-      // val && val !== this.queryModelComp && this.$emit('updateQueryInputSync', val);
-
       if (val && val !== this.queryModelComp) {
         this.$emit('updateQueryInputSync', val);
       }
@@ -186,8 +183,6 @@ export default {
       this.$store.dispatch('searchProfiles/queryUpdate', val);
     },
     cityInputSync(val) {
-      // val && val !== this.cityModelComp && this.$emit('updateCityInputSync', val);
-
       if (val && val !== this.cityModelComp) {
         this.$emit('updateCityInputSync', val);
       }
@@ -203,9 +198,8 @@ export default {
       this.$emit('submitSearchForm');
     },
   },
-  getCurrentLocation() {
-    //
-  },
+  // getCurrentLocation() {
+  // },
 };
 </script>
 
