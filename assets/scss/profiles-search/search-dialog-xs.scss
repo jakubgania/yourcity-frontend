@@ -1,73 +1,83 @@
 .toolbar-top-section
 {
-    background-color: #ffffff;
-    height: 56px;
-    line-height: 56px;
-    border-bottom: 1px solid #eceff1;
-    box-shadow: none;
+  background-color: #ffffff;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #eceff1;
+  box-shadow: none;
 
-    .close-icon
-    {
-        color: #2b2b2b;
-        font-size: 30px;
-    }
+  .close-icon
+  {
+    color: #2b2b2b;
+    font-size: 26px;
+  }
 
-    .top-title
-    {
-        font-size: 16px;
-        // color: #252bfc;
-        letter-spacing: 2px;
-        padding-top: 3px;
-        text-transform: uppercase;
-        cursor: default;
-    }
+  .top-title
+  {
+    font-size: 14px;
+    font-weight: 700;
+    color: #252bfc;
+    letter-spacing: 2px;
+    padding-top: 3px;
+    text-transform: uppercase;
+    cursor: default;
+  }
 }
 .query-input
 {
-    border-left: 1px solid #c9c9c9;
+  border-left: 1px solid #c9c9c9;
+  height: 64px;
+  line-height: 64px;
+
+  .v-input__slot
+  {
+    border-radius: 0px;
+    box-shadow: none !important;
+    margin-bottom: 0px;
     height: 64px;
-    line-height: 64px;
 
-    .v-input__slot
+    .primary--text
     {
-        border-radius: 0px;
-        box-shadow: none !important;
-        margin-bottom: 0px;
-        height: 64px;
-
-        .primary--text
-        {
-            color: #252bfc !important;
-        }
+      color: #252bfc !important;
     }
+  }
 }
 .combobox-input
 {
-    height: 64px;
-    line-height: 64px;
-    border-bottom: 1px solid #000000;
+  height: 64px;
+  line-height: 64px;
+  border-bottom: 1px solid #000000;
 }
 .submit-form-button
 {
-    height: 64px;
-    width: 100%;
-    background-color: #30d6bc;
-    line-height: 64px;
-    letter-spacing: 3px;
-    outline: none;
-    margin-top: 2px;
-    color: #000000;
-    text-transform: uppercase;
+  height: 64px;
+  width: 100%;
+  background-color: #252bfc;;
+  line-height: 64px;
+  letter-spacing: 3px;
+  outline: none;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
 
-    &:hover
-    {
-        background-color: #eceff1;
-        transition: background-color 200ms linear;
-    }
-}
-.button-icon
-{
+  .button-icon
+  {
     position: relative;
-    top: 6px;
-    margin-left: 10px;
+    top: 4px;
+    color: #ffffff;
+  }
+
+  &:hover
+  {
+    color: #000000;
+    background-color: #eceff1;
+    transition: background-color 200ms linear;
+
+    .button-icon
+    {
+      color: #000000;
+      transition: background-color 200ms linear;
+    }
+  }
 }
