@@ -6,17 +6,7 @@
     right
     temporary
   >
-    <v-list
-      class="list-section"
-    >
-      <div class="list-section-logo">
-        <v-icon
-          class="close-menu-icon-example-profile"
-          @click="closeNavigationDrawer()"
-        >
-          close
-        </v-icon>
-      </div>
+    <v-list class="list-section">
       <v-list-tile
         v-for="menuItem in navigationMenuItems"
         :key="menuItem.id"
@@ -83,8 +73,6 @@ export default {
   },
   watch: {
     drawerExampleProfile(value) {
-      // !value && this.$emit('closeNavigationDrawer');
-
       if (!value) {
         this.$emit('closeNavigationDrawerExampleProfile');
       }
