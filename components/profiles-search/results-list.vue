@@ -114,6 +114,7 @@
 
     <v-dialog
       v-model="showFullSizePhotoDialog"
+      :fullscreen="this.$vuetify.breakpoint.name == 'xs'"
       max-width="800"
       @keydown.esc="showFullSizePhotoDialog = false"
     >
@@ -150,6 +151,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
   </div>
 </template>
 
