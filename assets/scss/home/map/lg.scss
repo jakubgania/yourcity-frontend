@@ -1,24 +1,24 @@
 .map-image-section
 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-    text-align: center;
-    background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
 
-    .text-section
+  .text-section
+  {
+    position: absolute;
+    top: 44%;
+    left: 0;
+    right: 0;
+
+    .text
     {
-        position: absolute;
-        top: 44%;
-        left: 0;
-        right: 0;
-
-        .text
-        {
-            font-weight: 400;
-            font-size: 28px;
-            letter-spacing: 4px;
-            color: #242424;
-        }
+      font-weight: 400;
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #242424;
     }
+  }
 }

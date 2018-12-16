@@ -1,20 +1,20 @@
 @media only screen and (max-width: 600px)
 {
-    .map-image-section
+  .map-image-section
+  {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .text-section
     {
-        padding-top: 40px;
-        padding-bottom: 40px;
+      top: 40%;
 
-        .text-section
-        {
-            top: 40%;
-
-            .text
-            {
-                font-size: 20px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
+      .text
+      {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
+  }
 }
