@@ -10,7 +10,7 @@
   >
     <v-toolbar-side-icon @click.native="switchNavigationDrawer()"/>
 
-    <v-toolbar-title>
+    <v-toolbar-title class="toolbar-title">
       <logo-component/>
     </v-toolbar-title>
 

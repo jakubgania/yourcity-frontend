@@ -38,7 +38,8 @@ export default {
 <style lang="scss" scoped>
 .logo-link
 {
-  margin-top:0px;text-decoration:none;
+  margin-top: 0px;
+  text-decoration: none;
 }
 .logo-section
 {
