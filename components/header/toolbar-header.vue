@@ -50,7 +50,6 @@ export default {
   },
   watch: {
     drawer(value) {
-      // !value && this.$emit('closeNavigationDrawer');
       if (!value) {
         this.$emit('closeNavigationDrawer');
       }
