@@ -10,17 +10,9 @@
       class="list-section"
     >
       <div class="list-section-logo">
-        <v-icon
-          class="close-menu-icon"
-          @click="closeNavigationDrawer()"
-        >
-          close
-        </v-icon>
-
         <logo-component/>
-
       </div>
-      <!-- <v-divider/> -->
+
       <v-list-tile
         v-for="menuItem in navigationMenuItems"
         :key="menuItem.id"
