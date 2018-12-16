@@ -46,7 +46,7 @@
         </v-flex>
         <v-flex xs12 lg8>
           <v-layout row wrap>
-            <v-flex xs6 sm4 lg4>
+            <v-flex xs12 sm4 lg4>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
@@ -72,7 +72,7 @@
                 </nuxt-link>
               </div>
             </v-flex>
-            <v-flex xs6 sm4 lg4>
+            <v-flex xs12 sm4 lg4>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('project')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
@@ -98,7 +98,7 @@
                 </nuxt-link>
               </div>
             </v-flex>
-            <v-flex xs6 sm4 lg4>
+            <v-flex xs12 sm4 lg4>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('contact')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
