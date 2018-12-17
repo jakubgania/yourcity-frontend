@@ -38,6 +38,18 @@
       </div>
     </v-flex>
 
+    <v-flex
+      xs12 lg10 offset-lg1
+      style="text-align:center;margin-bottom:100px;"
+    >
+      <v-progress-circular
+        v-if="showLoader"
+        :size="50"
+        indeterminate
+        style="color:#252bfc;"
+      />
+    </v-flex>
+
   </v-layout>
 </template>
 
@@ -50,15 +62,19 @@ export default {
     return {
       nightImage,
       countriesItems: false,
+      showLoader: false,
     };
   },
   created() {
+    this.showLoader = true;
+
     axios.get('/api/countries')
       .then((response) => {
         this.countriesItems = response.data;
+        this.showLoader = false;
       })
       .catch(() => {
-        //
+        this.showLoader = false;
       });
   },
   head() {
