@@ -51,14 +51,14 @@
 
     <v-flex
       v-if="pagingPhotosURL"
-      xs10
-      offset-xs1
+      xs12
       sm6
       offset-sm3
       md4
       offset-md4
       lg4
       offset-lg4
+      class="paging-button-section"
     >
       <v-btn
         :loading="showPagingMoreButtonLoader"

@@ -10,7 +10,6 @@
 {
   height: auto;
   min-height: calc(100vh - 64px);
-  padding-bottom: 100px;
 
   background-color: #fff;
 }
@@ -33,14 +32,15 @@
 .paging-button
 {
   font-size: 12px;
-  font-weight: 700;
 
-  margin-top: 60px;
+  margin-top: 160px;
+  margin-bottom: 160px;
 
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
   color: #fff;
-  background-color: #000 !important;
+  background-color: #2a2f30 !important;
 }
 .desktop-full-screen-photo
 {
