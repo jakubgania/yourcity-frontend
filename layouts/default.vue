@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-app>
 
@@ -16,17 +18,23 @@
       <footer-component/>
     </div>
 
+    <no-ssr>
+      <portal-rules-alert-component/>
+    </no-ssr>
+
   </v-app>
 </template>
 
 <script>
 import HeaderComponent from '../components/header/header.vue';
 import FooterComponent from '../components/footer.vue';
+import PortalRulesAlertComponent from '../components/portal-rules-alert.vue';
 
 export default {
   components: {
     'header-component': HeaderComponent,
     'footer-component': FooterComponent,
+    'portal-rules-alert-component': PortalRulesAlertComponent,
   },
   methods: {
     displayFooter() {
@@ -41,5 +49,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/layouts/default.scss';
+  @import './assets/scss/layouts/default.scss';
 </style>
