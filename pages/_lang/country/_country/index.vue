@@ -1,7 +1,13 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <div class="">
-    cities of the country
-  </div>
+  <v-layout row wrap class="container-country">
+    <v-flex lg8 offset-lg2>
+      <div class="display-2" style="margin-top:100px;margin-bottom:100px;">
+        Country
+      </div>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -27,3 +33,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.container-country
+{
+  //
+}
+</style>
