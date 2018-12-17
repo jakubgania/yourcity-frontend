@@ -86,7 +86,7 @@
     >
       <v-card>
         <v-toolbar dark color="white" style="box-shadow:none;">
-          <v-btn icon dark style="color:black;" @click="fullScreenPhoto = false">
+          <v-btn icon dark style="color:black;" @click="closePhotoDetails()">
             <v-icon>close</v-icon>
           </v-btn>
           <v-spacer/>
@@ -107,7 +107,10 @@
     <v-dialog v-model="dialog" max-width="500px" @keydown.esc="closeDialogESC('dialog')">
       <v-card>
         <v-card-title>
-          <span class="title">Information</span>
+          <span class="title">
+            <v-icon style="margin-right:6px;">info_outline</v-icon>
+            Information
+          </span>
           <v-spacer/>
           <v-menu bottom left>
             <v-btn icon @click="dialog=false">
@@ -119,25 +122,46 @@
           <div class="dialog-subtitle">
             Title
           </div>
+          <div class="dialog-text">
+            {{ photoFullSizeDetails['title'] }}
+          </div>
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            Date creation
+            Date added
+          </div>
+          <div class="dialog-text">
+            {{ photoFullSizeDetails['creation_date'] }}
           </div>
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
             Location
           </div>
+          <div class="dialog-text">
+            {{ photoFullSizeDetails['location'] }}
+          </div>
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
             Share
           </div>
+          <div class="dialog-text">
+            text
+          </div>
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
             Tags
+          </div>
+          <div
+            v-for="tag in photoFullSizeDetails['tags']"
+            :key="tag.id"
+            style="display:inline;"
+          >
+            <v-chip class="tag">
+              {{ tag }}
+            </v-chip>
           </div>
         </v-card-text>
         <v-card-actions>
@@ -145,7 +169,8 @@
           <v-btn
             color="blue accent-3"
             class="dialog-close-button"
-            flat @click="dialog=false"
+            flat
+            @click="dialog=false"
           >
             Close
           </v-btn>
@@ -157,7 +182,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import NetworkConnectionErrorAlertComponent from '../../../components/network-connection-error-alert.vue';
 
 export default {
@@ -190,6 +215,9 @@ export default {
     this.$store.dispatch('photos/getPhotos', '/api/photos?start=0&offset=8&fields=id,thumbnail,src');
   },
   methods: {
+    ...mapActions('photos', [
+      'getPhotoDeatils',
+    ]),
     loadMore(url) {
       this.$store.dispatch('photos/pagingPhotoGallery', url);
     },
@@ -197,6 +225,7 @@ export default {
       const details = this.photoDetails[index];
       this.updateURL(`${this.checkLanguage()}/${this.resourcePath + details.id}`);
       this.src = details.src;
+      this.$store.dispatch('photos/getPhotoDeatils', details.id);
       this.fullScreenPhoto = true;
     },
     closePhotoDetails() {
@@ -208,6 +237,10 @@ export default {
       history.pushState(stateObject, 'page', url); // eslint-disable-line
     },
     checkLanguage() {
+      if (this.$i18n.locale === 'en') {
+        return '/en';
+      }
+
       if (this.$i18n.locale !== 'en') {
         return `/${this.$i18n.locale}`;
       }
@@ -218,7 +251,8 @@ export default {
       if (this.fullScreenPhoto && value === 'dialog') {
         this.dialog = false;
       } else if (!this.dialog && value === 'fullScreenPhoto') {
-        this.fullScreenPhoto = false;
+        // this.fullScreenPhoto = false;
+        this.closePhotoDetails();
       }
     },
   },
@@ -248,4 +282,28 @@ export default {
 @import './assets/scss/photos/lg.scss';
 @import './assets/scss/photos/sm.scss';
 @import './assets/scss/photos/xs.scss';
+
+.dialog-text
+{
+  padding-top: 4px;
+}
+.tag
+{
+  height: 48px;
+  margin: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 4px;
+  border-color: #d1d1d1;
+
+  letter-spacing: 1px;
+
+  background-color: #fff;
+
+  &:hover
+  {
+    color: #000;
+    border-color: #ffaa06;
+  }
+}
 </style>

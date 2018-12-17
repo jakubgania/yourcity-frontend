@@ -61,11 +61,15 @@ const actions = {
       dispatch('showErrorConnectionAlert', true);
     })
   },
-  getPhotoDeatils({ commit, dispatch }, url) {
+  getPhotoDeatils({ commit, dispatch }, id) {
     dispatch('showGalleryLoader', true);
     dispatch('showErrorConnectionAlert', false);
 
-    axios.get(url)
+    axios.get('/api/photos/details',{
+      params: {
+        id: id
+      }
+    })
     .then(response => {
       commit('photoFullSizeDetails', response.data);
       dispatch('showGalleryLoader', false);

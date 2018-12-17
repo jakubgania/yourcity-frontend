@@ -156,7 +156,7 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch('photos/getPhotoDeatils', `/api/photos/details?id=${this.$route.params.id}`);
+    this.$store.dispatch('photos/getPhotoDeatils', this.$route.params.id);
   },
   methods: {
     ...mapActions([
