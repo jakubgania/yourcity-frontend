@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap class="container-project">
     <v-flex xs12 lg4 offset-lg4>
@@ -51,5 +52,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/project/project.scss';
+  @import './assets/scss/project/project.scss';
 </style>
