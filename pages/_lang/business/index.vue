@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap>
+
     <top-image-component/>
 
     <v-layout row wrap class="about-description">
@@ -84,5 +86,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/business/business.scss';
+  @import './assets/scss/business/business.scss';
 </style>

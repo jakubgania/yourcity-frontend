@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-flex xs12 lg12>
-    <v-parallax :src="officeImage" height="800">
+    <v-parallax :src="officeImage" :height="imageHeight">
       <div class="content">
         <v-layout row wrap>
           <v-flex xs12 lg4 offset-lg2>
@@ -57,6 +58,18 @@ export default {
       officeImage,
     };
   },
+  computed: {
+    imageHeight() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return '580';
+        // case 'sm': return '400'
+        // case 'md': return '500'
+        case 'lg': return '680';
+        // case 'xl': return '800'
+        default: return '800';
+      }
+    },
+  },
 };
 </script>
 
@@ -105,8 +118,34 @@ export default {
   &:hover
   {
     background-color: white;
-    color: black;
+    color: #000000;
     transition: background-color 200ms linear;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  .content
+  {
+    top: -180px;
+  }
+  .description
+  {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .icon-section
+  {
+    .top-icon
+    {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  .form-button
+  {
+    font-size: 12px;
   }
 }
 </style>
