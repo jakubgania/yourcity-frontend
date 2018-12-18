@@ -1,3 +1,5 @@
+$yourcity-blue-color: #252bfc;
+
 .container-changelog
 {
   background-color: #ffffff;
@@ -24,7 +26,7 @@
 {
   padding-bottom: 60px;
 
-  border-left: 2px solid #252bfc;
+  border-left: 2px solid $yourcity-blue-color;
 }
 .message-item:first-child > .line-marker:before
 {
@@ -69,15 +71,13 @@
   width: 8px;
   height: 8px;
 
-  border: 1px solid #252bfc;
+  border: 1px solid $yourcity-blue-color;
   border-radius: 100%;
   background: #fff;
 }
 .card-information-section
 {
   width: 100%;
-
-  border-bottom: 1px solid #d5d5d5;
 }
 .information
 {
@@ -93,11 +93,17 @@
 }
 .time
 {
-  padding-left: 10px;
+  color: #8e8e8e;
+}
+.date
+{
+  padding-right: 10px;
+  color: #8e8e8e;
 }
 .message-counter
 {
-  padding-left: 10px;
+  float: left;
+  padding-right: 10px;
 }
 .message
 {
@@ -108,11 +114,9 @@
 .content-text
 {
   font-size: 14px;
-  font-weight: 400;
 
   letter-spacing: 1px;
 }
-
 .message-item:last-child
 {
   border-left: 0;
@@ -126,5 +130,24 @@
   letter-spacing: 2px;
 
   color: #fff;
-  background-color: #252bfc!important;
+  background-color: $yourcity-blue-color!important;
+}
+@media only screen and (max-width: 600px)
+{
+  .title-page
+  {
+    font-size: 32px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .paging-button-section
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .paging-button
+  {
+    font-size: 12px;
+  }
 }

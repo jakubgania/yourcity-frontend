@@ -12,7 +12,7 @@ import changelog           from './modules/changelog';
 import contact             from './modules/contact';
 
 const baseUrlProduction    = 'https://api.yourcity.io';
-const baseUrlDevelopment   = 'http://192.168.0.15';
+const baseUrlDevelopment   = 'http://192.168.2.111';
 
 if (process.env.NODE_ENV == 'production')
   axios.defaults.baseURL = baseUrlProduction;

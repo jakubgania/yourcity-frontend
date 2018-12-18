@@ -17,14 +17,14 @@
         <span class="line-marker"/>
         <v-layout row wrap>
           <v-flex xs10 offset-xs1 lg10 offset-lg1>
-            <div class="" style="background-color:#f2f2f2;">
+            <div style="background-color:#ffffff;">
               <div class="card-information-section">
                 <div class="information">
-                  <span class="date">
-                    {{ post.date }}
-                  </span>
                   <span class="time">
                     {{ post.time }}
+                  </span>
+                  <span class="date">
+                    {{ post.date }}
                   </span>
                   <span class="message-counter">
                     {{ post.post_number_id }}
@@ -45,7 +45,15 @@
     <v-flex xs12 sm12 md12 lg12 style="padding-bottom:120px;">
       <v-layout row wrap>
         <v-flex
-          v-if="showPagingButton" xs10 offset-xs1 sm4 offset-sm4 md4 offset-md4 lg2 offset-lg5
+          v-if="showPagingButton"
+          xs12
+          sm8
+          offset-sm2
+          md6
+          offset-md3
+          lg4
+          offset-lg4
+          class="paging-button-section"
         >
           <v-btn
             :loading="showPagingButtonLoader"
@@ -141,5 +149,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/changelog/lg.scss';
+  @import './assets/scss/changelog/lg.scss';
 </style>
