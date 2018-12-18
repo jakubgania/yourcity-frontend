@@ -24,3 +24,13 @@
 {
   margin-bottom: 140px;
 }
+@media only screen and (max-width: 600px)
+{
+  .title-page
+  {
+    font-size: 32px;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
