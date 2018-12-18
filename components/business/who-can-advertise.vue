@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap>
-    <v-flex xs12 lg12 style="background-color:white;">
+    <v-flex xs12 lg12 style="background-color:#ffffff;">
       <div class="text-thin-big">
         Jakie podmioty mogą promować się w YOURCITY dla biznesu ?
       </div>
@@ -13,7 +14,8 @@
       class="card-component"
     >
       <div class="title-info-section">
-        <i class="material-icons card-icon">{{ section.icon }}</i> {{ section.title }}
+        <i class="material-icons card-icon">{{ section.icon }}</i>
+        {{ section.title }}
       </div>
       <div class="description-info-section">
         {{ section.description }}
@@ -64,7 +66,7 @@ export default {
 }
 .card-component
 {
-  background-color: white;
+  background-color: #ffffff;
   padding-bottom: 140px;
   padding-left: 60px;
   padding-right: 60px;
@@ -97,6 +99,40 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  .text-thin-big
+  {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card-component
+  {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .card-icon
+    {
+      font-size: 32px;
+    }
+
+    .title-info-section
+    {
+      font-size: 26px;
+    }
+
+    .description-info-section
+    {
+      font-size: 14px;
+      padding-bottom: 60px;
+    }
   }
 }
 </style>
