@@ -3,7 +3,7 @@
 <template>
   <v-layout row wrap class="container-gallery">
     <v-flex xs12 lg4 offset-lg4>
-      <div class="title-section">
+      <div class="title-page">
         {{ $t('home.gallery.title_section') }}
       </div>
     </v-flex>
