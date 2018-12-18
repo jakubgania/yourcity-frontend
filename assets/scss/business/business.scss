@@ -7,10 +7,27 @@
 {
   background-color: #ffffff;
   margin-top: 140px;
+  margin-bottom: 60px;
 }
 .example-profile-description
 {
   letter-spacing: 1px;
   font-size: 16px;
-  margin-bottom: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+@media only screen and (max-width: 600px)
+{
+  .about-description
+  {
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+  .example-profile-description
+  {
+    font-size: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+  }
 }

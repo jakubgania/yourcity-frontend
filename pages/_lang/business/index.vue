@@ -7,7 +7,7 @@
 
     <v-layout row wrap class="about-description">
       <v-flex lg6 offset-lg3>
-        <div class="example-profile-description" style="font-weight:700;text-align:center;">
+        <div class="example-profile-description">
           YOURCITY ma pomagać ludziom odnaleźć interesujące ich informacje w danym mieście.
           Ma być przydatnym narzędziem kiedy ktoś szuka konkretnego miejsca, jakieś usługi
           albo siedziby Twojej firmy. YOURCITY to wysoka jakość informacji.
