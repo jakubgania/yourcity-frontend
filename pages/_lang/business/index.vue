@@ -6,7 +6,7 @@
     <top-image-component/>
 
     <v-layout row wrap class="about-description">
-      <v-flex lg6 offset-lg3>
+      <v-flex xs12 sm10 offset-sm1 md6 offset-md3 lg4 offset-lg4>
         <div class="example-profile-description">
           YOURCITY ma pomagać ludziom odnaleźć interesujące ich informacje w danym mieście.
           Ma być przydatnym narzędziem kiedy ktoś szuka konkretnego miejsca, jakieś usługi
