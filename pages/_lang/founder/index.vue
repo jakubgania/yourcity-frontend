@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap class="founder-container">
     <v-flex xs12 lg4 offset-lg4>
@@ -13,7 +14,7 @@
     </v-flex>
     <v-flex xs12 lg4 offset-lg4 style="text-align:center;">
       <v-avatar
-        size="200"
+        size="140"
         color="grey lighten-4"
         data-aos="zoom-in"
         data-aos-delay="300"
@@ -77,5 +78,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/founder/founder.scss';
+  @import './assets/scss/founder/founder.scss';
 </style>
