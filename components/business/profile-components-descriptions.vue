@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap>
     <v-flex lg12>
@@ -10,7 +11,7 @@
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex lg12 style="padding-top:80px;padding-bottom:80px;background-color:white;">
+    <v-flex lg12 class="options-section">
       <v-layout
         v-for="option in descriptions.options_descriptions"
         :key="option.id"
@@ -23,7 +24,7 @@
           </div>
         </v-flex>
         <v-flex lg6 offset-lg3>
-          <div class="" style="text-align:center;font-size:20px;">
+          <div class="description">
             {{ option.description }}
           </div>
         </v-flex>
@@ -104,12 +105,40 @@ export default {
     color: #37474F;
   }
 }
+.options-section
+{
+  padding-top: 80px;
+  padding-bottom:80px;
+  background-color: #ffffff;
+}
 .option-title
 {
-  text-align:center;
-  font-size:28px;
-  font-weight:700;
-  padding-top:14px;
-  padding-bottom:14px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.description
+{
+  text-align: center;
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px)
+{
+  .text-thin-big
+  {
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .option-title
+  {
+    font-size: 24px;
+  }
+  .description
+  {
+    font-size: 16px;
+  }
 }
 </style>
