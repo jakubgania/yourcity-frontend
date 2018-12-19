@@ -1,8 +1,8 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <v-layout
-    row
-    wrap
-  >
+  <v-layout row wrap>
+
     <div class="hidden-sm-only hidden-xs-only">
       <sidebar-menu-component/>
     </div>
