@@ -20,14 +20,7 @@
       <div class="search-form-section">
         <v-form @submit.prevent="submitSearchForm">
           <v-layout row wrap>
-            <v-flex
-              xs12
-              sm5
-              md5
-              offset-md1
-              lg4
-              offset-lg2
-            >
+            <v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2>
               <v-combobox
                 v-model="queryModel"
                 :items="queryItems"
@@ -72,7 +65,9 @@
                 >
                   <template v-if="cityItems.item.value">
                     <v-list-tile-content @click="getCurrentLocation()">
-                      <v-list-tile-title>Użyj obecnej lokalizacji</v-list-tile-title>
+                      <v-list-tile-title>
+                        Użyj obecnej lokalizacji
+                      </v-list-tile-title>
                     </v-list-tile-content>
                   </template>
                   <template v-else>
@@ -131,8 +126,8 @@ export default {
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '540';
-        // case 'sm': return '400'
-        // case 'md': return '500'
+        case 'sm': return '600';
+        case 'md': return '640';
         case 'lg': return '680';
         // case 'xl': return '800'
         default: return '800';
@@ -140,9 +135,7 @@ export default {
     },
     wordChanger() {
       if (this.counter > this.topWords.length) {
-        // this.counter = 0;
         this.resetCounter();
-        // return this.topWords[0];
       }
 
       return this.topWords[this.counter];
@@ -203,7 +196,10 @@ export default {
     submitSearchForm() {
       this.$router.push({
         path: `${this.checkLanguage()}/search`,
-        query: { query: this.query, city: this.city },
+        query: {
+          query: this.query,
+          city: this.city,
+        },
       });
     },
     checkLanguage() {
@@ -213,20 +209,15 @@ export default {
 
       return '';
     },
-    // getCurrentLocation() {
-    // },
+    getCurrentLocation() {
+    },
   },
 };
 </script>
 
 <style lang="scss">
-@import '../../assets/scss/home/search/lg.scss';
-@import '../../assets/scss/home/search/xs.scss';
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 1s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
+  @import '../../assets/scss/home/search/search.scss';
+  @import '../../assets/scss/home/search/lg.scss';
+  @import '../../assets/scss/home/search/sm.scss';
+  @import '../../assets/scss/home/search/xs.scss';
 </style>

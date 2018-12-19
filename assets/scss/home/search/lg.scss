@@ -1,36 +1,38 @@
+$yourcity-blue-color: #252bfc;
+
 .word-changer-section
 {
-    height: 200px;
-    line-height: 340px;
-    font-size: 44px;
-    font-weight: 700;
-    text-align: center;
-    cursor: default;
-    letter-spacing: 3px;
+  height: 200px;
+  line-height: 340px;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  cursor: default;
+  letter-spacing: 3px;
 }
 .search-form-section
 {
-    position: absolute;
-    top: calc(640px / 2);
-    right: 0;
-    left: 0;
+  position: absolute;
+  top: calc(640px / 2);
+  right: 0;
+  left: 0;
 }
 .v-input__slot
 {
-    height: 60px;
-    border-radius: 0px !important;
-    box-shadow: none;
+  height: 60px;
+  border-radius: 0px !important;
+  box-shadow: none;
 }
 .input-combobox
 {
-    height: 60px;
-    border-radius: 0px !important;
-    box-shadow: none;
+  height: 60px;
+  border-radius: 0px !important;
+  box-shadow: none;
 
-    .primary--text
-    {
-        color: #252bfc !important;
-    }
+  .primary--text
+  {
+    color: $yourcity-blue-color !important;
+  }
 }
 .submit-button
 {
@@ -40,7 +42,7 @@
   letter-spacing: 3px;
   outline: none;
   color: #ffffff;
-  background-color: #252bfc;
+  background-color: $yourcity-blue-color;
   text-transform: uppercase;
 
   &:hover
