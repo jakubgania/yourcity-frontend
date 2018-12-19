@@ -1,38 +1,25 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <v-flex
-    xs12
-    lg12
-    class=""
-  >
+  <v-flex xs12 lg12>
     <v-parallax
       :src="topImage"
       :height="imageHeight"
       alt="Wrocław at night from the Sky Tower"
     >
-      <v-layout
-        row
-        wrap
-      >
+      <v-layout row wrap>
         <v-flex lg12>
-          <div class="word-changer-section">
-            {{ wordChanger }}
-          </div>
-        </v-flex>
-        <!-- <v-flex lg12>
           <div class="word-changer-section">
             <transition name="fade">
               <p v-if="show">{{ wordChanger }}</p>
             </transition>
           </div>
-        </v-flex> -->
+        </v-flex>
       </v-layout>
 
       <div class="search-form-section">
         <v-form @submit.prevent="submitSearchForm">
-          <v-layout
-            row
-            wrap
-          >
+          <v-layout row wrap>
             <v-flex
               xs12
               sm5
@@ -54,12 +41,7 @@
                 class="input-combobox"
               />
             </v-flex>
-            <v-flex
-              xs12
-              sm4
-              md3
-              lg2
-            >
+            <v-flex xs12 sm4 md3 lg2>
               <v-combobox
                 v-model="cityModel"
                 :items="cityItems"
@@ -101,12 +83,7 @@
                 </template>
               </v-combobox>
             </v-flex>
-            <v-flex
-              xs12
-              sm3
-              md2
-              lg2
-            >
+            <v-flex xs12 sm3 md2 lg2>
               <button
                 type="submit"
                 class="submit-button"
@@ -162,7 +139,7 @@ export default {
       }
     },
     wordChanger() {
-      if (this.counter === this.topWords.length) {
+      if (this.counter > this.topWords.length) {
         // this.counter = 0;
         this.resetCounter();
         // return this.topWords[0];
@@ -209,8 +186,11 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      this.counter += 1;
-    }, 1800);
+      this.show = !this.show;
+      if (this.show) {
+        this.counter += 1;
+      }
+    }, 2000);
   },
   methods: {
     ...mapActions('autocomplete', [
@@ -233,9 +213,8 @@ export default {
 
       return '';
     },
-    getCurrentLocation() {
-      //
-    },
+    // getCurrentLocation() {
+    // },
   },
 };
 </script>
