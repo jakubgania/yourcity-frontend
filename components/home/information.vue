@@ -1,26 +1,19 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <v-flex
-    xs12
-    lg12
-  >
+  <v-flex xs12 sm12 md12 lg12>
     <v-layout
       row
       wrap
       class="title-section"
     >
-      <v-flex
-        xs12
-        lg4
-        offset-lg2
-      >
+      <v-flex xs12 sm12 md6 lg4 offset-lg2>
         <div
           data-aos="fade-right"
           data-aos-delay="240"
           data-aos-once="true"
         >
-          <div
-            class="logo-section"
-          >
+          <div class="logo-section">
             <logo-component
               :logo-size="logoSize"
               :margin="logoMargin"
@@ -28,10 +21,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex
-        xs12
-        lg4
-      >
+      <v-flex xs12 sm12 md6 lg4>
         <div
           data-aos="fade-left"
           data-aos-delay="240"
@@ -55,8 +45,8 @@
       <v-flex
         order-xs2
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         order-lg1
         lg3
         offset-lg2
@@ -97,11 +87,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         xs12
         lg3
@@ -123,8 +109,8 @@
       </v-flex>
       <v-flex
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         lg3
         offset-lg2
       >
@@ -143,16 +129,12 @@
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         order-xs2
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         order-lg1
         lg3
         offset-lg2
@@ -219,8 +201,8 @@
       </v-flex>
       <v-flex
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         lg3
         offset-lg2
       >
@@ -247,8 +229,8 @@
       <v-flex
         order-xs2
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         order-lg1
         lg3
         offset-lg2
@@ -315,8 +297,8 @@
       </v-flex>
       <v-flex
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         lg3
         offset-lg2
       >
@@ -343,8 +325,8 @@
       <v-flex
         order-xs2
         xs12
-        sm10
-        offset-sm1
+        sm8
+        offset-sm2
         order-lg1
         lg3
         offset-lg2
@@ -421,6 +403,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/home/information/lg.scss';
-@import '../../assets/scss/home/information/xs.scss';
+  @import '../../assets/scss/home/information/lg.scss';
+  @import '../../assets/scss/home/information/sm.scss';
+  @import '../../assets/scss/home/information/xs.scss';
 </style>
