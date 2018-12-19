@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
-  <v-layout row wrap style="background-color:#ffffff;">
+  <v-layout row wrap class="example-profile-container">
 
     <v-flex xs12 sm12 md12 lg12>
       <div class="top-image-section">
@@ -65,6 +66,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/example-profile/example-profile.scss';
-@import './assets/scss/example-profile/xs.scss';
+  @import '../../assets/scss/example-profile/example-profile.scss';
+  @import './assets/scss/example-profile/xs.scss';
 </style>
