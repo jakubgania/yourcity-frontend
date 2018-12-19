@@ -1,9 +1,26 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap class="contact-container">
+
     <v-flex xs12 lg4 offset-lg4>
       <div class="title-page">
-        Kontakt
+        {{ $t('contact.title') }}
+      </div>
+    </v-flex>
+    <v-flex xs12 lg4 offset-lg4>
+      <div class="subtitle-page">
+        {{ $t('contact.subtitle') }}
+      </div>
+    </v-flex>
+    <v-flex xs12 lg4 offset-lg4>
+      <div class="subtitle-page">
+        <v-alert
+          :value="true"
+          type="error"
+        >
+          The contact form is not working yet.
+        </v-alert>
       </div>
     </v-flex>
 
@@ -11,108 +28,85 @@
       <v-form ref="form" @submit.prevent="submit">
         <v-layout row wrap class="contact-form-section">
 
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4 class="section">
-            <v-text-field
-              ref="title"
-              v-model="title"
-              :label="text.label_title"
-              :rules="rules.title"
-              required
-              counter="80"
-            />
-          </v-flex>
-
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4 class="section">
-            <v-text-field
-              ref="email"
-              v-model="email"
-              :label="text.label_email"
-              :rules="rules.email"
-              required
-            />
-          </v-flex>
-
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4 class="section">
-            <v-textarea
-              ref="message"
-              v-model="message"
-              :label="text.label_message"
-              :rules="rules.message"
-              rows="10"
-              required
-              counter="1200"
-              spellcheck="false"
-            />
-          </v-flex>
-
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4 class="section">
-            <v-checkbox
-              ref="terms"
-              v-model="terms"
-              :label="text.label_checkbox"
-              :rules="rules.terms"
-              color="green"
-            />
-          </v-flex>
-
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4>
-            <div class="" style="margin-bottom:24px;">
-              CAPTCHA
-            </div>
-          </v-flex>
-
-          <v-flex xs12 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4>
-            <v-btn
-              :disabled="sending"
-              :loading="sending"
-              type="submit"
-              large
-              block
-              color="white"
-              style="font-size:12px;font-weight:400;letter-spacing:2px;margin-top:24px;"
-              @click="sending = true"
-            >
-              wyślij
-            </v-btn>
-          </v-flex>
-
-          <v-dialog
-            v-model="sending"
-            hide-overlay
-            persistent
-            width="300"
-          >
-            <v-card color="primary" dark>
-              <v-card-text>
-                Please stand by
-                <v-progress-linear
-                  indeterminate
-                  color="white"
-                  class="mb-0"
+          <v-flex lg12 class="contact-form">
+            <v-form ref="form" method="POST" @submit.prevent="submit">
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <v-text-field
+                  ref="title"
+                  v-model="title"
+                  :label="text.label_title"
+                  :rules="rules.title"
+                  :error-messages="errorMessageTtile"
+                  prepend-icon="person"
+                  name="title"
+                  type="text"
+                  required
+                  counter="40"
                 />
-              </v-card-text>
-            </v-card>
-          </v-dialog>
-
-          <v-snackbar
-            :timeout="timeout"
-            v-model="snackbarSuccess"
-            color="green"
-            style="letter-spacing:1px;"
-          >
-            Wiadomość wysłana.
-            <v-btn dark flat @click.native="snackbarSuccess = false">zamknij</v-btn>
-          </v-snackbar>
-
-          <v-snackbar
-            :timeout="timeout"
-            v-model="snackbarError"
-            color="red"
-            style="letter-spacing:1px;"
-          >
-            Wystąpił błąd.
-            <v-btn dark flat @click.native="snackbarSuccess = false">zamknij</v-btn>
-          </v-snackbar>
+              </v-flex>
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <v-text-field
+                  ref="email"
+                  v-model="email"
+                  :rules="rules.email"
+                  :error-messages="errorMessageEmail"
+                  label="E-mail"
+                  prepend-icon="alternate_email"
+                  name="login"
+                  type="text"
+                  required
+                />
+              </v-flex>
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <v-textarea
+                  ref="message"
+                  v-model="message"
+                  :label="text.label_message"
+                  :rules="rules.message"
+                  :error-messages="errorMessageMessage"
+                  prepend-icon="message"
+                  name="message"
+                  type="text"
+                  required
+                  counter="1000"
+                />
+              </v-flex>
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <v-checkbox
+                  ref="terms"
+                  v-model="terms"
+                  :label="text.label_checkbox"
+                  :rules="rules.terms"
+                  :error-messages="errorMessageTerms"
+                  color="green"
+                />
+              </v-flex>
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <div style="text-align:center;">
+                  <div
+                    class="g-recaptcha"
+                    data-theme="dark"
+                    data-callback="recaptchaCallback"
+                    data-sitekey="6Lf_MH4UAAAAAKnH6EzLo0zU3FpYNOYwkcUcOjUR"
+                  />
+                </div>
+              </v-flex>
+              <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 class="section">
+                <v-btn
+                  type="submit"
+                  name="submit"
+                  value="SUBMIT"
+                  depressed
+                  large
+                  block
+                  style="letter-spacing:2px;font-size:12px;"
+                >
+                  {{ $t('contact.send-button') }}
+                  <v-icon style="margin-left:4px;font-size:20px;">send</v-icon>
+                </v-btn>
+              </v-flex>
+            </v-form>
+          </v-flex>
 
         </v-layout>
       </v-form>
@@ -136,27 +130,30 @@ export default {
       timeout: 2400,
       snackbarSuccess: false,
       snackbarError: false,
+      errorMessageTtile: '',
+      errorMessageEmail: '',
+      errorMessageMessage: '',
+      errorMessageTerms: '',
       rules: {
         title: [
-          () => !!this.title || 'This field is required title',
+          () => !!this.title || this.$t('contact.rules.title'),
         ],
         email: [
-          () => !!this.email || 'This field is required email',
+          () => !!this.email || this.$t('contact.rules.email'),
         ],
         message: [
-          () => !!this.message || 'This field is required message',
+          () => !!this.message || this.$t('contact.rules.message'),
         ],
         terms: [
-          () => !!this.terms || 'This field is required terms',
+          () => !!this.terms || this.$t('contact.rules.terms'),
         ],
       },
       text: {
-        title_page: 'Formularz kontaktowy',
-        label_title: 'Tytuł widomości',
-        label_email: 'E-mail',
-        label_message: 'Wiadomości',
-        label_checkbox: 'Wyrażam zgodę na kontakt drogą elektroniczną na podany e-mail.',
-        send_button: 'WYŚLIJ',
+        label_title: this.$t('contact.label.title_message'),
+        label_email: this.$t('contact.label.email'),
+        label_message: this.$t('contact.label.message'),
+        label_checkbox: this.$t('contact.label.checkbox'),
+        send_button: this.$t('contact.send-button'),
       },
     };
   },
@@ -234,5 +231,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/contact/contact.scss';
+  @import './assets/scss/contact/contact.scss';
 </style>
