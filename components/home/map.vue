@@ -1,7 +1,9 @@
 <template>
   <v-flex
     xs12
-    lg12>
+    lg12
+    xl12
+  >
     <v-layout
       row
       wrap
@@ -11,6 +13,8 @@
         xs12
         lg8
         offset-lg2
+        xl8
+        offset-xl2
       >
         <img
           :src="worldImage"
