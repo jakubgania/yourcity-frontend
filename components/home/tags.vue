@@ -26,6 +26,8 @@
         sm12
         md12
         lg12
+        xl8
+        offset-xl2
       >
         <v-layout
           row
@@ -96,6 +98,8 @@
         offset-sm2
         lg4
         offset-lg4
+        xl2
+        offset-xl5
       >
         <router-link
           :to="$i18n.path('search')"
