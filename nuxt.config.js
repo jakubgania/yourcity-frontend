@@ -5,289 +5,289 @@ const sitemapRoutes = [
     url: '/',
     changefreq: 'daily',
     priority: 1,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl',
     changefreq: 'daily',
     priority: 1,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en',
     changefreq: 'daily',
     priority: 1,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de',
     changefreq: 'daily',
     priority: 1,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/search',
     changefreq: 'always',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/search',
     changefreq: 'always',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/search',
     changefreq: 'always',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/search',
     changefreq: 'always',
     priority: 0.8,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/countries/all',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
-    url: '/en/countries/all',
+    url: '/en/countries/a20',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
-    url: '/pl/countries/all',
+    url: '/pl/countries/a20',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
-    url: '/de/countries/all',
+    url: '/de/countries/a20',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/photos',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/photos',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/photos',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/photos',
     changefreq: 'daily',
     priority: 0.8,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/contact',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/contact',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/contact',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/contact',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/changelog',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/changelog',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/changelog',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/changelog',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/business',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/business',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/business',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/business',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/example-profile',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/example-profile',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/example-profile',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/example-profile',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/example-profile/photos',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/example-profile/photos',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/example-profile/photos',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/example-profile/photos',
     changefreq: 'daily',
     priority: 0.6,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/project',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/project',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/project',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/project',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/founder',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/founder',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/founder',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/founder',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/agreements',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/en/agreements',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/pl/agreements',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-08',
+    lastmodISO: '2018-12-20',
   },
   {
     url: '/de/agreements',
     changefreq: 'daily',
     priority: 0.5,
-    lastmodISO: '2018-12-11',
+    lastmodISO: '2018-12-20',
   },
 ];
 
@@ -347,12 +347,8 @@ const generateRoutes = [
 ];
 
 module.exports = {
-  // mode: 'spa',
   mode: 'universal',
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: pkg.name,
     meta: [
@@ -369,22 +365,13 @@ module.exports = {
     ],
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#252bfc' },
 
-  /*
-  ** Global CSS
-  */
   css: [
     '~/assets/style/app.styl',
     'aos/dist/aos.css',
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
     '@/plugins/vuetify',
     '~/plugins/i18n.js',
@@ -400,19 +387,10 @@ module.exports = {
     middleware: 'i18n',
   },
 
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
   ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
 
   sitemap: {
     path: '/sitemap.xml',
@@ -427,14 +405,9 @@ module.exports = {
     routes: sitemapRoutes,
   },
 
-  /*
-  ** Build configuration
-  */
   build: {
     vendor: ['aos'],
-    /*
-    ** You can extend webpack config here
-    */
+
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

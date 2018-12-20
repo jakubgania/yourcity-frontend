@@ -1,0 +1,3 @@
+User-agent: Googlebot
+
+Sitemap: https://yourcity.io/sitemap.xml
