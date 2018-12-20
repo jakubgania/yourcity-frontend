@@ -16,7 +16,7 @@
       xs12
       lg10
       offset-lg1
-      style="padding-left:10px;padding-right:10px;"
+      class="photos-grid-section"
     >
       <v-container fluid grid-list-xs>
         <v-layout row wrap justify-left>
@@ -109,7 +109,7 @@
         <v-card-title>
           <span class="title">
             <v-icon style="margin-right:6px;">info_outline</v-icon>
-            Information
+            {{ $t('photos.dialog.information') }}
           </span>
           <v-spacer/>
           <v-menu bottom left>
@@ -120,7 +120,7 @@
         </v-card-title>
         <v-card-text>
           <div class="dialog-subtitle">
-            Title
+            {{ $t('photos.dialog.title') }}
           </div>
           <div class="dialog-text">
             {{ photoFullSizeDetails['title'] }}
@@ -128,7 +128,7 @@
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            Date added
+            {{ $t('photos.dialog.date_added') }}
           </div>
           <div class="dialog-text">
             {{ photoFullSizeDetails['creation_date'] }}
@@ -136,7 +136,7 @@
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            Location
+            {{ $t('photos.dialog.location') }}
           </div>
           <div class="dialog-text">
             {{ photoFullSizeDetails['location'] }}
@@ -144,15 +144,22 @@
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            Share
+            {{ $t('photos.dialog.share') }}
           </div>
           <div class="dialog-text">
-            text
+            <v-btn
+              depressed
+              small
+              color="blue darken-2"
+              style="color:#ffffff;font-sieze:12px;letter-spacing:1px;margin-left:0px;"
+            >
+              {{ $t('photos.dialog.copy') }} <v-icon style="margin-left:6px;">link</v-icon>
+            </v-btn>
           </div>
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            Tags
+            {{ $t('photos.dialog.tags') }}
           </div>
           <div
             v-for="tag in photoFullSizeDetails['tags']"
@@ -172,7 +179,7 @@
             flat
             @click="dialog=false"
           >
-            Close
+            {{ $t('photos.dialog.close-button') }}
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -251,7 +258,6 @@ export default {
       if (this.fullScreenPhoto && value === 'dialog') {
         this.dialog = false;
       } else if (!this.dialog && value === 'fullScreenPhoto') {
-        // this.fullScreenPhoto = false;
         this.closePhotoDetails();
       }
     },
@@ -279,31 +285,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/photos/lg.scss';
-@import './assets/scss/photos/sm.scss';
-@import './assets/scss/photos/xs.scss';
-
-.dialog-text
-{
-  padding-top: 4px;
-}
-.tag
-{
-  height: 48px;
-  margin: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-  padding: 4px;
-  border-color: #d1d1d1;
-
-  letter-spacing: 1px;
-
-  background-color: #fff;
-
-  &:hover
-  {
-    color: #000;
-    border-color: #ffaa06;
-  }
-}
+  @import './assets/scss/photos/photos.scss';
+  @import './assets/scss/photos/lg.scss';
+  @import './assets/scss/photos/sm.scss';
+  @import './assets/scss/photos/xs.scss';
 </style>

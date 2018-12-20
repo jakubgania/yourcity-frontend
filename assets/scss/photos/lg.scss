@@ -12,6 +12,8 @@
   min-height: calc(100vh - 64px);
 
   background-color: #fff;
+
+  padding-bottom: 160px;
 }
 .title-page
 {
@@ -29,12 +31,16 @@
 {
   max-width: 480px;
 }
+.photos-grid-section
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .paging-button
 {
   font-size: 12px;
 
   margin-top: 160px;
-  margin-bottom: 160px;
 
   letter-spacing: 2px;
   text-transform: uppercase;

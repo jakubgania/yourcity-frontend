@@ -248,9 +248,16 @@
       "description": "Zobacz galerię zdjęć z różnych miejsc, lokalizacji, miast i krajów.",
       "keywords": "zdjęcia, obrazy, galeria, fotografie, zdjęcia miast, zdjęcia budynków, widoki, galeria yourcity"
     },
-    "information": "Informacje",
-    "share": "Udostępnij",
-    "tags": "Tagi",
+    "dialog": {
+      "information": "Informacje",
+      "title": "Tytuł",
+      "date_added": "Data dodania",
+      "location": "Lokalizacja",
+      "share": "Udostępnij",
+      "copy": "Kopiuj link",
+      "tags": "Tagi",
+      "close-button": "Zamknij"
+    },
     "gallery": "Galeria"
   },
   "countries": {

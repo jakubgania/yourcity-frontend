@@ -1,0 +1,23 @@
+.dialog-text
+{
+  padding-top: 4px;
+}
+.tag
+{
+  height: 48px;
+  margin: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 4px;
+  border-color: #d1d1d1;
+
+  letter-spacing: 1px;
+
+  background-color: #fff;
+
+  &:hover
+  {
+    color: #000;
+    border-color: #ffaa06;
+  }
+}

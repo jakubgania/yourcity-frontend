@@ -248,9 +248,16 @@
       "description": "See a photo gallery from various places, locations, cities and countries.",
       "keywords": "photos, pictures, gallery, photographs, photos of cities, pictures of buildings, views, gallery yourcity"
     },
-    "information": "Information",
-    "share": "Share",
-    "tags": "Tags",
+    "dialog": {
+      "information": "Information",
+      "title": "Title",
+      "date_addded": "Date added",
+      "location": "Location",
+      "share": "Share",
+      "copy": "Copy link",
+      "tags": "Tags",
+      "close-button": "Close"
+    },
     "gallery": "Gallery"
   },
   "countries": {
