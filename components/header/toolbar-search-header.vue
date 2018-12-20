@@ -204,5 +204,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/scss/header/toolbar-search-header.scss';
+  @import '../../assets/scss/header/toolbar-search-header.scss';
 </style>

@@ -242,7 +242,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '../../assets/scss/profiles-search/container-results/lg.scss';
-@import '../../assets/scss/profiles-search/container-results/sm.scss';
-@import '../../assets/scss/profiles-search/container-results/xs.scss';
+  @import '../../assets/scss/profiles-search/container-results/lg.scss';
+  @import '../../assets/scss/profiles-search/container-results/sm.scss';
+  @import '../../assets/scss/profiles-search/container-results/xs.scss';
 </style>

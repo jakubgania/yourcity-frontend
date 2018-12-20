@@ -6,8 +6,14 @@
     <v-flex
       xs10
       offset-xs1
+      sm8
+      offset-sm2
+      md6
+      offset-md3
       lg4
       offset-lg4
+      xl2
+      offset-xl5
       class="loader-position"
     >
       <v-progress-linear
@@ -24,7 +30,7 @@ export default {
   props: {
     showFullScreenLoader: {
       type: Boolean,
-      default: false,
+      default: true,
     },
   },
 };

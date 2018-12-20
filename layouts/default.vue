@@ -3,6 +3,10 @@
 <template>
   <v-app>
 
+    <full-screen-loader-component
+      :show-full-screen-loader="showFullScreenLoader"
+    />
+
     <header-component/>
 
     <v-content style="padding-top:64px;">
@@ -28,13 +32,23 @@
 <script>
 import HeaderComponent from '../components/header/header.vue';
 import FooterComponent from '../components/footer.vue';
+import FullSreenLoaderComponent from '../components/full-screen-loader.vue';
 import PortalRulesAlertComponent from '../components/portal-rules-alert.vue';
 
 export default {
   components: {
     'header-component': HeaderComponent,
     'footer-component': FooterComponent,
+    'full-screen-loader-component': FullSreenLoaderComponent,
     'portal-rules-alert-component': PortalRulesAlertComponent,
+  },
+  data() {
+    return {
+      showFullScreenLoader: true,
+    };
+  },
+  mounted() {
+    this.showFullScreenLoader = false;
   },
   methods: {
     displayFooter() {
