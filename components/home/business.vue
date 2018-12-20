@@ -74,6 +74,7 @@
               sm6
               lg3
               offset-lg2
+              xl3
             >
               <v-layout
                 row
@@ -103,6 +104,7 @@
               sm6
               lg3
               offset-lg2
+              xl3
             >
               <v-layout
                 row
@@ -136,6 +138,8 @@
           offset-sm2
           lg4
           offset-lg4
+          xl2
+          offset-xl5
         >
           <router-link
             :to="$i18n.path('business')"
