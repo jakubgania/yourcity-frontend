@@ -23,6 +23,7 @@
       :key="category.id"
       xs6
       lg3
+      xl3
     >
       <div
         :data-aos-delay="index * 100"
@@ -47,6 +48,8 @@
       offset-sm2
       lg4
       offset-lg4
+      xl2
+      offset-xl5
     >
       <router-link
         :to="$i18n.path('search')"
@@ -166,6 +169,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/home/categories/lg.scss';
-@import '../../assets/scss/home/categories/xs.scss';
+  @import '../../assets/scss/home/categories/lg.scss';
+  @import '../../assets/scss/home/categories/xs.scss';
 </style>
