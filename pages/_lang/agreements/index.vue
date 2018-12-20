@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap class="agreements-container">
-    <v-flex xs12 lg4 offset-lg4>
+    <v-flex xs12 lg4 offset-lg4 xl4 offset-xl4>
       <div class="title-page">
         {{ $t('agreements.title') }}
       </div>
@@ -15,6 +16,8 @@
       offset-md3
       lg4
       offset-lg4
+      xl4
+      offset-xl4
       class="description"
     >
       {{ $t('agreements.app') }}
@@ -27,6 +30,8 @@
       offset-md3
       lg4
       offset-lg4
+      xl4
+      offset-xl4
       class="description"
     >
       {{ $t('agreements.user') }}
@@ -42,6 +47,8 @@
       offset-md3
       lg4
       offset-lg4
+      xl4
+      offset-xl4
       class="description"
     >
       <div v-html="index + 1 + '. ' + rule.message"/>
@@ -80,5 +87,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/agreements/agreements.scss';
+  @import './assets/scss/agreements/agreements.scss';
 </style>
