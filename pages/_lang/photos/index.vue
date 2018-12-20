@@ -2,7 +2,7 @@
 
 <template>
   <v-layout row wrap class="container-gallery">
-    <v-flex xs12 lg4 offset-lg4>
+    <v-flex xs12 lg4 offset-lg4 xl2 offset-xl5>
       <div class="title-page">
         {{ $t('home.gallery.title_section') }}
       </div>
@@ -16,6 +16,8 @@
       xs12
       lg10
       offset-lg1
+      xl8
+      offset-xl2
       class="photos-grid-section"
     >
       <v-container fluid grid-list-xs>
@@ -58,6 +60,8 @@
       offset-md4
       lg4
       offset-lg4
+      xl2
+      offset-xl5
       class="paging-button-section"
     >
       <v-btn
