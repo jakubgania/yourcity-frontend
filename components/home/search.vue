@@ -129,7 +129,7 @@ export default {
         case 'sm': return '600';
         case 'md': return '640';
         case 'lg': return '680';
-        // case 'xl': return '800'
+        case 'xl': return '800';
         default: return '800';
       }
     },
