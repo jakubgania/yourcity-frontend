@@ -9,6 +9,8 @@
       offset-xs1
       lg11
       offset-lg1
+      xl2
+      offset-xl3
     >
       <div
         class="title-section"
@@ -30,6 +32,8 @@
       md12
       lg10
       offset-lg1
+      xl8
+      offset-xl2
       style="padding-left:10px;padding-right:10px;"
     >
       <v-container
@@ -80,6 +84,8 @@
       offset-md4
       lg4
       offset-lg4
+      xl2
+      offset-xl5
     >
       <router-link
         :to="$i18n.path('photos')"
