@@ -20,7 +20,7 @@
       <div class="search-form-section">
         <v-form @submit.prevent="submitSearchForm">
           <v-layout row wrap>
-            <v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2>
+            <v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2 xl3 offset-xl3>
               <v-combobox
                 v-model="queryModel"
                 :items="queryItems"
@@ -34,7 +34,7 @@
                 class="input-combobox"
               />
             </v-flex>
-            <v-flex xs12 sm4 md3 lg2>
+            <v-flex xs12 sm4 md3 lg2 xl2>
               <v-combobox
                 v-model="cityModel"
                 :items="cityItems"
@@ -78,7 +78,7 @@
                 </template>
               </v-combobox>
             </v-flex>
-            <v-flex xs12 sm3 md2 lg2>
+            <v-flex xs12 sm3 md2 lg2 xl1>
               <button
                 type="submit"
                 class="submit-button"
