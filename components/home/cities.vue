@@ -8,6 +8,8 @@
       offset-xs1
       lg11
       offset-lg1
+      xl2
+      offset-xl3
     >
       <div
         class="title-section"
@@ -20,6 +22,8 @@
     </v-flex>
     <v-flex
       lg12
+      xl8
+      offset-xl2
     >
       <v-layout
         row
@@ -54,6 +58,8 @@
       offset-sm2
       lg4
       offset-lg4
+      xl2
+      offset-xl5
     >
       <router-link
         :to="$i18n.path('countries/all')"
@@ -94,6 +100,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import '../../assets/scss/home/cities/lg.scss';
-    @import '../../assets/scss/home/cities/xs.scss';
+  @import '../../assets/scss/home/cities/lg.scss';
+  @import '../../assets/scss/home/cities/xs.scss';
 </style>
