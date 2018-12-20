@@ -8,6 +8,8 @@
       offset-md1
       lg10
       offset-lg1
+      xl8
+      offset-xl2
       class="footer-section"
     >
       <v-layout row wrap>
@@ -123,7 +125,7 @@
       </v-layout>
     </v-flex>
 
-    <v-flex xs12 md10 offset-md1 lg10 offset-lg1>
+    <v-flex xs12 md10 offset-md1 lg10 offset-lg1 xl8 offset-xl2>
       <div class="copyright-section">
         <a
           href="mailto:example@email.io"
