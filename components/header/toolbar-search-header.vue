@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-toolbar
     v-if="displaySearchHeader()"
@@ -15,7 +17,7 @@
     </v-toolbar-title>
 
     <v-form
-      class="search-form hidden-xs-only"
+      class="search-form hidden-xs-only hidden-sm-only"
       @submit.prevent="submitSearchForm()"
     >
       <v-layout

@@ -40,6 +40,27 @@
       @updateSearchDialogXsModel="updateSearchDialogXsModel"
     />
 
+    <div v-if="this.$vuetify.breakpoint.name == 'sm' ">
+      <search-dialog-sm-component
+        :search-dialog-sm-model="searchDialogXsModel"
+        :categories-model="categoriesModel"
+        :categories-items="categoriesItems"
+        :query-model="queryModel"
+        :query-items="queryItems"
+        :query-input-sync="queryInputSync"
+        :city-model="cityModel"
+        :city-items="cityItems"
+        :city-input-sync="cityInputSync"
+        @updateCategoriesModel="updateCategoriesModel"
+        @updateQueryModel="updateQueryModel"
+        @updateQueryInputSync="updateQueryInputSync"
+        @updateCityModel="updateCityModel"
+        @updateCityInputSync="updateCityInputSync"
+        @submitSearchForm="submitSearchForm"
+        @updateSearchDialogSmModel="updateSearchDialogSmModel"
+      />
+    </div>
+
     <div v-if="this.$vuetify.breakpoint.name == 'xs'">
       <search-dialog-xs-component
         :search-dialog-xs-model="searchDialogXsModel"
@@ -70,6 +91,7 @@ import NavigationDrawerComponent from './navigation-drawer.vue';
 import NavigationDrawerExampleProfileComponent from './navigation-drawer-example-profile.vue';
 import ToolbarHeaderComponent from './toolbar-header.vue';
 import ToolbarSearchHeaderComponent from './toolbar-search-header.vue';
+import SearchDialogSmComponent from './toolbar-search-header-sm.vue';
 import SearchDialogXsComponent from '../profiles-search/search-dialog-xs.vue';
 import categoriesItems from '../../json/categories-menu-items.json';
 
@@ -79,6 +101,7 @@ export default {
     'navigation-drawer-example-profile-component': NavigationDrawerExampleProfileComponent,
     'toolbar-header-component': ToolbarHeaderComponent,
     'toolbar-search-header-component': ToolbarSearchHeaderComponent,
+    'search-dialog-sm-component': SearchDialogSmComponent,
     'search-dialog-xs-component': SearchDialogXsComponent,
   },
   data: () => ({
@@ -86,6 +109,7 @@ export default {
     drawerExampleProfile: false,
     cityInputSync: null,
     queryInputSync: null,
+    searchDialogSmModel: true,
     searchDialogXsModel: false,
     categoriesModel: null,
     categoriesItems: categoriesItems.categories,
@@ -219,6 +243,9 @@ export default {
     },
     updateCategoriesModel(value) {
       this.categoriesModel = value;
+    },
+    updateSearchDialogSmModel(value) {
+      this.searchDialogXsModel = value;
     },
     updateSearchDialogXsModel(value) {
       this.searchDialogXsModel = value;
