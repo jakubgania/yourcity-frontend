@@ -17,11 +17,11 @@
       </div>
     </v-flex>
 
-    <v-flex xs12 lg10 offset-lg1 class="select-country">
+    <v-flex xs12 lg10 offset-lg1 xl8 offset-xl2 class="select-country">
       {{ $t('countries.select_country') }}
     </v-flex>
 
-    <v-flex xs12 lg10 offset-lg1>
+    <v-flex xs12 lg10 offset-lg1 xl8 offset-xl2>
       <div class="countries-section">
         <div
           v-for="(country) in countriesItems"
@@ -38,10 +38,7 @@
       </div>
     </v-flex>
 
-    <v-flex
-      xs12 lg10 offset-lg1
-      style="text-align:center;margin-bottom:100px;"
-    >
+    <v-flex xs12 lg10 offset-lg1 class="loader-section">
       <v-progress-circular
         v-if="showLoader"
         :size="50"
@@ -100,6 +97,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/countries/countries.scss';
-@import './assets/scss/countries/xs.scss';
+  @import './assets/scss/countries/countries.scss';
+  @import './assets/scss/countries/xs.scss';
 </style>
