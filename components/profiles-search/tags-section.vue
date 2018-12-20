@@ -1,19 +1,17 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <transition name="fade">
     <div
       v-if="showTagSection && proposedTags.length > 0"
-      style="border-bottom: 2px solid #ced8e2;"
     >
-      <v-flex lg12>
+      <v-flex lg12 xl10 offset-xl1>
         <div class="title-section">
           {{ $t('profiles_search.tags.title') + ' - ' + proposedTags.length }}
         </div>
       </v-flex>
       <div class="tag-section">
-        <v-flex
-          xs12
-          lg12
-        >
+        <v-flex xs12 lg12 xl10 offset-xl1>
           <v-flex
             v-for="index in numberOfTags"
             :key="index.id"
@@ -101,6 +99,8 @@
         </v-dialog>
 
       </v-flex>
+
+      <v-flex xs12 sm12 md12 lg12 xl10 offset-xl1 style="border-top: 2px solid #ced8e2;"/>
 
     </div>
   </transition>

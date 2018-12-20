@@ -1,53 +1,56 @@
-<template>
-  <v-expansion-panel
-    expand
-    style="box-shadow:none;"
-  >
-    <v-expansion-panel-content
-      class="extension-panel"
-      style="background-color: transparent;"
-    >
-      <div
-        slot="header"
-        style="letter-spacing:1px;font-weight:700;"
-      >
-        <v-icon style="position:relative;top:5px;margin-right:15px;font-size:20px;">
-          filter_list
-        </v-icon>
-        {{ $t('profiles_search.filter.title_section') }}
-      </div>
+<!-- eslint-disable vue/max-attributes-per-line -->
 
-      <v-layout
-        row
-        wrap
+<template>
+  <v-layout row wrap>
+    <v-flex xs12 sm12 md12 lg12 xl10 offset-xl1>
+      <v-expansion-panel
+        expand
+        style="box-shadow:none;"
       >
-        <v-flex
-          xs10
-          offset-xs1
-          sm4
-          lg4
-          style="margin-left:20px;"
+        <v-expansion-panel-content
+          class="extension-panel"
+          style="background-color: transparent;"
         >
-          <v-text-field
-            :append-icon="'search'"
-            v-model="prototypeFilter"
-            :label="$t('profiles_search.filter.search')"
-            loading
-            clearable
-            autocomplete="off"
-            name="input-1"
-            @keyup="inputFilter()"
-          />
-          <v-progress-linear
-            v-if="custom"
-            slot="progress"
-            :value="progress"
-            height="7"
-          />
-        </v-flex>
-      </v-layout>
-    </v-expansion-panel-content>
-  </v-expansion-panel>
+          <div
+            slot="header"
+            style="letter-spacing:1px;font-weight:700;"
+          >
+            <v-icon style="position:relative;top:5px;margin-right:15px;font-size:20px;">
+              filter_list
+            </v-icon>
+            {{ $t('profiles_search.filter.title_section') }}
+          </div>
+
+          <v-layout row wrap>
+            <v-flex
+              xs10
+              offset-xs1
+              sm4
+              lg4
+              style="margin-left:20px;"
+            >
+              <v-text-field
+                :append-icon="'search'"
+                v-model="prototypeFilter"
+                :label="$t('profiles_search.filter.search')"
+                loading
+                clearable
+                autocomplete="off"
+                name="input-1"
+                @keyup="inputFilter()"
+              />
+              <v-progress-linear
+                v-if="custom"
+                slot="progress"
+                :value="progress"
+                height="7"
+              />
+            </v-flex>
+          </v-layout>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>

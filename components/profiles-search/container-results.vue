@@ -10,7 +10,7 @@
 
           <tags-section-component @searchByTag="searchByTag"/>
 
-          <v-flex lg12 class="result-counter-section">
+          <v-flex lg12 xl10 offset-xl1 class="result-counter-section">
             <div class="title-section">
               {{ $t('profiles_search.result_count') + ' : ' + resultCount() }}
             </div>

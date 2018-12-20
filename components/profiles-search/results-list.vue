@@ -5,12 +5,13 @@
       :key="section.id"
       row
       wrap
-      class=""
     >
       <v-flex
         xs12
         sm12
         lg12
+        xl10
+        offset-xl1
       >
         <v-layout
           row
