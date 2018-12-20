@@ -50,6 +50,8 @@
         order-lg1
         lg3
         offset-lg2
+        xl2
+        offset-xl3
       >
         <div
           data-aos="fade-right"
@@ -70,6 +72,7 @@
         lg3
         order-lg2
         offset-lg2
+        xl2
         class="section-icon"
       >
         <div
@@ -92,6 +95,8 @@
         xs12
         lg3
         offset-lg2
+        xl2
+        offset-xl3
         class="section-icon"
       >
         <div
@@ -113,6 +118,8 @@
         offset-sm2
         lg3
         offset-lg2
+        xl2
+        offset-xl2
       >
         <div
           data-aos="fade-left"
@@ -138,6 +145,8 @@
         order-lg1
         lg3
         offset-lg2
+        xl2
+        offset-xl3
       >
         <div
           data-aos="fade-right"
@@ -158,6 +167,7 @@
         lg3
         order-lg2
         offset-lg2
+        xl2
         class="section-icon"
       >
         <div
@@ -184,6 +194,8 @@
         xs12
         lg3
         offset-lg2
+        xl2
+        offset-xl3
         class="section-icon"
       >
         <div
@@ -205,6 +217,8 @@
         offset-sm2
         lg3
         offset-lg2
+        xl2
+        offset-xl2
       >
         <div
           data-aos="fade-left"
@@ -234,6 +248,8 @@
         order-lg1
         lg3
         offset-lg2
+        xl2
+        offset-xl3
       >
         <div
           data-aos="fade-right"
@@ -254,6 +270,7 @@
         lg3
         order-lg2
         offset-lg2
+        xl2
         class="section-icon"
       >
         <div
@@ -280,6 +297,8 @@
         xs12
         lg3
         offset-lg2
+        xl2
+        offset-xl3
         class="section-icon"
       >
         <div
@@ -301,6 +320,8 @@
         offset-sm2
         lg3
         offset-lg2
+        xl2
+        offset-xl2
       >
         <div
           data-aos="fade-left"
@@ -330,6 +351,8 @@
         order-lg1
         lg3
         offset-lg2
+        xl2
+        offset-xl3
       >
         <div
           data-aos="fade-right"
@@ -350,6 +373,7 @@
         lg3
         order-lg2
         offset-lg2
+        xl2
         class="section-icon"
       >
         <div
