@@ -7,58 +7,103 @@
 
       <information-component/>
 
-      <img
+      <!-- <img
         :src="seeImage"
         alt="Phoenix See Dortmund"
-        style="width:100%;"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-once="true"
-      >
+        class="image2"
+      > -->
+      <div
+        :src="seeImage"
+        :style="{'background-image': 'url(' + seeImage + ')'}"
+        alt="Phoenix See Dortmund"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="image2"
+      />
 
       <categories-component/>
 
-      <img
+      <!-- <img
         :src="galleryImage"
         alt="Thier-Galerie Dortmund"
-        style="width:100%;"
+        class="image2"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-once="true"
-      >
+      > -->
+      <div
+        :src="galleryImage"
+        :style="{'background-image': 'url(' + galleryImage + ')'}"
+        alt="Phoenix See Dortmund"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="image2"
+      />
 
       <tags-component/>
 
-      <img
+      <!-- <img
         :src="bridgeImage"
         alt="Rędziński Bridge Wrocław"
-        style="width:100%;"
+        class="image2"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-once="true"
-      >
+      > -->
+      <div
+        :src="bridgeImage"
+        :style="{'background-image': 'url(' + bridgeImage + ')'}"
+        alt="Phoenix See Dortmund"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="image2"
+      />
 
       <gallery-component/>
 
-      <img
+      <!-- <img
         :src="wroImage"
         alt="Gallery Wroclavia Wrocław"
-        style="width:100%;"
+        class="image2"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-once="true"
-      >
+      > -->
+      <div
+        :src="wroImage"
+        :style="{'background-image': 'url(' + wroImage + ')'}"
+        alt="Phoenix See Dortmund"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="image2"
+      />
 
       <cities-component/>
 
-      <img
+      <!-- <img
         :src="schoolImage"
         alt="Wrocław University of Economics"
-        style="width:100%;"
+        class="image2"
         data-aos="fade-up"
         data-aos-delay="200"
         data-aos-once="true"
-      >
+      > -->
+      <div
+        :src="schoolImage"
+        :style="{'background-image': 'url(' + schoolImage + ')'}"
+        alt="Phoenix See Dortmund"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+        class="image2"
+      />
 
       <business-component/>
 
@@ -123,3 +168,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.image2
+{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1904px)
+{
+  .image2
+  {
+    height: 800px;
+  }
+}
+</style>
