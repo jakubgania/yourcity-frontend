@@ -5,7 +5,7 @@
     <v-parallax :src="officeImage" :height="imageHeight">
       <div class="content">
         <v-layout row wrap>
-          <v-flex xs12 lg4 offset-lg2>
+          <v-flex xs12 lg4 offset-lg2 xl3 offset-xl3>
             <div class="description">
               YOURCITY FOR BUSINESS to platforma umożliwiająca dotarcie do klienta.
               W zależności od rodzaju biznesu jaki prowadzisz YOURCITY daje możliwośc
@@ -33,7 +33,7 @@
               </v-flex>
             </v-layout>
           </v-flex>
-          <v-flex xs10 offset-xs1 lg4 offset-lg1>
+          <v-flex xs10 offset-xs1 lg4 offset-lg1 xl3 offset-xl1>
             <button
               type="button"
               name="button"
@@ -65,7 +65,7 @@ export default {
         // case 'sm': return '400'
         // case 'md': return '500'
         case 'lg': return '680';
-        // case 'xl': return '800'
+        case 'xl': return '800';
         default: return '800';
       }
     },

@@ -3,21 +3,21 @@
 <template>
   <v-flex lg12>
     <v-layout row wrap class="scheme-section">
-      <v-flex xs12 sm12 md3 lg3 offset-lg1 class="scheme">
+      <v-flex xs12 sm12 md3 lg3 offset-lg1 xl2 offset-xl2 class="scheme">
         Twój biznes
       </v-flex>
-      <v-flex xs12 sm12 md1 lg1 class="scheme-icon-section">
+      <v-flex xs12 sm12 md1 lg1 xl1 class="scheme-icon-section">
         <v-icon class="scheme-icon hidden-xs-only hidden-sm-only">swap_horiz</v-icon>
-        <v-icon class="scheme-icon hidden-md-only hidden-lg-only">swap_vert</v-icon>
+        <v-icon class="scheme-icon hidden-md-only hidden-lg-only hidden-xl-only">swap_vert</v-icon>
       </v-flex>
-      <v-flex xs12 sm12 md4 lg2 class="scheme-logo-section" style="margin-top:-20px;">
+      <v-flex xs12 sm12 md4 lg2 xl2 class="scheme-logo-section" style="margin-top:-20px;">
         <logo-component :logo-size="48" margin="-10"/>
       </v-flex>
-      <v-flex xs12 sm12 md1 lg1 class="scheme-icon-section">
+      <v-flex xs12 sm12 md1 lg1 xl1 class="scheme-icon-section">
         <v-icon class="scheme-icon hidden-xs-only hidden-sm-only">swap_horiz</v-icon>
-        <v-icon class="scheme-icon hidden-md-only hidden-lg-only">swap_vert</v-icon>
+        <v-icon class="scheme-icon hidden-md-only hidden-lg-only hidden-xl-only">swap_vert</v-icon>
       </v-flex>
-      <v-flex xs12 sm12 md3 lg3 class="scheme">
+      <v-flex xs12 sm12 md3 lg3 xl2 class="scheme">
         Klienci
       </v-flex>
     </v-layout>
@@ -47,7 +47,6 @@ export default {
   line-height: 50px;
   text-align: center;
   font-size: 38px;
-  // font-weight: 700;
 }
 .scheme-icon-section
 {

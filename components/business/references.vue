@@ -12,6 +12,8 @@
         offset-md3
         lg4
         offset-lg1
+        xl3
+        offset-xl2
         class="button-link-section"
       >
         <router-link :to="$i18n.path('example-profile')">
@@ -29,6 +31,8 @@
         offset-md3
         lg4
         offset-lg2
+        xl3
+        offset-xl2
         class="button-link-section"
       >
         <button type="button" name="button" class="button-link" @click="dialog = true">

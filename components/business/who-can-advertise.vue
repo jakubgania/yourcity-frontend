@@ -7,19 +7,24 @@
         Jakie podmioty mogą promować się w YOURCITY dla biznesu ?
       </div>
     </v-flex>
-    <v-flex
-      v-for="section in descriptions.advertise.section"
-      :key="section.id"
-      xs12 lg4
-      class="card-component"
-    >
-      <div class="title-info-section">
-        <i class="material-icons card-icon">{{ section.icon }}</i>
-        {{ section.title }}
-      </div>
-      <div class="description-info-section">
-        {{ section.description }}
-      </div>
+    <v-flex lg12 xl8 offset-xl2>
+      <v-layout row wrap>
+        <v-flex
+          v-for="section in descriptions.advertise.section"
+          :key="section.id"
+          xs12
+          lg4
+          class="card-component"
+        >
+          <div class="title-info-section">
+            <i class="material-icons card-icon">{{ section.icon }}</i>
+            {{ section.title }}
+          </div>
+          <div class="description-info-section">
+            {{ section.description }}
+          </div>
+        </v-flex>
+      </v-layout>
     </v-flex>
   </v-layout>
 </template>
