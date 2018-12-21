@@ -390,6 +390,7 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    '@nuxtjs/pwa',
   ],
 
   sitemap: {
