@@ -16,9 +16,10 @@
         Pliki Cookies
       </v-card-title>
       <v-card-text style="letter-spacing:1px;">
-        Strona wykorzystuje pliki cookie jedynie w celach statystycznych do
-        analizowania ruchu sieciowego. Wykorzystywany jest również mechanizm
-        local storage do poprawnego działania aplikacji Yourcity.
+        Strona wykorzystuje pliki cookie oraz usługę Google Analytics jedynie
+        w celach statystycznych do analizowania ruchu sieciowego.
+        Wykorzystywany jest również mechanizm local storage do poprawnego
+        działania aplikacji Yourcity.
       </v-card-text>
       <v-card-title class="title">
         Regulamin
@@ -30,6 +31,13 @@
         <a :href="link()" target="_blank">
           https://yourcity.io/agreements
         </a>
+      </v-card-text>
+      <v-card-title class="title">
+        Lokalizacja
+      </v-card-title>
+      <v-card-text style="letter-spacing:1px;">
+        Obecna lokalizacja może być wykorzystana za zgodą użytkownika do
+        realizacji funkcjonalności związanych z wyszukiwaniem.
       </v-card-text>
       <v-card-actions>
         <v-spacer/>
