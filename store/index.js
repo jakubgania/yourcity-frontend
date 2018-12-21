@@ -4,6 +4,8 @@ import Vue                 from 'vue';
 import Vuex                from 'vuex';
 import axios               from 'axios';
 
+import VueClazyLoad        from 'vue-clazy-load';
+
 import globalVariables     from './modules/global-variables';
 import searchProfiles      from './modules/profiles-search';
 import autocomplete        from './modules/autocomplete';
@@ -19,6 +21,7 @@ if (process.env.NODE_ENV == 'production')
 else
   axios.defaults.baseURL = baseUrlDevelopment;
 
+Vue.use(VueClazyLoad);
 Vue.use(Vuex);
 
 export default () => new Vuex.Store({

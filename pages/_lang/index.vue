@@ -7,58 +7,88 @@
 
       <information-component/>
 
-      <div
-        :style="{'background-image': 'url(' + seeImage + ')'}"
-        alt="Phoenix See Dortmund"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-once="true"
-        class="image"
-      />
+      <clazy-load :src="seeImage">
+        <div
+          :style="{'background-image': 'url('+ seeImage +')'}"
+          class="image"
+        />
+        <div slot="placeholder" class="preloader">
+          <div class="preloader-image">
+            <v-progress-circular
+              indeterminate
+              color="primary"
+            />
+          </div>
+        </div>
+      </clazy-load>
 
       <categories-component/>
 
-      <div
-        :style="{'background-image': 'url(' + galleryImage + ')'}"
-        alt="Phoenix See Dortmund"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-once="true"
-        class="image"
-      />
+      <clazy-load :src="galleryImage">
+        <div
+          :style="{'background-image': 'url(' + galleryImage + ')'}"
+          class="image"
+        />
+        <div slot="placeholder" class="preloader">
+          <div class="preloader-image">
+            <v-progress-circular
+              indeterminate
+              color="primary"
+            />
+          </div>
+        </div>
+      </clazy-load>
 
       <tags-component/>
 
-      <div
-        :style="{'background-image': 'url(' + bridgeImage + ')'}"
-        alt="Phoenix See Dortmund"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-once="true"
-        class="image"
-      />
+      <clazy-load :src="bridgeImage">
+        <div
+          :style="{'background-image': 'url(' + bridgeImage + ')'}"
+          class="image"
+        />
+        <div slot="placeholder" class="preloader">
+          <div class="preloader-image">
+            <v-progress-circular
+              indeterminate
+              color="primary"
+            />
+          </div>
+        </div>
+      </clazy-load>
 
       <gallery-component/>
 
-      <div
-        :style="{'background-image': 'url(' + wroImage + ')'}"
-        alt="Phoenix See Dortmund"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-once="true"
-        class="image"
-      />
+      <clazy-load :src="wroImage">
+        <div
+          :style="{'background-image': 'url(' + wroImage + ')'}"
+          class="image"
+        />
+        <div slot="placeholder" class="preloader">
+          <div class="preloader-image">
+            <v-progress-circular
+              indeterminate
+              color="primary"
+            />
+          </div>
+        </div>
+      </clazy-load>
 
       <cities-component/>
 
-      <div
-        :style="{'background-image': 'url(' + schoolImage + ')'}"
-        alt="Phoenix See Dortmund"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-once="true"
-        class="image"
-      />
+      <clazy-load :src="schoolImage">
+        <div
+          :style="{'background-image': 'url(' + schoolImage + ')'}"
+          class="image"
+        />
+        <div slot="placeholder" class="preloader">
+          <div class="preloader-image">
+            <v-progress-circular
+              indeterminate
+              color="primary"
+            />
+          </div>
+        </div>
+      </clazy-load>
 
       <business-component/>
 
@@ -125,6 +155,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
 .image
 {
   width: 100%;
@@ -133,11 +166,29 @@ export default {
   background-position: center;
   background-size: cover;
 }
+.preloader-image
+{
+  width: 100%;
+  height: 600px;
+  line-height: 600px;
+  text-align: center;
+}
 @media only screen and (min-width: 1904px)
 {
   .image
   {
     height: 800px;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  .image
+  {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 </style>
