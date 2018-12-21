@@ -4,40 +4,36 @@
   <v-dialog v-model="dialog" persistent max-width="440">
     <v-card>
       <v-card-title class="headline">
-        Szanowny Użytkowniku
+        {{ $t('rules-dialog.title') }}
         <v-spacer/>
         <v-icon style="cursor:default;" @click="accept()">close</v-icon>
       </v-card-title>
       <v-card-text style="letter-spacing:1px;">
-        Klikając „Akceptuję” lub zamykając okno przez kliknięcie w
-        znaczek X, zgadzasz się na poniższe warunki.
+        {{ $t('rules-dialog.description') }}
       </v-card-text>
       <v-card-title class="title">
-        Pliki Cookies
+        <v-icon style="margin-right:10px;">storage</v-icon>
+        {{ $t('rules-dialog.cookies.title') }}
       </v-card-title>
       <v-card-text style="letter-spacing:1px;">
-        Strona wykorzystuje pliki cookie oraz usługę Google Analytics jedynie
-        w celach statystycznych do analizowania ruchu sieciowego.
-        Wykorzystywany jest również mechanizm local storage do poprawnego
-        działania aplikacji Yourcity.
+        {{ $t('rules-dialog.cookies.description') }}
       </v-card-text>
       <v-card-title class="title">
-        Regulamin
+        <v-icon style="margin-right:10px;">format_list_numbered</v-icon>
+        {{ $t('rules-dialog.agreements.title') }}
       </v-card-title>
       <v-card-text style="letter-spacing:1px;">
-        Regualmin opisuje reguły i zasady dotyczące platformy Yourcity.
-        Użytkownik potwierdza, że rozumie i akceptuje regualmin dostępny pod
-        następującym adresem -
+        {{ $t('rules-dialog.agreements.description') }}
         <a :href="link()" target="_blank">
           https://yourcity.io/agreements
         </a>
       </v-card-text>
       <v-card-title class="title">
-        Lokalizacja
+        <v-icon style="margin-right:10px;">location_on</v-icon>
+        {{ $t('rules-dialog.location.title') }}
       </v-card-title>
       <v-card-text style="letter-spacing:1px;">
-        Obecna lokalizacja może być wykorzystana za zgodą użytkownika do
-        realizacji funkcjonalności związanych z wyszukiwaniem.
+        {{ $t('rules-dialog.location.description') }}
       </v-card-text>
       <v-card-actions>
         <v-spacer/>
@@ -47,7 +43,7 @@
           class="accept-button"
           @click="accept()"
         >
-          Akceptuję
+          {{ $t('rules-dialog.accept-button') }}
         </v-btn>
       </v-card-actions>
     </v-card>
