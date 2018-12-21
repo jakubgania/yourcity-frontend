@@ -8,12 +8,14 @@
       @closeNavigationDrawer="closeNavigationDrawer"
     />
 
-    <navigation-drawer-example-profile-component
-      :drawer-example-profile="drawerExampleProfile"
-      @switchNavigationDrawerExampleProfile="switchNavigationDrawerExampleProfile"
-      @updateNavigationDrawerValueExampleProfile="updateNavigationDrawerValueExampleProfile"
-      @closeNavigationDrawerExampleProfile="closeNavigationDrawerExampleProfile"
-    />
+    <no-ssr>
+      <navigation-drawer-example-profile-component
+        :drawer-example-profile="drawerExampleProfile"
+        @switchNavigationDrawerExampleProfile="switchNavigationDrawerExampleProfile"
+        @updateNavigationDrawerValueExampleProfile="updateNavigationDrawerValueExampleProfile"
+        @closeNavigationDrawerExampleProfile="closeNavigationDrawerExampleProfile"
+      />
+    </no-ssr>
 
     <toolbar-header-component
       :drawer="drawer"
@@ -40,8 +42,9 @@
       @updateSearchDialogXsModel="updateSearchDialogXsModel"
     />
 
-    <div v-if="this.$vuetify.breakpoint.name == 'sm' ">
+    <no-ssr>
       <search-dialog-sm-component
+        v-if="this.$vuetify.breakpoint.name == 'sm' "
         :search-dialog-sm-model="searchDialogXsModel"
         :categories-model="categoriesModel"
         :categories-items="categoriesItems"
@@ -59,10 +62,11 @@
         @submitSearchForm="submitSearchForm"
         @updateSearchDialogSmModel="updateSearchDialogSmModel"
       />
-    </div>
+    </no-ssr>
 
-    <div v-if="this.$vuetify.breakpoint.name == 'xs'">
+    <no-ssr>
       <search-dialog-xs-component
+        v-if="this.$vuetify.breakpoint.name == 'xs'"
         :search-dialog-xs-model="searchDialogXsModel"
         :categories-model="categoriesModel"
         :categories-items="categoriesItems"
@@ -80,7 +84,7 @@
         @submitSearchForm="submitSearchForm"
         @updateSearchDialogXsModel="updateSearchDialogXsModel"
       />
-    </div>
+    </no-ssr>
 
   </div>
 </template>
