@@ -372,7 +372,9 @@ module.exports = {
     'aos/dist/aos.css',
   ],
 
+  cache: true,
   plugins: [
+    '~/plugins/sw.js',
     '@/plugins/vuetify',
     '~/plugins/i18n.js',
     { src: '~/plugins/aos', ssr: false },
