@@ -361,7 +361,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       { rel: 'shortcut icon', type: 'image/png', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:400,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' },
     ],
   },
 
@@ -369,6 +369,7 @@ module.exports = {
 
   css: [
     '~/assets/style/app.styl',
+    '~/assets/scss/fonts.scss',
     'aos/dist/aos.css',
   ],
 
