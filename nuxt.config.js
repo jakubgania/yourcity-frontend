@@ -349,6 +349,26 @@ const generateRoutes = [
 module.exports = {
   mode: 'universal',
 
+  manifest: {
+    lang: 'en',
+    name: 'Yourcity - Search for different places in cities and locations',
+    description: 'Information about your city and the area where you are. Search for information in various categories in different countries. Yourcity is a constantly growing platform.',
+    icons: [
+      {
+        src: '/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: '/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+    theme_color: '#252bfc',
+    background_color: '#252bfc',
+  },
+
   head: {
     title: pkg.name,
     meta: [
@@ -359,8 +379,12 @@ module.exports = {
       { name: 'google-site-verification', content: 'cUuV3bKjY_wOCtCYYfn0xNwrPnqq25aTvcrXyVPEPrA' },
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      { rel: 'shortcut icon', type: 'image/png', href: '/favicon.png' },
+      {
+        rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32',
+      },
+      {
+        rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16',
+      },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' },
     ],
   },
