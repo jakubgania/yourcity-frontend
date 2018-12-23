@@ -11,7 +11,7 @@
         {{ $t('contact.subtitle') }}
       </div>
     </v-flex>
-    <v-flex xs12 lg4 offset-lg4>
+    <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4>
       <div class="subtitle-page">
         <v-alert
           :value="true"
