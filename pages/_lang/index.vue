@@ -7,7 +7,7 @@
 
       <information-component/>
 
-      <clazy-load :src="seeImage">
+      <!-- <clazy-load :src="seeImage">
         <div
           :style="{'background-image': 'url('+ seeImage +')'}"
           class="image"
@@ -20,11 +20,20 @@
             />
           </div>
         </div>
-      </clazy-load>
+      </clazy-load> -->
+
+      <img
+        :src="seeImage"
+        alt="Phoenix See Dortmund"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <categories-component/>
 
-      <clazy-load :src="galleryImage">
+      <!-- <clazy-load :src="galleryImage">
         <div
           :style="{'background-image': 'url(' + galleryImage + ')'}"
           class="image"
@@ -37,11 +46,20 @@
             />
           </div>
         </div>
-      </clazy-load>
+      </clazy-load> -->
+
+      <img
+        :src="galleryImage"
+        alt="Thier-Galerie Dortmund"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <tags-component/>
 
-      <clazy-load :src="bridgeImage">
+      <!-- <clazy-load :src="bridgeImage">
         <div
           :style="{'background-image': 'url(' + bridgeImage + ')'}"
           class="image"
@@ -54,11 +72,20 @@
             />
           </div>
         </div>
-      </clazy-load>
+      </clazy-load> -->
+
+      <img
+        :src="bridgeImage"
+        alt="Rędziński Bridge Wrocław"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <gallery-component/>
 
-      <clazy-load :src="wroImage">
+      <!-- <clazy-load :src="wroImage">
         <div
           :style="{'background-image': 'url(' + wroImage + ')'}"
           class="image"
@@ -71,11 +98,20 @@
             />
           </div>
         </div>
-      </clazy-load>
+      </clazy-load> -->
+
+      <img
+        :src="wroImage"
+        alt="Gallery Wroclavia Wrocław"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <cities-component/>
 
-      <clazy-load :src="schoolImage">
+      <!-- <clazy-load :src="schoolImage">
         <div
           :style="{'background-image': 'url(' + schoolImage + ')'}"
           class="image"
@@ -88,7 +124,16 @@
             />
           </div>
         </div>
-      </clazy-load>
+      </clazy-load> -->
+
+      <img
+        :src="schoolImage"
+        alt="Wrocław University of Economics"
+        style="width:100%;"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-once="true"
+      >
 
       <business-component/>
 
