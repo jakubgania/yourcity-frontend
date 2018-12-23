@@ -1,9 +1,9 @@
 <template>
   <v-app>
 
-    <!-- <full-screen-loader-component
+    <full-screen-loader-component
       :show-full-screen-loader="showFullScreenLoader"
-    /> -->
+    />
 
     <header-component/>
 
@@ -45,9 +45,9 @@ export default {
       showFullScreenLoader: true,
     };
   },
-  // mounted() {
-  //   this.showFullScreenLoader = false;
-  // },
+  mounted() {
+    this.showFullScreenLoader = false;
+  },
   methods: {
     displayFooter() {
       if (this.$route.name === 'lang-search' || this.$route.name === 'search') {

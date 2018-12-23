@@ -25,7 +25,7 @@
 
     <v-toolbar-side-icon
       v-if="displayNavigationDrawerExampleProfile() &&
-      this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm' "
+      (this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm')"
       @click.native="switchNavigationDrawerExampleProfile()"
     />
 
