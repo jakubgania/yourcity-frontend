@@ -1,9 +1,5 @@
 <template>
-  <v-layout
-    row
-    wrap
-    class="container-photo"
-  >
+  <v-layout row wrap class="container-photo">
 
     <v-flex
       order-xs2
@@ -17,10 +13,7 @@
     >
       <v-card class="details-section">
         <v-card-title class="title-text">
-          <i
-            class="material-icons"
-            style="margin-right: 20px;"
-          >
+          <i class="material-icons" style="margin-right: 20px;">
             info_outline
           </i>
           {{ $t('photos.information') }}
@@ -68,10 +61,7 @@
             lg12
             style="display:inline;"
           >
-            <v-chip
-              outline
-              class="tag-chip details-tag"
-            >
+            <v-chip outline class="tag-chip details-tag">
               {{ tag }}
             </v-chip>
           </v-flex>
@@ -101,10 +91,7 @@
       lg9
       style="background-color:#ffffff;"
     >
-      <v-img
-        :src="imagePath"
-        class="photo-section"
-      >
+      <v-img :src="imagePath" class="photo-section">
         <v-layout
           slot="placeholder"
           fill-height
@@ -112,10 +99,7 @@
           justify-center
           ma-0
         >
-          <v-progress-circular
-            indeterminate
-            style="color:#252bfc;"
-          />
+          <v-progress-circular indeterminate style="color:#252bfc;"/>
         </v-layout>
       </v-img>
     </v-flex>
@@ -176,5 +160,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './assets/scss/photos/id/lg.scss';
+  @import './assets/scss/photos/id/lg.scss';
 </style>
