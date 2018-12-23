@@ -46,20 +46,30 @@
       />
     </v-flex>
 
+    <network-connection-error-alert-component
+      :show-error-connection-alert="networkError"
+      :margin="-180"
+    />
+
   </v-layout>
 </template>
 
 <script>
 import axios from 'axios';
 import nightImage from '../../../assets/images/night-dortmund.jpg';
+import NetworkConnectionErrorAlertComponent from '../../../components/network-connection-error-alert.vue';
 
 export default {
   scrollToTop: true,
+  components: {
+    'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
+  },
   data() {
     return {
       nightImage,
       countriesItems: false,
       showLoader: false,
+      networkError: false,
     };
   },
   created() {
@@ -72,6 +82,7 @@ export default {
       })
       .catch(() => {
         this.showLoader = false;
+        this.networkError = true;
       });
   },
   head() {
