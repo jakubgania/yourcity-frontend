@@ -1,4 +1,5 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
+
 <template>
   <v-layout row wrap class="container-changelog">
     <v-layout row wrap>
@@ -88,7 +89,8 @@
 
     <v-flex
       v-if="showPageLoader"
-      xs12 sm12 md12 lg12 style="min-height:calc(100vh - 264px);text-align:center;">
+      xs12 sm12 md12 lg12 style="min-height:calc(100vh - 264px);text-align:center;"
+    >
       <v-progress-circular :size="50" indeterminate style="color:#252bfc;margin-top:80px;"/>
     </v-flex>
 
