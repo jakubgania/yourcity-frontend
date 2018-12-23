@@ -196,6 +196,7 @@ import googleLogo from '../../../assets/images/play-logo.png';
 import worldImage from '../../../assets/images/world.png';
 
 export default {
+  scrollToTop: true,
   name: 'ExampleProfileInformationPage',
   data() {
     return {

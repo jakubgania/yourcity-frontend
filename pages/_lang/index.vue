@@ -81,6 +81,7 @@ import wroImage from '../../assets/images/wro.jpg';
 import schoolImage from '../../assets/images/school.jpg';
 
 export default {
+  scrollToTop: true,
   components: {
     'search-component': SearchComponent,
     'information-component': InformationComponent,

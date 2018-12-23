@@ -23,6 +23,7 @@ import ContainerOfResultsComponent from '../../../components/profiles-search/con
 import ShowFullScreenLoaderComponent from '../../../components/full-screen-loader.vue';
 
 export default {
+  scrollToTop: true,
   components: {
     'sidebar-menu-component': SidebarMenuComponent,
     'container-results-component': ContainerOfResultsComponent,

@@ -48,6 +48,7 @@
 import profileImg from '../../../assets/images/jakub-gania.jpg';
 
 export default {
+  scrollToTop: true,
   data() {
     return {
       profileImg,

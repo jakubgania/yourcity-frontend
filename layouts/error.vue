@@ -8,6 +8,12 @@
   </v-layout>
 </template>
 
+<script>
+export default {
+  scrollToTop: true,
+};
+</script>
+
 <style lang="scss" scoped>
 .error-container
 {

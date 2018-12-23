@@ -117,6 +117,7 @@
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
+  scrollToTop: true,
   data() {
     return {
       title: null,

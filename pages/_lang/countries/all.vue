@@ -54,6 +54,7 @@ import axios from 'axios';
 import nightImage from '../../../assets/images/night-dortmund.jpg';
 
 export default {
+  scrollToTop: true,
   data() {
     return {
       nightImage,

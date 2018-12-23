@@ -100,6 +100,7 @@ import { mapGetters, mapActions } from 'vuex';
 import NetworkConnectionErrorAlertComponent from '../../../components/network-connection-error-alert.vue';
 
 export default {
+  scrollToTop: true,
   components: {
     'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
   },

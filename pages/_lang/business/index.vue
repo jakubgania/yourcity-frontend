@@ -47,6 +47,7 @@ import PartnersComponent from '../../../components/business/partners.vue';
 import fromSkyTowerImage from '../../../assets/images/from-sky-tower.jpg';
 
 export default {
+  scrollToTop: true,
   components: {
     'top-image-component': TopImageComponent,
     'scheme-component': SchemeComponent,

@@ -57,6 +57,7 @@
 
 <script>
 export default {
+  scrollToTop: true,
   data() {
     return {
       rules: this.$t('agreements.rules'),

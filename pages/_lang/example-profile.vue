@@ -58,6 +58,7 @@
 import topImage from '../../assets/images/b2.jpg';
 
 export default {
+  scrollToTop: true,
   data() {
     return {
       topImage,
