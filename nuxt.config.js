@@ -347,6 +347,7 @@ const generateRoutes = [
 ];
 
 module.exports = {
+  cache: true,
   mode: 'universal',
 
   manifest: {
@@ -385,7 +386,9 @@ module.exports = {
       {
         rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16',
       },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons' },
+      {
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Material+Icons',
+      },
     ],
   },
 
