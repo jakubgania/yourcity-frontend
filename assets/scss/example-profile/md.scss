@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1264px)
+{
+  .content-container
+  {
+    // width: 100%;
+    margin: auto;
+    // padding-left: 60px;
+    // padding-right: 60px;
+  }
+  .wrapper
+  {
+    display: inline-block;
+
+    margin: 300px 0 0 0;
+
+    text-align: left;
+  }
+  .content-section
+  {
+    float: right;
+
+    width: 640px;
+    // padding-left: 200px;
+    padding-top: 60px;
+  }
+}

@@ -24,7 +24,8 @@
     <v-spacer/>
 
     <v-toolbar-side-icon
-      v-if="displayNavigationDrawerExampleProfile() && this.$vuetify.breakpoint.name == 'xs'"
+      v-if="displayNavigationDrawerExampleProfile() &&
+      this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm' "
       @click.native="switchNavigationDrawerExampleProfile()"
     />
 
@@ -85,5 +86,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/header/toolbar-header.scss';
+  @import '../../assets/scss/header/toolbar-header.scss';
 </style>

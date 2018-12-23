@@ -10,7 +10,10 @@
     <div class="content-container">
       <span id="alignment"/>
       <div class="wrapper">
-        <div v-if="this.$vuetify.breakpoint.name != 'xs'" class="menu-section">
+        <div
+          v-if="this.$vuetify.breakpoint.name != 'xs' && this.$vuetify.breakpoint.name != 'sm'"
+          class="menu-section"
+        >
           <router-link :to="$i18n.path('example-profile')" class="router-link">
             <div class="router-link-button">
               <v-icon class="icon">chevron_right</v-icon>
@@ -65,5 +68,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '../../assets/scss/example-profile/example-profile.scss';
+  @import './assets/scss/example-profile/md.scss';
+  @import './assets/scss/example-profile/sm.scss';
   @import './assets/scss/example-profile/xs.scss';
 </style>

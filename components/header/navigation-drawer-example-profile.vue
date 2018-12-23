@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-    v-if="this.$vuetify.breakpoint.name == 'xs'"
+    v-if="this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm'"
     v-model="drawerFlagPro"
     fixed
     right
@@ -87,5 +87,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/header/navigation-drawer.scss';
+  @import '../../assets/scss/header/navigation-drawer.scss';
 </style>
