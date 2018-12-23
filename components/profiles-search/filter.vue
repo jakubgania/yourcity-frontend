@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap>
     <v-flex xs12 sm12 md12 lg12 xl10 offset-xl1>

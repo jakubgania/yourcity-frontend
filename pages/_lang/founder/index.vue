@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap class="founder-container">
     <v-flex xs12 lg4 offset-lg4>

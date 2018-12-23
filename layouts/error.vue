@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap class="error-container">
     <v-flex lg12 style="text-align:center;">

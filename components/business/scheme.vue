@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-flex lg12>
     <v-layout row wrap class="scheme-section">

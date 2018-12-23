@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap class="agreements-container">
     <v-flex xs12 lg4 offset-lg4 xl4 offset-xl4>

@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap class="container-gallery">
     <v-flex xs12 lg4 offset-lg4 xl2 offset-xl5>

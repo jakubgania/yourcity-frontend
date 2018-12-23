@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap class="categories-title-section">
     <v-flex lg6 offset-lg3>

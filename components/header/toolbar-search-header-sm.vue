@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <transition name="fade">
     <div v-if="searchDialogSmModel" class="toolbar-sm-section">

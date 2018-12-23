@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-flex xs12 sm12 md12 lg12>
     <v-layout

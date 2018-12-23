@@ -1,5 +1,3 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-dialog v-model="dialog" persistent max-width="440">
     <v-card>

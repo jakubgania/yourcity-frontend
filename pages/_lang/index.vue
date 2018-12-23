@@ -1,26 +1,9 @@
-<!-- eslint-disable vue/max-attributes-per-line -->
-
 <template>
   <v-layout row wrap style="overflow-x: hidden;">
     <v-flex xs12 lg12>
       <search-component/>
 
       <information-component/>
-
-      <!-- <clazy-load :src="seeImage">
-        <div
-          :style="{'background-image': 'url('+ seeImage +')'}"
-          class="image"
-        />
-        <div slot="placeholder" class="preloader">
-          <div class="preloader-image">
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            />
-          </div>
-        </div>
-      </clazy-load> -->
 
       <img
         :src="seeImage"
@@ -33,21 +16,6 @@
 
       <categories-component/>
 
-      <!-- <clazy-load :src="galleryImage">
-        <div
-          :style="{'background-image': 'url(' + galleryImage + ')'}"
-          class="image"
-        />
-        <div slot="placeholder" class="preloader">
-          <div class="preloader-image">
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            />
-          </div>
-        </div>
-      </clazy-load> -->
-
       <img
         :src="galleryImage"
         alt="Thier-Galerie Dortmund"
@@ -58,21 +26,6 @@
       >
 
       <tags-component/>
-
-      <!-- <clazy-load :src="bridgeImage">
-        <div
-          :style="{'background-image': 'url(' + bridgeImage + ')'}"
-          class="image"
-        />
-        <div slot="placeholder" class="preloader">
-          <div class="preloader-image">
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            />
-          </div>
-        </div>
-      </clazy-load> -->
 
       <img
         :src="bridgeImage"
@@ -85,21 +38,6 @@
 
       <gallery-component/>
 
-      <!-- <clazy-load :src="wroImage">
-        <div
-          :style="{'background-image': 'url(' + wroImage + ')'}"
-          class="image"
-        />
-        <div slot="placeholder" class="preloader">
-          <div class="preloader-image">
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            />
-          </div>
-        </div>
-      </clazy-load> -->
-
       <img
         :src="wroImage"
         alt="Gallery Wroclavia Wrocław"
@@ -110,21 +48,6 @@
       >
 
       <cities-component/>
-
-      <!-- <clazy-load :src="schoolImage">
-        <div
-          :style="{'background-image': 'url(' + schoolImage + ')'}"
-          class="image"
-        />
-        <div slot="placeholder" class="preloader">
-          <div class="preloader-image">
-            <v-progress-circular
-              indeterminate
-              color="primary"
-            />
-          </div>
-        </div>
-      </clazy-load> -->
 
       <img
         :src="schoolImage"
