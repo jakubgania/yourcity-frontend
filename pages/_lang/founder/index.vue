@@ -36,7 +36,7 @@
         data-aos-delay="400"
         data-aos-once="true"
       >
-        <a href="https://jakubgania.io" target="_blank" class="link">
+        <a href="https://jakubgania.io" rel="noreferrer" target="_blank" class="link">
           jakubgania.io
         </a>
       </div>
