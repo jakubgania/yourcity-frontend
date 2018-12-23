@@ -1,9 +1,7 @@
 <template>
-  <v-layout row wrap>
+  <v-layout row wrap class="filter-container">
     <v-flex xs12 sm12 md12 lg12 xl10 offset-xl1>
-      <v-expansion-panel
-        expand
-        style="box-shadow:none;"
+      <v-expansion-panel expand style="box-shadow:none;"
       >
         <v-expansion-panel-content
           class="extension-panel"
@@ -20,13 +18,7 @@
           </div>
 
           <v-layout row wrap>
-            <v-flex
-              xs10
-              offset-xs1
-              sm4
-              lg4
-              style="margin-left:20px;"
-            >
+            <v-flex xs12 sm4 lg4 class="filter-input">
               <v-text-field
                 :append-icon="'search'"
                 v-model="prototypeFilter"
@@ -55,7 +47,6 @@
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
-  // props: ['custom'],
   data() {
     return {
       custom: null,
@@ -73,11 +64,11 @@ export default {
     ]),
   },
   watch: {
-    // prototypeFilter(value) {
-    //   if (!value) {
-    //     this.$store.dispatch('searchProfiles/resetResult', this.resultCopy);
-    //   }
-    // },
+    prototypeFilter(value) {
+      if (!value) {
+        this.$store.dispatch('searchProfiles/resetResult', this.resultCopy);
+      }
+    },
   },
   methods: {
     ...mapActions('searchProfiles', [
@@ -132,7 +123,20 @@ export default {
 {
   border-bottom: 1px solid #dfdfdf;
 }
+.filter-input
+{
+  margin-left: 20px;
+}
 @media only screen and (max-width: 600px)
 {
+  .filter-container
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filter-input
+  {
+    margin-left: 0px;
+  }
 }
 </style>
