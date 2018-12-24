@@ -1,30 +1,15 @@
 <template>
   <v-flex xs12 sm12 md12 lg12>
-    <v-layout
-      row
-      wrap
-      class="title-section"
-    >
+    <v-layout row wrap class="title-section">
       <v-flex xs12 sm12 md6 lg4 offset-lg2>
-        <div
-          data-aos="fade-right"
-          data-aos-delay="240"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-right" data-aos-delay="240" data-aos-once="true">
           <div class="logo-section">
-            <logo-component
-              :logo-size="logoSize"
-              :margin="logoMargin"
-            />
+            <logo-component :logo-size="logoSize" :margin="logoMargin"/>
           </div>
         </div>
       </v-flex>
       <v-flex xs12 sm12 md6 lg4>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="240"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-left" data-aos-delay="240" data-aos-once="true">
           <div class="text-title">
             {{ $t('home.information_section.title') }}
           </div>
@@ -35,11 +20,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         order-xs2
         xs12
@@ -51,11 +32,7 @@
         xl2
         offset-xl3
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.exploration.title') }}
           </div>
@@ -73,15 +50,8 @@
         xl2
         class="section-icon"
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#030ac9;"
-          >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#030ac9;">
             search
           </v-icon>
         </div>
@@ -97,15 +67,8 @@
         offset-xl3
         class="section-icon"
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#0308b0;"
-          >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#0308b0;">
             info_outline
           </v-icon>
         </div>
@@ -119,11 +82,7 @@
         xl2
         offset-xl2
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.information.title') }}
           </div>
@@ -146,11 +105,7 @@
         xl2
         offset-xl3
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.categories.title') }}
           </div>
@@ -168,26 +123,15 @@
         xl2
         class="section-icon"
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#020797;"
-          >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#020797;">
             location_on
           </v-icon>
         </div>
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         xs12
         lg3
@@ -196,15 +140,8 @@
         offset-xl3
         class="section-icon"
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#02067e;"
-          >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#02067e;">
             map
           </v-icon>
         </div>
@@ -218,11 +155,7 @@
         xl2
         offset-xl2
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.attractions.title') }}
           </div>
@@ -233,11 +166,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         order-xs2
         xs12
@@ -249,11 +178,7 @@
         xl2
         offset-xl3
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.help.title') }}
           </div>
@@ -271,26 +196,15 @@
         xl2
         class="section-icon"
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#020564;"
-          >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#020564;">
             local_hospital
           </v-icon>
         </div>
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         xs12
         lg3
@@ -299,15 +213,8 @@
         offset-xl3
         class="section-icon"
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#01044b;"
-          >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#01044b;">
             view_compact
           </v-icon>
         </div>
@@ -321,11 +228,7 @@
         xl2
         offset-xl2
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.profiles.title') }}
           </div>
@@ -336,11 +239,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout
-      row
-      wrap
-      class="section-info"
-    >
+    <v-layout row wrap class="section-info">
       <v-flex
         order-xs2
         xs12
@@ -352,11 +251,7 @@
         xl2
         offset-xl3
       >
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
+        <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.companies.title') }}
           </div>
@@ -374,15 +269,8 @@
         xl2
         class="section-icon"
       >
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-icon
-            class="info-icon"
-            style="color:#010232;"
-          >
+        <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+          <v-icon class="info-icon" style="color:#010232;">
             dvr
           </v-icon>
         </div>
