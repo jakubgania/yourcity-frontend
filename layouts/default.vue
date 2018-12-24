@@ -1,10 +1,6 @@
 <template>
   <v-app>
 
-    <full-screen-loader-component
-      :show-full-screen-loader="showFullScreenLoader"
-    />
-
     <header-component/>
 
     <v-content style="padding-top:64px;">
@@ -44,9 +40,6 @@ export default {
     return {
       showFullScreenLoader: true,
     };
-  },
-  mounted() {
-    this.showFullScreenLoader = false;
   },
   methods: {
     displayFooter() {
