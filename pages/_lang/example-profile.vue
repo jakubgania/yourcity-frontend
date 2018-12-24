@@ -7,49 +7,51 @@
       </div>
     </v-flex>
 
-    <div class="content-container">
-      <span id="alignment"/>
-      <div class="wrapper">
-        <div
-          v-if="this.$vuetify.breakpoint.name != 'xs' && this.$vuetify.breakpoint.name != 'sm'"
-          class="menu-section"
-        >
-          <router-link :to="$i18n.path('example-profile')" class="router-link">
-            <div class="router-link-button">
-              <v-icon class="icon">chevron_right</v-icon>
-              {{ $t('example-profile.menu.information') }}
-            </div>
-          </router-link>
-          <router-link :to="$i18n.path('example-profile/posts')" class="router-link">
-            <div class="router-link-button">
-              <v-icon class="icon">chevron_right</v-icon>
-              {{ $t('example-profile.menu.posts') }}
-            </div>
-          </router-link>
-          <router-link :to="$i18n.path('example-profile/photos')" class="router-link">
-            <div class="router-link-button">
-              <v-icon class="icon">chevron_right</v-icon>
-              {{ $t('example-profile.menu.photos') }}
-            </div>
-          </router-link>
-          <router-link :to="$i18n.path('example-profile/comments')" class="router-link">
-            <div class="router-link-button">
-              <v-icon class="icon">chevron_right</v-icon>
-              {{ $t('example-profile.menu.comments') }}
-            </div>
-          </router-link>
-          <router-link :to="$i18n.path('example-profile/related-profiles')" class="router-link">
-            <div class="router-link-button">
-              <v-icon class="icon">chevron_right</v-icon>
-              {{ $t('example-profile.menu.related-profiles') }}
-            </div>
-          </router-link>
-        </div>
-        <div class="content-section">
-          <nuxt-child/>
+    <no-ssr>
+      <div class="content-container">
+        <span id="alignment"/>
+        <div class="wrapper">
+          <div
+            v-if="this.$vuetify.breakpoint.name != 'xs' && this.$vuetify.breakpoint.name != 'sm'"
+            class="menu-section"
+          >
+            <router-link :to="$i18n.path('example-profile')" class="router-link">
+              <div class="router-link-button">
+                <v-icon class="icon">chevron_right</v-icon>
+                {{ $t('example-profile.menu.information') }}
+              </div>
+            </router-link>
+            <router-link :to="$i18n.path('example-profile/posts')" class="router-link">
+              <div class="router-link-button">
+                <v-icon class="icon">chevron_right</v-icon>
+                {{ $t('example-profile.menu.posts') }}
+              </div>
+            </router-link>
+            <router-link :to="$i18n.path('example-profile/photos')" class="router-link">
+              <div class="router-link-button">
+                <v-icon class="icon">chevron_right</v-icon>
+                {{ $t('example-profile.menu.photos') }}
+              </div>
+            </router-link>
+            <router-link :to="$i18n.path('example-profile/comments')" class="router-link">
+              <div class="router-link-button">
+                <v-icon class="icon">chevron_right</v-icon>
+                {{ $t('example-profile.menu.comments') }}
+              </div>
+            </router-link>
+            <router-link :to="$i18n.path('example-profile/related-profiles')" class="router-link">
+              <div class="router-link-button">
+                <v-icon class="icon">chevron_right</v-icon>
+                {{ $t('example-profile.menu.related-profiles') }}
+              </div>
+            </router-link>
+          </div>
+          <div class="content-section">
+            <nuxt-child/>
+          </div>
         </div>
       </div>
-    </div>
+    </no-ssr>
 
   </v-layout>
 </template>
