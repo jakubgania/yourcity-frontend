@@ -23,11 +23,13 @@
 
     <v-spacer/>
 
-    <v-toolbar-side-icon
-      v-if="displayNavigationDrawerExampleProfile() &&
-      (this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm')"
-      @click.native="switchNavigationDrawerExampleProfile()"
-    />
+    <no-ssr>
+      <v-toolbar-side-icon
+        v-if="displayNavigationDrawerExampleProfile() &&
+        (this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm')"
+        @click.native="switchNavigationDrawerExampleProfile()"
+      />
+    </no-ssr>
 
     <dropdown-menu-component/>
 
