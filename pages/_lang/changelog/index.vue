@@ -31,9 +31,9 @@
                 </div>
               </div>
               <div class="message">
-                <span class="content-text" v-html="post.message">
+                <div class="content-text" v-html="post.message">
                   {{ post.message }}
-                </span>
+                </div>
               </div>
             </div>
           </v-flex>
