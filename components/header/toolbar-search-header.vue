@@ -18,10 +18,7 @@
       class="search-form hidden-xs-only hidden-sm-only"
       @submit.prevent="submitSearchForm()"
     >
-      <v-layout
-        row
-        wrap
-      >
+      <v-layout row wrap>
         <v-flex lg5>
           <div class="query-input">
             <v-combobox
@@ -54,16 +51,10 @@
               prepend-inner-icon="location_on"
               class="combobox-input"
             >
-              <template
-                slot="item"
-                slot-scope="cityItems"
-              >
+              <template slot="item" slot-scope="cityItems">
                 {{ cityItems.item.name }}
               </template>
-              <template
-                slot="item"
-                slot-scope="cityItems"
-              >
+              <template slot="item" slot-scope="cityItems">
                 <template v-if="cityItems.item.value">
                   <v-list-tile-content @click="getCurrentLocation()">
                     <v-list-tile-title>
@@ -81,10 +72,7 @@
           </div>
         </v-flex>
         <v-flex lg3>
-          <button
-            type="submit"
-            class="submit-search-form-btn"
-          >
+          <button type="submit" class="submit-search-form-btn">
             {{ $t('profiles_search.search_form.submit_button') }}
             <v-icon class="btn-icon">keyboard_arrow_right</v-icon>
           </button>
@@ -208,8 +196,9 @@ export default {
       this.$emit('submitSearchForm');
     },
   },
-  // getCurrentLocation() {
-  // },
+  getCurrentLocation() {
+    //
+  },
 };
 </script>
 
