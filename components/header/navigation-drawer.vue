@@ -6,11 +6,9 @@
     temporary
     class="navigation-drawer-container"
   >
-    <v-list
-      class="list-section"
-    >
+    <v-list class="list-section">
       <div class="list-section-logo">
-        <logo-component/>
+        <logo-component :logo-size="logoSize" :margin="logoMargin"/>
       </div>
 
       <v-list-tile
@@ -61,6 +59,26 @@ export default {
         this.$emit('updateNavigationDrawerValue', value);
       },
     },
+    logoSize() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 120;
+        case 'sm': return 140;
+        case 'md': return 140;
+        case 'lg': return 160;
+        case 'xl': return 160;
+        default: return 420;
+      }
+    },
+    logoMargin() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 16;
+        case 'sm': return 14;
+        case 'md': return 14;
+        case 'lg': return 12;
+        case 'xl': return 12;
+        default: return 16;
+      }
+    },
   },
   watch: {
     drawer(value) {
@@ -78,5 +96,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/header/navigation-drawer.scss';
+  @import '../../assets/scss/header/navigation-drawer.scss';
 </style>

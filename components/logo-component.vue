@@ -1,22 +1,12 @@
 <template>
-  <router-link
-    :to="'/' + $i18n.locale"
-    class="logo-link"
-  >
-    <div
-      :style="{ fontSize: logoSize + 'px'}"
-      class="logo-section"
+  <router-link :to="'/' + $i18n.locale" class="logo-link">
+    <img
+      :style="{ marginTop: margin + 'px' }"
+      :width="logoSize"
+      src="logo.svg"
+      alt="Yourcity logo"
+      height="auto"
     >
-      <div class="your">
-        your
-      </div>
-      <div
-        :style="{ marginLeft: margin + 'px' }"
-        class="city"
-      >
-        city
-      </div>
-    </div>
   </router-link>
 </template>
 
@@ -25,11 +15,11 @@ export default {
   props: {
     logoSize: {
       type: Number,
-      default: 24,
+      default: 160,
     },
     margin: {
       type: Number,
-      default: -6,
+      default: 0,
     },
   },
 };
@@ -38,24 +28,6 @@ export default {
 <style lang="scss" scoped>
 .logo-link
 {
-  margin-top: 0px;
   text-decoration: none;
-}
-.logo-section
-{
-  display: inline;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-}
-.your
-{
-  display:inline;
-}
-.city
-{
-  display: inline;
-  color: blue;
 }
 </style>

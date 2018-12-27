@@ -125,12 +125,12 @@
 
     <v-flex xs12 md10 offset-md1 lg10 offset-lg1 xl8 offset-xl2>
       <div class="copyright-section">
-        <a
+        <!-- <a
           href="mailto:example@email.io"
           class="email-link"
         >
           email address
-        </a>
+        </a> -->
         <div class="copyright">
           yourcity &copy; 2018
         </div>
@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './../assets/scss/footer/lg.scss';
-@import './../assets/scss/footer/sm.scss';
-@import './../assets/scss/footer/xs.scss';
+  @import './../assets/scss/footer/lg.scss';
+  @import './../assets/scss/footer/sm.scss';
+  @import './../assets/scss/footer/xs.scss';
 </style>

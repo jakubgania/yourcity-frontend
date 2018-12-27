@@ -290,22 +290,22 @@ export default {
   computed: {
     logoSize() {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return 44;
-        case 'sm': return 88;
-        case 'md': return 88;
-        case 'lg': return 88;
-        case 'xl': return 88;
-        default: return 88;
+        case 'xs': return 240;
+        case 'sm': return 400;
+        case 'md': return 420;
+        case 'lg': return 480;
+        case 'xl': return 560;
+        default: return 420;
       }
     },
     logoMargin() {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return -10;
-        case 'sm': return -16;
-        case 'md': return -16;
-        case 'lg': return -16;
-        case 'xl': return -16;
-        default: return -16;
+        case 'xs': return 0;
+        case 'sm': return 0;
+        case 'md': return 10;
+        case 'lg': return 0;
+        case 'xl': return 0;
+        default: return 0;
       }
     },
   },

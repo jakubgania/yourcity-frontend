@@ -9,7 +9,7 @@
         <v-icon class="scheme-icon hidden-md-only hidden-lg-only hidden-xl-only">swap_vert</v-icon>
       </v-flex>
       <v-flex xs12 sm12 md4 lg2 xl2 class="scheme-logo-section" style="margin-top:-20px;">
-        <logo-component :logo-size="48" margin="-10"/>
+        <logo-component :logo-size="280" margin="4"/>
       </v-flex>
       <v-flex xs12 sm12 md1 lg1 xl1 class="scheme-icon-section">
         <v-icon class="scheme-icon hidden-xs-only hidden-sm-only">swap_horiz</v-icon>
