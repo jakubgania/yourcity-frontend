@@ -1,7 +1,7 @@
 const state = {
-  city: null,
-  query: null,
-  category: null,
+  city: '',
+  query: '',
+  category: '',
   currentCategory: null,
   pagingURL: null,
   items: [],

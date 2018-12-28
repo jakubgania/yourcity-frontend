@@ -1,14 +1,6 @@
 <template>
-  <v-layout
-    row
-    wrap
-  >
-    <v-flex
-      xs10
-      offset-xs1
-      lg11
-      offset-lg1
-    >
+  <v-layout row wrap>
+    <v-flex xs10 offset-xs1 lg11 offset-lg1>
       <div
         class="title-section"
         data-aos="fade-right"
@@ -51,10 +43,7 @@
       xl2
       offset-xl5
     >
-      <router-link
-        :to="$i18n.path('search')"
-        class="link-section"
-      >
+      <router-link :to="$i18n.path('search')" class="link-section">
         <v-btn
           block
           large
@@ -65,10 +54,7 @@
           data-aos-once="true"
         >
           {{ $t('home.categories.search_button') }}
-          <v-icon
-            right
-            dark
-          >
+          <v-icon right dark>
             keyboard_arrow_right
           </v-icon>
         </v-btn>
@@ -85,7 +71,7 @@ export default {
         {
           id: 'club',
           icon: 'music_note',
-          name: this.$t('home.categories.clubs'),
+          name: this.$t('home.categories.club'),
         },
         {
           id: 'barAndPub',
@@ -95,7 +81,7 @@ export default {
         {
           id: 'cafeteria',
           icon: 'local_cafe',
-          name: this.$t('home.categories.coffeehouses'),
+          name: this.$t('home.categories.coffeehouse'),
         },
         {
           id: 'food',

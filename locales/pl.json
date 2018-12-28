@@ -85,9 +85,9 @@
     },
     "categories": {
       "title_section": "Kategorie",
-      "clubs": "kluby",
+      "club": "kluby",
       "bar_and_pub": "bary i puby",
-      "coffeehouses": "kawiarnie",
+      "coffeehouse": "kawiarnie",
       "food": "jedzenie",
       "entertainment": "rozrywka",
       "event": "wydarzenia",
@@ -451,9 +451,9 @@
     "example_profile": "Przykładowy profil"
   },
   "categories": {
-    "clubs": "Kluby",
+    "club": "Kluby",
     "bar_and_pub": "Bary i Puby",
-    "coffeehouses": "Kawiarnie",
+    "coffeehouse": "Kawiarnie",
     "food": "Jedzenie",
     "entertainment": "Rozrywka",
     "event": "Wydarzenia",

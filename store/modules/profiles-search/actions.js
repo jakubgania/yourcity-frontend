@@ -50,10 +50,14 @@ const shuffle = (dataArray) => {
   }
 };
 
+function checkIsEmptyData(responseObject) {
+  return !responseObject.data.data || responseObject.data.data.length === 0;
+}
+
 const getProfilesData = ({ commit, dispatch }, parameters) => {
   const queryStringParameters = parameters;
-  // let url = null;
   const emptyArray = [];
+  let categoryValue = null;
 
   dispatch('showFullScreenLoader', true);
   // commit('resultCopy', state.result);
@@ -61,6 +65,7 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
 
   if (queryStringParameters.category) {
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
+    categoryValue = encodeURIComponent(queryStringParameters.category);
   } else {
     queryStringParameters.query = encodeURIComponent(queryStringParameters.query);
     queryStringParameters.city = encodeURIComponent(queryStringParameters.city);
@@ -70,10 +75,11 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
     params: {
       city: queryStringParameters.city,
       query: queryStringParameters.query,
+      category: categoryValue,
     },
   })
     .then((response) => {
-      if (!response.data.data || response.data.data.length === 0) {
+      if (checkIsEmptyData(response)) {
         commit('showEmptyResultsAlert', true);
         dispatch('showFullScreenLoader', false);
       } else {
@@ -93,10 +99,14 @@ const getProfilesData = ({ commit, dispatch }, parameters) => {
         dispatch('showFullScreenLoader', false);
       }
     }).catch(() => {
-      commit('showEmptyResultsAlert', false);
-      commit('showErrorConnectionAlert', true);
-      dispatch('showFullScreenLoader', false);
+      dispatch('errorConnectionSearchProfiles');
     });
+};
+
+const errorConnectionSearchProfiles = ({ commit, dispatch }) => {
+  commit('showEmptyResultsAlert', false);
+  commit('showErrorConnectionAlert', true);
+  dispatch('showFullScreenLoader', false);
 };
 
 const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
@@ -128,8 +138,6 @@ const getPagingProfilesData = ({ commit, dispatch }, urlparameters) => {
 };
 
 const checkIsPaging = ({ commit, dispatch }, data) => {
-  // if (data.hasOwnProperty('paging')) {
-  // if (data.Object.prototype.hasOwnProperty.call(foo, 'paging')) {
   if (data.paging) {
     dispatch('showPaginigButton', true);
     commit('pagingURL', data.paging.next);
@@ -140,7 +148,7 @@ const checkIsPaging = ({ commit, dispatch }, data) => {
 
 const setProposedTags = ({ commit, dispatch }, data) => {
   let numberOfResults = 0;
-  const arrayResult = []; // const ??
+  const arrayResult = [];
 
   numberOfResults = data.length;
 
@@ -281,6 +289,7 @@ export {
   updateCurrentCategory,
   shuffle,
   getProfilesData,
+  errorConnectionSearchProfiles,
   getPagingProfilesData,
   setProposedTags,
   numberOfTags,

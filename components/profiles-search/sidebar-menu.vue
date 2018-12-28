@@ -9,7 +9,9 @@
           class="li-menu"
           @click="changeCategory(category.id)"
         >
-          <v-icon class="icon">{{ category.icon }}</v-icon>
+          <v-icon class="icon">
+            {{ category.icon }}
+          </v-icon>
           {{ $t(`categories.${category.id}`) }}
         </li>
       </ul>
@@ -46,8 +48,28 @@ export default {
       },
     },
   },
-  // created() {
-  // },
+  created() {
+    if (this.$route.query.category) {
+      this.currentCategory = this.$route.query.category;
+      this.$store.dispatch('searchProfiles/updateShowTagSection', true);
+      this.updateCurrentCategory(this.$route.query.category);
+
+      let cityInput = '';
+      const newCategory = this.$route.query.category;
+
+      if (this.city !== null) {
+        // eslint-disable-next-line
+        cityInput = this.city;
+      }
+
+      const parameters = {
+        city: cityInput,
+        category: newCategory,
+      };
+
+      this.$store.dispatch('searchProfiles/switchCategory', parameters);
+    }
+  },
   methods: {
     ...mapActions('searchProfiles', [
       'showTagSection',
@@ -61,7 +83,10 @@ export default {
     },
     changeCategory(category) {
       this.isActive = category;
-      this.updateURL(`${this.basicClientAddress}/${this.checkLanguage()}/search?category=${category}`);
+      // this.updateURL(`${this.basicClientAddress}
+      // /${this.checkLanguage()}/search?category=${category}`);
+      // this.updateURL(`/${this.checkLanguage()}/search?category=${category}`);
+      this.updateURL(this.getUrl(category));
       this.$emit('updateCurrentCategory', category);
       window.scrollTo(0, 0);
       this.$store.dispatch('searchProfiles/updateShowTagSection', true);
@@ -82,6 +107,13 @@ export default {
       };
 
       this.$store.dispatch('searchProfiles/switchCategory', parameters);
+    },
+    getUrl(category) {
+      if (this.city) {
+        return `/${this.checkLanguage()}/search?category=${category}&city=${this.city}`;
+      }
+
+      return `/${this.checkLanguage()}/search?category=${category}`;
     },
     updateURL(url) {
       const stateObj = { foo: 'bar' };

@@ -3,7 +3,7 @@
     <img
       :style="{ marginTop: margin + 'px' }"
       :width="logoSize"
-      src="logo.svg"
+      :src="logo"
       alt="Yourcity logo"
       height="auto"
     >
@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import logo from '../static/logo.svg';
+
 export default {
   props: {
     logoSize: {
@@ -21,6 +23,11 @@ export default {
       type: Number,
       default: 0,
     },
+  },
+  data() {
+    return {
+      logo,
+    };
   },
 };
 </script>

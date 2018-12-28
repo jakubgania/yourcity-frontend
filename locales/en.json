@@ -85,9 +85,9 @@
     },
     "categories": {
       "title_section": "Categories",
-      "clubs": "clubs",
+      "club": "clubs",
       "bar_and_pub": "bars and pubs",
-      "coffeehouses": "coffeehouses",
+      "coffeehouse": "coffeehouses",
       "food": "food",
       "entertainment": "entertainment",
       "event": "events",
@@ -451,9 +451,9 @@
     "example_profile": "Example profile"
   },
   "categories": {
-    "clubs": "Clubs",
+    "club": "Clubs",
     "bar_and_pub": "Bars and Pubs",
-    "coffeehouses": "Coffeehouses",
+    "coffeehouse": "Coffeehouses",
     "food": "Food",
     "entertainment": "Entertainment",
     "event": "Events",

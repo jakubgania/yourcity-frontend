@@ -1,9 +1,9 @@
 {
     "categories" : [
         {
-            "id" : "clubs",
+            "id" : "club",
             "icon" : "music_note",
-            "name" : "clubs"
+            "name" : "club"
         },
         {
             "id" : "bar_and_pub",
@@ -11,9 +11,9 @@
             "name" : "bar_and_pub"
         },
         {
-            "id" : "coffeehouses",
+            "id" : "coffeehouse",
             "icon" : "local_cafe",
-            "name" : "coffeehouses"
+            "name" : "coffeehouse"
         },
         {
             "id" : "food",
