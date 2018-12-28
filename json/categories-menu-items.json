@@ -6,9 +6,9 @@
             "name" : "club"
         },
         {
-            "id" : "bar_and_pub",
+            "id" : "barAndPub",
             "icon" : "local_bar",
-            "name" : "bar_and_pub"
+            "name" : "barAndPub"
         },
         {
             "id" : "coffeehouse",

@@ -14,7 +14,7 @@
             "drink",
             "alkohol"
         ],
-        "cafeteria" : [
+        "coffeehouse" : [
             "kawiarnia",
             "kawa",
             "cafe",
@@ -90,7 +90,6 @@
             "trener personalny"
         ],
         "other" : [
-            "qwert"
         ],
         "information" : [
             "qwerty"
@@ -121,7 +120,6 @@
             "nocleg"
         ],
         "travel" : [
-
         ],
         "culture" : [
             "muzeum",
@@ -130,7 +128,7 @@
             "wystawia",
             "dom kultury"
         ],
-        "public institutions" : [
+        "public_institutions" : [
             "urząd",
             "urząd skarbowy",
             "urząd pracy",

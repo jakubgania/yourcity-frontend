@@ -91,6 +91,7 @@ export default {
       window.scrollTo(0, 0);
       this.$store.dispatch('searchProfiles/updateShowTagSection', true);
       this.$store.dispatch('searchProfiles/updateCategory', category);
+      this.updateCurrentCategory(category);
       this.currentCategory = category;
 
       let cityInput = '';
@@ -121,11 +122,12 @@ export default {
       history.pushState(stateObj, 'page', url);
     },
     checkLanguage() {
-      if (this.$i18n.locale !== 'en') {
-        return `${this.$i18n.locale}`;
-      }
+      // if (this.$i18n.locale !== 'en') {
+      //   return `${this.$i18n.locale}`;
+      // }
 
-      return '';
+      // return '';
+      return `${this.$i18n.locale}`;
     },
   },
 };

@@ -86,7 +86,7 @@
     "categories": {
       "title_section": "Kategorien",
       "club": "clubs",
-      "bar_and_pub": "bars und pubs",
+      "barAndPub": "bars und pubs",
       "coffeehouse": "kaffeehäuser",
       "food": "essen",
       "entertainment": "unterhaltung",
@@ -452,7 +452,7 @@
   },
   "categories": {
     "club": "Clubs",
-    "bar_and_pub": "Bars und Pubs",
+    "barAndPub": "Bars und Pubs",
     "coffeehouse": "Kaffeehäuser",
     "food": "Essen",
     "entertainment": "Unterhaltung",
