@@ -1,8 +1,5 @@
 <template>
-  <v-layout
-    row
-    wrap
-  >
+  <v-layout row wrap>
     <v-flex
       xs10
       offset-xs1
@@ -20,15 +17,8 @@
         {{ $t('home.cities.title_section') }}
       </div>
     </v-flex>
-    <v-flex
-      lg12
-      xl8
-      offset-xl2
-    >
-      <v-layout
-        row
-        wrap
-      >
+    <v-flex lg12 xl8 offset-xl2>
+      <v-layout row wrap>
         <v-flex lg12>
           <div class="cities-section">
             <div
@@ -38,7 +28,7 @@
               style="width:100%;"
             >
               <router-link
-                :to="$i18n.path(`search?query=&city=${city}`)"
+                :to="$i18n.path(`search?city=${city}`)"
                 target="_blank"
                 style="text-decoration:none;"
               >
@@ -75,10 +65,7 @@
           data-aos-once="true"
         >
           {{ $t('home.cities.search_button') }}
-          <v-icon
-            right
-            dark
-          >
+          <v-icon right dark>
             keyboard_arrow_right
           </v-icon>
         </v-btn>
