@@ -76,7 +76,7 @@ export default {
         {
           id: 'barAndPub',
           icon: 'local_bar',
-          name: this.$t('home.categories.bar_and_pub'),
+          name: this.$t('home.categories.barAndPub'),
         },
         {
           id: 'cafeteria',
