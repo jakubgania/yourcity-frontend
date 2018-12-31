@@ -11,7 +11,7 @@
     <v-toolbar-side-icon @click.native="switchNavigationDrawer()"/>
 
     <v-toolbar-title class="toolbar-title">
-      <logo-component :logo-size="logoSize" margin="8"/>
+      <logo-component :logo-size="logoSize" :margin="8"/>
     </v-toolbar-title>
 
     <div v-if="displayLogoBusinessName()" class="business-logo-text">

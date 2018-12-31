@@ -132,7 +132,7 @@
           email address
         </a> -->
         <div class="copyright">
-          yourcity &copy; 2018
+          yourcity &copy; 2018 - 2019
         </div>
       </div>
     </v-flex>
