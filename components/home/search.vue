@@ -1,101 +1,111 @@
 <template>
-  <v-flex xs12 lg12>
-    <v-parallax
-      :src="topImage"
-      :height="imageHeight"
-      alt="Wrocław at night from the Sky Tower"
-    >
-      <v-layout row wrap>
-        <v-flex lg12>
-          <div class="word-changer-section">
-            <transition name="fade">
-              <p v-if="show">{{ wordChanger }}</p>
-            </transition>
-          </div>
-        </v-flex>
-      </v-layout>
+  <div>
+    <v-flex xs12 lg12>
+      <v-parallax
+        :src="topImage"
+        :height="imageHeight"
+        alt="Wrocław at night from the Sky Tower"
+      >
+        <v-layout row wrap>
+          <v-flex lg12>
+            <div class="word-changer-section">
+              <transition name="fade">
+                <p v-if="show">{{ wordChanger }}</p>
+              </transition>
+            </div>
+          </v-flex>
+        </v-layout>
 
-      <div class="search-form-section">
-        <v-form @submit.prevent="submitSearchForm">
-          <v-layout row wrap>
-            <v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2 xl3 offset-xl3>
-              <v-combobox
-                v-model="queryModel"
-                :items="queryItems"
-                :search-input.sync="queryInputSync"
-                :placeholder="$t('home.search_section.search_form.input_query_placeholder')"
-                solo
-                clearable
-                autocomplete="off"
-                spellcheck="false"
-                prepend-inner-icon="search"
-                class="input-combobox"
-              />
-            </v-flex>
-            <v-flex xs12 sm4 md3 lg2 xl2>
-              <v-combobox
-                v-model="cityModel"
-                :items="cityItems"
-                :search-input.sync="cityInputSync"
-                :placeholder="$t('home.search_section.search_form.input_city_placeholder')"
-                item-text="name"
-                item-value="name"
-                return-object
-                solo
-                clearable
-                autocomplete="off"
-                spellcheck="false"
-                prepend-inner-icon="location_on"
-                class="input-combobox"
-              >
-                <!-- <autocomplete-list-component
-                  :city-items="cityItems"
-                /> -->
-                <template
-                  slot="item"
-                  slot-scope="cityItems"
+        <div class="search-form-section">
+          <v-form @submit.prevent="submitSearchForm">
+            <v-layout row wrap>
+              <v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2 xl3 offset-xl3>
+                <v-combobox
+                  v-model="queryModel"
+                  :items="queryItems"
+                  :search-input.sync="queryInputSync"
+                  :placeholder="$t('home.search_section.search_form.input_query_placeholder')"
+                  solo
+                  clearable
+                  autocomplete="off"
+                  spellcheck="false"
+                  prepend-inner-icon="search"
+                  class="input-combobox"
+                />
+              </v-flex>
+              <v-flex xs12 sm4 md3 lg2 xl2>
+                <v-combobox
+                  v-model="cityModel"
+                  :items="cityItems"
+                  :search-input.sync="cityInputSync"
+                  :placeholder="$t('home.search_section.search_form.input_city_placeholder')"
+                  item-text="name"
+                  item-value="name"
+                  return-object
+                  solo
+                  clearable
+                  autocomplete="off"
+                  spellcheck="false"
+                  prepend-inner-icon="location_on"
+                  class="input-combobox"
                 >
-                  {{ cityItems.item.name }}
-                </template>
-                <template
-                  slot="item"
-                  slot-scope="cityItems"
+                  <!-- <autocomplete-list-component
+                    :city-items="cityItems"
+                  /> -->
+                  <template
+                    slot="item"
+                    slot-scope="cityItems"
+                  >
+                    {{ cityItems.item.name }}
+                  </template>
+                  <template
+                    slot="item"
+                    slot-scope="cityItems"
+                  >
+                    <template v-if="cityItems.item.value">
+                      <v-list-tile-content @click="getCurrentLocation()">
+                        <v-list-tile-title>
+                          Użyj obecnej lokalizacji
+                        </v-list-tile-title>
+                      </v-list-tile-content>
+                    </template>
+                    <template v-else>
+                      <v-list-tile-content>
+                        <v-list-tile-title v-html="cityItems.item"/>
+                      </v-list-tile-content>
+                    </template>
+                  </template>
+                </v-combobox>
+              </v-flex>
+              <v-flex xs12 sm3 md2 lg2 xl1>
+                <button
+                  type="submit"
+                  class="submit-button"
                 >
-                  <template v-if="cityItems.item.value">
-                    <v-list-tile-content @click="getCurrentLocation()">
-                      <v-list-tile-title>
-                        Użyj obecnej lokalizacji
-                      </v-list-tile-title>
-                    </v-list-tile-content>
-                  </template>
-                  <template v-else>
-                    <v-list-tile-content>
-                      <v-list-tile-title v-html="cityItems.item"/>
-                    </v-list-tile-content>
-                  </template>
-                </template>
-              </v-combobox>
-            </v-flex>
-            <v-flex xs12 sm3 md2 lg2 xl1>
-              <button
-                type="submit"
-                class="submit-button"
-              >
-                {{ $t('home.search_section.search_form.submit_button') }}
-                <v-icon class="icon">keyboard_arrow_right</v-icon>
-              </button>
-            </v-flex>
-          </v-layout>
-        </v-form>
+                  {{ $t('home.search_section.search_form.submit_button') }}
+                  <v-icon class="icon">keyboard_arrow_right</v-icon>
+                </button>
+              </v-flex>
+            </v-layout>
+          </v-form>
+        </div>
+
+      </v-parallax>
+    </v-flex>
+
+    <v-flex lg12>
+      <div class="message">
+        {{ $t('message') }}
       </div>
+    </v-flex>
 
-    </v-parallax>
-  </v-flex>
+  </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import topImage from '../../assets/images/sky-tower-16.jpg';
+// import topImage from '../../assets/images/sky-tower-16.jpg';
+import topImage from '../../assets/images/fireworks.jpg';
 import AutocompleteListComponent from '../autocomplete-list.vue';
 
 export default {
@@ -218,4 +228,13 @@ export default {
   @import '../../assets/scss/home/search/lg.scss';
   @import '../../assets/scss/home/search/sm.scss';
   @import '../../assets/scss/home/search/xs.scss';
+
+  .message
+  {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 80px;
+    letter-spacing: 2px;
+  }
 </style>
