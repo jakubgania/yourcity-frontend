@@ -131,7 +131,7 @@
 </template>
 
 <script>
-import LogoComponent from '../logo-component.vue';
+import LogoComponent from '../logo.vue';
 
 export default {
   components: {

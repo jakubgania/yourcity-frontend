@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import LogoComponent from '../logo-component.vue';
+import LogoComponent from '../logo.vue';
 import DropdownMenuComponent from './dropdown-menu.vue';
 
 export default {

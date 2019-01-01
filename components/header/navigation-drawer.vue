@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import LogoComponent from '../logo-component.vue';
+import LogoComponent from '../logo.vue';
 import navigationMenuItems from '../../json/navigation-menu-items.json';
 
 export default {

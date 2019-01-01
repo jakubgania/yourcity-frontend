@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="'/' + $i18n.locale" class="logo-link">
+  <router-link :to="$i18n.path('')" class="logo-link">
     <img
       :style="{ marginTop: margin + 'px' }"
       :width="logoSize"
