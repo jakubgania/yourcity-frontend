@@ -1,10 +1,6 @@
 <template>
   <v-flex lg12>
-    <v-layout
-      v-if="showErrorConnectionAlert"
-      row
-      wrap
-    >
+    <v-layout v-if="showErrorConnectionAlert" row wrap>
       <v-flex
         :style="{ marginTop: margin + 'px' }"
         xs10
@@ -15,7 +11,7 @@
         offset-lg4
       >
         <v-alert
-          :value="true"
+          value="true"
           color="error"
           type="error"
           style="letter-spacing:1px;font-weight:700;"
