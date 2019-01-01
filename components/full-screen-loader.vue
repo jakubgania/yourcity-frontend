@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-if="showFullScreenLoader"
-    class="loader-section"
-  >
+  <div v-if="showFullScreenLoader" class="loader-section">
     <v-flex
       xs10
       offset-xs1
