@@ -16,7 +16,7 @@
           </v-icon>
         </v-btn>
         <v-toolbar-title class="top-title">
-          szukaj
+          {{ $t('profiles_search.search_form.search_dialog_xs_title') }}
         </v-toolbar-title>
       </v-toolbar>
       <v-form @submit.prevent="submitSearchForm()">
@@ -26,12 +26,12 @@
               <v-select
                 v-model="categoriesModelComputed"
                 :items="categoriesItems"
+                :placeholder="$t('profiles_search.search_form.input_category_placeholder')"
                 item-text="name"
                 item-value="id"
                 solo
                 clearable
                 prepend-inner-icon="label"
-                placeholder="Kategoria"
                 class="combobox-input"
               />
             </div>
@@ -42,12 +42,12 @@
                 v-model="queryModelComputed"
                 :items="queryItems"
                 :search-input.sync="queryInputSyncComputed"
+                :placeholder="$t('profiles_search.search_form.input_query_placeholder')"
                 solo
                 clearable
                 autocomplete="off"
                 spellcheck="false"
                 prepend-inner-icon="search"
-                placeholder="Czego szukasz ?"
                 class="combobox-input"
               />
             </div>
@@ -90,7 +90,7 @@
           </v-flex>
           <v-flex xs12>
             <button type="submit" class="submit-form-button">
-              search
+              {{ $t('profiles_search.search_form.submit_button') }}
               <v-icon class="button-icon">keyboard_arrow_right</v-icon>
             </button>
           </v-flex>

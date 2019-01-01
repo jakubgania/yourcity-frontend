@@ -203,8 +203,10 @@
     "search_form": {
       "input_query_placeholder": "Czego szukasz ?",
       "input_city_placeholder": "Lokalizacja",
+      "input_category_placeholder": "Kategoria",
       "current_location": "Użyj obecnej lokalizacji",
-      "submit_button": "wyślij"
+      "submit_button": "szukaj",
+      "search_dialog_xs_title": "szukaj"
     },
     "filter": {
       "title_section": "Filtry",
