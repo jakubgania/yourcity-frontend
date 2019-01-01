@@ -10,16 +10,16 @@
         {{ this.$t('founder.title') }}
       </div>
     </v-flex>
-    <v-flex xs12 lg4 offset-lg4 style="text-align:center;">
-      <v-avatar
-        size="140"
-        color="grey lighten-4"
+    <v-flex xs12 lg4 offset-lg4 justify-center layout>
+      <div
         data-aos="zoom-in"
         data-aos-delay="300"
         data-aos-once="true"
       >
-        <img :src="profileImg" alt="Jakub Gania - profile image">
-      </v-avatar>
+        <v-avatar size="140" color="grey lighten-4">
+          <img :src="profileImg" alt="Jakub Gania - profile image">
+        </v-avatar>
+      </div>
     </v-flex>
     <v-flex xs12 lg4 offset-lg4 style="text-align:center;">
       <div
@@ -31,7 +31,6 @@
         Jakub Gania
       </div>
       <div
-        style="margin-top:20px;"
         data-aos="zoom-in"
         data-aos-delay="400"
         data-aos-once="true"
