@@ -1,11 +1,9 @@
 <template>
   <transition name="fade">
-    <div
-      v-if="showTagSection && proposedTags.length > 0"
-    >
+    <div v-if="showTagSection && proposedTags.length > 0">
       <v-flex lg12 xl10 offset-xl1>
         <div class="title-section">
-          {{ $t('profiles_search.tags.title') + ' - ' + proposedTags.length }}
+          {{ `${$t('profiles_search.tags.title')} - ${proposedTags.length}` }}
         </div>
       </v-flex>
       <div class="tag-section">
@@ -60,10 +58,7 @@
             <div class="top-title-section">
               <v-icon class="icon-info">info_outline</v-icon>
               {{ $t('profiles_search.tags.title') }}
-              <v-icon
-                class="icon-close"
-                @click="showMoreTagsDialog(false)"
-              >
+              <v-icon class="icon-close" @click="showMoreTagsDialog(false)">
                 close
               </v-icon>
             </div>
