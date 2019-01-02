@@ -1,0 +1,36 @@
+.card-menu
+{
+  border-radius: 0px;
+}
+.title-header-menu
+{
+  cursor: default;
+  background-color: #d4d4d4;
+}
+.icon
+{
+  font-size: 16px;
+  margin-right: 14px;
+}
+.v-menu__content
+{
+  position: fixed!important;
+  top: 54px!important;
+  right: 20px!important;
+  left: unset!important;
+}
+.text-title
+{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.list
+{
+  cursor: default;
+  letter-spacing: 1px;
+}
+.link-section:hover
+{
+  background-color: #f4efef;
+}

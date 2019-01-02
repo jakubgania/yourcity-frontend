@@ -1,47 +1,35 @@
 <template>
   <v-menu :nudge-width="140">
-    <v-btn
-      slot="activator"
-      icon
-    >
+    <v-btn slot="activator" icon>
       <v-icon>more_vert</v-icon>
     </v-btn>
 
-    <v-card style="border-radius:0px;">
+    <v-card class="card-menu">
 
-      <v-list-tile style="cursor:default;background-color:#d4d4d4;">
+      <v-list-tile class="title-header-menu">
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:18px;margin-right:14px;">translate</v-icon>
+          <v-icon class="icon">translate</v-icon>
           {{ $t('header.dropdown_menu.title') }}
         </v-list-tile-title>
       </v-list-tile>
 
-      <v-list-tile
-        class="link-section"
-        @click="changeLanguage('pl')"
-      >
+      <v-list-tile class="link-section" @click="changeLanguage('pl')">
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon class="icon">chevron_right</v-icon>
           Polski
         </v-list-tile-title>
       </v-list-tile>
 
-      <v-list-tile
-        class="link-section"
-        @click="changeLanguage('en')"
-      >
+      <v-list-tile class="link-section" @click="changeLanguage('en')">
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon class="icon">chevron_right</v-icon>
           English
         </v-list-tile-title>
       </v-list-tile>
 
-      <v-list-tile
-        class="link-section"
-        @click="changeLanguage('de')"
-      >
+      <v-list-tile class="link-section" @click="changeLanguage('de')">
         <v-list-tile-title class="text-title">
-          <v-icon style="font-size:16px;margin-right:14px;">chevron_right</v-icon>
+          <v-icon class="icon">chevron_right</v-icon>
           Deutsch
         </v-list-tile-title>
       </v-list-tile>
@@ -66,23 +54,23 @@ export default {
         return;
       }
 
-      let routeNameTest = '';
+      let route = '';
 
       if (this.$i18n.locale === 'pl') {
-        routeNameTest = `lang-${this.$route.name}`;
+        route = `lang-${this.$route.name}`;
       } else {
-        routeNameTest = this.$route.name;
+        route = this.$route.name;
       }
 
       if (this.$i18n.locale !== 'pl' && language === 'pl') {
         this.$i18n.locale = 'pl';
-        this.$router.push({ name: routeNameTest, params: { lang: 'pl' } });
+        this.$router.push({ name: route, params: { lang: 'pl' } });
       } else if (this.$i18n.locale !== 'en' && language === 'en') {
         this.$i18n.locale = 'en';
-        this.$router.push({ name: routeNameTest, params: { lang: 'en' } });
+        this.$router.push({ name: route, params: { lang: 'en' } });
       } else if (this.$i18n.locale !== 'de' && language === 'de') {
         this.$i18n.locale = 'de';
-        this.$router.push({ name: routeNameTest, params: { lang: 'de' } });
+        this.$router.push({ name: route, params: { lang: 'de' } });
       }
     },
   },
@@ -90,33 +78,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-menu__content
-{
-  position: fixed!important;
-  top: 54px!important;
-  right: 20px!important;
-  left: unset!important;
-}
-.text-title
-{
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.list
-{
-  cursor: default;
-  letter-spacing: 1px;
-}
-.link-section:hover
-{
-  background-color: #f4efef;
-}
-.link
-{
-  width: 100%;
-  background-color: red;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
+  @import '../../assets/scss/header/dropdown-menu.scss';
 </style>
