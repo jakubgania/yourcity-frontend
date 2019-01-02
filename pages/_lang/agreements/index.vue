@@ -6,32 +6,10 @@
       </div>
     </v-flex>
 
-    <v-flex
-      xs12
-      sm8
-      offset-sm2
-      md6
-      offset-md3
-      lg4
-      offset-lg4
-      xl4
-      offset-xl4
-      class="description"
-    >
+    <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 xl4 offset-xl4 class="description">
       {{ $t('agreements.app') }}
     </v-flex>
-    <v-flex
-      xs12
-      sm8
-      offset-sm2
-      md6
-      offset-md3
-      lg4
-      offset-lg4
-      xl4
-      offset-xl4
-      class="description"
-    >
+    <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 xl4 offset-xl4 class="description">
       {{ $t('agreements.user') }}
     </v-flex>
 
