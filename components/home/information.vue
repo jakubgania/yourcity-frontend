@@ -21,17 +21,7 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        order-xs2
-        xs12
-        sm8
-        offset-sm2
-        order-lg1
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-      >
+      <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.exploration.title') }}
@@ -41,15 +31,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex
-        order-xs1
-        xs12
-        lg3
-        order-lg2
-        offset-lg2
-        xl2
-        class="section-icon"
-      >
+      <v-flex order-xs1 xs12 lg3 order-lg2 offset-lg2 xl2 class="section-icon">
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#030ac9;">
             search
@@ -59,29 +41,14 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        xs12
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-        class="section-icon"
-      >
+      <v-flex xs12 lg3 offset-lg2 xl2 offset-xl3 class="section-icon">
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#0308b0;">
             info_outline
           </v-icon>
         </div>
       </v-flex>
-      <v-flex
-        xs12
-        sm8
-        offset-sm2
-        lg3
-        offset-lg2
-        xl2
-        offset-xl2
-      >
+      <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.information.title') }}
@@ -94,17 +61,7 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        order-xs2
-        xs12
-        sm8
-        offset-sm2
-        order-lg1
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-      >
+      <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.categories.title') }}
@@ -114,15 +71,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex
-        order-xs1
-        xs12
-        lg3
-        order-lg2
-        offset-lg2
-        xl2
-        class="section-icon"
-      >
+      <v-flex order-xs1 xs12 lg3 order-lg2 offset-lg2 xl2 class="section-icon">
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#020797;">
             location_on
@@ -132,29 +81,14 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        xs12
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-        class="section-icon"
-      >
+      <v-flex xs12 lg3 offset-lg2 xl2 offset-xl3 class="section-icon">
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#02067e;">
             map
           </v-icon>
         </div>
       </v-flex>
-      <v-flex
-        xs12
-        sm8
-        offset-sm2
-        lg3
-        offset-lg2
-        xl2
-        offset-xl2
-      >
+      <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.attractions.title') }}
@@ -167,17 +101,7 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        order-xs2
-        xs12
-        sm8
-        offset-sm2
-        order-lg1
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-      >
+      <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.help.title') }}
@@ -187,15 +111,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex
-        order-xs1
-        xs12
-        lg3
-        order-lg2
-        offset-lg2
-        xl2
-        class="section-icon"
-      >
+      <v-flex order-xs1 xs12 lg3 order-lg2 offset-lg2 xl2 class="section-icon">
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#020564;">
             local_hospital
@@ -205,29 +121,14 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        xs12
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-        class="section-icon"
-      >
+      <v-flex xs12 lg3 offset-lg2 xl2 offset-xl3 class="section-icon">
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#01044b;">
             view_compact
           </v-icon>
         </div>
       </v-flex>
-      <v-flex
-        xs12
-        sm8
-        offset-sm2
-        lg3
-        offset-lg2
-        xl2
-        offset-xl2
-      >
+      <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.profiles.title') }}
@@ -240,17 +141,7 @@
     </v-layout>
 
     <v-layout row wrap class="section-info">
-      <v-flex
-        order-xs2
-        xs12
-        sm8
-        offset-sm2
-        order-lg1
-        lg3
-        offset-lg2
-        xl2
-        offset-xl3
-      >
+      <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
             {{ $t('home.information_section.companies.title') }}
@@ -260,15 +151,7 @@
           </div>
         </div>
       </v-flex>
-      <v-flex
-        order-xs1
-        xs12
-        lg3
-        order-lg2
-        offset-lg2
-        xl2
-        class="section-icon"
-      >
+      <v-flex order-xs1 xs12 lg3 order-lg2 offset-lg2 xl2 class="section-icon">
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <v-icon class="info-icon" style="color:#010232;">
             dvr
