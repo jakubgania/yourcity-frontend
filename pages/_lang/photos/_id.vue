@@ -12,19 +12,19 @@
         <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">title</i>
-            {{ photoFullSizeDetails.title }}
+            {{ details.title }}
           </div>
         </v-card-text>
         <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">schedule</i>
-            {{ photoFullSizeDetails.creation_date }}
+            {{ details.creation_date }}
           </div>
         </v-card-text>
         <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">location_on</i>
-            {{ photoFullSizeDetails.location }}
+            {{ details.location }}
           </div>
         </v-card-text>
         <v-card-text>
@@ -34,7 +34,11 @@
           </div>
         </v-card-text>
         <v-card-text>
-          <div class="card-text">
+          <div
+            v-clipboard:copy="linkToCopy"
+            class="card-text"
+            @click="handleCopyStatus(true)"
+          >
             <i class="material-icons card-icon">share</i>
             {{ $t('photos.dialog.share') }}
           </div>
@@ -47,7 +51,7 @@
         </v-card-text>
         <v-card-text>
           <v-flex
-            v-for="tag in photoFullSizeDetails.tags"
+            v-for="tag in details.tags"
             :key="tag.id"
             lg12
             style="display:inline;"
@@ -68,17 +72,7 @@
       </v-card>
     </v-flex>
 
-    <v-flex
-      order-xs1
-      xs12
-      order-sm1
-      sm12
-      order-md2
-      md8
-      order-lg2
-      lg9
-      style="background-color:#ffffff;"
-    >
+    <v-flex order-xs1 xs12 order-sm1 sm12 order-md2 md8 order-lg2 lg9>
       <v-img :src="imagePath" class="photo-section">
         <v-layout
           slot="placeholder"
@@ -92,21 +86,52 @@
       </v-img>
     </v-flex>
 
+    <v-snackbar
+      v-model="snackbar"
+      :timeout="timeout"
+      bottom
+      color="blue lighten-1"
+    >
+      Link copied
+      <v-btn color="black" flat @click="snackbar = false">
+        Close
+      </v-btn>
+    </v-snackbar>
+
   </v-layout>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import axios from 'axios';
 
 export default {
   scrollToTop: true,
+  async asyncData({ params, redirect }) {
+    try {
+      const { data } = await axios.get('http://192.168.2.111/api/photos/details', {
+        params: {
+          id: params.id,
+        },
+      });
+
+      if (data.length !== 0) {
+        return { details: data };
+      }
+
+      return redirect('/photos');
+    } catch (e) {
+      return redirect('/photos');
+    }
+  },
   data() {
     return {
       snackbar: false,
-      mode: '',
-      timeout: 2600,
+      timeout: 2200,
       text: 'Link skopiowany',
       dialogShare: false,
+      linkToCopy: null,
+      pageTitle: null,
     };
   },
   computed: {
@@ -117,31 +142,31 @@ export default {
       basicClientAddress: 'basicClientAddress',
       basicServerAddressAPI: 'basicServerAddressAPI',
     }),
-    // getCurrentURL() {
-    //   return this.basicClientAddress + '/photos' + '/' + this.photoDetails['id'];
-    // },
     imagePath() {
-      if (this.photoFullSizeDetails.src) {
-        return this.basicServerAddressAPI + this.photoFullSizeDetails.src;
+      if (this.details.src) {
+        return this.basicServerAddressAPI + this.details.src;
       }
 
       return '';
     },
   },
   created() {
-    this.$store.dispatch('photos/getPhotoDeatils', this.$route.params.id);
+    this.linkToCopy = this.basicClientAddress + this.$route.fullPath;
   },
   methods: {
     ...mapActions([
       'getProfilesData',
     ]),
+    handleCopyStatus(status) {
+      this.snackbar = status;
+    },
   },
   head() {
     return {
       htmlAttrs: {
         lang: this.$t('html.language'),
       },
-      title: `Yourcity - ${this.$t('photos.head.photo')} - ${this.photoFullSizeDetails.title}`,
+      title: `Yourcity - ${this.$t('photos.head.photo')} - ${this.details.title}`,
     };
   },
 };

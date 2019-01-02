@@ -4,6 +4,7 @@ import Vue                 from 'vue';
 import Vuex                from 'vuex';
 import axios               from 'axios';
 
+import VueClipboard        from 'vue-clipboard2';
 import VueClazyLoad        from 'vue-clazy-load';
 
 import globalVariables     from './modules/global-variables';
@@ -21,6 +22,7 @@ if (process.env.NODE_ENV == 'production')
 else
   axios.defaults.baseURL = baseUrlDevelopment;
 
+Vue.use(VueClipboard);
 Vue.use(VueClazyLoad);
 Vue.use(Vuex);
 
