@@ -1,13 +1,6 @@
 <template>
   <v-layout row wrap>
-    <v-flex
-      xs10
-      offset-xs1
-      lg11
-      offset-lg1
-      xl2
-      offset-xl3
-    >
+    <v-flex xs10 offset-xs1 lg11 offset-lg1 xl2 offset-xl3>
       <div
         class="title-section"
         data-aos="fade-right"
@@ -41,20 +34,8 @@
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex
-      xs10
-      offset-xs1
-      sm8
-      offset-sm2
-      lg4
-      offset-lg4
-      xl2
-      offset-xl5
-    >
-      <router-link
-        :to="$i18n.path('countries/all')"
-        class="link-section"
-      >
+    <v-flex xs10 offset-xs1 sm8 offset-sm2 lg4 offset-lg4 xl2 offset-xl5>
+      <router-link :to="$i18n.path('countries/all')" class="link-section">
         <v-btn
           block
           large
