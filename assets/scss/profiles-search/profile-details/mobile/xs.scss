@@ -1,164 +1,217 @@
 @media only screen and (max-width: 600px)
 {
-    .profile-details-mobile-container
-    {
-        display: inline;
-        position: fixed;
-        z-index: 8;
-        top: 56px;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    .profile-section
-    {
-        // position: absolute;
-        // width: calc(100% - 0px);
-    }
-    .swipe-section
-    {
-        height: auto;
-        overflow-y: hidden;
-    }
-    .profile-image
-    {
-        width: 100%;
-        height: auto;
-    }
-    .profile-no-image
-    {
-        height: 240px;
-        line-height: 240px;
-        text-align: center;
-        background-color: #f2f2f2;
-    }
-    .profile-details-card-section
-    {
-        margin-top: -8px;
-    }
-    .profile-title-section
-    {
-        border-bottom: 1px solid #ececec;
-    }
-    .card-section
-    {
-        padding-left: 60px;
-    }
-    .address-section-tags
-    {
-        margin-top:10px;
-        overflow-x: auto;
-        white-space: nowrap;
+  .profile-details-mobile-container
+  {
+    display: inline;
+    position: fixed;
+    z-index: 8;
+    top: 56px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .profile-section
+  {
+    // position: absolute;
+    // width: calc(100% - 0px);
+  }
+  .swipe-section
+  {
+    height: auto;
+    overflow-y: hidden;
+  }
+  .profile-image
+  {
+    width: 100%;
+    height: auto;
+  }
+  .profile-no-image
+  {
+    height: 240px;
+    line-height: 240px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  .profile-details-card-section
+  {
+    margin-top: -8px;
+  }
+  .profile-title-section
+  {
+    border-bottom: 1px solid #ececec;
+  }
+  .card-section
+  {
+    padding-left: 60px;
+  }
+  .address-section-tags
+  {
+    margin-top:10px;
+    overflow-x: auto;
+    white-space: nowrap;
 
-        &::-webkit-scrollbar-track {
-            border-radius: 0px;
-            background-color: #ffffff;
-        }
-        &::-webkit-scrollbar {
-            width: 0px;
-            height: 0px;
-        }
-        &::-webkit-scrollbar-thumb {
-            height: 0px;
-            border-radius: 0px;
-            background-color: #8d8e8d;
-        }
+    &::-webkit-scrollbar-track {
+      border-radius: 0px;
+      background-color: #ffffff;
     }
-    .day-of-week
-    {
-        padding-bottom: 4px;
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
     }
-    .opening-hours
-    {
-        text-align: center;
-        // letter-spacing: 1px;
+    &::-webkit-scrollbar-thumb {
+      height: 0px;
+      border-radius: 0px;
+      background-color: #8d8e8d;
     }
-    .profile-title
-    {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-    .profile-text
-    {
-        font-size: 14px;
-        color: #4d4d4d;
-        letter-spacing: 1px;
-        cursor: default;
+  }
+  .day-of-week
+  {
+    padding-bottom: 4px;
+  }
+  .opening-hours
+  {
+    text-align: center;
+    // letter-spacing: 1px;
+  }
+  .profile-title
+  {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .profile-text
+  {
+    font-size: 14px;
+    color: #4d4d4d;
+    letter-spacing: 1px;
+    cursor: default;
 
-        .icon
-        {
-            color: #3eafaf;
-            position: relative;
-            top: 2px;
-            margin-right: 18px;
-        }
-    }
-    .tag-section
+    .icon
     {
-        display: block;
+      color: #3eafaf;
+      position: relative;
+      top: 2px;
+      margin-right: 18px;
     }
-    .tag-chip {
-        width: auto;
-        height: 48px;
-        letter-spacing: 1px;
-        padding: 4px;
+  }
+  .tag-section
+  {
+    display: block;
+  }
+  .tag-chip {
+    width: auto;
+    height: 48px;
+    letter-spacing: 1px;
+    padding: 4px;
 
-        &:hover
-        {
-            border-color: #ffaa06;
-            color: #000000;
-        }
-    }
-    .hide-content
+    &:hover
     {
-        overflow: hidden;
-        height: 7.6em;
+      border-color: #ffaa06;
+      color: #000000;
     }
-    .show-content
-    {
-        height: auto;
-    }
-    .description-section
-    {
-        padding-left: 44px;
-    }
-    .full-description-button-section
-    {
-        // border-bottom: 1px solid #f0f0f0;
-    }
-    .full-description-button
-    {
-        font-size: 12px;
-        letter-spacing: 1px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        background-color: #ECEFF1 !important;
+  }
+  .hide-content
+  {
+    overflow: hidden;
+    height: 7.6em;
+  }
+  .show-content
+  {
+    height: auto;
+  }
+  .description-section
+  {
+    padding-left: 44px;
+  }
+  .full-description-button-section
+  {
+    // border-bottom: 1px solid #f0f0f0;
+  }
+  .full-description-button
+  {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #ECEFF1 !important;
 
-        .icon
-        {
-            position: relative;
-            margin-left: 10px;
-        }
-    }
-    .border-bottom
+    .icon
     {
-        border-bottom: 1px solid #f0f0f0;
+      position: relative;
+      margin-left: 10px;
     }
-    .return-button
-    {
+  }
+  .border-bottom
+  {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .return-button
+  {
 
-    }
-    .website-chip
-    {
-        height: 48px;
-        margin-left: 0px;
-        letter-spacing: 1px;
-        padding: 4px;
+  }
+  .website-chip
+  {
+    height: 48px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    padding: 4px;
 
-        &:hover
-        {
-            border-color: #4b4b4b;
-            color: #30c1ff;
-        }
+    &:hover
+    {
+      border-color: #4b4b4b;
+      color: #30c1ff;
     }
+  }
+
+  .title-header
+  {
+    line-height: 48px;
+
+    position: fixed;
+    z-index: 10;
+
+    display: inline;
+
+    width: 100%;
+    max-width: 600px;
+    height: 48px;
+
+    background-color: #ffffff;
+  }
+  .icon-info
+  {
+    font-size: 28px;
+
+    position: relative;
+    top: 5px;
+
+    display: inline;
+
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .title-text
+  {
+    font-weight: 700;
+
+    display: inline;
+
+    letter-spacing: 2px;
+  }
+  .icon-close
+  {
+    font-size: 28px;
+
+    position: relative;
+    top: 10px;
+
+    display: inline;
+    float: right;
+
+    margin-right: 20px;
+
+    &:hover
+    {
+      color: #000000;
+    }
+  }
 }

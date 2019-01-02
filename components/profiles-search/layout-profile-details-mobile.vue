@@ -6,12 +6,8 @@
     v-model="profileDetailsMobileModel"
     fullscreen
   >
-    <div
-      id="scroll-target"
-      style="max-height: 100%"
-      class="scroll-y"
-    >
-      <div  style="height: 1000px">
+    <div id="scroll-target" style="max-height: 100%" class="scroll-y">
+      <div style="height: 1000px">
         <div
           class="profile-section"
           data-aos="zoom-in"
@@ -57,23 +53,14 @@
                   </v-card-title>
                   <v-card-text class="border-bottom">
                     <v-layout row wrap>
-                      <v-flex
-                        xs5
-                        style="font-size:14px;letter-spacing: 1px;"
-                      >
-                        <v-icon
-                          class=""
-                          style="position:relative;top:2px;color: #3eafaf;"
-                        >
+                      <v-flex xs5 style="font-size:14px;letter-spacing: 1px;">
+                        <v-icon class="" style="position:relative;top:2px;color: #3eafaf;">
                           start
                         </v-icon>
                         {{ profileDetails.overall_star_rating ?
                         'Ocena - ' + profileDetails.overall_star_rating : 'Ocena - Brak' }}
                       </v-flex>
-                      <v-flex
-                        xs7
-                        style="font-size:14px;letter-spacing: 1px;"
-                      >
+                      <v-flex xs7 style="font-size:14px;letter-spacing: 1px;">
                         <v-icon
                           class=""
                           style="position:relative;top:2px;margin-right:12px;color: #3eafaf;"
@@ -187,9 +174,7 @@
                     </v-layout>
                   </v-card-text>
 
-                  <posts-dialog-component
-                    :profile-posts="profilePosts"
-                  />
+                  <posts-dialog-component :profile-posts="profilePosts"/>
 
                   <v-card-text>
                     <div class="profile-text">
@@ -232,10 +217,7 @@
                   </v-card-text>
 
                   <v-card-text class="card-section border-bottom">
-                    <div
-                      class=""
-                      @click="facebookDialogModel = true"
-                    >
+                    <div @click="facebookDialogModel = true">
                       Facebook
                     </div>
                   </v-card-text>
@@ -369,10 +351,10 @@ export default {
     ]),
     descriptionButtonText() {
       if (this.showFullDescription) {
-        return 'Pokaż mniej';
+        return this.$t('profiles_search.profile-details.show-less');
       }
 
-      return 'Pokaż więcej';
+      return this.$t('profiles_search.profile-details.show-more');
     },
     iconButtonText() {
       if (this.showFullDescription) {
@@ -415,9 +397,9 @@ export default {
       const element = document.getElementById('scroll-target');
       element.scrollTo(0, 0);
     },
-    hourText(val1, val2) {
-      if (val1 && val2) {
-        return `${val1} - ${val2}`;
+    hourText(openingHour, closingHour) {
+      if (openingHour && closingHour) {
+        return `${openingHour} - ${closingHour}`;
       }
 
       return '-- - --';
@@ -431,57 +413,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/profiles-search/profile-details/mobile/xs.scss';
-.title-header
-{
-  line-height: 48px;
-
-  position: fixed;
-  z-index: 10;
-
-  display: inline;
-
-  width: 100%;
-  max-width: 600px;
-  height: 48px;
-
-  background-color: #ffffff;
-}
-.icon-info
-{
-  font-size: 28px;
-
-  position: relative;
-  top: 5px;
-
-  display: inline;
-
-  margin-right: 16px;
-  margin-left: 16px;
-}
-.title-text
-{
-  font-weight: 700;
-
-  display: inline;
-
-  letter-spacing: 2px;
-}
-.icon-close
-{
-  font-size: 28px;
-
-  position: relative;
-  top: 10px;
-
-  display: inline;
-  float: right;
-
-  margin-right: 20px;
-
-  &:hover
-  {
-    color: #000000;
-  }
-}
+  @import '../../assets/scss/profiles-search/profile-details/mobile/xs.scss';
 </style>
