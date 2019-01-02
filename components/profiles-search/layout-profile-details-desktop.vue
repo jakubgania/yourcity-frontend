@@ -51,14 +51,7 @@
           class="full-description-button-section"
         >
           <v-layout row wrap>
-            <v-flex
-              sm6
-              offset-sm3
-              md6
-              offset-md3
-              lg6
-              offset-lg3
-            >
+            <v-flex sm6 offset-sm3 md6 offset-md3 lg6 offset-lg3>
               <v-btn
                 block
                 depressed
@@ -77,9 +70,7 @@
           {{ $t('profiles_search.profile-details.address') }}
         </v-card-title>
 
-        <v-card-text
-          v-if="profileDetails.single_line_address"
-          class="section">
+        <v-card-text v-if="profileDetails.single_line_address" class="section">
           {{ profileDetails.single_line_address }}
           <div>
             <div
@@ -132,10 +123,7 @@
                 {{ hourText(profileDetails.hours.mon_1_open, profileDetails.hours.mon_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.tuesday') }}
               </div>
@@ -143,10 +131,7 @@
                 {{ hourText(profileDetails.hours.tue_1_open, profileDetails.hours.tue_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.wednesday') }}
               </div>
@@ -154,10 +139,7 @@
                 {{ hourText(profileDetails.hours.wed_1_open, profileDetails.hours.wed_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.wednesday') }}
               </div>
@@ -165,10 +147,7 @@
                 {{ hourText(profileDetails.hours.thu_1_open, profileDetails.hours.thu_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.friday') }}
               </div>
@@ -176,10 +155,7 @@
                 {{ hourText(profileDetails.hours.fri_1_open, profileDetails.hours.fri_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.saturday') }}
               </div>
@@ -187,10 +163,7 @@
                 {{ hourText(profileDetails.hours.sat_1_open, profileDetails.hours.sat_1_close) }}
               </div>
             </v-flex>
-            <v-flex
-              lg12
-              class="opening-hours-subsection"
-            >
+            <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
                 {{ $t('profiles_search.profile-details.opening-hours.sunday') }}
               </div>
@@ -211,14 +184,7 @@
 
         <div class="full-description-button-section">
           <v-layout row wrap>
-            <v-flex
-              sm6
-              offset-sm3
-              md6
-              offset-md3
-              lg6
-              offset-lg3
-            >
+            <v-flex sm6 offset-sm3 md6 offset-md3 lg6 offset-lg3>
               <v-btn
                 :loading="postLoaderButton"
                 :disabled="postLoaderButton"
@@ -234,9 +200,7 @@
           </v-layout>
         </div>
 
-        <posts-dialog-component
-          :profile-posts="profilePosts"
-        />
+        <posts-dialog-component :profile-posts="profilePosts"/>
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">smartphone</i>
@@ -344,21 +308,16 @@ export default {
       default: false,
     },
   },
-  data() {
-    return {
-      //
-    };
-  },
   computed: {
     ...mapGetters('searchProfiles', [
       'postLoaderButton',
     ]),
     descriptionButtonText() {
       if (this.showFullDescription) {
-        return 'Pokaż mniej';
+        return this.$t('profiles_search.profile-details.show-more');
       }
 
-      return 'Pokaż więcej';
+      return this.$t('profiles_search.profile-details.show-less');
     },
     iconButtonText() {
       if (this.showFullDescription) {
@@ -370,17 +329,15 @@ export default {
   },
   watch: {
     showInformationDialog(value) {
-      // !value && this.$emit('closeShowInformationDialog');
-
       if (!value) {
         this.$emit('closeShowInformationDialog');
       }
     },
   },
   methods: {
-    hourText(value1, value2) {
-      if (value1 && value2) {
-        return `${value1} - ${value2}`;
+    hourText(openingHour, closingHour) {
+      if (openingHour && closingHour) {
+        return `${openingHour} - ${closingHour}`;
       }
 
       return '-- - --';
