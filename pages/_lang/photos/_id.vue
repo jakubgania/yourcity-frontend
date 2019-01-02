@@ -1,22 +1,13 @@
 <template>
   <v-layout row wrap class="container-photo">
 
-    <v-flex
-      order-xs2
-      xs12
-      order-sm2
-      sm12
-      order-md1
-      md4
-      order-lg1
-      lg3
-    >
+    <v-flex order-xs2 xs12 order-sm2 sm12 order-md1 md4 order-lg1 lg3>
       <v-card class="details-section">
         <v-card-title class="title-text">
           <i class="material-icons" style="margin-right: 20px;">
             info_outline
           </i>
-          {{ $t('photos.information') }}
+          {{ $t('photos.dialog.information') }}
         </v-card-title>
         <v-card-text>
           <div class="card-text">
@@ -36,22 +27,22 @@
             {{ photoFullSizeDetails.location }}
           </div>
         </v-card-text>
-        <!-- <v-card-text>
+        <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">map</i>
             Pokaż na mapie
           </div>
-        </v-card-text> -->
+        </v-card-text>
         <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">share</i>
-            {{ $t('photos.share') }}
+            {{ $t('photos.dialog.share') }}
           </div>
         </v-card-text>
         <v-card-text>
           <div class="card-text">
             <i class="material-icons card-icon">label</i>
-            {{ $t('photos.tags') }}
+            {{ $t('photos.dialog.tags') }}
           </div>
         </v-card-text>
         <v-card-text>
@@ -66,10 +57,7 @@
             </v-chip>
           </v-flex>
         </v-card-text>
-        <router-link
-          :to="$i18n.path('photos')"
-          style="text-decoration:none;"
-        >
+        <router-link :to="$i18n.path('photos')" style="text-decoration:none;">
           <v-card-text>
             <div class="card-text">
               <i class="material-icons card-icon">photo_camera</i>
