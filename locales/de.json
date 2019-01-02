@@ -228,26 +228,26 @@
       }
     },
     "profile-details": {
-      "title-dialog": "Więcej informacji",
+      "title-dialog": "Weitere Informationen",
       "description": {
-        "title": "Opis",
-        "show-more": "Pokaż więcej",
-        "show-less": "Pokaż mniej"
+        "title": "Beschreibung",
+        "show-more": "Mehr anzeigen",
+        "show-less": "Weniger anzeigen"
       },
-      "address": "Adres",
+      "address": "Adresse",
       "opening-hours": {
-        "title": "Godziny otwarcia",
-        "monday": "Poniedziałek",
-        "tuesday": "Wtorek",
-        "wednesday": "Środa",
-        "thursday": "Czwartek",
-        "friday": "Piątek",
-        "saturday": "Sobota",
-        "sunday": "Niedziela"
+        "title": "Öffnungszeiten",
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag"
       },
       "posts": {
-        "title": "Posty",
-        "button-text": "Pokaż wpisy"
+        "title": "Beiträge",
+        "button-text": "Einträge anzeigen"
       },
       "phone": "Telefon",
       "website": {
