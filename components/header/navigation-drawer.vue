@@ -56,7 +56,7 @@ export default {
         return this.drawer;
       },
       set(value) {
-        this.$emit('updateNavigationDrawerValue', value);
+        this.$emit('updateNavigationDrawerModel', value);
       },
     },
     logoSize() {

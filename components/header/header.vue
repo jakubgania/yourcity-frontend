@@ -3,8 +3,7 @@
 
     <navigation-drawer-component
       :drawer="drawer"
-      @switchNavigationDrawer="switchNavigationDrawer"
-      @updateNavigationDrawerValue="updateNavigationDrawerValue"
+      @updateNavigationDrawerModel="updateNavigationDrawerModel"
       @closeNavigationDrawer="closeNavigationDrawer"
     />
 
@@ -19,7 +18,6 @@
 
     <toolbar-header-component
       :drawer="drawer"
-      @showNavigationDrawer="showNavigationDrawer"
       @switchNavigationDrawer="switchNavigationDrawer"
       @switchNavigationDrawerExampleProfile="switchNavigationDrawerExampleProfile"
       @closeNavigationDrawer="closeNavigationDrawer"
@@ -38,13 +36,12 @@
       @updateCityModel="updateCityModel"
       @updateCityInputSync="updateCityInputSync"
       @submitSearchForm="submitSearchForm"
-      @updateNavigationDrawerValue="updateNavigationDrawerValue"
+      @updateNavigationDrawerModel="updateNavigationDrawerModel"
       @updateSearchDialogXsModel="updateSearchDialogXsModel"
     />
 
     <no-ssr>
       <search-dialog-sm-component
-        v-if="this.$vuetify.breakpoint.name == 'sm' "
         :search-dialog-sm-model="searchDialogXsModel"
         :categories-model="categoriesModel"
         :categories-items="categoriesItems"
@@ -66,7 +63,6 @@
 
     <no-ssr>
       <search-dialog-xs-component
-        v-if="this.$vuetify.breakpoint.name == 'xs'"
         :search-dialog-xs-model="searchDialogXsModel"
         :categories-model="categoriesModel"
         :categories-items="categoriesItems"
@@ -108,16 +104,18 @@ export default {
     'search-dialog-sm-component': SearchDialogSmComponent,
     'search-dialog-xs-component': SearchDialogXsComponent,
   },
-  data: () => ({
-    drawer: false,
-    drawerExampleProfile: false,
-    cityInputSync: null,
-    queryInputSync: null,
-    searchDialogSmModel: true,
-    searchDialogXsModel: false,
-    categoriesModel: null,
-    categoriesItems: categoriesItems.categories,
-  }),
+  data() {
+    return {
+      drawer: false,
+      drawerExampleProfile: false,
+      cityInputSync: null,
+      queryInputSync: null,
+      searchDialogSmModel: true,
+      searchDialogXsModel: false,
+      categoriesModel: null,
+      categoriesItems: categoriesItems.categories,
+    };
+  },
   computed: {
     ...mapGetters('searchProfiles', [
       'query',
@@ -178,11 +176,25 @@ export default {
       parameters.query = this.checkIsNull(this.query);
       parameters.city = this.checkIsNull(this.city);
 
-      document.title = `Yourcity - wyszukiwanie - ${parameters.query} - ${parameters.city}`;
+      document.title = this.documentTitle(parameters.query, parameters.city);
 
       this.updateURL(`${this.checkLanguage()}/search?query=${parameters.query}&city=${parameters.city}`);
       this.$store.dispatch('searchProfiles/getProfilesData', parameters);
       // update current category
+    },
+    documentTitle(query, city) {
+      let queryText = '';
+      let cityText = '';
+
+      if (query !== '') {
+        queryText = ` - ${query}`;
+      }
+
+      if (city !== '') {
+        cityText = ` - ${city}`;
+      }
+
+      return `Yourcity ${queryText} ${cityText}`;
     },
     updateURL(url) {
       const stateObj = { foo: 'bar' };
@@ -209,17 +221,14 @@ export default {
 
       return '';
     },
-    closeNavigationDrawer() {
-      this.drawer = false;
-    },
-    showNavigationDrawer() {
-      this.drawer = true;
-    },
     switchNavigationDrawer() {
       this.drawer = !this.drawer;
     },
-    updateNavigationDrawerValue(value) {
+    updateNavigationDrawerModel(value) {
       this.drawer = value;
+    },
+    closeNavigationDrawer() {
+      this.drawer = false;
     },
     switchNavigationDrawerExampleProfile() {
       this.drawerExampleProfile = !this.drawerExampleProfile;
