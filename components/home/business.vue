@@ -14,16 +14,8 @@
         </v-flex>
         <v-flex xs12 lg12 class="logo-section">
           <v-layout row wrap>
-            <v-flex
-              xs6
-              lg4
-              offset-lg2
-              class="logo-section-component"
-            >
-              <logo-component
-                :logo-size="logoSize"
-                :margin="logoMargin"
-              />
+            <v-flex xs6 lg4 offset-lg2 class="logo-section-component">
+              <logo-component :logo-size="logoSize" :margin="logoMargin"/>
             </v-flex>
             <v-flex xs6 lg4>
               <div
@@ -39,13 +31,7 @@
         </v-flex>
         <v-flex xs12 lg12>
           <v-layout row wrap>
-            <v-flex
-              xs12
-              sm6
-              lg3
-              offset-lg2
-              xl3
-            >
+            <v-flex xs12 sm6 lg3 offset-lg2 xl3>
               <v-layout row wrap>
                 <div
                   data-aos="fade-right"
@@ -66,13 +52,7 @@
                 </div>
               </v-layout>
             </v-flex>
-            <v-flex
-              xs12
-              sm6
-              lg3
-              offset-lg2
-              xl3
-            >
+            <v-flex xs12 sm6 lg3 offset-lg2 xl3>
               <v-layout row wrap>
                 <div
                   data-aos="fade-left"
@@ -105,10 +85,7 @@
           xl2
           offset-xl5
         >
-          <router-link
-            :to="$i18n.path('business')"
-            class="link-section"
-          >
+          <router-link :to="$i18n.path('business')" class="link-section">
             <v-btn
               block
               large
