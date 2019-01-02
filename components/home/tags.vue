@@ -1,15 +1,7 @@
 <template>
   <v-flex lg12>
-    <v-layout
-      row
-      wrap
-    >
-      <v-flex
-        xs10
-        offset-xs1
-        lg11
-        offset-lg1
-      >
+    <v-layout row wrap>
+      <v-flex xs10 offset-xs1 lg11 offset-lg1>
         <div
           class="title-section"
           data-aos="fade-right"
@@ -29,44 +21,19 @@
         xl8
         offset-xl2
       >
-        <v-layout
-          row
-          wrap
-          data-aos="fade-down"
-          data-aos-delay="200"
-          data-aos-once="true"
-        >
-          <v-flex
-            xs12
-            sm10
-            offset-sm1
-            md8
-            offset-md2
-            lg8
-            offset-lg2
-          >
+        <v-layout row wrap data-aos="fade-down" data-aos-delay="200" data-aos-once="true">
+          <v-flex xs12 sm10 offset-sm1 md8 offset-md2 lg8 offset-lg2>
             <div
               data-aos="fade"
               data-aos-delay="200"
               data-aos-once="true"
             >
-              <div
-                class="tag-section-title"
-              >
+              <div class="tag-section-title">
                 {{ section.section_name }}
               </div>
             </div>
           </v-flex>
-          <v-flex
-            xs12
-            sm10
-            offset-sm1
-            md8
-            offset-md2
-            lg8
-            offset-lg2
-            class="tags-section"
-          >
+          <v-flex xs12 sm10 offset-sm1 md8 offset-md2 lg8 offset-lg2 class="tags-section">
             <div
               v-for="tag in section.tags"
               :key="tag.id"
@@ -79,11 +46,7 @@
                 :to="$i18n.path(`search?city=&query=${checkWhiteSpace(tag)}`)"
                 class="tag-router-link"
               >
-                <v-chip
-                  :class="section.color_hover_class"
-                  outline
-                  class="tag"
-                >
+                <v-chip :class="section.color_hover_class" outline class="tag">
                   {{ tag }}
                 </v-chip>
               </router-link>
@@ -91,20 +54,8 @@
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-flex
-        xs10
-        offset-xs1
-        sm8
-        offset-sm2
-        lg4
-        offset-lg4
-        xl2
-        offset-xl5
-      >
-        <router-link
-          :to="$i18n.path('search')"
-          class="link-section"
-        >
+      <v-flex xs10 offset-xs1 sm8 offset-sm2 lg4 offset-lg4 xl2 offset-xl5>
+        <router-link :to="$i18n.path('search')" class="link-section">
           <v-btn
             block
             large
@@ -115,10 +66,7 @@
             data-aos-once="true"
           >
             {{ $t('home.popular_tags.search_button') }}
-            <v-icon
-              right
-              dark
-            >
+            <v-icon right dark>
               keyboard_arrow_right
             </v-icon>
           </v-btn>
