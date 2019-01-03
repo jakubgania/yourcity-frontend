@@ -1,50 +1,40 @@
 .category-tiles
 {
-    font-size: 12.8px;
-    line-height: 100px;
+  font-size: 12.8px;
+  line-height: 100px;
 
-    height: 100px;
+  height: 100px;
 
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 
-    color: #242222;
+  color: #242222;
 
-    &:hover
-    {
-        transition: background-color 200ms linear;
+  &:hover
+  {
+    transition: background-color 200ms linear;
 
-        color: #fff;
-        background-color: #252bfc;
-
-        .category-icon
-        {
-          transition: background-color 200ms linear;
-          color: #fff;
-        }
-    }
+    color: #fff;
+    background-color: #252bfc;
 
     .category-icon
     {
-        position: relative;
-        top: 6px;
-
-        margin-right: 16px;
+      transition: background-color 200ms linear;
+      color: #fff;
     }
+  }
+
+  .category-icon
+  {
+    position: relative;
+    top: 6px;
+
+    margin-right: 16px;
+  }
 }
 .link-section
 {
-    text-decoration: none;
-}
-.button
-{
-    margin-top: 160px;
-    margin-bottom: 160px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: #2a2f30 !important;
+  text-decoration: none;
 }
