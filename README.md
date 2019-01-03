@@ -17,13 +17,15 @@ Last update date : 14:54 24/12/2018
 - [Vue.js](https://vuejs.org/) 2.5.17
 - [Vuex](https://github.com/vuejs/vuex) 3.0.1
 - [Vuetify](https://vuetifyjs.com/) 1.2.4
+- [vue-clipboard2](https://github.com/Inndy/vue-clipboard2) 0.2.1
 - [NUXT](https://nuxtjs.org/) 2.0.0
 - [node-sass](https://github.com/sass/node-sass) 4.9.3
 - [AOS](https://michalsnik.github.io/aos/) 3.0.0-beta.5
 - [Vue i18n](https://kazupon.github.io/vue-i18n/) 8.1.0
 - [axios](https://github.com/axios/axios) 0.18.0
-- [nuxtjs/axios](https://github.com/nuxt-community/axios-module) 5.0.0
-- [nuxtjs/sitemap](https://github.com/nuxt-community/sitemap-module) 0.1.1
+- [@nuxtjs/axios](https://github.com/nuxt-community/axios-module) 5.0.0
+- [@nuxtjs/pwa](https://pwa.nuxtjs.org/) 2.6.0
+- [@nuxtjs/sitemap](https://github.com/nuxt-community/sitemap-module) 0.1.1
 - [Node.js](https://nodejs.org/en/) 8.11.3
 
 ## Additional project settings
@@ -31,6 +33,8 @@ Last update date : 14:54 24/12/2018
 - [ESlint](https://eslint.org/) 5.0.1
 - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) 13.1.0
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) 4.0.0
+- [node-sass] 4.9.3
+- [sass-loader] 7.1.0
 
 ## System components
 
