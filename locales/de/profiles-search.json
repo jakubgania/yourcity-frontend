@@ -1,0 +1,67 @@
+{
+  "head": {
+    "title": "Yourcity - Profilsuche",
+    "description": "Suchen Sie nach Informationen zu der gewünschten Stadt und dem Standort, in dem Sie sich befinden, oder durchsuchen Sie verschiedene Kategorien.",
+    "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
+  },
+  "search-form": {
+    "input-query-placeholder": "Was suchst du?",
+    "input-city-placeholder": "Lokalisierung",
+    "input-category-placeholder": "Kategorie",
+    "current-location": "Aktueller lokalisierung",
+    "submit-button": "Suche",
+    "search-dialog-xs-title": "Suche"
+  },
+  "filter": {
+    "title-section": "Filter",
+    "search": "Suche in Ergebnissen"
+  },
+  "tags": {
+    "title": "Tags",
+    "button": "Mehr tags",
+    "close": "Schließen"
+  },
+  "results-list": {
+    "address": "Address",
+    "rating": "Rating",
+    "rating-count": "Rating count",
+    "hours": "Opening hours",
+    "image-not-available": "Image not available",
+    "image-dialog": {
+      "close-button": "Schließen"
+    }
+  },
+  "profile-details": {
+    "title-dialog": "Weitere Informationen",
+    "description": {
+      "title": "Beschreibung",
+      "show-more": "Mehr anzeigen",
+      "show-less": "Weniger anzeigen"
+    },
+    "address": "Adresse",
+    "opening-hours": {
+      "title": "Öffnungszeiten",
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag"
+    },
+    "posts": {
+      "title": "Beiträge",
+      "button-text": "Einträge anzeigen"
+    },
+    "phone": "Telefon",
+    "website": {
+      "title": "Strona",
+      "go-to-website": "go to website"
+    },
+    "related-categories": "Powiązane kategorie",
+    "close": "Zamknij",
+    "no-data": "Brak danych"
+  },
+  "result-count": "Results",
+  "paging-button": "Load more"
+}

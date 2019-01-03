@@ -1,0 +1,168 @@
+{
+  "head": {
+    "title": "Yourcity - Suche nach Orten in verschiedenen Städten und Lokaliesierung",
+    "description": "Informationen über Ihre Stadt und die Region, in der Sie sich befinden. Suchen Sie nach Informationen in verschiedenen Kategorien in verschiedenen Ländern. Yourcity ist eine ständig wachsende Plattform.",
+    "keywords": "yourcity, yourcity app, startseite, home, lokalisierung, suche, profile, standorte, städte, länder"
+  },
+  "search-section": {
+    "top-words": [
+      "clubs",
+      "mittagessen",
+      "stadt",
+      "party",
+      "essen",
+      "bier",
+      "shop",
+      "musik",
+      "schwimmbad",
+      "kino",
+      "apotheke"
+    ],
+    "search-form": {
+      "input-query-placeholder": "Was suchst du?",
+      "input-city-placeholder": "Lokalisierung",
+      "submit-button": "Suche"
+    }
+  },
+  "information-section": {
+    "title": "Informationen zu Ihrer Stadt",
+    "subtitle": "und der Bereich, in dem Sie sich befinden",
+    "exploration": {
+      "title": "Exploration",
+      "description": "YOURCITY kann während eines Aufenthalts in einer neuen unbekannten Stadt oder zum Erkunden neuer Orte an Ihrem aktuellen Standort verwendet werden."
+    },
+    "information": {
+      "title": "Informationen",
+      "description": "This is a place where you can find useful information about various places and services or upcoming events. Check what are the restaurants in the place you are going to, or search for a shopping mall planning shopping."
+    },
+    "categories": {
+      "title": "Kategorien",
+      "description": "Thanks to various categories, you can discover interesting objects in your area or in a place that is unknown to you."
+    },
+    "attractions": {
+      "title": "Attraktionen",
+      "description": "YOURCITY will also help you in finding sports facilities such as swimming pools, sports halls and trampoline parks, but also tourist attractions, e.g museums and art galleries."
+    },
+    "help": {
+      "title": "Hilfe",
+      "description": "When health is important to you, you can look for a gym or personal trainer, but also find information about medical clinics, hospitals and pharmacies."
+    },
+    "profiles": {
+      "title": "Profiles",
+      "description": "Profiles provide various information such as opening hours or address or photo."
+    },
+    "companies": {
+      "title": "Unternehmen",
+      "description": "Here you can find information about many companies from various sectors and information for startups and entrepreneurs."
+    }
+  },
+  "categories": {
+    "title-section": "Kategorien",
+    "club": "clubs",
+    "bar-and-pub": "bars und pubs",
+    "coffeehouse": "kaffeehäuser",
+    "food": "essen",
+    "entertainment": "unterhaltung",
+    "event": "veranstaltung",
+    "shop": "shops",
+    "service": "services",
+    "tourism": "tourismus",
+    "sport": "sport",
+    "other": "other",
+    "information": "information",
+    "education": "bildung",
+    "health": "health",
+    "hotel": "hotels",
+    "travel": "reise",
+    "search-button": "suche"
+  },
+  "popular-tags": {
+    "title-section": "Populär tags",
+    "food": {
+      "title": "food",
+      "tags": [
+        "eis",
+        "restaurant",
+        "pizza",
+        "cafe",
+        "essen",
+        "food truck",
+        "vegan",
+        "sushi"
+      ]
+    },
+    "shop": {
+      "title": "shop",
+      "tags": [
+        "fashion",
+        "galerie",
+        "zentrum",
+        "einkaufszentrum",
+        "laden"
+      ]
+    },
+    "entertainment": {
+      "title": "entertainment",
+      "tags": [
+        "kino",
+        "party",
+        "escape room",
+        "club",
+        "fun"
+      ]
+    },
+    "sport": {
+      "title": "sport",
+      "tags": [
+        "gym",
+        "schwimmbad",
+        "sport",
+        "fitness"
+      ]
+    },
+    "business": {
+      "title": "business",
+      "tags": [
+        "startup",
+        "office",
+        "business",
+        "job",
+        "service",
+        "work"
+      ]
+    },
+    "other": {
+      "title": "andere",
+      "tags": [
+        "wohnungen",
+        "bootcamp",
+        "design",
+        "apotheke",
+        "tourismus",
+        "beauty",
+        "kultur"
+      ]
+    },
+    "search-button": "zur suche gehen"
+  },
+  "gallery": {
+    "title-section": "Bilder",
+    "search-button": "mehr sehen",
+    "paging-button": "mehr laden"
+  },
+  "cities": {
+    "title-section": "Städte",
+    "search-button": "Mehr Städte"
+  },
+  "business": {
+    "title-section": "Für Unternehmen",
+    "section-1": {
+      "title": "Offizielle Partnerschaft",
+      "description": "Treten Sie der Yourcity plattform bei und werden Sie ein offiziell geprüfter Partner."
+    },
+    "section-2": {
+      "title": "Erstellen Sie ein Geschäftsprofil",
+      "description": "Erstellen Sie ein detailliertes Profil für das Unternehmen, das Sie betreiben."
+    }
+  }
+}

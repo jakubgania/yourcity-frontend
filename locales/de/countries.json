@@ -1,0 +1,9 @@
+{
+  "head": {
+    "title": "Yourcity - Länder",
+    "description": "Select the country in which you want to view city profiles. The list of countries is constantly updated.",
+    "keywords": "countries, select country, city, locations"
+  },
+  "title": "Länder",
+  "select-country": "Wähle ein Land aus"
+}

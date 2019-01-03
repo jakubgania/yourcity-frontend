@@ -11,7 +11,24 @@ export default ({ app, store }) => {
     messages: {
       'en': require('~/locales/en.json'),
       'pl': require('~/locales/pl.json'),
-      'de': require('~/locales/de.json')
+      'de': {
+        'rules-dialog': require('~/locales/de/rules-dialog.json'),
+        'home': require('~/locales/de/home.json'),
+        'profiles-search': require('~/locales/de/profiles-search.json'),
+        'example-profile': require('~/locales/de/example-profile.json'),
+        'agreements': require('~/locales/de/agreements.json'),
+        'photos': require('~/locales/de/photos.json'),
+        'countries': require('~/locales/de/countries.json'),
+        'project': require('~/locales/de/project.json'),
+        'founder': require('~/locales/de/founder.json'),
+        'changelog': require('~/locales/de/changelog.json'),
+        'contact': require('~/locales/de/contact.json'),
+        'business': require('~/locales/de/business.json'),
+        'routes-names': require('~/locales/de/routes-names.json'),
+        'categories': require('~/locales/de/categories.json'),
+        'footer': require('~/locales/de/footer.json'),
+        'general': require('~/locales/de/general.json'),
+      }
     }
   })
 

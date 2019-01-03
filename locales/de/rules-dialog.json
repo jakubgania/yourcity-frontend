@@ -1,0 +1,17 @@
+{
+  "title": "Sehr geehrter Benutzer",
+  "description": "Durch Klicken auf \"Akzeptieren\" oder Schließen des Fensters durch Klicken auf das X stimmen Sie den folgenden Bedingungen zu.",
+  "cookies": {
+    "title": "Dateien Cookie",
+    "description": "TDiese Website verwendet Cookies und den Google Analytics-Dienst nur zu statistischen Zwecken, um den Netzwerkverkehr zu analysieren. Der lokale Speichermechanismus wird auch für den ordnungsgemäßen Betrieb Ihrer Yourcity Anwendung verwendet."
+  },
+  "agreements": {
+    "title": "Vorschriften",
+    "description": "Regualmin beschreibt die Regeln und Grundsätze für Ihre Yourcity-Plattform. Der Benutzer bestätigt, dass er die unter der folgenden Adresse verfügbaren Registrierungsinformationen versteht und akzeptiert -"
+  },
+  "location": {
+    "title": "Lokalisierung",
+    "description": "Der aktuelle Standort kann mit Zustimmung des Benutzers zur Implementierung der Suchfunktion verwendet werden."
+  },
+  "accept-button": "Akzeptieren"
+}

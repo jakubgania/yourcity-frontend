@@ -1,0 +1,22 @@
+{
+  "head": {
+    "title": "Yourcity - Kontakt",
+    "description": "Kontaktformular - Schreiben Sie eine Nachricht, stellen Sie eine Frage oder beschreiben Sie das Problem.",
+    "keywords": "kontakt, kontaktformular, frage, nachricht, e-mail"
+  },
+  "title": "Kontakt",
+  "subtitle": "Kontaktformular",
+  "label": {
+    "title-message": "der Titel der Nachricht",
+    "email": "E-mail",
+    "message": "Nachricht",
+    "checkbox": "Ich bin damit einverstanden, per E-Mail kontaktiert zu werden."
+  },
+  "rules": {
+    "title": "Titel ist erforderlich.",
+    "email": "E-Mail ist erforderlich.",
+    "message": "Die Nachricht ist erforderlich.",
+    "terms": "Die Annahme der Bedingungen ist erforderlich."
+  },
+  "send-button": "Senden"
+}

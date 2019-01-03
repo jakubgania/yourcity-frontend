@@ -1,0 +1,19 @@
+{
+  "head": {
+    "title": "Yourcity - Bilder",
+    "photo": "Photo",
+    "description": "Sehen Sie sich eine Fotogalerie aus verschiedenen Orten, Standorte, Städten und Ländern an.",
+    "keywords": "fotos, bilder, galerie, fotos, fotos von städten, bilder von gebäuden, ansichten, galerie yourcity"
+  },
+  "dialog": {
+    "information": "Informationen",
+    "title": "Titel",
+    "date-addded": "Erstellungsdatum",
+    "location": "Lokalisierung",
+    "share": "Aktie",
+    "copy": "Kopieren Sie den Link",
+    "tags": "Tags",
+    "close-button": "Schließen"
+  },
+  "gallery": "Galerie"
+}
