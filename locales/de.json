@@ -10,21 +10,21 @@
   },
   "message": "Frohes Neues Jahr 2019",
   "rules-dialog": {
-    "title": "Dear user",
-    "description": "By clicking \"Accept\" or closing the window by clicking on the X, you agree to the following conditions.",
+    "title": "Sehr geehrter Benutzer",
+    "description": "Durch Klicken auf \"Akzeptieren\" oder Schließen des Fensters durch Klicken auf das X stimmen Sie den folgenden Bedingungen zu.",
     "cookies": {
-      "title": "Cookies",
-      "description": "This site uses cookies and the Google Analytics service only for statistical purposes to analyze network traffic. The local storage mechanism is also used for the proper operation of your Yourcity application."
+      "title": "Dateien Cookie",
+      "description": "TDiese Website verwendet Cookies und den Google Analytics-Dienst nur zu statistischen Zwecken, um den Netzwerkverkehr zu analysieren. Der lokale Speichermechanismus wird auch für den ordnungsgemäßen Betrieb Ihrer Yourcity Anwendung verwendet."
     },
     "agreements": {
-      "title": "Agreements",
-      "description": "Regualmin describes the rules and principles for your Yourcity platform. The user confirms that he understands and accepts the regualmin available under the following address -"
+      "title": "Vorschriften",
+      "description": "Regualmin beschreibt die Regeln und Grundsätze für Ihre Yourcity-Plattform. Der Benutzer bestätigt, dass er die unter der folgenden Adresse verfügbaren Registrierungsinformationen versteht und akzeptiert -"
     },
     "location": {
-      "title": "Location",
-      "description": "The current location can be used with the user's consent to implement the search functionality."
+      "title": "Lokalisierung",
+      "description": "Der aktuelle Standort kann mit Zustimmung des Benutzers zur Implementierung der Suchfunktion verwendet werden."
     },
-    "accept-button": "Confirm"
+    "accept-button": "Akzeptieren"
   },
   "home": {
     "head": {
@@ -57,7 +57,7 @@
       "subtitle": "und der Bereich, in dem Sie sich befinden",
       "exploration": {
         "title": "Exploration",
-        "description": "You can use YOURCITY while in a new unknown city or to discover new places in your current location."
+        "description": "YOURCITY kann während eines Aufenthalts in einer neuen unbekannten Stadt oder zum Erkunden neuer Orte an Ihrem aktuellen Standort verwendet werden."
       },
       "information": {
         "title": "Informationen",
@@ -197,7 +197,7 @@
   "profiles_search": {
     "head": {
       "title": "Yourcity - Profilsuche",
-      "description": "Search for information about the city of interest and the location where you are or browse different categories.",
+      "description": "Suchen Sie nach Informationen zu der gewünschten Stadt und dem Standort, in dem Sie sich befinden, oder durchsuchen Sie verschiedene Kategorien.",
       "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
     },
     "search_form": {
@@ -438,7 +438,7 @@
     }
   },
   "footer": {
-    "description": "A place where you can find useful information about various places, from restaurants to shops. Thanks to various categories, you can discover interesting objects in your area or in a place that is unknown to you. YOURCITY will help you in searching for a pharmacy but also tourist attractions. Service and location profiles provide various information."
+    "description": "Ein Ort, an dem Sie nützliche Informationen zu verschiedenen Orten finden können, von Restaurants bis zu Geschäften. Dank verschiedener Kategorien können Sie interessante Objekte in Ihrer Nähe oder an einem Ihnen unbekannten Ort entdecken. Yourcity hilft Ihnen bei der Suche nach einer Apotheke, aber auch nach touristischen Attraktionen. Service und Standortprofile liefern verschiedene Informationen."
   },
   "routes_names": {
     "home_page": "Home",
