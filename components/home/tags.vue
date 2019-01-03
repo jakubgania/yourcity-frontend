@@ -1,16 +1,9 @@
 <template>
   <v-flex lg12>
     <v-layout row wrap>
-      <v-flex xs10 offset-xs1 lg11 offset-lg1>
-        <div
-          class="title-section"
-          data-aos="fade-right"
-          data-aos-delay="240"
-          data-aos-once="true"
-        >
-          {{ $t('home.popular_tags.title_section') }}
-        </div>
-      </v-flex>
+
+      <title-section-component :title="$t('home.popular_tags.title_section')"/>
+
       <v-flex
         v-for="section in proposedTags"
         :key="section.id"
@@ -77,7 +70,12 @@
 </template>
 
 <script>
+import TitleComponent from './title-section.vue';
+
 export default {
+  components: {
+    'title-section-component': TitleComponent,
+  },
   data() {
     return {
       proposedTags: [

@@ -1,15 +1,7 @@
 <template>
   <v-layout row wrap class="gallery-container">
-    <v-flex xs10 offset-xs1 lg11 offset-lg1 xl2 offset-xl3>
-      <div
-        class="title-section"
-        data-aos="fade-right"
-        data-aos-delay="240"
-        data-aos-once="true"
-      >
-        {{ $t('home.gallery.title_section') }}
-      </div>
-    </v-flex>
+
+    <title-section-component :title="$t('home.gallery.title_section')"/>
 
     <network-connection-error-alert-component
       :show-error-connection-alert="showErrorConnectionAlert"
@@ -53,10 +45,12 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import TitleComponent from './title-section.vue';
 import NetworkConnectionErrorAlertComponent from '../network-connection-error-alert.vue';
 
 export default {
   components: {
+    'title-section-component': TitleComponent,
     'network-connection-error-alert-component': NetworkConnectionErrorAlertComponent,
   },
   computed: {

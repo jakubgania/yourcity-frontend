@@ -2,16 +2,9 @@
   <v-layout row wrap>
     <v-flex xs12 lg12>
       <v-layout row wrap class="business-section">
-        <v-flex xs10 offset-xs1 lg11 offset-lg1>
-          <div
-            class="title-section"
-            data-aos="fade-right"
-            data-aos-delay="240"
-            data-aos-once="true"
-          >
-            {{ $t('home.business.title_section') }}
-          </div>
-        </v-flex>
+
+        <title-section-component :title="$t('home.business.title_section')"/>
+
         <v-flex xs12 lg12 class="logo-section">
           <v-layout row wrap>
             <v-flex xs6 lg4 offset-lg2 class="logo-section-component">
@@ -108,10 +101,12 @@
 </template>
 
 <script>
+import TitleComponent from './title-section.vue';
 import LogoComponent from '../logo.vue';
 
 export default {
   components: {
+    'title-section-component': TitleComponent,
     'logo-component': LogoComponent,
   },
   computed: {

@@ -1,15 +1,8 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs10 offset-xs1 lg11 offset-lg1 xl2 offset-xl3>
-      <div
-        class="title-section"
-        data-aos="fade-right"
-        data-aos-delay="240"
-        data-aos-once="true"
-      >
-        {{ $t('home.cities.title_section') }}
-      </div>
-    </v-flex>
+
+    <title-section-component :title="$t('home.cities.title_section')"/>
+
     <v-flex lg12 xl8 offset-xl2>
       <v-layout row wrap>
         <v-flex lg12>
@@ -56,9 +49,13 @@
 </template>
 
 <script>
+import TitleComponent from './title-section.vue';
 import cities from '../../json/cities.json';
 
 export default {
+  components: {
+    'title-section-component': TitleComponent,
+  },
   data() {
     return {
       cities: cities.cities,
