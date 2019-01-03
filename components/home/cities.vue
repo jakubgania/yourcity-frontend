@@ -27,34 +27,24 @@
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs10 offset-xs1 sm8 offset-sm2 lg4 offset-lg4 xl2 offset-xl5>
-      <router-link :to="$i18n.path('countries/all')" class="link-section">
-        <v-btn
-          block
-          large
-          depressed
-          class="more-cities-button"
-          data-aos="fade-right"
-          data-aos-delay="240"
-          data-aos-once="true"
-        >
-          {{ $t('home.cities.search_button') }}
-          <v-icon right dark>
-            keyboard_arrow_right
-          </v-icon>
-        </v-btn>
-      </router-link>
-    </v-flex>
+
+    <button-section-component
+      :route-path="$i18n.path('countries/all')"
+      :button-title="$t('home.categories.search_button')"
+    />
+
   </v-layout>
 </template>
 
 <script>
 import TitleComponent from './title-section.vue';
+import ButtonComponent from './button-section.vue';
 import cities from '../../json/cities.json';
 
 export default {
   components: {
     'title-section-component': TitleComponent,
+    'button-section-component': ButtonComponent,
   },
   data() {
     return {
