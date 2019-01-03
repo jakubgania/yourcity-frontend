@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
 
-    <title-section-component :title="$t('home.cities.title_section')"/>
+    <title-section-component :title="$t('home.cities.title-section')"/>
 
     <v-flex lg12 xl8 offset-xl2>
       <v-layout row wrap>

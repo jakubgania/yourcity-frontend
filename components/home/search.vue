@@ -24,7 +24,7 @@
                   v-model="queryModel"
                   :items="queryItems"
                   :search-input.sync="queryInputSync"
-                  :placeholder="$t('home.search_section.search_form.input_query_placeholder')"
+                  :placeholder="$t('home.search-section.search-form.input-query-placeholder')"
                   solo
                   clearable
                   autocomplete="off"
@@ -38,7 +38,7 @@
                   v-model="cityModel"
                   :items="cityItems"
                   :search-input.sync="cityInputSync"
-                  :placeholder="$t('home.search_section.search_form.input_city_placeholder')"
+                  :placeholder="$t('home.search-section.search-form.input-city-placeholder')"
                   item-text="name"
                   item-value="name"
                   return-object
@@ -82,7 +82,7 @@
                   type="submit"
                   class="submit-button"
                 >
-                  {{ $t('home.search_section.search_form.submit_button') }}
+                  {{ $t('home.search-section.search-form.submit-button') }}
                   <v-icon class="icon">keyboard_arrow_right</v-icon>
                 </button>
               </v-flex>
@@ -95,7 +95,7 @@
 
     <v-flex lg12>
       <div class="message">
-        {{ $t('message') }}
+        {{ $t('home.message') }}
       </div>
     </v-flex>
 
@@ -117,7 +117,7 @@ export default {
       topImage,
       counter: 0,
       show: false,
-      topWords: this.$t('home.search_section.top_words'),
+      topWords: this.$t('home.search-section.top-words'),
       cityInputSync: null,
       queryInputSync: null,
     };

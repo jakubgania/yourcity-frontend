@@ -39,16 +39,16 @@ export default {
       htmlAttrs: {
         lang: this.$t('html.language'),
       },
-      title: this.$t('profiles_search.head.title'),
+      title: this.$t('profiles-search.head.title'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('profiles_search.head.description'),
+          content: this.$t('profiles-search.head.description'),
         },
         {
           name: 'keywords',
-          content: this.$t('profiles_search.head.keywords'),
+          content: this.$t('profiles-search.head.keywords'),
         },
       ],
     };

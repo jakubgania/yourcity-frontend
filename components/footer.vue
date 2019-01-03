@@ -50,25 +50,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.home_page') }}
+                  {{ $t('routes-names.home-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('search')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.search_page') }}
+                  {{ $t('routes-names.search-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('photos')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.photos_page') }}
+                  {{ $t('routes-names.photos-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('countries/all')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.countries_page') }}
+                  {{ $t('routes-names.countries-page') }}
                 </nuxt-link>
               </div>
             </v-flex>
@@ -76,25 +76,25 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('project')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.projects_page') }}
+                  {{ $t('routes-names.projects-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('founder')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.founder_page') }}
+                  {{ $t('routes-names.founder-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('changelog')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.changelog_page') }}
+                  {{ $t('routes-names.changelog-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('agreements')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.agreements_page') }}
+                  {{ $t('routes-names.agreements-page') }}
                 </nuxt-link>
               </div>
             </v-flex>
@@ -102,19 +102,19 @@
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('contact')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.contact_page') }}
+                  {{ $t('routes-names.contact-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('business')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.business_page') }}
+                  {{ $t('routes-names.business-page') }}
                 </nuxt-link>
               </div>
               <div class="link-section">
                 <nuxt-link :to="$i18n.path('example-profile')">
                   <v-icon class="link-icon">keyboard_arrow_right</v-icon>
-                  {{ $t('routes_names.example_profile') }}
+                  {{ $t('routes-names.example-profile') }}
                 </nuxt-link>
               </div>
             </v-flex>

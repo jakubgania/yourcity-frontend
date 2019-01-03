@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap class="gallery-container">
 
-    <title-section-component :title="$t('home.gallery.title_section')"/>
+    <title-section-component :title="$t('home.gallery.title-section')"/>
 
     <network-connection-error-alert-component
       :show-error-connection-alert="showErrorConnectionAlert"
@@ -32,7 +32,7 @@
     <v-flex xs10 offset-xs1 sm8 offset-sm2 md4 offset-md4 lg4 offset-lg4 xl2 offset-xl5>
       <router-link :to="$i18n.path('photos')" class="button-link">
         <v-btn block large depressed class="show-gallery-button">
-          {{ $t('home.gallery.search_button') }}
+          {{ $t('home.gallery.search-button') }}
           <v-icon right dark>
             keyboard_arrow_right
           </v-icon>

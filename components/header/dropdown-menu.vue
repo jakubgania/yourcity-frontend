@@ -9,7 +9,7 @@
       <v-list-tile class="title-header-menu">
         <v-list-tile-title class="text-title">
           <v-icon class="icon">translate</v-icon>
-          {{ $t('header.dropdown_menu.title') }}
+          {{ $t('header.dropdown-menu.title') }}
         </v-list-tile-title>
       </v-list-tile>
 

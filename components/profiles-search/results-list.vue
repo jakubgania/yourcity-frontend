@@ -133,7 +133,7 @@
           class="dialog-profile-image-not-available"
         >
           <div class="no-picture-text">
-            {{ $t('profiles_search.results_list.image_not_available') }}
+            {{ $t('profiles-search.results-list.image-not-available') }}
           </div>
         </div>
         <v-card-actions style="height:64px;">
@@ -147,7 +147,7 @@
             class="dialog-close-button"
             @click.native="showFullSizePhotoDialog = false"
           >
-            {{ $t('profiles_search.results_list.image_dialog.close_button') }}
+            {{ $t('profiles-search.results-list.image-dialog.close-button') }}
           </v-btn>
         </v-card-actions>
       </v-card>

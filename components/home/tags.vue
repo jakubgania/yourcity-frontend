@@ -2,7 +2,7 @@
   <v-flex lg12>
     <v-layout row wrap>
 
-      <title-section-component :title="$t('home.popular_tags.title_section')"/>
+      <title-section-component :title="$t('home.popular-tags.title-section')"/>
 
       <v-flex
         v-for="section in proposedTags"
@@ -50,7 +50,7 @@
 
       <button-section-component
         :route-path="$i18n.path('search')"
-        :button-title="$t('home.popular_tags.search_button')"
+        :button-title="$t('home.popular-tags.search-button')"
       />
 
     </v-layout>
@@ -70,33 +70,33 @@ export default {
     return {
       proposedTags: [
         {
-          section_name: this.$t('home.popular_tags.food.title'),
-          tags: this.$t('home.popular_tags.food.tags'),
+          section_name: this.$t('home.popular-tags.food.title'),
+          tags: this.$t('home.popular-tags.food.tags'),
           color_hover_class: 'color-hover-food',
         },
         {
-          section_name: this.$t('home.popular_tags.shop.title'),
-          tags: this.$t('home.popular_tags.shop.tags'),
+          section_name: this.$t('home.popular-tags.shop.title'),
+          tags: this.$t('home.popular-tags.shop.tags'),
           color_hover_class: 'color-hover-shop',
         },
         {
-          section_name: this.$t('home.popular_tags.entertainment.title'),
-          tags: this.$t('home.popular_tags.entertainment.tags'),
+          section_name: this.$t('home.popular-tags.entertainment.title'),
+          tags: this.$t('home.popular-tags.entertainment.tags'),
           color_hover_class: 'color-hover-entertainment',
         },
         {
-          section_name: this.$t('home.popular_tags.sport.title'),
-          tags: this.$t('home.popular_tags.sport.tags'),
+          section_name: this.$t('home.popular-tags.sport.title'),
+          tags: this.$t('home.popular-tags.sport.tags'),
           color_hover_class: 'color-hover-sport',
         },
         {
-          section_name: this.$t('home.popular_tags.business.title'),
-          tags: this.$t('home.popular_tags.business.tags'),
+          section_name: this.$t('home.popular-tags.business.title'),
+          tags: this.$t('home.popular-tags.business.tags'),
           color_hover_class: 'color-hover-business',
         },
         {
-          section_name: this.$t('home.popular_tags.other.title'),
-          tags: this.$t('home.popular_tags.other.tags'),
+          section_name: this.$t('home.popular-tags.other.title'),
+          tags: this.$t('home.popular-tags.other.tags'),
           color_hover_class: 'color-hover-other',
         },
       ],

@@ -2,7 +2,7 @@
   <v-layout row wrap class="container-gallery">
     <v-flex xs12 lg4 offset-lg4 xl2 offset-xl5>
       <div class="title-page">
-        {{ $t('home.gallery.title_section') }}
+        {{ $t('home.gallery.title-section') }}
       </div>
     </v-flex>
 
@@ -130,7 +130,7 @@
         </v-card-text>
         <v-card-text>
           <div class="dialog-subtitle">
-            {{ $t('photos.dialog.date_added') }}
+            {{ $t('photos.dialog.date-added') }}
           </div>
           <div class="dialog-text">
             {{ photoFullSizeDetails['creation_date'] }}

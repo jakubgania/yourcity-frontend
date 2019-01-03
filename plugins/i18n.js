@@ -1,4 +1,5 @@
 /* eslint-disable */
+
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 
@@ -12,22 +13,24 @@ export default ({ app, store }) => {
       'en': require('~/locales/en.json'),
       'pl': require('~/locales/pl.json'),
       'de': {
-        'rules-dialog': require('~/locales/de/rules-dialog.json'),
-        'home': require('~/locales/de/home.json'),
-        'profiles-search': require('~/locales/de/profiles-search.json'),
-        'example-profile': require('~/locales/de/example-profile.json'),
-        'agreements': require('~/locales/de/agreements.json'),
-        'photos': require('~/locales/de/photos.json'),
-        'countries': require('~/locales/de/countries.json'),
-        'project': require('~/locales/de/project.json'),
-        'founder': require('~/locales/de/founder.json'),
-        'changelog': require('~/locales/de/changelog.json'),
-        'contact': require('~/locales/de/contact.json'),
-        'business': require('~/locales/de/business.json'),
-        'routes-names': require('~/locales/de/routes-names.json'),
-        'categories': require('~/locales/de/categories.json'),
-        'footer': require('~/locales/de/footer.json'),
-        'general': require('~/locales/de/general.json'),
+        'html':             require('~/locales/de/html.json'),
+        'header':           require('~/locales/de/header.json'),
+        'rules-dialog':     require('~/locales/de/rules-dialog.json'),
+        'home':             require('~/locales/de/home.json'),
+        'profiles-search':  require('~/locales/de/profiles-search.json'),
+        'countries':        require('~/locales/de/countries.json'),
+        'photos':           require('~/locales/de/photos.json'),
+        'contact':          require('~/locales/de/contact.json'),
+        'changelog':        require('~/locales/de/changelog.json'),
+        'business':         require('~/locales/de/business.json'),
+        'example-profile':  require('~/locales/de/example-profile.json'),
+        'project':          require('~/locales/de/project.json'),
+        'founder':          require('~/locales/de/founder.json'),
+        'agreements':       require('~/locales/de/agreements.json'),
+        'routes-names':     require('~/locales/de/routes-names.json'),
+        'categories':       require('~/locales/de/categories.json'),
+        'footer':           require('~/locales/de/footer.json'),
+        'alerts':           require('~/locales/de/alerts.json')
       }
     }
   })

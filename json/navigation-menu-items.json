@@ -1,47 +1,47 @@
 {
   "items": [
     {
-      "nameKey": "home_page",
+      "nameKey": "home-page",
       "path": ""
     },
     {
-      "nameKey": "search_page",
+      "nameKey": "search-page",
       "path": "search"
     },
     {
-      "nameKey": "countries_page",
+      "nameKey": "countries-page",
       "path": "countries/all"
     },
     {
-      "nameKey": "photos_page",
+      "nameKey": "photos-page",
       "path": "photos"
     },
     {
-      "nameKey": "contact_page",
+      "nameKey": "contact-page",
       "path": "contact"
     },
     {
-      "nameKey": "changelog_page",
+      "nameKey": "changelog-page",
       "path": "changelog"
     },
     {
-      "nameKey": "business_page",
+      "nameKey": "business-page",
       "path": "business"
     },
     {
-      "nameKey": "example_profile",
+      "nameKey": "example-profile",
       "path": "example-profile"
     },
     {
-      "nameKey": "projects_page",
+      "nameKey": "projects-page",
       "path": "project"
     },
     {
-      "nameKey": "founder_page",
+      "nameKey": "founder-page",
       "path": "founder"
     },
     {
-      "nameKey": "agreements_page",
+      "nameKey": "agreements-page",
       "path": "agreements"
     }
   ]

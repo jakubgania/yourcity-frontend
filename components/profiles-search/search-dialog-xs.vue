@@ -17,7 +17,7 @@
             </v-icon>
           </v-btn>
           <v-toolbar-title class="top-title">
-            {{ $t('profiles_search.search_form.search_dialog_xs_title') }}
+            {{ $t('profiles-search.search-form.search-dialog-xs-title') }}
           </v-toolbar-title>
         </v-toolbar>
         <v-form @submit.prevent="submitSearchForm()">
@@ -27,7 +27,7 @@
                 <v-select
                   v-model="categoriesModelComputed"
                   :items="categoriesItems"
-                  :placeholder="$t('profiles_search.search_form.input_category_placeholder')"
+                  :placeholder="$t('profiles-search.search-form.input-category-placeholder')"
                   item-text="name"
                   item-value="id"
                   solo
@@ -43,7 +43,7 @@
                   v-model="queryModelComputed"
                   :items="queryItems"
                   :search-input.sync="queryInputSyncComputed"
-                  :placeholder="$t('profiles_search.search_form.input_query_placeholder')"
+                  :placeholder="$t('profiles-search.search-form.input-query-placeholder')"
                   solo
                   clearable
                   autocomplete="off"
@@ -59,7 +59,7 @@
                   v-model="cityModelComputed"
                   :items="cityItems"
                   :search-input.sync="cityInputSyncComputed"
-                  :placeholder="$t('profiles_search.search_form.input_city_placeholder')"
+                  :placeholder="$t('profiles-search.search-form.input-city-placeholder')"
                   item-text="name"
                   item-value="name"
                   solo
@@ -76,7 +76,7 @@
                     <template v-if="cityItems.item.value">
                       <v-list-tile-content @click="getCurrentLocation()">
                         <v-list-tile-title>
-                          {{ $t('profiles_search.search_form.current_location') }}
+                          {{ $t('profiles-search.search-form.current-location') }}
                         </v-list-tile-title>
                       </v-list-tile-content>
                     </template>
@@ -91,7 +91,7 @@
             </v-flex>
             <v-flex xs12>
               <button type="submit" class="submit-form-button">
-                {{ $t('profiles_search.search_form.submit_button') }}
+                {{ $t('profiles-search.search-form.submit-button') }}
                 <v-icon class="button-icon">keyboard_arrow_right</v-icon>
               </button>
             </v-flex>

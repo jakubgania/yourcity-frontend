@@ -9,7 +9,7 @@
         <div class="title-header">
           <v-icon class="icon-info">info_outline</v-icon>
           <div class="title-text">
-            {{ $t('profiles_search.profile-details.title-dialog') }}
+            {{ $t('profiles-search.profile-details.title-dialog') }}
           </div>
           <v-icon
             class="icon-close"
@@ -33,7 +33,7 @@
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">description</i>
-          {{ $t('profiles_search.profile-details.description.title') }}
+          {{ $t('profiles_-search.profile-details.description.title') }}
         </v-card-title>
 
         <v-card-text
@@ -44,7 +44,7 @@
           {{ profileDetails.description }}
         </v-card-text>
         <v-card-text v-else class="section">
-          {{ $t('profiles_search.profile-details.no-data') }}
+          {{ $t('profiles-search.profile-details.no-data') }}
         </v-card-text>
         <div
           v-if="showFullDescriptionButton"
@@ -67,7 +67,7 @@
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">location_on</i>
-          {{ $t('profiles_search.profile-details.address') }}
+          {{ $t('profiles-search.profile-details.address') }}
         </v-card-title>
 
         <v-card-text v-if="profileDetails.single_line_address" class="section">
@@ -100,12 +100,12 @@
           </div>
         </v-card-text>
         <v-card-text v-else class="section">
-          {{ $t('profiles_search.profile-details.no-data') }}
+          {{ $t('profiles-search.profile-details.no-data') }}
         </v-card-text>
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">access_time</i>
-          {{ $t('profiles_search.profile-details.opening-hours.title') }}
+          {{ $t('profiles-search.profile-details.opening-hours.title') }}
         </v-card-title>
 
         <v-card-text class="section">
@@ -117,7 +117,7 @@
           >
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.monday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.monday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.mon_1_open, profileDetails.hours.mon_1_close) }}
@@ -125,7 +125,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.tuesday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.tuesday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.tue_1_open, profileDetails.hours.tue_1_close) }}
@@ -133,7 +133,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.wednesday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.wednesday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.wed_1_open, profileDetails.hours.wed_1_close) }}
@@ -141,7 +141,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.wednesday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.wednesday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.thu_1_open, profileDetails.hours.thu_1_close) }}
@@ -149,7 +149,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.friday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.friday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.fri_1_open, profileDetails.hours.fri_1_close) }}
@@ -157,7 +157,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.saturday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.saturday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.sat_1_open, profileDetails.hours.sat_1_close) }}
@@ -165,7 +165,7 @@
             </v-flex>
             <v-flex lg12 class="opening-hours-subsection">
               <div class="title-day-off-week">
-                {{ $t('profiles_search.profile-details.opening-hours.sunday') }}
+                {{ $t('profiles-search.profile-details.opening-hours.sunday') }}
               </div>
               <div class="hour-text">
                 {{ hourText(profileDetails.hours.sun_1_open, profileDetails.hours.sun_1_close) }}
@@ -173,13 +173,13 @@
             </v-flex>
           </v-layout>
           <v-layout v-else row wrap>
-            {{ $t('profiles_search.profile-details.no-data') }}
+            {{ $t('profiles-search.profile-details.no-data') }}
           </v-layout>
         </v-card-text>
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">comment</i>
-          {{ $t('profiles_search.profile-details.posts.title') }}
+          {{ $t('profiles-search.profile-details.posts.title') }}
         </v-card-title>
 
         <div class="full-description-button-section">
@@ -193,7 +193,7 @@
                 class="full-description-button"
                 @click.native="$emit('loadProfilePosts', profileDetails.id)"
               >
-                {{ $t('profiles_search.profile-details.posts.button-text') }}
+                {{ $t('profiles-search.profile-details.posts.button-text') }}
                 <v-icon class="icon">cloud_upload</v-icon>
               </v-btn>
             </v-flex>
@@ -204,19 +204,19 @@
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">smartphone</i>
-          {{ $t('profiles_search.profile-details.phone') }}
+          {{ $t('profiles-search.profile-details.phone') }}
         </v-card-title>
 
         <v-card-text v-if="profileDetails.phone" class="section">
           {{ profileDetails.phone }}
         </v-card-text>
         <v-card-text v-else class="section">
-          {{ $t('profiles_search.profile-details.no-data') }}
+          {{ $t('profiles-search.profile-details.no-data') }}
         </v-card-text>
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">language</i>
-          {{ $t('profiles_search.profile-details.website.title') }}
+          {{ $t('profiles-search.profile-details.website.title') }}
         </v-card-title>
 
         <v-card-text v-if="profileDetails.website" class="section">
@@ -226,18 +226,18 @@
             style="text-decoration:none;"
           >
             <v-chip outline class="website-chip">
-              {{ $t('profiles_search.profile-details.website.go-to-website') }}
+              {{ $t('profiles-search.profile-details.website.go-to-website') }}
               <v-icon>keyboard_arrow_right</v-icon>
             </v-chip>
           </a>
         </v-card-text>
         <v-card-text v-else class="section">
-          {{ $t('profiles_search.profile-details.no-data') }}
+          {{ $t('profiles-search.profile-details.no-data') }}
         </v-card-text>
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">share</i>
-          {{ $t('profiles_search.profile-details.related-categories') }}
+          {{ $t('profiles-search.profile-details.related-categories') }}
         </v-card-title>
 
         <div v-if="profileDetails.category_list">
@@ -267,7 +267,7 @@
             class="dialog-close-button"
             @click.native="$emit('closeShowInformationDialog')"
           >
-            {{ $t('profiles_search.profile-details.close') }}
+            {{ $t('profiles-search.profile-details.close') }}
           </v-btn>
         </v-card-actions>
 
@@ -314,10 +314,10 @@ export default {
     ]),
     descriptionButtonText() {
       if (this.showFullDescription) {
-        return this.$t('profiles_search.profile-details.show-more');
+        return this.$t('profiles-search.profile-details.show-more');
       }
 
-      return this.$t('profiles_search.profile-details.show-less');
+      return this.$t('profiles-search.profile-details.show-less');
     },
     iconButtonText() {
       if (this.showFullDescription) {

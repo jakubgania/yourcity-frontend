@@ -14,7 +14,7 @@
             <v-icon style="position:relative;top:5px;margin-right:15px;font-size:20px;">
               filter_list
             </v-icon>
-            {{ $t('profiles_search.filter.title_section') }}
+            {{ $t('profiles-search.filter.title-section') }}
           </div>
 
           <v-layout row wrap>
@@ -22,7 +22,7 @@
               <v-text-field
                 :append-icon="'search'"
                 v-model="prototypeFilter"
-                :label="$t('profiles_search.filter.search')"
+                :label="$t('profiles-search.filter.search')"
                 loading
                 clearable
                 autocomplete="off"

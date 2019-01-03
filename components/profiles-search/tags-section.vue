@@ -3,7 +3,7 @@
     <div v-if="showTagSection && proposedTags.length > 0">
       <v-flex lg12 xl10 offset-xl1>
         <div class="title-section">
-          {{ `${$t('profiles_search.tags.title')} - ${proposedTags.length}` }}
+          {{ `${$t('profiles-search.tags.title')} - ${proposedTags.length}` }}
         </div>
       </v-flex>
       <div class="tag-section">
@@ -85,7 +85,7 @@
                 flat
                 @click.native="showMoreTagsDialog(false)"
               >
-                {{ $t('profiles_search.tags.close') }}
+                {{ $t('profiles-search.tags.close') }}
               </v-btn>
             </v-card-actions>
           </v-card>

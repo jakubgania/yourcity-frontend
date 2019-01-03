@@ -10,7 +10,7 @@
 
           <v-flex lg12 xl10 offset-xl1 class="result-counter-section">
             <div class="title-section">
-              {{ $t('profiles_search.result_count') + ' : ' + resultCount() }}
+              {{ $t('profiles-search.result-count') + ' : ' + resultCount() }}
             </div>
           </v-flex>
 
@@ -69,7 +69,7 @@
                 block
                 @click.native="getPagingProfilesData(pagingURL)"
               >
-                {{ $t('profiles_search.paging_button') }}
+                {{ $t('profiles-search.paging-button') }}
                 <v-icon class="icon">cached</v-icon>
               </v-btn>
             </v-flex>

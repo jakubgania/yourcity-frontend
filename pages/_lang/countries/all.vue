@@ -17,7 +17,7 @@
     </v-flex>
 
     <v-flex xs12 lg10 offset-lg1 xl8 offset-xl2 class="select-country">
-      {{ $t('countries.select_country') }}
+      {{ $t('countries.select-country') }}
     </v-flex>
 
     <v-flex xs12 lg10 offset-lg1 xl8 offset-xl2>

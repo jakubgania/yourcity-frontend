@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
 
-    <title-section-component :title="$t('home.categories.title_section')"/>
+    <title-section-component :title="$t('home.categories.title-section')"/>
 
     <v-flex
       v-for="(category, index) in category_tiles"
@@ -29,7 +29,7 @@
 
     <button-section-component
       :route-path="$i18n.path('search')"
-      :button-title="$t('home.categories.search_button')"
+      :button-title="$t('home.categories.search-button')"
     />
 
   </v-layout>
@@ -55,7 +55,7 @@ export default {
         {
           id: 'barAndPub',
           icon: 'local_bar',
-          name: this.$t('home.categories.barAndPub'),
+          name: this.$t('home.categories.bar-and-pub'),
         },
         {
           id: 'cafeteria',

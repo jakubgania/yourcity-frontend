@@ -3,7 +3,7 @@
     <v-flex xs12 lg12>
       <v-layout row wrap class="business-section">
 
-        <title-section-component :title="$t('home.business.title_section')"/>
+        <title-section-component :title="$t('home.business.title-section')"/>
 
         <v-flex xs12 lg12 class="logo-section">
           <v-layout row wrap>
@@ -34,12 +34,12 @@
                   <v-flex lg12>
                     <div class="big-font-title">
                       <i class="material-icons icon-title">compare_arrows</i>
-                      {{ $t('home.business.section_1.title') }}
+                      {{ $t('home.business.section-1.title') }}
                     </div>
                   </v-flex>
                   <v-flex lg12>
                     <div class="description first-description">
-                      {{ $t('home.business.section_1.description') }}
+                      {{ $t('home.business.section-1.description') }}
                     </div>
                   </v-flex>
                 </div>
@@ -55,12 +55,12 @@
                   <v-flex lg12>
                     <div class="big-font-title">
                       <i class="material-icons icon-title">layers</i>
-                      {{ $t('home.business.section_2.title') }}
+                      {{ $t('home.business.section-2.title') }}
                     </div>
                   </v-flex>
                   <v-flex lg12>
                     <div class="description">
-                      {{ $t('home.business.section_2.description') }}
+                      {{ $t('home.business.section-2.description') }}
                     </div>
                   </v-flex>
                 </div>

@@ -23,7 +23,7 @@
           <v-list-tile-title
             class="list-menu-text"
           >
-            {{ $t(`routes_names.${menuItem.nameKey}`) }}
+            {{ $t(`routes-names.${menuItem.nameKey}`) }}
           </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>

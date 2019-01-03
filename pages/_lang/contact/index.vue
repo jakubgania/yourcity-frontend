@@ -148,7 +148,7 @@ export default {
         ],
       },
       text: {
-        label_title: this.$t('contact.label.title_message'),
+        label_title: this.$t('contact.label.title-message'),
         label_email: this.$t('contact.label.email'),
         label_message: this.$t('contact.label.message'),
         label_checkbox: this.$t('contact.label.checkbox'),

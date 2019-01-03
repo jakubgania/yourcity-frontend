@@ -11,10 +11,10 @@
       <v-flex xs12 sm12 md6 lg4>
         <div data-aos="fade-left" data-aos-delay="240" data-aos-once="true">
           <div class="text-title">
-            {{ $t('home.information_section.title') }}
+            {{ $t('home.information-section.title') }}
           </div>
           <div class="text-subtitle">
-            {{ $t('home.information_section.subtitle') }}
+            {{ $t('home.information-section.subtitle') }}
           </div>
         </div>
       </v-flex>
@@ -24,10 +24,10 @@
       <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.exploration.title') }}
+            {{ $t('home.information-section.exploration.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.exploration.description') }}
+            {{ $t('home.information-section.exploration.description') }}
           </div>
         </div>
       </v-flex>
@@ -51,10 +51,10 @@
       <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.information.title') }}
+            {{ $t('home.information-section.information.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.information.description') }}
+            {{ $t('home.information-section.information.description') }}
           </div>
         </div>
       </v-flex>
@@ -64,10 +64,10 @@
       <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.categories.title') }}
+            {{ $t('home.information-section.categories.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.categories.description') }}
+            {{ $t('home.information-section.categories.description') }}
           </div>
         </div>
       </v-flex>
@@ -91,10 +91,10 @@
       <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.attractions.title') }}
+            {{ $t('home.information-section.attractions.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.attractions.description') }}
+            {{ $t('home.information-section.attractions.description') }}
           </div>
         </div>
       </v-flex>
@@ -104,10 +104,10 @@
       <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.help.title') }}
+            {{ $t('home.information-section.help.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.help.description') }}
+            {{ $t('home.information-section.help.description') }}
           </div>
         </div>
       </v-flex>
@@ -131,10 +131,10 @@
       <v-flex xs12 sm8 offset-sm2 lg3 offset-lg2 xl2 offset-xl2>
         <div data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.profiles.title') }}
+            {{ $t('home.information-section.profiles.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.profiles.description') }}
+            {{ $t('home.information-section.profiles.description') }}
           </div>
         </div>
       </v-flex>
@@ -144,10 +144,10 @@
       <v-flex order-xs2 xs12 sm8 offset-sm2 order-lg1 lg3 offset-lg2 xl2 offset-xl3>
         <div data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
           <div class="section-info-title">
-            {{ $t('home.information_section.companies.title') }}
+            {{ $t('home.information-section.companies.title') }}
           </div>
           <div class="section-info-description">
-            {{ $t('home.information_section.companies.description') }}
+            {{ $t('home.information-section.companies.description') }}
           </div>
         </div>
       </v-flex>

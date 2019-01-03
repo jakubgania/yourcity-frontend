@@ -23,7 +23,7 @@
             <div class="title-header">
               <v-icon class="icon-info">info_outline</v-icon>
               <div class="title-text">
-                {{ $t('profiles_search.profile-details.title-dialog') }}
+                {{ $t('profiles-search.profile-details.title-dialog') }}
               </div>
               <v-icon
                 class="icon-close"
@@ -167,7 +167,7 @@
                           class="full-description-button"
                           @click.native="$emit('loadProfilePosts', profileDetails.id)"
                         >
-                          {{ $t('profiles_search.profile-details.posts.button-text') }}
+                          {{ $t('profiles-search.profile-details.posts.button-text') }}
                           <v-icon class="icon">cloud_upload</v-icon>
                         </v-btn>
                       </v-flex>
@@ -351,10 +351,10 @@ export default {
     ]),
     descriptionButtonText() {
       if (this.showFullDescription) {
-        return this.$t('profiles_search.profile-details.show-less');
+        return this.$t('profiles-search.profile-details.show-less');
       }
 
-      return this.$t('profiles_search.profile-details.show-more');
+      return this.$t('profiles-search.profile-details.show-more');
     },
     iconButtonText() {
       if (this.showFullDescription) {
