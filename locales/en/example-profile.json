@@ -1,0 +1,49 @@
+{
+  "head": {
+    "title": "Yourcity - Example profile",
+    "description": "See how your profile looks like on Yourcity. Various optional sections, detailed information.",
+    "keywords": "example profile, profile in yourcity, information profile, sections, basic information, category, description, address, opening hours, contact, tags, location, map, other media, facebook, twitter, youtube, instagram, snapchat, linkedin, mobile apps, app store, google play, creation date, last update date"
+  },
+  "menu": {
+    "information": "Information",
+    "posts": "Posts",
+    "photos": "Photos",
+    "comments": "Comments",
+    "related-profiles": "Related profiles"
+  },
+  "information": {
+    "page-subtitle": "Yourcity - Example profile - Information",
+    "profile-title": "Example profile on YOURCITY platform",
+    "basic-information": "Basic information",
+    "category": "Category",
+    "description": "Description",
+    "address": "Address",
+    "country": "Country",
+    "city": "City",
+    "street": "Street",
+    "postal-code": "Postal code",
+    "opening-hours": "Opening hours",
+    "contact": "Contact",
+    "phone": "Phone",
+    "website": "Website",
+    "e-mail": "E-mail",
+    "tags": "Tags",
+    "location": "Location",
+    "other-media": "Other media",
+    "apps": "Apps",
+    "creation-date": "Creation date",
+    "last-update": "Last update"
+  },
+  "posts": {
+    "page-subtitle": "Yourcity - Example profile - Posts"
+  },
+  "gallery": {
+    "page-subtitle": "Yourcity - Example profile - Gallery"
+  },
+  "comments": {
+    "page-subtitle": "Yourcity - Example profile - Comments"
+  },
+  "related-profiles": {
+    "page-subtitle": "Yourcity - Example profile - Related profiles"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "head": {
+    "title": "Yourcity - Photos",
+    "photo": "Photo",
+    "description": "See a photo gallery from various places, locations, cities and countries.",
+    "keywords": "photos, pictures, gallery, photographs, photos of cities, pictures of buildings, views, gallery yourcity"
+  },
+  "dialog": {
+    "information": "Information",
+    "title": "Title",
+    "date-addded": "Date added",
+    "location": "Location",
+    "share": "Share",
+    "copy": "Copy link",
+    "tags": "Tags",
+    "close-button": "Close"
+  },
+  "gallery": "Gallery"
+}

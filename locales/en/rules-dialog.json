@@ -1,0 +1,17 @@
+{
+  "title": "Dear user",
+  "description": "By clicking \"Accept\" or closing the window by clicking on the X, you agree to the following conditions.",
+  "cookies": {
+    "title": "Cookies",
+    "description": "This site uses cookies and the Google Analytics service only for statistical purposes to analyze network traffic. The local storage mechanism is also used for the proper operation of your Yourcity application."
+  },
+  "agreements": {
+    "title": "Agreements",
+    "description": "Regualmin describes the rules and principles for your Yourcity platform. The user confirms that he understands and accepts the regualmin available under the following address -"
+  },
+  "location": {
+    "title": "Location",
+    "description": "The current location can be used with the user's consent to implement the search functionality."
+  },
+  "accept-button": "Confirm"
+}

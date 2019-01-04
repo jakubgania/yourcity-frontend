@@ -1,0 +1,22 @@
+{
+  "head": {
+    "title": "Yourcity - Contact",
+    "description": "Contact form - write a message, ask a question or describe a problem.",
+    "keywords": "contact, contact form, question, message, email"
+  },
+  "title": "Contact",
+  "subtitle": "Contact form",
+  "label": {
+    "title-message": "Title message",
+    "email": "E-mail",
+    "message": "Message",
+    "checkbox": "I agree to be contacted via e-mail."
+  },
+  "rules": {
+    "title": "This field is required title.",
+    "email": "This field is required email.",
+    "message": "This field is required message.",
+    "terms": "This field is required terms."
+  },
+  "send-button": "SEND"
+}

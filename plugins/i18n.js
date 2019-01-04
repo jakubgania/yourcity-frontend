@@ -10,7 +10,26 @@ export default ({ app, store }) => {
     locale: store.state.locale,
     fallbackLocale: 'pl',
     messages: {
-      'en': require('~/locales/en.json'),
+      'en': {
+        'html':             require('~/locales/en/html.json'),
+        'header':           require('~/locales/en/header.json'),
+        'rules-dialog':     require('~/locales/en/rules-dialog.json'),
+        'home':             require('~/locales/en/home.json'),
+        'profiles-search':  require('~/locales/en/profiles-search.json'),
+        'countries':        require('~/locales/en/countries.json'),
+        'photos':           require('~/locales/en/photos.json'),
+        'contact':          require('~/locales/en/contact.json'),
+        'changelog':        require('~/locales/en/changelog.json'),
+        'business':         require('~/locales/en/business.json'),
+        'example-profile':  require('~/locales/en/example-profile.json'),
+        'project':          require('~/locales/en/project.json'),
+        'founder':          require('~/locales/en/founder.json'),
+        'agreements':       require('~/locales/en/agreements.json'),
+        'routes-names':     require('~/locales/en/routes-names.json'),
+        'categories':       require('~/locales/en/categories.json'),
+        'footer':           require('~/locales/en/footer.json'),
+        'alerts':           require('~/locales/en/alerts.json')
+      },
       'pl': require('~/locales/pl.json'),
       'de': {
         'html':             require('~/locales/de/html.json'),

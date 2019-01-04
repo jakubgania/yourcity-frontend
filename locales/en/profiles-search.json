@@ -1,0 +1,67 @@
+{
+  "head": {
+    "title": "Yourcity - Search for profiles",
+    "description": "Search for information about the city of interest and the location where you are or browse different categories.",
+    "keywords": "search, profiles, locations, categories, tags, information, addresses, yourcity search profiles"
+  },
+  "search-form": {
+    "input-query-placeholder": "What are you looking for ?",
+    "input-city-placeholder": "Location",
+    "input-category-placeholder": "Category",
+    "current-location": "Current location",
+    "submit-button": "Search",
+    "search-dialog-xs-title": "Search"
+  },
+  "filter": {
+    "title-section": "Filter",
+    "search": "Search in results"
+  },
+  "tags": {
+    "title": "Tags",
+    "button": "More tags",
+    "close": "Close"
+  },
+  "results-list": {
+    "address": "Address",
+    "rating": "Rating",
+    "rating-count": "Rating count",
+    "hours": "Opening hours",
+    "image-not-available": "Image not available",
+    "image-dialog": {
+      "close-button": "Close"
+    }
+  },
+  "profile-details": {
+    "title-dialog": "More information",
+    "description": {
+      "title": "Description",
+      "show-more": "Show more",
+      "show-less": "Show less"
+    },
+    "address": "Address",
+    "opening-hours": {
+      "title": "Opening hours",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "posts": {
+      "title": "Posts",
+      "button-text": "Show posts"
+    },
+    "phone": "Phone",
+    "website": {
+      "title": "Website",
+      "go-to-website": "Go to website"
+    },
+    "related-categories": "Related categories",
+    "close": "Close",
+    "no-data": "No data"
+  },
+  "result-count": "Results",
+  "paging-button": "Load more"
+}
