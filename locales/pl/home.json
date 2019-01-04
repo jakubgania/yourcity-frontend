@@ -1,0 +1,169 @@
+{
+  "head": {
+    "title": "Yourcity - Wyszukaj różne miejsca w miastach i lokalizacjach.",
+    "description": "Informacje o Twoim mieście oraz okolicy w której się znajdujesz. Szukaj informacji w różnych kategoriach w różnych krajach. Yourcity to stale rowijająca się platforma.",
+    "keywords": "yourcity, aplikacja yourcity, strona główna, strona startowa, wyszukiwanie, szukaj, profile, lokalizacje, miasta, kraje"
+  },
+  "search-section": {
+    "top-words": [
+      "klub",
+      "obiad",
+      "rynek",
+      "impreza",
+      "jedznie",
+      "piwo",
+      "sklep",
+      "muzyka",
+      "basen",
+      "kino",
+      "apteka"
+    ],
+    "search-form": {
+      "input-query-placeholder": "Czego szukasz ?",
+      "input-city-placeholder": "Lokalizacja",
+      "submit-button": "wyślij"
+    }
+  },
+  "information-section": {
+    "title": "Informacje o Twoim mieście",
+    "subtitle": "oraz okolicy w której się znajdujesz",
+    "exploration": {
+      "title": "Odkrywanie",
+      "description": "YOURCITY możesz użyc podczas pobytu w nowym nieznanym miescie lub do odkrywania nowych miejsc w twoim obecnym."
+    },
+    "information": {
+      "title": "Informacje",
+      "description": "Jest to miejsce w którym znajdziesz przydatne informacje o różnych miejscach oraz usugach czy nadchodzacych wydarzeniach. Sprawdz jakie sa restauracje w miejscu do ktroego sie wybierasz lub wyszukaj galerie handlowa planujac zakupy."
+    },
+    "categories": {
+      "title": "Kategorie",
+      "description": "Dzięki różnym kategoriom możesz odkrywać ciekawe obiekty w Twojej okolicy lub w miejscu, które jest Ci nieznane."
+    },
+    "attractions": {
+      "title": "Atrakcje",
+      "description": "YOURCITY wspomoże Cię takze w poszukiwaniu obiektow sportowych takich jak baseny, hale sportowe czy parki trampolin ale i również atrakcji turystycznych, muzeow czy galerii sztuki."
+    },
+    "help": {
+      "title": "Pomoc",
+      "description": "Gdy jest dla Ciebie ważne zdrowie mozesz poszukac silowni lub trenera personalnego ale takze znajdziesz informacje o przychodniach lekarskich, szpitalch i aptekach."
+    },
+    "profiles": {
+      "title": "Profile",
+      "description": "Profile dostarczają różne informacje takie jak godziny otwarcia czy adres lub zdjęcie."
+    },
+    "companies": {
+      "title": "Firmy",
+      "description": "Można tutaj znaleźc informacje o wielu firmach z różnych braż oraz informacje przeznaczone dla startupow i przedsiębiorcow."
+    }
+  },
+  "categories": {
+    "title-section": "Kategorie",
+    "club": "kluby",
+    "bar-and-pub": "bary i puby",
+    "coffeehouse": "kawiarnie",
+    "food": "jedzenie",
+    "entertainment": "rozrywka",
+    "event": "wydarzenia",
+    "shop": "sklepy",
+    "service": "usługi",
+    "tourism": "turystyka",
+    "sport": "sport",
+    "other": "inne",
+    "information": "informacje",
+    "education": "edukacja",
+    "health": "zdrowie",
+    "hotel": "hotele",
+    "travel": "podróż",
+    "search-button": "przejdź do wyszukiwania"
+  },
+  "popular-tags": {
+    "title-section": "Popularne tagi",
+    "food": {
+      "title": "jedzenie",
+      "tags": [
+        "lody",
+        "restauracja",
+        "pizza",
+        "kawiarnia",
+        "food",
+        "food truck",
+        "vegan",
+        "sushi"
+      ]
+    },
+    "shop": {
+      "title": "zakupy",
+      "tags": [
+        "fashion",
+        "galeria",
+        "centrum",
+        "centrum handlowe",
+        "sklep"
+      ]
+    },
+    "entertainment": {
+      "title": "rozrywka",
+      "tags": [
+        "kino",
+        "party",
+        "escape room",
+        "club",
+        "fun"
+      ]
+    },
+    "sport": {
+      "title": "sport",
+      "tags": [
+        "siłownia",
+        "basen",
+        "sport",
+        "fitness"
+      ]
+    },
+    "business": {
+      "title": "biznes",
+      "tags": [
+        "startup",
+        "office",
+        "business",
+        "job",
+        "service",
+        "work"
+      ]
+    },
+    "other": {
+      "title": "inne",
+      "tags": [
+        "apartamenty",
+        "bootcamp",
+        "design",
+        "apteka",
+        "turystyka",
+        "beauty",
+        "kultura"
+      ]
+    },
+    "search-button": "PRZEJDŹ DO WYSZUKIWANIA"
+  },
+  "gallery": {
+    "title-section": "Galeria",
+    "search-button": "Zobacz więcej",
+    "paging-button": "Więcej"
+  },
+  "cities": {
+    "title-section": "Miasta",
+    "search-button": "Więcej miast"
+  },
+  "business": {
+    "title-section": "Dla biznesu",
+    "section-1": {
+      "title": "Zostań oficjalnym partnerem",
+      "description": "Dołącz do platformy YOURCITY i zostań oficjalnym zweryfikowanym partnerem."
+    },
+    "section-2": {
+      "title": "Stwórz porfil dla biznesu",
+      "description": "Utwórz szczegółowy profil dla biznesu , który prowadzisz."
+    }
+  },
+  "message": "Szczęśliwego Nowego Roku 2019"
+}

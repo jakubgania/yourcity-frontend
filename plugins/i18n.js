@@ -30,7 +30,26 @@ export default ({ app, store }) => {
         'footer':           require('~/locales/en/footer.json'),
         'alerts':           require('~/locales/en/alerts.json')
       },
-      'pl': require('~/locales/pl.json'),
+      'pl': {
+        'html':             require('~/locales/pl/html.json'),
+        'header':           require('~/locales/pl/header.json'),
+        'rules-dialog':     require('~/locales/pl/rules-dialog.json'),
+        'home':             require('~/locales/pl/home.json'),
+        'profiles-search':  require('~/locales/pl/profiles-search.json'),
+        'countries':        require('~/locales/pl/countries.json'),
+        'photos':           require('~/locales/pl/photos.json'),
+        'contact':          require('~/locales/pl/contact.json'),
+        'changelog':        require('~/locales/pl/changelog.json'),
+        'business':         require('~/locales/pl/business.json'),
+        'example-profile':  require('~/locales/pl/example-profile.json'),
+        'project':          require('~/locales/pl/project.json'),
+        'founder':          require('~/locales/pl/founder.json'),
+        'agreements':       require('~/locales/pl/agreements.json'),
+        'routes-names':     require('~/locales/pl/routes-names.json'),
+        'categories':       require('~/locales/pl/categories.json'),
+        'footer':           require('~/locales/pl/footer.json'),
+        'alerts':           require('~/locales/pl/alerts.json')
+      },
       'de': {
         'html':             require('~/locales/de/html.json'),
         'header':           require('~/locales/de/header.json'),

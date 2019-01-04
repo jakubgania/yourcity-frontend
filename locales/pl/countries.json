@@ -1,0 +1,9 @@
+{
+  "head": {
+    "title": "Yourcity - Kraje",
+    "description": "Wybierz kraj w którym chcesz przeglądać profile miast. Lista krajów jest cały czas aktualizowana.",
+    "keywords": "kraje, wybierz kraj, miasto, lokalizacje"
+  },
+  "title": "Kraje",
+  "select-country": "Wybierz kraj"
+}

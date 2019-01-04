@@ -1,0 +1,67 @@
+{
+  "head": {
+    "title": "Yourcity - Wyszukiwanie profili",
+    "description": "Wyszukuj informacje o interesującym mieście oraz lokalizacji w której jesteś lub przeglądaj różne kategorie.",
+    "keywords": "szukaj, profile, lokalizacje, kategorie, tagi, informacje, adresy, yourcity wyszukiwanie profili"
+  },
+  "search-form": {
+    "input-query-placeholder": "Czego szukasz ?",
+    "input-city-placeholder": "Lokalizacja",
+    "input-category-placeholder": "Kategoria",
+    "current-location": "Użyj obecnej lokalizacji",
+    "submit-button": "szukaj",
+    "search-dialog-xs-title": "szukaj"
+  },
+  "filter": {
+    "title-section": "Filtry",
+    "search": "Szukaj w wynikach"
+  },
+  "tags": {
+    "title": "Tagi",
+    "button": "Więcej tagów",
+    "close": "Zamknij"
+  },
+  "results-list": {
+    "address": "Adres",
+    "rating": "Ocena",
+    "rating-count": "Liczba ocen",
+    "hours": "Godziny otwarcia",
+    "image-not-available": "Brak zdjęcia",
+    "image-dialog": {
+      "close-button": "Zamknij"
+    }
+  },
+  "profile-details": {
+    "title-dialog": "Więcej informacji",
+    "description": {
+      "title": "Opis",
+      "show-more": "Pokaż więcej",
+      "show-less": "Pokaż mniej"
+    },
+    "address": "Adres",
+    "opening-hours": {
+      "title": "Godziny otwarcia",
+      "monday": "Poniedziałek",
+      "tuesday": "Wtorek",
+      "wednesday": "Środa",
+      "thursday": "Czwartek",
+      "friday": "Piątek",
+      "saturday": "Sobota",
+      "sunday": "Niedziela"
+    },
+    "posts": {
+      "title": "Posty",
+      "button-text": "Pokaż wpisy"
+    },
+    "phone": "Telefon",
+    "website": {
+      "title": "Strona",
+      "go-to-website": "Przejdź do strony"
+    },
+    "related-categories": "Powiązane kategorie",
+    "close": "Zamknij",
+    "no-data": "Brak danych"
+  },
+  "result-count": "Wyników",
+  "paging-button": "Pokaż więcej"
+}

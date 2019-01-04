@@ -1,0 +1,19 @@
+{
+  "head": {
+    "title": "Yourcity - Zdjęcia",
+    "photo": "Zdjęcie",
+    "description": "Zobacz galerię zdjęć z różnych miejsc, lokalizacji, miast i krajów.",
+    "keywords": "zdjęcia, obrazy, galeria, fotografie, zdjęcia miast, zdjęcia budynków, widoki, galeria yourcity"
+  },
+  "dialog": {
+    "information": "Informacje",
+    "title": "Tytuł",
+    "date-added": "Data dodania",
+    "location": "Lokalizacja",
+    "share": "Udostępnij",
+    "copy": "Kopiuj link",
+    "tags": "Tagi",
+    "close-button": "Zamknij"
+  },
+  "gallery": "Galeria"
+}

@@ -1,0 +1,10 @@
+{
+  "head": {
+    "title": "Yourcity - Changelog",
+    "description": "Przeczytaj o zmianach jakie zachodzą na platformie Yourcity.",
+    "keywords": "changelog, informacje, zmiany, wiadomości, opisy zmian"
+  },
+  "title": "Changelog",
+  "paging-button": "POKAŻ WIĘCEJ",
+  "network-connection-error": "Błąd sieci."
+}

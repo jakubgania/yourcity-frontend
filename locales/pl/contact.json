@@ -1,0 +1,22 @@
+{
+  "head": {
+    "title": "Yourcity - Kontakt",
+    "description": "Formularz kontaktowy - napisz wiadomość, zadaj pytanie lub opisz problem.",
+    "keywords": "kontakt, formularz kontaktowy, pytanie, wiadomość, email"
+  },
+  "title": "Kontakt",
+  "subtitle": "Formularz kontaktowy",
+  "label": {
+    "title-message": "Tytuł widomości",
+    "email": "E-mail",
+    "message": "Wiadomość",
+    "checkbox": "Wyrażam zgodę na kontakt drogą elektroniczną na podany e-mail."
+  },
+  "rules": {
+    "title": "Tytuł jest wymagany.",
+    "email": "E-mail jest wymagany.",
+    "message": "Wiadomość jest wymagana.",
+    "terms": "Akceptacja warunków jest wymagana."
+  },
+  "send-button": "Wyślij"
+}

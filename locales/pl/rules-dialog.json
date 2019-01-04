@@ -1,0 +1,17 @@
+{
+  "title": "Szanowny Użytkowniku",
+  "description": "Klikając „Akceptuję” lub zamykając okno przez kliknięcie w znaczek X, zgadzasz się na poniższe warunki.",
+  "cookies": {
+    "title": "Pliki Cookies",
+    "description": "Strona wykorzystuje pliki cookie oraz usługę Google Analytics jedynie w celach statystycznych do analizowania ruchu sieciowego. Wykorzystywany jest również mechanizm local storage do poprawnego działania aplikacji Yourcity."
+  },
+  "agreements": {
+    "title": "Regulamin",
+    "description": "Regualmin opisuje reguły i zasady dotyczące platformy Yourcity. Użytkownik potwierdza, że rozumie i akceptuje regualmin dostępny pod następującym adresem -"
+  },
+  "location": {
+    "title": "Lokalizacja",
+    "description": "Obecna lokalizacja może być wykorzystana za zgodą użytkownika do realizacji funkcjonalności związanych z wyszukiwaniem."
+  },
+  "accept-button": "Akceptuję"
+}

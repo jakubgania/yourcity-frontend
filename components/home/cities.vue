@@ -30,7 +30,7 @@
 
     <button-section-component
       :route-path="$i18n.path('countries/all')"
-      :button-title="$t('home.categories.search_button')"
+      :button-title="$t('home.categories.search-button')"
     />
 
   </v-layout>
