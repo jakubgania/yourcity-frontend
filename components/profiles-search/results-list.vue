@@ -1,38 +1,12 @@
 <template>
   <div>
-    <v-layout
-      v-for="(section, index) in result"
-      :key="section.id"
-      row
-      wrap
-    >
-      <v-flex
-        xs12
-        sm12
-        lg12
-        xl10
-        offset-xl1
-      >
-        <v-layout
-          row
-          wrap
-          class="container-profile"
-        >
-          <v-flex
-            xs12
-            order-xs2
-            sm8
-            order-sm1
-            md8
-            order-md1
-            lg8
-            order-lg1
-          >
+    <v-layout v-for="(section, index) in result" :key="section.id" row wrap>
+      <v-flex xs12 sm12 lg12 xl10 offset-xl1>
+        <v-layout row wrap class="container-profile">
+
+          <v-flex xs12 order-xs2 sm8 order-sm1 md8 order-md1 lg8 order-lg1>
             <div class="">
-              <div
-                class="profile-name"
-                @click="moreProfileInfo(index)"
-              >
+              <div class="profile-name" @click="moreProfileInfo(index)">
                 {{ section.name }}
               </div>
               <div class="profile-subtext">
@@ -68,16 +42,7 @@
               </div>
             </v-layout>
           </v-flex>
-          <v-flex
-            xs12
-            order-xs1
-            sm4
-            order-sm2
-            md4
-            order-md2
-            lg4
-            order-lg2
-          >
+          <v-flex xs12 order-xs1 sm4 order-sm2 md4 order-md2 lg4 order-lg2>
             <div class="profile-image-section">
               <v-img
                 v-if="section.cover"
@@ -128,10 +93,7 @@
           :style="{'background-image': 'url(' + fullSizePhotoCoverSource + ')'}"
           class="card-profile-image"
         />
-        <div
-          v-else
-          class="dialog-profile-image-not-available"
-        >
+        <div v-else class="dialog-profile-image-not-available">
           <div class="no-picture-text">
             {{ $t('profiles-search.results-list.image-not-available') }}
           </div>
