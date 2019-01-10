@@ -10,7 +10,7 @@ The project is at a early stage.
 
 [yourcity.io](https://yourcity.io)
 
-Last update date : 14:54 24/12/2018
+Last update date : 03:30 10/01/2019
 
 ## Technology stack
 
