@@ -15,7 +15,7 @@ import changelog           from './modules/changelog';
 import contact             from './modules/contact';
 
 const baseUrlProduction    = 'https://api.yourcity.io';
-const baseUrlDevelopment   = 'http://192.168.2.111';
+const baseUrlDevelopment   = 'http://192.168.0.19';
 
 if (process.env.NODE_ENV == 'production')
   axios.defaults.baseURL = baseUrlProduction;
@@ -29,7 +29,7 @@ Vue.use(Vuex);
 export default () => new Vuex.Store({
   state: {
     locales: ['en', 'pl', 'de'],
-    locale: 'pl',
+    locale: 'en',
   },
   mutations: {
     setLanguage(state, locale) {

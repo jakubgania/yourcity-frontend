@@ -16,23 +16,23 @@
               </div>
               <div class="profile-subtext">
                 {{ section.single_line_address ?
-                  $t('profiles_search.results_list.address') + ' - ' +
+                  $t('profiles-search.results-list.address') + ' - ' +
                 section.single_line_address : 'Adres - Brak' }}
               </div>
               <div class="profile-subtext">
                 {{ section.overall_star_rating ?
-                  $t('profiles_search.results_list.rating') + ' - ' +
+                  $t('profiles-search.results-list.rating') + ' - ' +
                 section.overall_star_rating : 'Ocena - Brak' }}
               </div>
               <div class="profile-subtext">
                 {{ section.rating_count ?
-                  $t('profiles_search.results_list.rating_count') + ' - ' +
+                  $t('profiles-search.results-list.rating-count') + ' - ' +
                 section.rating_count : 'Liczba ocen - 0' }}
               </div>
               <div class="profile-subtext">
                 {{ section.hours ?
-                  $t('profiles_search.results_list.hours') :
-                $t('profiles_search.results_list.hours') }}
+                  $t('profiles-search.results-list.hours') :
+                $t('profiles-search.results-list.hours') }}
               </div>
             </div>
 
@@ -69,7 +69,7 @@
                 @click="showFullSizePhoto(section.name, null, null)"
               >
                 <div class="no-picture-text">
-                  {{ $t('profiles_search.results_list.image_not_available') }}
+                  {{ $t('profiles-search.results-list.image-not-available') }}
                 </div>
               </div>
             </div>

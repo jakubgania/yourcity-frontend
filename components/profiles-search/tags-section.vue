@@ -44,7 +44,7 @@
           class="more-tags-button"
           @click="showMoreTagsDialog(true)"
         >
-          {{ $t('profiles_search.tags.button') }}
+          {{ $t('profiles-search.tags.button') }}
           <v-icon class="icon">bubble_chart</v-icon>
         </v-btn>
 
@@ -57,7 +57,7 @@
           <v-card>
             <div class="top-title-section">
               <v-icon class="icon-info">info_outline</v-icon>
-              {{ $t('profiles_search.tags.title') }}
+              {{ $t('profiles-search.tags.title') }}
               <v-icon class="icon-close" @click="showMoreTagsDialog(false)">
                 close
               </v-icon>

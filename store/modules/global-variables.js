@@ -4,12 +4,13 @@ const state = () => ({
   basicClientAddress: 'https://yourcity.io',
   // basicClientAddress: 'http://192.168.0.15:9800',
   basicServerAddressAPI: 'https://api.yourcity.io',
-  // basicServerAddressAPI: 'http://192.168.0.15',
+  basicServerPhotosAddress: 'https://jakubgania.io/yourcity/photos',
 });
 
 const getters = {
   basicClientAddress: state => state.basicClientAddress,
   basicServerAddressAPI: state => state.basicServerAddressAPI,
+  basicServerPhotosAddress: state => state.basicServerPhotosAddress,
 };
 
 export default {

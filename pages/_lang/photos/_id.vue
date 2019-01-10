@@ -109,7 +109,7 @@ export default {
   scrollToTop: true,
   async asyncData({ params, redirect }) {
     try {
-      const { data } = await axios.get('http://192.168.2.111/api/photos/details', {
+      const { data } = await axios.get('https://api.yourcity.io/api/photos/details', {
         params: {
           id: params.id,
         },
@@ -140,11 +140,11 @@ export default {
     ]),
     ...mapGetters({
       basicClientAddress: 'basicClientAddress',
-      basicServerAddressAPI: 'basicServerAddressAPI',
+      basicServerPhotosAddress: 'basicServerPhotosAddress',
     }),
     imagePath() {
       if (this.details.src) {
-        return this.basicServerAddressAPI + this.details.src;
+        return this.basicServerPhotosAddress + this.details.src;
       }
 
       return '';

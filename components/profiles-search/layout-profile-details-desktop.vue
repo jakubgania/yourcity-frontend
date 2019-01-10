@@ -33,7 +33,7 @@
 
         <v-card-title class="title-subsection">
           <i class="material-icons icon">description</i>
-          {{ $t('profiles_-search.profile-details.description.title') }}
+          {{ $t('profiles-search.profile-details.description.title') }}
         </v-card-title>
 
         <v-card-text
@@ -314,10 +314,10 @@ export default {
     ]),
     descriptionButtonText() {
       if (this.showFullDescription) {
-        return this.$t('profiles-search.profile-details.show-more');
+        return this.$t('profiles-search.profile-details.description.show-more');
       }
 
-      return this.$t('profiles-search.profile-details.show-less');
+      return this.$t('profiles-search.profile-details.description.show-less');
     },
     iconButtonText() {
       if (this.showFullDescription) {

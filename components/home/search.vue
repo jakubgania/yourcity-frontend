@@ -93,19 +93,12 @@
       </v-parallax>
     </v-flex>
 
-    <v-flex lg12>
-      <div class="message">
-        {{ $t('home.message') }}
-      </div>
-    </v-flex>
-
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-// import topImage from '../../assets/images/sky-tower-16.jpg';
-import topImage from '../../assets/images/fireworks.jpg';
+import topImage from '../../assets/images/sky-tower-16.jpg';
 import AutocompleteListComponent from '../autocomplete-list.vue';
 
 export default {
@@ -203,19 +196,12 @@ export default {
     },
     submitSearchForm() {
       this.$router.push({
-        path: `${this.checkLanguage()}/search`,
+        path: `${this.$i18n.locale}/search`,
         query: {
           query: this.query,
           city: this.city,
         },
       });
-    },
-    checkLanguage() {
-      if (this.$i18n.locale !== 'en') {
-        return `/${this.$i18n.locale}`;
-      }
-
-      return '';
     },
     getCurrentLocation() {
     },
@@ -228,13 +214,4 @@ export default {
   @import '../../assets/scss/home/search/lg.scss';
   @import '../../assets/scss/home/search/sm.scss';
   @import '../../assets/scss/home/search/xs.scss';
-
-  .message
-  {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: 80px;
-    letter-spacing: 2px;
-  }
 </style>

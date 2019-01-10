@@ -19,7 +19,7 @@
             lg3
             class="image-section"
           >
-            <v-img :src="basicServerAddressAPI + photoDetails[index].thumbnail" height="220px">
+            <v-img :src="basicServerPhotosAddress + photoDetails[index].thumbnail" height="220px">
               <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                 <v-progress-circular indeterminate style="color:#252bfc;"/>
               </v-layout>
@@ -59,7 +59,7 @@ export default {
       'showErrorConnectionAlert',
     ]),
     ...mapGetters({
-      basicServerAddressAPI: 'basicServerAddressAPI',
+      basicServerPhotosAddress: 'basicServerPhotosAddress',
     }),
   },
   created() {

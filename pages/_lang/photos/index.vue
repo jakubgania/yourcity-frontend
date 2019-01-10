@@ -30,7 +30,7 @@
             class="image-section"
           >
             <v-img
-              :src="basicServerAddressAPI + photoDetails[index].thumbnail"
+              :src="basicServerPhotosAddress + photoDetails[index].thumbnail"
               height="220px"
               @click="setDetailsPhoto(index)"
             >
@@ -71,7 +71,7 @@
         class="paging-button"
         @click="loadMore(pagingPhotosURL)"
       >
-        {{ $t('home.gallery.paging_button') }}
+        {{ $t('home.gallery.paging-button') }}
         <v-icon right dark>
           cached
         </v-icon>
@@ -99,7 +99,7 @@
           </v-toolbar-items>
         </v-toolbar>
         <img
-          :src="basicServerAddressAPI + src"
+          :src="basicServerPhotosAddress + src"
           alt=""
           class="full-size-photo"
         >
@@ -218,7 +218,7 @@ export default {
     ]),
     ...mapGetters({
       basicClientAddress: 'basicClientAddress',
-      basicServerAddressAPI: 'basicServerAddressAPI',
+      basicServerPhotosAddress: 'basicServerPhotosAddress',
     }),
   },
   created() {
