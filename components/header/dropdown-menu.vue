@@ -56,7 +56,7 @@ export default {
 
       let route = '';
 
-      if (this.$i18n.locale === 'pl') {
+      if (this.$i18n.locale === 'en') {
         route = `lang-${this.$route.name}`;
       } else {
         route = this.$route.name;
