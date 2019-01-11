@@ -34,6 +34,7 @@
         data-aos="zoom-in"
         data-aos-delay="400"
         data-aos-once="true"
+        style="padding-top:40px;"
       >
         <a href="https://jakubgania.io" rel="noreferrer" target="_blank" class="link">
           jakubgania.io
