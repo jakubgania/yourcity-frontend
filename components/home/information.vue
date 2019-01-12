@@ -6,6 +6,18 @@
           <div class="logo-section">
             <logo-component :logo-size="logoSize" :margin="logoMargin"/>
           </div>
+          <v-layout row wrap style="margin-top:-80px;padding-bottom:48px;">
+            <v-flex
+              lg4 style="font-weight:700;text-align:center;letter-spacing:1px;">
+              Cities
+            </v-flex>
+            <v-flex lg4 style="font-weight:700;text-align:center;letter-spacing:1px;">
+              Places
+            </v-flex>
+            <v-flex lg4 style="font-weight:700;text-align:center;letter-spacing:1px;">
+              Locations
+            </v-flex>
+          </v-layout>
         </div>
       </v-flex>
       <v-flex xs12 sm12 md6 lg4>
@@ -199,4 +211,18 @@ export default {
   @import '../../assets/scss/home/information/lg.scss';
   @import '../../assets/scss/home/information/sm.scss';
   @import '../../assets/scss/home/information/xs.scss';
+
+  @media only screen and (max-width: 1264px)
+  {
+    .text-title
+    {
+      font-size: 34px;
+      text-align: center;
+    }
+    .text-subtitle
+    {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
 </style>
