@@ -12,9 +12,9 @@
 			<footer-component/>
 		</div>
 
-		<no-srr>
-			<!-- <portal-rules-alert-component/> -->
-		</no-srr>
+		<no-ssr>
+			<portal-rules-alert-component/>
+		</no-ssr>
 
 	</v-app>
 </template>
@@ -23,14 +23,14 @@
 import HeaderComponent from '../components/header/header.vue';
 import FooterComponent from '../components/footer.vue';
 import FullSreenLoaderComponent from '../components/full-screen-loader.vue';
-// import PortalRulesAlertComponent from '../components/portal-rules-alert.vue';
+import PortalRulesAlertComponent from '../components/portal-rules-alert.vue';
 
 export default {
 	components: {
 		'header-component': HeaderComponent,
     	'footer-component': FooterComponent,
     	'full-screen-loader-component': FullSreenLoaderComponent,
-    	// 'portal-rules-alert-component': PortalRulesAlertComponent,
+    	'portal-rules-alert-component': PortalRulesAlertComponent,
 	},
 	data() {
 		return {
