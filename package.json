@@ -6,7 +6,7 @@
   "private": true,
   "config": {
     "nuxt": {
-      "host": "192.168.0.12",
+      "host": "192.168.0.13",
       "port": "9800"
     }
   },
@@ -19,29 +19,29 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/axios": "^5.4.1",
     "@nuxtjs/pwa": "^2.6.0",
-    "@nuxtjs/sitemap": "^0.1.1",
-    "aos": "^3.0.0-beta.5",
+    "@nuxtjs/sitemap": "^0.1.2",
+    "aos": "^3.0.0-beta.6",
     "axios": "^0.18.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
-    "vue": "^2.5.17",
+    "nuxt": "^2.6.1",
+    "vue": "^2.6.10",
     "vue-clazy-load": "^0.4.2",
     "vue-clipboard2": "^0.2.1",
-    "vue-i18n": "^8.1.0",
-    "vuetify": "^1.2.4",
-    "vuex": "^3.0.1"
+    "vue-i18n": "^8.10.0",
+    "vuetify": "^1.5.9",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.9.3",
-    "nodemon": "^1.11.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"

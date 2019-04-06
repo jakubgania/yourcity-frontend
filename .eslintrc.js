@@ -9,11 +9,11 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'plugin:vue/recommended'
+    // 'plugin:vue/recommended'
   ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    // 'vue'
   ],
   // add your custom rules here
   rules: {
@@ -21,6 +21,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     "import/no-unresolved": "off",
     "import/extensions": "off",
-    "vue/max-attributes-per-line": "off"
+    // "vue/max-attributes-per-line": "off"
   }
 }

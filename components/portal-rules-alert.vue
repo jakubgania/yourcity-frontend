@@ -58,9 +58,11 @@ export default {
     };
   },
   created() {
-    let confirmation = false;
-    confirmation = localStorage.getItem('confirmation');
+    // let confirmation = false;
+    let confirmation = true;
 
+    // confirmation = localStorage.getItem('confirmation');
+    
     if (confirmation) {
       this.dialog = false;
     } else {
