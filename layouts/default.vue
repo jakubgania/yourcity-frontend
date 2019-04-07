@@ -39,7 +39,7 @@ export default {
 	},
 	methods: {
 		displayFooter() {
-			return this.$route.name === 'lang-search' || this.$route.name === 'search' ? true : false
+			return this.$route.name === 'lang-search' || this.$route.name === 'search' ? false : true
 		}
 	}
 }
