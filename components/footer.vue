@@ -10,29 +10,9 @@
 						<v-flex xs12 sm8 lg12>
 							<div class="icons-section">
 								<v-layout>
-									<v-flex sm2 mg2 lg2>
+									<v-flex v-for="icon in icons" :key="icon.id" sm2 mg2 lg2>
 										<v-icon class="footer-icon">
-											perm_device_info
-										</v-icon>
-									</v-flex>
-									<v-flex sm2 mg2 lg2>
-										<v-icon class="footer-icon">
-											location_city
-										</v-icon>
-									</v-flex>
-									<v-flex sm2 mg2 lg2>
-										<v-icon class="footer-icon">
-											map
-										</v-icon>
-									</v-flex>
-									<v-flex sm2 mg2 lg2>
-										<v-icon class="footer-icon">
-											layers
-										</v-icon>
-									</v-flex>
-									<v-flex sm2 mg2 lg2>
-										<v-icon class="footer-icon">
-											perm_device_info
+											{{ icon }}
 										</v-icon>
 									</v-flex>
 								</v-layout>
@@ -81,6 +61,13 @@ export default {
 	},
 	data() {
 		return {
+			icons: [
+				'perm_device_info',
+				'location_city',
+				'map',
+				'layers',
+				'perm_device_info'
+			],
 			routes: [
 				[
 					{
