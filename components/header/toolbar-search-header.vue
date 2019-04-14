@@ -32,6 +32,7 @@
               spellcheck="false"
               prepend-inner-icon="search"
               class="combobox-input"
+              @keyup.enter.native="submitSearchForm()"
             />
           </div>
         </v-flex>
@@ -50,6 +51,7 @@
               spellcheck="false"
               prepend-inner-icon="location_on"
               class="combobox-input"
+              @keyup.enter.native="submitSearchForm()"
             >
               <template slot="item" slot-scope="cityItems">
                 {{ cityItems.item.name }}

@@ -1,19 +1,17 @@
 <template>
-  <v-layout row wrap>
+	<v-layout row wrap>
 
-    <div class="hidden-sm-only hidden-xs-only">
-      <sidebar-menu-component/>
-    </div>
+		<div class="hidden-sm-only hidden-xs-only">
+			<sidebar-menu-component/>
+		</div>
 
-    <container-results-component/>
+		<container-results-component/>
 
-    <no-ssr>
-      <full-screen-loader-component
-        :show-full-screen-loader="showFullScreenLoader"
-      />
-    </no-ssr>
+		<no-ssr>
+			<full-screen-loader-component :show-full-screen-loader="showFullScreenLoader"/>
+		</no-ssr>
 
-  </v-layout>
+	</v-layout>
 </template>
 
 <script>
@@ -23,35 +21,35 @@ import ContainerOfResultsComponent from '../../../components/profiles-search/con
 import ShowFullScreenLoaderComponent from '../../../components/full-screen-loader.vue';
 
 export default {
-  scrollToTop: true,
-  components: {
-    'sidebar-menu-component': SidebarMenuComponent,
-    'container-results-component': ContainerOfResultsComponent,
-    'full-screen-loader-component': ShowFullScreenLoaderComponent,
-  },
-  computed: {
-    ...mapGetters('searchProfiles', [
-      'showFullScreenLoader',
-    ]),
-  },
-  head() {
-    return {
-      htmlAttrs: {
-        lang: this.$t('html.language'),
-      },
-      title: this.$t('profiles-search.head.title'),
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.$t('profiles-search.head.description'),
-        },
-        {
-          name: 'keywords',
-          content: this.$t('profiles-search.head.keywords'),
-        },
-      ],
-    };
-  },
-};
+	scrollToTop: true,
+	components: {
+		'sidebar-menu-component': SidebarMenuComponent,
+    	'container-results-component': ContainerOfResultsComponent,
+    	'full-screen-loader-component': ShowFullScreenLoaderComponent,
+	},
+	computed: {
+		...mapGetters('searchProfiles', [
+      		'showFullScreenLoader',
+    	]),
+	},
+	head() {
+		return {
+			htmlAttrs: {
+				lang: this.$t('html.language'),
+			},
+			title: this.$t('profiles-search.head.title'),
+			meta: [
+				{
+          			hid: 'description',
+          			name: 'description',
+          			content: this.$t('profiles-search.head.description'),
+        		},
+        		{
+          			name: 'keywords',
+          			content: this.$t('profiles-search.head.keywords'),
+        		},
+			],
+		}
+	}
+}
 </script>

@@ -31,6 +31,7 @@
                   spellcheck="false"
                   prepend-inner-icon="search"
                   class="input-combobox"
+                  @keyup.enter.native="submitSearchForm()"
                 />
               </v-flex>
               <v-flex xs12 sm4 md3 lg2 xl2>
@@ -48,6 +49,7 @@
                   spellcheck="false"
                   prepend-inner-icon="location_on"
                   class="input-combobox"
+                  @keyup.enter.native="submitSearchForm()"
                 >
                   <!-- <autocomplete-list-component
                     :city-items="cityItems"
@@ -184,7 +186,7 @@ export default {
       if (this.show) {
         this.counter += 1;
       }
-    }, 2000);
+    }, 1800);
   },
   methods: {
     ...mapActions('autocomplete', [

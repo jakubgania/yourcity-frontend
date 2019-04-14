@@ -1,6 +1,6 @@
 <template>
 	<div v-if="showFullScreenLoader" class="loader-section">
-		<v-flex xs10 offset-xs1 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 xl2 offset-xl5>
+		<v-flex xs10 offset-xs1 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 xl2 offset-xl5 class="loader-position">
 			<v-progress-linear :indeterminate="true" color="indigo accent-4" background-color="grey lighten-5"/>
 		</v-flex>
 	</div>
@@ -36,8 +36,6 @@ export default {
   	right: 0;
   	bottom: 0;
   	left: 0;
-  	width: auto;
-  	height: auto;
 }
 </style>
 
