@@ -34,20 +34,54 @@ export default {
 	},
 	data() {
 		return {
-			
+			localStorageObject: new LocalStorage(),
 		}
 	},
 	computed: {
 
-	},\
+	},
 	watch: {
 
 	},
 	mounted() {
+		setInterval(() => {
+			this.show = !this.show;
+			if (this.show) this.counter += 1;
+		}, 1800);
 
+		if (this.localStorageObject.checkIfDataExistsInLocalStorageByKey('listOfSuggestedQueries')) {
+			this.$store.commit('autocomplete/queryItems', JSON.parse(localStorage.getItem('listOfSuggestedQueries')))
+		}
 	},
 	methods: {
+		...mapActions('autocomplete', [
+			'autocompleteQuery',
+			'autocompleteCity',
+		]),
+		resetCounter() {
+			this.counter = 0;
+		},
+		submitSearchForm() {
+			this.updateLocalStorage(this.query, 'listOfSuggestedQueries')
+			this.updateLocalStorage(this.city, 'listOfSuggestedCities')
 
+			this.$router.push({
+				path: `${this.$i18n.locale}/search`,
+				query: {
+					query: this.query,
+					city: this.city
+				}
+			})
+		},
+		updateLocalStorage(value, key) {
+			if (value != null && value.length > 0) {
+				if (this.localStorageObject.checkIfDataExistsInLocalStorageByKey(key)) {
+					this.localStorageObject.updateDataByKey(key, value)					
+				} else {
+					this.localStorageObject.setDataByKey(key, value)
+				}
+			}
+		}
 	}
 }
 </script>
