@@ -38,7 +38,47 @@ export default {
 		}
 	},
 	computed: {
+		...mapGetters('searchProfiles', [
+			'city',
+			'query'
+		]),
+		...mapGetters('autocomplete', [
+			'queryItems',
+			'cityItems'
+		]),
+		imageHeight() {
+			switch (this.$vuetify.breakpiont.name) {
+				case 'xs': return '540';
+				case 'sm': return '600';
+				case 'md': return '640';
+				case 'lg': return '680';
+				case 'xl': return '800';
+				default: return '800'
+			}
+		},
+		wordChanger() {
+			if (this.counter > this.topWords.length) {
+				this.resetCounter();
+			}
 
+			return this.topWords[this.counter];
+		},
+		queryModel: {
+			get() {
+				return this.$store.state.searchProfiles.query;
+			},
+			set(value) {
+				this.$store.dispatch('searchProfiles/queryUpdate', value);
+			}
+		},
+		cityModel: {
+			get() {
+				return this.$store.state.searchProfiles.city;
+			},
+			set(value) {
+				this.$store.dispatch('searchProfiles/cityUpdate', value);
+			}
+		}
 	},
 	watch: {
 		cityInputSync(value) {
