@@ -41,7 +41,20 @@ export default {
 
 	},
 	watch: {
+		cityInputSync(value) {
+			if (value && value !== this.cityModel) {
+				this.$store.dispatch('autocomplete/autocompleteCity', value);
+			}
 
+			if (value != null) this.cityModel = value
+		},
+		queryInputSync(value) {
+			if (value && value !== this.queryModel) {
+				this.$store.dispatch('autocomplete/autocompleteQuery', value);
+			}
+
+			if (value != null) this.queryModel = value
+		}
 	},
 	mounted() {
 		setInterval(() => {
