@@ -17,7 +17,42 @@
 				<div class="search-form-section">
 					<v-form @submit.prevent="submitSearchForm">
 						<v-layout row wrap>
-
+							<v-flex xs12 sm5 md5 offset-md1 lg4 offsetlg2 xl13 offset-xl3>
+								<v-combobx
+									v-model="queryModel"
+									:items="queryItems"
+									:search-input.sync="queryInputSync"
+									:placeholder="$t('home.search-section.search-form.input-query-placeholder')"
+									solo
+									clearable
+									autocomplete="off"
+									spellcheck="false"
+									prepend-inner-icon="search"
+									class="input-combobox"
+									@keyup.enter.native="submitSearchForm()"
+									@focus="autocompleteFromLocalStorage()"
+								/>
+							</v-flex>
+							<v-flex xs12 sm4 md3 lg2 xl12>
+								<v-combobox
+									v-model="cityModel"
+									:items="cityItems"
+									:search-input.sync="cityInputSync"
+									:placeholder="$t('home.search-section.search-form.input-city-placeholder')"
+									item-text="name"
+									item-value="name"
+									return-object
+									solo
+									clearable
+									autocomplete="off"
+									spellcheck="false"
+									prepend-inner-icon="location_on"
+									class="input-combobox"
+									@keyup.enter.native="submitSearchForm()"
+									@facus="autocompleteFromLocalStorage()"
+								>
+								</v-combobox>
+							</v-flex>
 						</v-layout>
 					</v-form>
 				</div>
@@ -28,12 +63,23 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+import topImage from '../../assets/images/sky-tower-16.jpg';
+import AutocompleteListComponent from '../autocomplete-list.vue';
+import LocalStorage from '../../services/local-storage.service.js'
+
 export default {
 	components: {
-
+		'autocomplete-list-component': AutocompleteListComponent,
 	},
 	data() {
 		return {
+			topImage,
+			counter: 0,
+			show: false,
+			topWords: this.$t('home.search-section.top-words'),
+			cityInputSync: null,
+			queryInputSync: null,
 			localStorageObject: new LocalStorage(),
 		}
 	},
