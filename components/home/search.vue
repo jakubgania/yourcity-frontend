@@ -17,8 +17,8 @@
 				<div class="search-form-section">
 					<v-form @submit.prevent="submitSearchForm">
 						<v-layout row wrap>
-							<v-flex xs12 sm5 md5 offset-md1 lg4 offsetlg2 xl13 offset-xl3>
-								<v-combobx
+							<v-flex xs12 sm5 md5 offset-md1 lg4 offset-lg2 xl3 offset-xl3>
+								<v-combobox
 									v-model="queryModel"
 									:items="queryItems"
 									:search-input.sync="queryInputSync"
@@ -33,7 +33,7 @@
 									@focus="autocompleteFromLocalStorage()"
 								/>
 							</v-flex>
-							<v-flex xs12 sm4 md3 lg2 xl12>
+							<v-flex xs12 sm4 md3 lg2 xl2>
 								<v-combobox
 									v-model="cityModel"
 									:items="cityItems"
@@ -51,7 +51,32 @@
 									@keyup.enter.native="submitSearchForm()"
 									@facus="autocompleteFromLocalStorage()"
 								>
+									<template slot="item" slot-scope="cityItems">
+										{{ cityItems.item.name }}
+									</template>
+									<template slot="item" slot-scope="cityItems">
+										<template v-if="cityItems.item.value">
+											<v-list-tile-content @click="getCurrentLocation()">
+												<v-list-tile-title>
+													Użyj obecnej lokalizacji
+												</v-list-tile-title>
+											</v-list-tile-content>
+										</template>
+										<v-template v-else>
+											<v-list-tile-content>
+												<v-list-tile-title v-html="cityItems.item"/>
+											</v-list-tile-content>
+										</v-template>
+									</template>
 								</v-combobox>
+							</v-flex>
+							<v-flex xs12 sm3 md2 lg2 xl1>
+								<button type="submit" class="submit-button">
+									{{ $t('home.search-section.search-form.submit-button') }}
+									<v-icon class="icon">
+										keyboard_arrow_right
+									</v-icon>
+								</button>
 							</v-flex>
 						</v-layout>
 					</v-form>
@@ -93,7 +118,7 @@ export default {
 			'cityItems'
 		]),
 		imageHeight() {
-			switch (this.$vuetify.breakpiont.name) {
+			switch (this.$vuetify.breakpoint.name) {
 				case 'xs': return '540';
 				case 'sm': return '600';
 				case 'md': return '640';
@@ -172,6 +197,9 @@ export default {
 				}
 			})
 		},
+		autocompleteFromLocalStorage() {
+
+		},
 		updateLocalStorage(value, key) {
 			if (value != null && value.length > 0) {
 				if (this.localStorageObject.checkIfDataExistsInLocalStorageByKey(key)) {
@@ -185,7 +213,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	@import '../../assets/scss/home/search/search.scss';
 	@import '../../assets/scss/home/search/lg.scss';
 	@import '../../assets/scss/home/search/sm.scss';
