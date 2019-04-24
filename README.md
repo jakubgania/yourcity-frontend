@@ -2,8 +2,9 @@
 
 Web application for searching places in cities and locations.
 
-The project is at a early stage.
+~~The project is at a early stage.
 
+There is still a lot to implement ...
 >  
 
 ## Project preview
