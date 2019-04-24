@@ -7,6 +7,10 @@
       :show-error-connection-alert="showErrorConnectionAlert"
     />
 
+    <!-- <v-flex v-if="true" lg4 offset-lg4>
+      <v-progress-linear :indeterminate="true"></v-progress-linear>
+    </v-flex> -->
+
     <v-flex xs12 sm12 md12 lg10 offset-lg1 xl8 offset-xl2 class="gallery-section">
       <v-container fluid grid-list-xs>
         <v-layout row wrap>

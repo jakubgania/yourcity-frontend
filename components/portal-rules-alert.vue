@@ -55,18 +55,21 @@
 </template>
 
 <script>
+import LocalStorage from './../services/local-storage.service.js'
+
 export default {
 	data() {
 		return {
 			dialog: false,
+			localStorageObject: new LocalStorage(),
 		}
 	},
 	created() {
-		localStorage.getItem('confirmation') ? this.dialog = false : this.dialog = true
+		this.dialog = this.localStorageObject.checkConfirmationRules()
 	},
 	methods: {
 		accept() {
-			localStorage.setItem('confirmation', true);
+			this.localStorageObject.setDataByKey('confirmation', true)
       		this.dialog = false;
 		},
 		link() {

@@ -20,4 +20,8 @@ export default class LocalStorage {
     deleteDataFromLocalStorageByKey(key) {
         localStorage.removeItem(key)
     }
+
+    checkConfirmationRules() {
+        return !this.checkIfDataExistsInLocalStorageByKey('confirmation')
+    }
 }
