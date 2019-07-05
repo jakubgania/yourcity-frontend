@@ -7,6 +7,8 @@ Web application for searching places in cities and locations.
 There is still a lot to implement ...
 >  
 
+**Start work (05/07/2019) on a completely new version that will be written from scratch.**
+
 ## Project preview
 
 Production version
