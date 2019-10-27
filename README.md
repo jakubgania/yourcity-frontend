@@ -29,15 +29,6 @@ Production version
 
 Last update date : 03:30 10/01/2019
 
-=================================================================
-
-Developer version (currently in preparation)
-
-[development.yourcity.io](https://development.yourcity.io)
-
-Last update date : --:-- --/--/----
-
-
 ## Technology stack
 
 - [Vue.js](https://vuejs.org/) 2.6.10
