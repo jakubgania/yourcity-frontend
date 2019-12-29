@@ -7,7 +7,7 @@ Web application for searching places in cities and locations.
 - [**yourcity-app-frontend**](https://github.com/jakubgania/yourcity-app-frontend)
 - [**yourcity-app-backend**](https://github.com/jakubgania/yourcity-app-backend)
 
-**Currently the website address is down because a new environment is being set up.**
+~~Currently the website address is down because a new environment is being set up.~~
 
 ***
 
