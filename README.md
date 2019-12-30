@@ -19,7 +19,7 @@ Web application for searching places in cities and locations.
 
 >  
 
-**Start work (05/07/2019) on a completely new version that will be written from scratch.**
+~~Start work (05/07/2019) on a completely new version that will be written from scratch.~~
 
 ## Project preview
 
