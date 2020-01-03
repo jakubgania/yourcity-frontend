@@ -27,7 +27,7 @@ Production version
 
 [yourcity.io](https://yourcity.io)
 
-Last update date : 03:30 10/01/2019
+Last update date : 03:30 10/01/2019f
 
 ## Technology stack
 
