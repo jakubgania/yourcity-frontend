@@ -12,8 +12,6 @@ Web application for searching places in cities and locations.
 ***
 
 <br/><br/>
-<br/><br/>
-<br/><br/>
 
 ~~The project is at a early stage.~~
 
@@ -24,9 +22,7 @@ Web application for searching places in cities and locations.
 ## Project preview
 
 Production version
-
 [yourcity.io](https://yourcity.io)
-
 Last update date : 03:30 10/01/2019
 
 ## Technology stack
