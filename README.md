@@ -18,8 +18,8 @@ Web application for searching places in cities and locations.
 
 ## Project preview
 
-Production version
-[yourcity.io](https://yourcity.io)
+~~Production version
+[yourcity.io](https://yourcity.io)~~
 Last update date : 03:30 10/01/2019
 
 ## Technology stack
