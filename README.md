@@ -2,7 +2,7 @@
 
 Web application for searching places in cities and locations.
 
-**(14/10/2019) Soon this project will be created again from scratch in this repository :**
+~~**(14/10/2019) Soon this project will be created again from scratch in this repository :**~~
 - [**yourcity-app-frontend**](https://github.com/jakubgania/yourcity-app-frontend)
 - [**yourcity-app-backend**](https://github.com/jakubgania/yourcity-app-backend)
 
