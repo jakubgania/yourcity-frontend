@@ -43,8 +43,8 @@ Last update date : 03:30 10/01/2019
 - [ESlint](https://eslint.org/) 5.0.1
 - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) 13.1.0
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) 4.0.0
-- [node-sass] 4.11.0
-- [sass-loader] 7.1.0
+- node-sass 4.11.0
+- sass-loader 7.1.0
 
 ## System components
 
