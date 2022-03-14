@@ -4,24 +4,8 @@ Web application for searching places in cities and locations.
 
 Application created for learning programming.
 
-~~**(14/10/2019) Soon this project will be created again from scratch in this repository :**~~
-- [**yourcity-app-frontend**](https://github.com/jakubgania/yourcity-app-frontend)
-- [**yourcity-app-backend**](https://github.com/jakubgania/yourcity-app-backend)
-
-~~Currently the website address is down because a new environment is being set up.~~
-
 ***
 
-~~The project is at a early stage.~~
-
->  
-
-~~Start work (05/07/2019) on a completely new version that will be written from scratch.~~
-
-## Project preview
-
-~~Production version
-[yourcity.io](https://yourcity.io)~~
 Last update date : 03:30 10/01/2019
 
 ## Technology stack
