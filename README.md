@@ -6,8 +6,6 @@ Application created for learning programming.
 
 ***
 
-Last update date : 03:30 10/01/2019
-
 ## Technology stack
 
 - [Vue.js](https://vuejs.org/) 2.6.10
