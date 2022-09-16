@@ -29,9 +29,3 @@ Application created for learning programming.
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) 4.0.0
 - node-sass 4.11.0
 - sass-loader 7.1.0
-
-## System components
-
-- Frontend (this repository)
-- [Backend](https://github.com/jakubgania/yourcity-backend-laravel)
-- [Docker setup](https://github.com/jakubgania/yourcity-docker-setup)
